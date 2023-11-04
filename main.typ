@@ -1,1 +1,1 @@
-#image("assets/logos/logo.png")
+#include "cover.typ"
