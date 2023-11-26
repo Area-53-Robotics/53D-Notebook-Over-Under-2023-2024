@@ -34,7 +34,7 @@
       } else if type == "select" { 
         image("icons\bullseye-arrow.svg")
       } else if type == "build" {
-        image("icons\hammer.svg")
+        image("icons\hammer2.svg")
       } else if type == "program" {
         image("icons\code.svg")
       } else if type == "test" {
