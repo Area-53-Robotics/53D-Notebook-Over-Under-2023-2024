@@ -14,7 +14,7 @@
   body,
 ) = {
   // Styling rules
-  set text(font: "Calibri", size: 11pt)
+  set text(font: "Linux Libertine", size: 11pt)
   set page("us-letter")
 
   set heading()
@@ -22,7 +22,7 @@
 
   show image: it => [
     #align(center)[
-      #set text(font: "Virgil 3 YOFF")
+      #set text(font: "Linux Libertine")
       #it
     ]
   ]
@@ -81,7 +81,7 @@
   // Content
   align(center, [
     // Title Page
-    #text(size: 24pt, font: "Orbitron")[
+    #set text(size: 24pt, font: "Orbitron")
       #text(size: 28pt)[
         53D Engineering Notebook
       ]
@@ -92,8 +92,6 @@
       VEX Robotics Challenge \
       // #line(length: 50%, stroke: (thickness: 2.5pt, cap: "round"))
       Over Under
-
-    ]
   ])
 
   pagebreak()

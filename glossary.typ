@@ -1,6 +1,7 @@
 #import "/template/glossary.typ": *
 
 // TODO: Color code glossary entries
+// TODO: Add LVGL glossary entry
 
 #nb_create_glossary_entry(title: "Singleton Pattern", definition: [
   A software design pattern where a class is only instantiated once.
