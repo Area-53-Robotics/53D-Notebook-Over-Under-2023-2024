@@ -1,6 +1,8 @@
 #import "/template/entries.typ": create_entry
 #import "/template/widgets.typ": *
 
+#include "/template/codly.typ"
+
 #create_entry(
   title: "Ajibola",
   type: "program",
@@ -38,7 +40,6 @@
         500, // largeErrorTimeout
         0 // slew rate
     };
-    
     ```
   ],
 )

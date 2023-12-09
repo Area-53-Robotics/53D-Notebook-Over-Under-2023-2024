@@ -32,8 +32,6 @@
   let colored_image = change_icon_color(data.icon, white)
 
   nb_highlight(color: data.color, image.decode(colored_image, height: size))
-  /*
-  */
 }
 
 #let nb_heading(level: 1, color: gray, beginning: none, end: none, body) = [

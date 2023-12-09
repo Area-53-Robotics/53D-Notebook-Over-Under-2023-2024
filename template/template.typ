@@ -3,6 +3,23 @@
 #import "./colors.typ": *
 #import "./glossary.typ": nb_print_glossary
 
+#import "@preview/codly:0.1.0": *
+
+#let program-icon(codepoint) = {
+  box(
+    height: 0.8em,
+    baseline: 0.05em,
+    image(codepoint)
+  )
+  h(0.1em)
+}
+
+#codly(languages: (
+  cpp: (name: "C++", icon: program-icon("/template/program-icons/brand-cpp.svg"), color: rgb("#CE412B")),
+  python: (name: "Python", icon: program-icon("/template/program-icons/brand-python.svg"), color: rgb("#CE412B")),
+  powershell: (name: "Powershell", icon: program-icon("/template/program-icons/brand-powershell.svg"), color: rgb("#CE412B")),
+))
+
 #let notebook(
   team: "",
   organization: "",
@@ -44,7 +61,10 @@
     outset: (y: 3pt),
     radius: 2pt,
   )
+  
+  show: codly-init.with()
 
+  /*
   show raw.where(block: true): it => {
     set par(justify: false);
     // the line counter
@@ -77,6 +97,7 @@
       block(radius: box_radius, fill: gray2, width: 100%, inset: 1em, it)
     }
   }
+  */
 
   // Content
   align(center, [

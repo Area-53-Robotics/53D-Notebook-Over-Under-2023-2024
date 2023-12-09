@@ -16,16 +16,5 @@
   "program": (icon: "./icons/file-code.svg", color: blue),
   "test": (icon: "./icons/chart-simple.svg", color: purple),
   "management": (icon: "./icons/folder.svg", color: gray),
-  "competition": (icon: "./icons/trophy.svg", color: amber),
-)
-
-#let entry_type_metadata = (
-  "identify": (icon: "./icons/seal-question.svg", color: red),
-  "brainstorm": (icon: "./icons/lightbulb-alt.svg", color: orange),
-  "select": (icon: "./icons/bullseye-arrow.svg", color: yellow),
-  "build": (icon: "./icons/shapes.svg", color: green),
-  "program": (icon: "./icons/file-code.svg", color: blue),
-  "test": (icon: "./icons/chart-simple.svg", color: purple),
-  "management": (icon: "./icons/folder.svg", color: gray),
-  "competition": (icon: "./icons/trophy.svg", color: amber),
+  "competition": (icon: "./icons/award-alt.svg", color: amber),
 )
