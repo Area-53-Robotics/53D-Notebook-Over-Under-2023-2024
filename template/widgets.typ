@@ -197,7 +197,7 @@
   // TODO: swap this out for a hashmap
   if type == "note" {
     title = "Note"
-    icon = "./icons/pencil.svg"
+    icon = "./icons/circle-information.svg"
     color = green
   } else if type == "warning" {
     title = "Warning"
@@ -217,11 +217,11 @@
     color = orange
   } else if type == "decision" {
     title = "Final Decision"
-    icon = "./icons/target.svg"
+    icon = "./icons/bullseye-arrow.svg"
     color = blue
   } else if type == "build" {
     title = "Build Complete"
-    icon = "./icons/hammer.svg"
+    icon = "./icons/shapes.svg"
     color = red
   } else {
     panic("invalid admonition type")

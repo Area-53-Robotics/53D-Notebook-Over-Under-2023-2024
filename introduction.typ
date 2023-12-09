@@ -3,24 +3,36 @@
 #import "/template/widgets.typ" : *
 
 #page(
-  header: nb_heading([Members of 53D], level: 0),
+  header: nb_heading([53D Members], level: 0),
   footer: [
     #nb_frontmatter_footer()
   ],
   [
 
     // TODO: move to template
-    #let nb_member(name: "", picture: "", body) = [
-      #rect(
-        fill: blue-gray1,
-        inset: 20pt,
-        width: 200pt,
-        height: 170pt,
-        radius: 1.5pt,
+    #let nb_member(name: "", picture: "", color: green, body) = [
+      #showybox(
+        title-style: (
+          boxed-style: (
+            anchor: (
+              x: center,
+              y: horizon
+            ),
+            radius: (top-left: 10pt, bottom-right: 10pt, rest: 0pt),
+          ),
+          weight: "bold"
+        ),
+        frame: (
+          title-color: color.darken(40%),
+          body-color: color.lighten(80%),
+          border-color: color.darken(60%),
+          radius: (top-left: 10pt, bottom-right: 10pt, rest: 0pt),
+          inset: 20pt,
+          width: 200pt,
+          height: 170pt,
+        ),
+        title: name,
       )[
-        = #name
-        #line(length: 100%, stroke: (cap: "round", dash: "solid", thickness: 1.5pt))
-        #v(8pt)
         #grid(
           columns: 2,
           gutter: 20pt,
@@ -33,46 +45,69 @@
     #align(
       center,
     )[
-      /*
       #grid(
         columns: 2,
-        rows: 2,
+        rows: 3,
         gutter: 20pt,
-        [
-          #nb_member(name: "Felix Hass", picture: "./assets/mugshots/felix.jpg")[
-            - 12th Grade
-            - Team Leader
-            - Programmer
-            - Notebooker
-          ]
+        nb_member(name: "Ajibola Ajani", picture: "./assets/members/ajibola.png")[
+          - Grade: 11
+          - First Season: Tipping Point
+          - Team Leader
+          - Programmer
+          - Notebooker
+          - Designer
         ],
-        nb_member(name: "Alan Morales", picture: "./assets/mugshots/alan.jpg")[
-          - 11th Grade
-          - Design
-          - Builder
+        nb_member(name: "Ishika Saha", picture: "./assets/members/ishika.png")[
+          - Grade: 9
+          - First Season: Over Under
+          - Programmer
+          - Notebooker
         ],
-        nb_member(name: "John Kelly", picture: "./assets/mugshots/john.png")[
+        nb_member(name: "Makhi Epps", picture: "./assets/members/ishika.png")[
           - 10th Grade
-          - Design
           - Builder
+          - Designer
           - Driver
         ],
-        nb_member(name: "Joy Oladimejij", picture: "./assets/mugshots/joy.jpg")[
-          - 10th Grade
-          - Programmer
+        nb_member(name: "Eric Singer", picture: "./assets/members/eric.png")[
+          - Grade: 9
+          - First Season: Over Under
           - Builder
         ],
-        nb_member(name: "Meghana Noojipady", picture: "./assets/mugshots/meghana2.png")[
-          - 9th Grade
-          - Programmer
-        ],
-        nb_member(name: "Violet Ridge", picture: "./assets/mugshots/violet.jpg")[
-          - 9th Grade
-          - Design
+        nb_member(name: "Rory Cullum", picture: "./assets/members/eric.png")[
+          - Grade: 9
+          - First Season: Over Under
           - Builder
         ],
       )
-      */
+
+      \
+      \
+      
+      #nb_admonition(
+        type: "note",
+        [
+          The following people have left during the season:
+        ],
+      )
+    
+      #grid(
+        columns: 2,
+        rows: 1,
+        gutter: 20pt,
+        nb_member(name: "Emma Cantwell", picture: "./assets/members/emma.png", color: gray)[
+          - Grade: 11
+          - First Season: Tipping Point
+          - Notebooker
+          - Builder
+        ],
+        nb_member(name: "Von Skaggs", picture: "./assets/members/von.jpg", color: gray)[
+          - Grade: 10
+          - First Season: Tipping Point
+          - Lead Builder
+          - Designer
+        ],
+      )
     ]
 
   ],
