@@ -19,3 +19,8 @@
 #let blue-gray = rgb("#607D8B")
 #let white = rgb("#FFFFFF")
 #let black = rgb("#000000")
+
+//Temporary
+#let gray3 = rgb("#9E9E9E")
+#let gray2 = rgb("#607D8C")
+#let blue-gray1 = rgb("#607D8B")
