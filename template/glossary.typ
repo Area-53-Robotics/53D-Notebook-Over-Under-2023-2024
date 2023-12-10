@@ -19,6 +19,8 @@
 
 #let nb_print_glossary() = [
   #page(
+    margin: (left: 5em, right: 5em),
+    background: nb_side_margin_color(color: gray),
     footer: align(right)[
       #counter(page).display()
     ],

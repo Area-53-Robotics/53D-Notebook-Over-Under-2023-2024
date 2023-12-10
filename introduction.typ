@@ -3,6 +3,8 @@
 #import "/template/widgets.typ" : *
 
 #page(
+  margin: (left: 5em, right: 5em),
+  background: nb_side_margin_color(color: gray),
   header: nb_heading([53D Members], level: 0),
   footer: [
     #nb_frontmatter_footer()

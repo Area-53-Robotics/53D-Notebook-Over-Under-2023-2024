@@ -55,14 +55,7 @@
               colspanx(4)[#align(center)[#entry.title]], (), (), (),
               colspanx(2, rowspanx(3)[
                 #align(center + horizon)[
-                  #box(
-                    fill: info.color.lighten(40%),
-                    outset: 5pt,
-                    radius: 1.5pt,
-                    height: 0.5in,
-                    width: 2in,
-                    stroke: (paint: info.color, thickness: 1pt, dash: "dashed")
-                  )[]
+                  #nb_label_box(type: entry.type)
                 ]
               ]),
               (),
@@ -82,35 +75,9 @@
             
           ],
 
-          margin: (left: 4em, bottom: 11em, right: 4em),
+          margin: (left: 5em, bottom: 11em, right: 5em),
 
-          background: [
-            #locate(
-              loc => {
-                if calc.rem(loc.page(), 2) == 1 {
-                  align(left + horizon)[
-                    #rect(
-                      fill: info.color,
-                      height: 800pt,
-                      width: 30pt,
-                      radius: (top-right: 15pt, bottom-right: 15pt)
-                    )
-                  ]
-                } else {
-                  align(right + horizon)[
-                    #rect(
-                      fill: info.color,
-                      height: 800pt,
-                      width: 30pt,
-                      radius: (top-left: 15pt, bottom-left: 15pt)
-                    )
-                  ]
-                }
-              },
-            )
-
-
-          ]
+          background: nb_side_margin_color(color: info.color)
         )
 
         #entry.body <nb_entry>

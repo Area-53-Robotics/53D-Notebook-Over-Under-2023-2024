@@ -3,6 +3,9 @@
 #import "@preview/codetastic:0.2.2": qrcode
 
 #page(
+  margin: (left: 5em, right: 5em),
+  background: nb_side_margin_color(color: gray),
+
   header: [
     #nb_heading([About This Notebook], level: 0)
   ],
@@ -54,35 +57,26 @@
 
     Here are the existing types:
 
-    #box(baseline: 30%, nb_label(label: "identify", size: 2em)) #h(10pt) *Identify the Problem*
-
-    #v(5pt)
-
-    #box(baseline: 30%, nb_label(label: "brainstorm", size: 2em)) #h(10pt) *Brainstorm Possible Solutions*
-
-    #v(5pt)
-
-    #box(baseline: 30%, nb_label(label: "select", size: 2em)) #h(10pt) *Select the Best Solution*
-
-    #v(5pt)
-
-    #box(baseline: 30%, nb_label(label: "build", size: 2em)) #h(10pt) *Build the Solution*
-
-    #v(5pt)
-
-    #box(baseline: 30%, nb_label(label: "program", size: 2em)) #h(10pt) *Program the Solution*
-
-    #v(5pt)
-
-    #box(baseline: 30%, nb_label(label: "test", size: 2em)) #h(10pt) *Test the Solution*
-
-    #v(5pt)
-
-    #box(baseline: 30%, nb_label(label: "management", size: 2em)) #h(10pt) *Team Management*
-    
-    #v(5pt)
-
-    #box(baseline: 30%, nb_label(label: "competition", size: 2em)) #h(10pt) *Competition Reflection*
-
+    #grid(
+      columns: 2,
+      rows: 8,
+      gutter: 25pt,
+      align(horizon)[#box(baseline: 30%, nb_label(label: "identify", size: 2em)) #h(10pt) *Identify the Problem*],
+      nb_label_box(type: "identify"),
+      align(horizon)[#box(baseline: 30%, nb_label(label: "brainstorm", size: 2em)) #h(10pt) *Brainstorm Possible Solutions*],
+      nb_label_box(type: "brainstorm"),
+      align(horizon)[#box(baseline: 30%, nb_label(label: "build", size: 2em)) #h(10pt) *Build the Solution*],
+      nb_label_box(type: "build"),
+      align(horizon)[#box(baseline: 30%, nb_label(label: "select", size: 2em)) #h(10pt) *Select the Best Solution*],
+      nb_label_box(type: "select"),
+      align(horizon)[#box(baseline: 30%, nb_label(label: "program", size: 2em)) #h(10pt) *Program the Solution*],
+      nb_label_box(type: "program"),
+      align(horizon)[#box(baseline: 30%, nb_label(label: "test", size: 2em)) #h(10pt) *Test the Solution*],
+      nb_label_box(type: "test"),
+      align(horizon)[#box(baseline: 30%, nb_label(label: "management", size: 2em)) #h(10pt) *Team Management*],
+      nb_label_box(type: "management"),
+      align(horizon)[#box(baseline: 30%, nb_label(label: "competition", size: 2em)) #h(10pt) *Competition Reflection*],
+      nb_label_box(type: "competition"),
+    )
   ],
 )

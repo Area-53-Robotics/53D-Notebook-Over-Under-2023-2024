@@ -326,3 +326,43 @@
   }
 
 }
+
+#let nb_label_box(type: "") = {
+  let info = entry_type_metadata.at(type)
+
+  box(
+    fill: info.color.lighten(40%),
+    outset: 5pt,
+    radius: 1.5pt,
+    height: 0.5in,
+    width: 2in,
+    stroke: (paint: info.color, thickness: 1pt, dash: "dashed")
+  )
+}
+
+#let nb_side_margin_color(color: "") = {
+  let margin-width = 35pt
+  locate(
+    loc => {
+      if calc.rem(loc.page(), 2) == 1 {
+        align(left + horizon)[
+          #rect(
+            fill: color,
+            height: 800pt,
+            width: margin-width,
+            radius: (top-right: 15pt, bottom-right: 15pt)
+          )
+        ]
+      } else {
+        align(right + horizon)[
+          #rect(
+            fill: color,
+            height: 800pt,
+            width: margin-width,
+            radius: (top-left: 15pt, bottom-left: 15pt)
+          )
+        ]
+      }
+    },
+  )
+}

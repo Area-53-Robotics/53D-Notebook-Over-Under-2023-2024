@@ -3,6 +3,8 @@
 
 #let nb_toc() = {
   page(
+    margin: (left: 5em, right: 5em),
+    background: nb_side_margin_color(color: gray),
     header: nb_heading([Table of Contents], level: 0),
     footer: nb_frontmatter_footer(),
     [
