@@ -54,35 +54,35 @@
 
     Here are the existing types:
 
-    #box(baseline: 30%, nb_label(label: "identify", size: 1.7em)) #h(10pt) *Identify the Problem*
+    #box(baseline: 30%, nb_label(label: "identify", size: 2em)) #h(10pt) *Identify the Problem*
 
     #v(5pt)
 
-    #box(baseline: 30%, nb_label(label: "brainstorm", size: 1.7em)) #h(10pt) *Brainstorm Possible Solutions*
+    #box(baseline: 30%, nb_label(label: "brainstorm", size: 2em)) #h(10pt) *Brainstorm Possible Solutions*
 
     #v(5pt)
 
-    #box(baseline: 30%, nb_label(label: "select", size: 1.7em)) #h(10pt) *Select the Best Solution*
+    #box(baseline: 30%, nb_label(label: "select", size: 2em)) #h(10pt) *Select the Best Solution*
 
     #v(5pt)
 
-    #box(baseline: 30%, nb_label(label: "build", size: 1.7em)) #h(10pt) *Build the Solution*
+    #box(baseline: 30%, nb_label(label: "build", size: 2em)) #h(10pt) *Build the Solution*
 
     #v(5pt)
 
-    #box(baseline: 30%, nb_label(label: "program", size: 1.7em)) #h(10pt) *Program the Solution*
+    #box(baseline: 30%, nb_label(label: "program", size: 2em)) #h(10pt) *Program the Solution*
 
     #v(5pt)
 
-    #box(baseline: 30%, nb_label(label: "test", size: 1.7em)) #h(10pt) *Test the Solution*
+    #box(baseline: 30%, nb_label(label: "test", size: 2em)) #h(10pt) *Test the Solution*
 
     #v(5pt)
 
-    #box(baseline: 30%, nb_label(label: "management", size: 1.7em)) #h(10pt) *Team Management*
+    #box(baseline: 30%, nb_label(label: "management", size: 2em)) #h(10pt) *Team Management*
     
     #v(5pt)
 
-    #box(baseline: 30%, nb_label(label: "competition", size: 1.7em)) #h(10pt) *Competition Reflection*
+    #box(baseline: 30%, nb_label(label: "competition", size: 2em)) #h(10pt) *Competition Reflection*
 
   ],
 )

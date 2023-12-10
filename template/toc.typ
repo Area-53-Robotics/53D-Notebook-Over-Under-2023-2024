@@ -20,11 +20,17 @@
             let page_number = counter(page).at(headings.at(index).location()).at(0)
             let start_date = entry.start_date.display("[year]/[month]/[day]")
             let end_date = if (not entry.start_date == entry.end_date) { entry.end_date.display("[year]/[month]/[day]") } else { none }
+
+            let info = entry_type_metadata.at(entry.type)
+
             [
-              #start_date#h(5pt)
-              #nb_label(label: entry.type)
+              #box(baseline: 15%, nb_label(label: entry.type, size: 1em))
               #h(5pt)
-              #entry.title
+              #box(fill: info.color, radius: 1pt, height: 1em, baseline: 15%)[
+                #align(center + horizon)[
+                  #h(2pt) #start_date #sym.dash.em #entry.title #h(2pt)
+                ]
+              ]#h(5pt)
               #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted")))
               #page_number \
             ]

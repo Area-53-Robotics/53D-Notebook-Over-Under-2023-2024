@@ -1,6 +1,6 @@
 // I should have named  this file components.typ, can't change it now.
 #import "@preview/showybox:2.0.1": showybox
-#import "@preview/tablex:0.0.5": *
+#import "@preview/tablex:0.0.6": *
 
 #import "./globals.typ": appendix_page_counter, entry_type_metadata
 #import "./colors.typ": *
@@ -26,12 +26,9 @@
 }
 
 #let nb_label(label: "", size: 0.7em) = {
-
   let data = entry_type_metadata.at(label)
-
-  let colored_image = change_icon_color(data.icon, white)
-
-  nb_highlight(color: data.color, image.decode(colored_image, height: size))
+  let raw_icon = read(data.icon)
+  image.decode(raw_icon, height: size)
 }
 
 #let nb_heading(level: 1, color: gray, beginning: none, end: none, body) = [
@@ -53,9 +50,7 @@
     #set text(size: 18pt, weight: "bold")
 
     #if not beginning == none {
-      highlight(color: color)[
-        #box(baseline: -30%, beginning)
-      ]
+      box(baseline: 30%, align(left)[#beginning])
       h(10pt)
     }
     #if not end == none {

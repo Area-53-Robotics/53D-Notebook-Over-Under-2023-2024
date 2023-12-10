@@ -2,7 +2,7 @@
 #import "./globals.typ": *
 #import "./widgets.typ": *
 
-#let create_entry(title: "", type: "", start_date: none, end_date: none, body) = {
+#let create_entry(title: "", type: "", start_date: none, end_date: none, attendance: "", body) = {
   if start_date == none {
     panic("No valid start date specified")
   }
@@ -15,6 +15,7 @@
       type: type,
       start_date: start_date,
       end_date: end_date,
+      attendance: attendance,
       body: body,
     ))
     x
@@ -25,79 +26,93 @@
   locate(loc => {
     for entry in entries.final(loc) {
       [
+        #let info = entry_type_metadata.at(entry.type)
+        #let type = entry.type
+
         #set page(
           header: [
-            #let info = entry_type_metadata.at(entry.type)
-            #let type = entry.type
             #nb_heading(color: info.color, level: 0, beginning: [
-              #entry.start_date.display("[year]/[month]/[day]")
-            ], end: [
-              #box()[
-                #box()[#image.decode(change_icon_color(info.icon, white), height: 1em)]
-                #box(baseline: -30%)[
-                  #if type == "identify" [Identify:]
-                  #if type == "brainstorm" [Brainstorm:]
-                  #if type == "select" [Select:]
-                  #if type == "build" [Build:]
-                  #if type == "program" [Program:]
-                  #if type == "test" [Test:]
-                  #if type == "management" [Management:]
-                  #if type == "competition" [Competition:]
-                ]
-              ]
+              #nb_label(label: type, size: 2.5em)
             ], [
               #entry.title #h(1fr)
             ])
           ],
 
           footer: [
-            #let info = entry_type_metadata.at(entry.type)
-            #line(length: 100%)
-            #align(left)[
-              #box(
-                fill: info.color.lighten(70%),
-                outset: 5pt,
-                radius: 1.5pt,
-                height: auto,
-                width: auto,
-              )[
-              #grid(columns: (2fr, 1fr, 10pt), rows: 1,
-                [
-                  *Designed By:* #box(line(end: none, length: 62%, stroke: (paint: black, thickness: 1pt, dash: "dashed")))
-                  \
-                  *Witnessed By:* #box(line(end: none, length: 60%, stroke: (paint: black, thickness: 1pt, dash: "dashed")))
-                ],
-                [
-                  *Date:* #box(line(end: none, length: 70%, stroke: (paint: black, thickness: 1pt, dash: "dashed")))
-                  \
-                  *Date:* #box(line(end: none, length: 70%, stroke: (paint: black, thickness: 1pt, dash: "dashed")))
-                ],
-                [
-                  #align(bottom + center)[
-                    #box(
-                      fill: info.color,
-                      outset: 5pt,
-                      radius: 1.5pt,
-                      height: auto,
-                      width: auto,
-                    )[#h(1fr) #counter(page).display()]
-                  ]
+            #tablex(
+              columns: (1fr, 1fr, 1fr, 1fr, 2fr, 35pt),
+              rows: 3,
+              align: left + horizon,
+              width: 1fr,
+
+              hlinex(start: 0, end: 4, stroke: black + 1pt, y: 0),
+              hlinex(start: 0, end: 4, stroke: black + 1pt, y: 1),
+              hlinex(start: 0, end: 5, stroke: black + 1pt, y: 2),
+              hlinex(start: 0, end: 5, stroke: black + 1pt, y: 3),
+              vlinex(start: 0, end: 3, stroke: 0pt, x: 6),
+
+              colspanx(4)[Designed By:], (), (), (),
+              colspanx(2, rowspanx(2)[
+                #align(center + horizon)[
+                  #box(
+                    fill: info.color.lighten(40%),
+                    outset: 5pt,
+                    radius: 1.5pt,
+                    height: 18pt,
+                    width: 125pt,
+                    stroke: (paint: info.color, thickness: 1pt, dash: "dashed")
+                  )[Label]
                 ]
-              )
-              ]
-            ]
-          ]/*,
-          
-          background: box(width: 1fr, height: 7in, fill: gray)[
-            #repeat[
-              #repeat[.#h(1in)] #parbreak()
-            ]
-          ]*/
+              ]),
+              (),
+              colspanx(4)[Witnessed By:], (), (), (), (), (),
+              [#align(center)[#entry.start_date.display("[year]/[month]/[day]")]], colspanx(4)[Attendance: #entry.attendance], (), (), (), (
+                align(center + horizon)[
+                  #box(
+                    fill: info.color,
+                    outset: 5pt,
+                    radius: 1.5pt,
+                    height: auto,
+                    width: 20pt,
+                  )[#counter(page).display()]
+                ]),
+            )
+            
+          ],
+
+          margin: (left: 4em, bottom: 8em, right: 4em),
+
+          background: [
+            #locate(
+              loc => {
+                if calc.rem(loc.page(), 2) == 1 {
+                  align(left + horizon)[
+                    #rect(
+                      fill: info.color,
+                      height: 800pt,
+                      width: 30pt,
+                      radius: (top-right: 15pt, bottom-right: 15pt)
+                    )
+                  ]
+                } else {
+                  align(right + horizon)[
+                    #rect(
+                      fill: info.color,
+                      height: 800pt,
+                      width: 30pt,
+                      radius: (top-left: 15pt, bottom-left: 15pt)
+                    )
+                  ]
+                }
+              },
+            )
+
+
+          ]
         )
 
-        #counter(footnote).update(0)
         #entry.body <nb_entry>
-
+        #counter(footnote).update(0)
       ]
       }
   })
