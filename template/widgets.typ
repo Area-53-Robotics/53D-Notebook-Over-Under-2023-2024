@@ -236,6 +236,8 @@
   ])
 }
 
+#let nb_management_admonition() = {}
+
 #let nb_tournament(matches: ((
   match: "",
   red_alliance: (teams: ("", ""), score: 0),

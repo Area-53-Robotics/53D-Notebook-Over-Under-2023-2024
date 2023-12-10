@@ -49,11 +49,18 @@
         columns: 2,
         rows: 3,
         gutter: 20pt,
-        nb_member(name: "Ajibola Ajani", picture: "./assets/members/ajibola.png")[
+        nb_member(name: "Ajibola Ajani", picture: "./assets/members/ajibola.jpg")[
           - Grade: 11
           - First Season: Tipping Point
           - Team Leader
           - Programmer
+          - Notebooker
+          - Designer
+        ],
+        nb_member(name: "Jin Hao Cao", picture: "./assets/members/jin.jpg")[
+          - Grade: 11
+          - First Season: Tipping Point
+          - Builder
           - Notebooker
           - Designer
         ],
@@ -64,7 +71,8 @@
           - Notebooker
         ],
         nb_member(name: "Makhi Epps", picture: "./assets/members/ishika.png")[
-          - 10th Grade
+          - Grade: 9
+          - First Season: Spin Up
           - Builder
           - Designer
           - Driver

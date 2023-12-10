@@ -41,7 +41,7 @@
           footer: [
             #tablex(
               columns: (1fr, 1fr, 1fr, 1fr, 2fr, 35pt),
-              rows: 3,
+              rows: 4,
               align: left + horizon,
               width: 1fr,
 
@@ -49,22 +49,24 @@
               hlinex(start: 0, end: 4, stroke: black + 1pt, y: 1),
               hlinex(start: 0, end: 5, stroke: black + 1pt, y: 2),
               hlinex(start: 0, end: 5, stroke: black + 1pt, y: 3),
+              hlinex(start: 0, end: 5, stroke: black + 1pt, y: 4),
               vlinex(start: 0, end: 3, stroke: 0pt, x: 6),
 
-              colspanx(4)[Designed By:], (), (), (),
-              colspanx(2, rowspanx(2)[
+              colspanx(4)[#align(center)[#entry.title]], (), (), (),
+              colspanx(2, rowspanx(3)[
                 #align(center + horizon)[
                   #box(
                     fill: info.color.lighten(40%),
                     outset: 5pt,
                     radius: 1.5pt,
-                    height: 18pt,
-                    width: 125pt,
+                    height: 0.5in,
+                    width: 2in,
                     stroke: (paint: info.color, thickness: 1pt, dash: "dashed")
-                  )[Label]
+                  )[]
                 ]
               ]),
               (),
+              colspanx(4)[Designed By:], (), (), (), (), (),
               colspanx(4)[Witnessed By:], (), (), (), (), (),
               [#align(center)[#entry.start_date.display("[year]/[month]/[day]")]], colspanx(4)[Attendance: #entry.attendance], (), (), (), (
                 align(center + horizon)[
@@ -80,7 +82,7 @@
             
           ],
 
-          margin: (left: 4em, bottom: 8em, right: 4em),
+          margin: (left: 4em, bottom: 11em, right: 4em),
 
           background: [
             #locate(
