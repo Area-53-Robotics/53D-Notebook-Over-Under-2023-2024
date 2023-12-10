@@ -70,8 +70,8 @@
           - Programmer
           - Notebooker
         ],
-        nb_member(name: "Makhi Epps", picture: "./assets/members/ishika.png")[
-          - Grade: 9
+        nb_member(name: "Makhi Epps", picture: "./assets/members/makhi.jpg")[
+          - Grade: 8
           - First Season: Spin Up
           - Builder
           - Designer
@@ -105,7 +105,7 @@
         gutter: 20pt,
         nb_member(name: "Emma Cantwell", picture: "./assets/members/emma.png", color: gray)[
           - Grade: 11
-          - First Season: Tipping Point
+          - First Season: Spin Up
           - Notebooker
           - Builder
         ],

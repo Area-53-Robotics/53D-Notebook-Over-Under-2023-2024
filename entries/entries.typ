@@ -1,2 +1,2 @@
-#include "./ajibola1.typ"
-#include "./ajibola2.typ"
+#include "./identify-pre-reveal-reflection.typ"
+#include ".\identify-game-challenge\identify-game-challenge.typ"

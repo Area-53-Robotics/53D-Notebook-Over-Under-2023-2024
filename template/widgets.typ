@@ -181,21 +181,50 @@
   )
 }
 
-#let nb_admonition(type: "", body) = {
+#let nb_admonition(type: "", title: "", body) = {
   let color;
   let icon;
-  let title;
+  let initTitle = title;
 
   // I hate everthing about this
   // TODO: swap this out for a hashmap
-  if type == "note" {
-    title = "Note"
-    icon = "./icons/circle-information.svg"
+
+  if type == "identify" {
+    title = "Identify"
+    icon = "./icons/seal-question-red.svg"
+    color = red
+  } else if type == "brainstorm" {
+    title = "Brainstorm"
+    icon = "./icons/lightbulb-alt-orange.svg"
+    color = orange
+  } else if type == "select" {
+    title = "Final Selection"
+    icon = "./icons/bullseye-arrow-yellow.svg"
+    color = yellow
+  } else if type == "build" {
+    title = "Build Phase Complete"
+    icon = "./icons/shapes-green.svg"
     color = green
+  } else if type == "program" {
+    title = "Program"
+    icon = "./icons/file-code-blue.svg"
+    color = blue
+  } else if type == "test" {
+    title = "Test"
+    icon = "./icons/chart-simple-purple.svg"
+    color = purple
+  } else if type == "note" {
+    title = "Note"
+    icon = "./icons/circle-information-deep-orange.svg"
+    color = deep-orange
   } else if type == "warning" {
     title = "Warning"
     icon = "./icons/warning.svg"
     color = red
+  } else if type == "equation" {
+    title = "Equation"
+    icon = "./icons/superscript-teal.svg"
+    color = teal
   } else if type == "example" {
     title = "Example"
     icon = "./icons/web.svg"
@@ -204,36 +233,36 @@
     title = "Quote"
     icon = "./icons/quotes.svg"
     color = gray
-  } else if type == "equation" {
-    title = "Equation"
-    icon = "./icons/function.svg"
-    color = orange
-  } else if type == "decision" {
-    title = "Final Decision"
-    icon = "./icons/bullseye-arrow.svg"
-    color = blue
-  } else if type == "build" {
-    title = "Build Complete"
-    icon = "./icons/shapes.svg"
-    color = red
   } else {
     panic("invalid admonition type")
   }
 
-  let colored_icon = change_icon_color(icon, color)
+  if initTitle != "" {
+    title = initTitle
+  }
 
-  showybox(frame: (
-    border-color: color,
-    body-color: color.lighten(80%),
-    thickness: (left: 4pt),
-    radius: 1.5pt,
-  ), [
-    #text(size: 15pt, fill: color, [
-      #box(baseline: 30%, image.decode(colored_icon, width: 1.5em)) *#title*
-    ])
-    \
-    #body
-  ])
+  let raw_icon = read(icon)
+  
+  box(
+    grid(
+      columns: (3em, 1fr),
+      align(center + horizon)[#box(baseline: 30%, image.decode(raw_icon, height: 2em))],
+      showybox(
+        frame:(
+          border-color: color,
+          body-color: color.lighten(80%),
+          thickness: (left: 4pt),
+          radius: 1.5pt,
+        )
+      )[
+        #text(size: 15pt, fill: color, [
+          *#title*
+        ])
+        \
+        #body
+      ]
+    )
+  )
 }
 
 #let nb_management_admonition() = {}

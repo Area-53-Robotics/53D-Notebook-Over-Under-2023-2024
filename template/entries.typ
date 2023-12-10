@@ -68,7 +68,7 @@
               (),
               colspanx(4)[Designed By:], (), (), (), (), (),
               colspanx(4)[Witnessed By:], (), (), (), (), (),
-              [#align(center)[#entry.start_date.display("[year]/[month]/[day]")]], colspanx(4)[Attendance: #entry.attendance], (), (), (), (
+              align(center)[#entry.start_date.display("[year]/[month]/[day]")], colspanx(4)[Attendance: #entry.attendance], (), (), (), (
                 align(center + horizon)[
                   #box(
                     fill: info.color,

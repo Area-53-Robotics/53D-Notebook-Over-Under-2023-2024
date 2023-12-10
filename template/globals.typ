@@ -15,6 +15,6 @@
   "build": (icon: "./icons/shapes-green.svg", color: green),
   "program": (icon: "./icons/file-code-blue.svg", color: blue),
   "test": (icon: "./icons/chart-simple-purple.svg", color: purple),
-  "management": (icon: "./icons/folder-gray.svg", color: gray),
+  "management": (icon: "./icons/folder-blue-gray.svg", color: blue-gray),
   "competition": (icon: "./icons/award-alt-amber.svg", color: amber),
 )
