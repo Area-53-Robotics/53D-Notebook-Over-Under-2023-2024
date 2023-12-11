@@ -71,8 +71,7 @@
                     width: 20pt,
                   )[#counter(page).display()]
                 ]),
-            )
-            
+            )  
           ],
 
           margin: (left: 5em, bottom: 11em, right: 5em),

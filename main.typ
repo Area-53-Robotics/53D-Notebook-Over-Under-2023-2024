@@ -1,6 +1,6 @@
 #import "template/template.typ": *
 #include "/entries/entries.typ"
-#include "/glossary.typ"
+#include "/appendix/glossary.typ"
 
 #show: notebook.with(
   team: "53D",

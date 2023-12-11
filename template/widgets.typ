@@ -17,15 +17,32 @@
   appendix_page_counter.step()
   // align(right, appendix_page_counter.display("i"))
 
-  align(right)[
+  align(right + bottom)[
     #box(
       fill: gray,
       outset: 5pt,
       radius: 1.5pt,
       height: auto,
       width: 20pt,
-    )[#appendix_page_counter.display("i")]
+    )[#align(center + horizon)[#appendix_page_counter.display("i")]]
   ]
+  v(2em)
+}
+
+#let nb_appendix_footer(color: none) = {
+  appendix_page_counter.step()
+  // align(right, appendix_page_counter.display("i"))
+
+  align(right + bottom)[
+    #box(
+      fill: gray,
+      outset: 5pt,
+      radius: 1.5pt,
+      height: auto,
+      width: 20pt,
+    )[#align(center + horizon)[#counter(page).display()]]
+  ]
+  v(2em)
 }
 
 #let nb_highlight(color: red, body) = {
