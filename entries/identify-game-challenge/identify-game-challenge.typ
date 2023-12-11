@@ -15,6 +15,15 @@
     #nb_heading([Robot Rules], level: 1)
     - <R4> Robot must fit within an 18” x 18” x 18” volume
     - <SG2> Horizontal expansion is limited to 36”
-    - There is no limit on vertical expansion
+    - There is NO limit on vertical expansion
+    
+    #nb_heading(
+      [Field Elements #footnote(
+          [All diagrams sourced from: #link(
+              "https://content.vexrobotics.com/docs/23-24/vrc-overunder/VRC-Manual-2324-1.1-Release.pdf",
+            )],
+        )],
+      level: 1,
+    )
   ]
 )
