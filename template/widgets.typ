@@ -15,7 +15,17 @@
 // FIXME: frontmatter is using the appendix counter
 #let nb_frontmatter_footer() = {
   appendix_page_counter.step()
-  align(right, appendix_page_counter.display("i"))
+  // align(right, appendix_page_counter.display("i"))
+
+  align(right)[
+    #box(
+      fill: gray,
+      outset: 5pt,
+      radius: 1.5pt,
+      height: auto,
+      width: 20pt,
+    )[#appendix_page_counter.display("i")]
+  ]
 }
 
 #let nb_highlight(color: red, body) = {
@@ -213,6 +223,14 @@
     title = "Test"
     icon = "./icons/chart-simple-purple.svg"
     color = purple
+  } else if type == "management" {
+    title = "Management"
+    icon = "./icons/folder-blue-gray.svg"
+    color = blue-gray
+  } else if type == "competition" {
+    title = "Competition"
+    icon = "./icons/award-alt-amber.svg"
+    color = amber
   } else if type == "note" {
     title = "Note"
     icon = "./icons/circle-information-deep-orange.svg"
@@ -265,7 +283,13 @@
   )
 }
 
-#let nb_management_admonition() = {}
+#let nb_todo(schedule: "", body) = {
+  nb_admonition(type: "management", title: [To-Do:])[
+    #body
+    #line(length: 100%)
+    Schedule Status: #schedule
+  ]
+}
 
 #let nb_tournament(matches: ((
   match: "",
@@ -363,6 +387,6 @@
           )
         ]
       }
-    },
+    }
   )
 }

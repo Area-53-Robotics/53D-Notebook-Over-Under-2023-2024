@@ -8,6 +8,11 @@
   start_date: datetime(year: 2023, month: 3, day: 17),
   attendance: "Ajibola, Emma, Von",
   [
+    #nb_todo(schedule: "N/A")[
+      + Reflect on the Spin Up season and what we can improve on. (Everyone)
+    ]
+
+    #nb_heading([Overall], level: 1)
     53D had a great season during Spin Up, managing to make it to the States championship and qualifying for the elimination matches as the 17th ranked team out of 90. The team has gained a wealth of knowledge about building strategies and how to assess build quality, which will be invaluable for the upcoming season.
 
     #nb_heading([Ajibola], level: 1)
@@ -21,8 +26,5 @@
     #nb_heading([Von], level: 1)
     The vex spin up season was my first year leading the construction of the robot as the lead builder. When the season started I treated it how I did last year by just designing one or two pieces of the robot, but I soon realized that as the lead builder my responsibility was not just to build but to also teach the people on my team as the most important part of robotics is not to win, but to pass on the knowledge that you have to others. Next year I plan to CAD and design everything before starting construction and to have the freshman on the team build it using the cad almost as instructions, so they can learn strategies of building through trial and error while I can oversee the construction and guide them in the correct direction. Eventually, I hope that they can become a teacher and pass on the abilities that I passed on to them. 
     On a different note, I predict that next year's game will revolve more around stacking and platforms as it has been a pattern in vex to have a game that mostly revolves around shooting and then the next year it will be mostly oriented around stacking.
-
   ]
 )
-
-

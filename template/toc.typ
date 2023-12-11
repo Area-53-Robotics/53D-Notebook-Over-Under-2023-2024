@@ -3,15 +3,13 @@
 
 #let nb_toc() = {
   page(
-    margin: (left: 5em, right: 5em),
+    margin: (left: 5em, right: 5em, /*bottom: 4em*/),
     background: nb_side_margin_color(color: gray),
     header: nb_heading([Table of Contents], level: 0),
     footer: nb_frontmatter_footer(),
     [
 
       #nb_heading([Entries], level: 1)
-
-      
 
       #locate(
         loc => {
