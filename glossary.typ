@@ -3,6 +3,19 @@
 // TODO: Color code glossary entries
 // TODO: Add LVGL glossary entry
 
+#nb_create_glossary_entry(title: "Area 53", definition: [
+  The name of our organization. Consists of 6 teams/squads from A-F.
+])
+
+#nb_create_glossary_entry(title: "Spin Up", definition: [
+  The 2023-24 Vex Robotics Challenge. It involved shooting frisbee-like discs into elevated baskets, scoring rollers, and expanding during the endgame.
+])
+
+#nb_create_glossary_entry(title: "RPM", definition: [
+  An acronym that stands for "Rotations per Minute." Used to evaluate the speed of motors and motorized subsystems.
+])
+
+// Old Glossary Entries
 #nb_create_glossary_entry(title: "Singleton Pattern", definition: [
   A software design pattern where a class is only instantiated once.
 ])
@@ -138,7 +151,3 @@
     bot, and the right joystick controls the right side of the bot.
   ],
 )
-
-// TODO:
-// - Holonomic
-// -
