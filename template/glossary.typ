@@ -21,11 +21,10 @@
   #page(
     margin: (left: 5em, right: 5em),
     background: nb_side_margin_color(color: gray),
+    header: [#nb_heading(level: 0)[Glossary]<nb_heading_glossary>],
     footer: nb_appendix_footer()
   )[
-    #nb_heading([Glossary #h(1fr)])<nb_heading_glossary>
-
-    #v(20pt)
+    // #v(20pt)
 
     #columns(
       2,

@@ -28,9 +28,10 @@
 
     Typst gives us multiple benefits compared to Google Slides, the platform that we used last year.
 
-    - Management and collaboration with Git
-    - Verification of history with Git
-    - Native scripting support
+    - Management and collaboration using Git #footnote([See "Git" glossary entry])
+    - Verification of notebook history using Git
+    - The development of multiple branches (versions) of the notebook at the same time using Git
+    - Native scripting support, allowing for advance styling
     - Native support for math and code rendering
 
     /*

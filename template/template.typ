@@ -2,6 +2,7 @@
 #import "./toc.typ": *
 #import "./colors.typ": *
 #import "./glossary.typ": nb_print_glossary
+#import "/appendix/innovate.typ": nb_print_innovate
 
 #import "@preview/codly:0.1.0": *
 
@@ -92,4 +93,6 @@
   print_entries()
 
   nb_print_glossary()
+
+  nb_print_innovate()
 }

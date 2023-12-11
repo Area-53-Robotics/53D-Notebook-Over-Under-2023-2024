@@ -42,6 +42,10 @@
             #let glossary = query(selector(<nb_heading_glossary>), loc)
             Glossary #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted"))) #counter(page).at(glossary.at(0).location()).at(0)
             #counter(page).update(_ => 0)
+
+            #let innovate = query(selector(<nb_heading_innovate>), loc)
+            Innovate Award Submission Information Form #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted"))) #counter(page).at(innovate.at(0).location()).at(0)
+            #counter(page).update(_ => 0)
           ]
         },
       )
