@@ -9,7 +9,7 @@
   attendance: "Ajibola, Emma, Von",
   [
     #nb_todo(schedule: "N/A")[
-      + Reflect on the Spin Up season and what we can improve on. (Everyone)
+      + Reflect on the Spin Up season and identify what we can improve on. (Everyone)
     ]
 
     #nb_heading([Overall], level: 1)

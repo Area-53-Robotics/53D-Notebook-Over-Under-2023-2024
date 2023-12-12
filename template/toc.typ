@@ -43,6 +43,10 @@
             Glossary #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted"))) #counter(page).at(glossary.at(0).location()).at(0)
             #counter(page).update(_ => 0)
 
+            #let resources = query(selector(<nb_heading_resources>), loc)
+            Resources #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted"))) #counter(page).at(resources.at(0).location()).at(0)
+            #counter(page).update(_ => 0)
+
             #let innovate = query(selector(<nb_heading_innovate>), loc)
             Innovate Award Submission Information Form #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted"))) #counter(page).at(innovate.at(0).location()).at(0)
             #counter(page).update(_ => 0)
