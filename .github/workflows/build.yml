@@ -28,8 +28,8 @@ jobs:
           path: main.pdf
       
       - name: Upload to Discord
-        uses: ToppleTheNun/discord-scm-action@v1.0.2
+        uses: sinshutu/upload-to-discord@v1.0.2
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         with:
-          discordWebhookId: ${{ secrets.DISCORD_WEBHOOK_ID }}
-          discordWebhookToken: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
-          artifacts: main.pdf
+          args: main.pdf
