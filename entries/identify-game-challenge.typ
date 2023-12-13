@@ -48,7 +48,7 @@
         - Weight of 103-138g
         - Abnormal shape (Reuleaux triangle)
       ],
-      [#image("/assets/field-elements/triball.png")],
+      [#image("/assets/field-elements/triball.png", height: 50%)],
       [#image("/assets/field-elements/elevation-bar.png")],
       [
         #nb_heading([Elevation Bar], level: 1)
