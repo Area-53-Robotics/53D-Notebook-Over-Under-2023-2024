@@ -26,3 +26,10 @@ jobs:
         with:
           name: notebook
           path: main.pdf
+      
+      - name: Upload to Discord
+        uses: ToppleTheNun/discord-scm-action@v1.0.2
+        with:
+          discordWebhookId: ${{ secrets.DISCORD_WEBHOOK_ID }}
+          discordWebhookToken: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
+          artifacts: main.pdf
