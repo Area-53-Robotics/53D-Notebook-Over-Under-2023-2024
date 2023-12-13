@@ -28,7 +28,7 @@ jobs:
           path: main.pdf
       
       - name: Upload to Discord
-        uses: sinshutu/upload-to-discord@v1.0.2
+        uses: sinshutu/upload-to-discord@v2.0.0
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         with:
