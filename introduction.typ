@@ -58,14 +58,14 @@
           - Programmer
           - Notebooker
           - Designer
-        ],
+        ], /*
         nb_member(name: "Jin Hao Cao", picture: "./assets/members/jin.jpg")[
           - Grade: 11
           - First Season: Tipping Point
           - Builder
           - Notebooker
           - Designer
-        ],
+        ], */
         nb_member(name: "Ishika Saha", picture: "./assets/members/ishika.png")[
           - Grade: 9
           - First Season: Over Under
