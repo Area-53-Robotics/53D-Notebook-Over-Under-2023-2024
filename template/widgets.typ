@@ -103,6 +103,7 @@
         #highlight(color: gray.lighten(70%), bottom-border-size: 0pt, bottom-color: gray)[
         #box(baseline: 130%, body)
       ]
+      #v(6pt)
     ])
   ] else if level == 3 {
     heading[

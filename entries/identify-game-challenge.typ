@@ -1,6 +1,7 @@
 #import "/template/entries.typ": create_entry
 #import "/template/widgets.typ": *
 #include "/template/codly.typ"
+#import "@preview/tablex:0.0.6": *
 
 #create_entry(
   title: "Game Challenge Analysis",
@@ -104,7 +105,14 @@
     ]
 
     #nb_heading([Match Scoring], level: 2)
-    #table(columns: 2, rows: 7,
+
+    #tablex(
+      columns: (1fr, 1fr),
+      rows: 8,
+      align: center + horizon,
+      header-rows: 1,
+
+      cellx(fill: gray)[*Acheivement*], cellx(fill: gray)[*Point Value*],
       [Autonomous Bonus], [8 Points],
       [Each Triball Scored in a Goal], [5 Points],
       [Each Triball Scored in an Offensive Zone], [2 Points],
