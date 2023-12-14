@@ -74,7 +74,7 @@
         ],
         nb_member(name: "Makhi Epps", picture: "./assets/members/makhi.jpg")[
           - Grade: 8
-          - First Season: Spin Up
+          - First Season: TippingPoint
           - Builder
           - Designer
           - Driver
@@ -84,7 +84,7 @@
           - First Season: Over Under
           - Builder
         ],
-        nb_member(name: "Rory Cullum", picture: "./assets/members/eric.png")[
+        nb_member(name: "Rory Cullum", picture: "./assets/members/rory.jpg")[
           - Grade: 9
           - First Season: Over Under
           - Builder

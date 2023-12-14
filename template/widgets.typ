@@ -86,13 +86,13 @@
       ]
       h(10pt)
     }
-     #highlight(color: color.lighten(80%), width: 1fr, bottom-border-size: 5pt, bottom-color: color)[
+     #highlight(color: color.lighten(50%), width: 1fr, bottom-border-size: 5pt, bottom-color: color)[
       #box(baseline: -30%, body)
     ]
   ]  else if level == 1 [
     #heading([
       #set text(size: 15pt)
-      #highlight(color: gray3.lighten(50%), bottom-border-size: 3pt, bottom-color: gray3)[
+      #highlight(color: gray.lighten(60%), bottom-border-size: 3pt, bottom-color: gray)[
         #box(baseline: 130%, body)
       ]
       #v(6pt)
@@ -100,7 +100,9 @@
   ] else if level == 2 [
     #heading([
       #set text(size: 13pt)
-      #body
+        #highlight(color: gray.lighten(70%), bottom-border-size: 0pt, bottom-color: gray)[
+        #box(baseline: 130%, body)
+      ]
     ])
   ] else if level == 3 {
     heading[
@@ -300,11 +302,13 @@
   )
 }
 
-#let nb_todo(schedule: "", body) = {
-  nb_admonition(type: "management", title: [To-Do:])[
+#let nb_todo(date: none, schedule: "", body) = {
+  nb_admonition(type: "management", title: [To-Do: (#date.display("[year]/[month]/[day]"))])[
     #body
-    #line(length: 100%)
-    Schedule Status: #schedule
+    #if schedule != "" [
+      #line(length: 100%)
+      Schedule Status: #schedule
+    ]
   ]
 }
 

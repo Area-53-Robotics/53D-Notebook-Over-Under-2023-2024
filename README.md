@@ -4,6 +4,8 @@
 
 53D's notebook for the 2023-24 VRC Over Under challenge. Written by Ajibola Ajani, Jin Hao Cao, and Ishika Saha.
 
+NOTE: Install the Orbitron font before compiling the notebook
+
 ## Special Thanks To
 - Felix for backend code support
 - Terry for notebooking advice

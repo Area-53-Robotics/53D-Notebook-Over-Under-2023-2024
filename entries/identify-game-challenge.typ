@@ -6,9 +6,9 @@
   title: "Game Challenge Analysis",
   type: "identify",
   start_date: datetime(year: 2023, month: 4, day: 30),
-  attendance: "Ajibola, Emma, Von",
+  attendance: "Ajibola, Emma, Von, Eric",
   [
-    #nb_todo(schedule: "N/A")[
+    #nb_todo(date: datetime(year: 2023, month: 4, day: 30), schedule: "")[
       + Analyze the game challenge rules to identify the game objectives for the season. (Everyone)
     ]
 
@@ -18,7 +18,6 @@
               "https://content.vexrobotics.com/docs/23-24/vrc-overunder/VRC-Manual-2324-1.1-Release.pdf",
             )],
         )],
-    
       level: 1,
     )
 
@@ -29,7 +28,7 @@
 
       [#image("/assets/field-elements/game-field.png")],
       [
-        #nb_heading([Field Overview], level: 1)
+        #nb_heading([Field Overview], level: 2)
         - Two Alliances, one “red” and one “blue”, composed of two teams on each side
         - 12ft x 12ft foam mat, surrounded by a perimeter and divided in half by a barrier spanning the length of the field.
         -The VRC Over Under field consists of sixty Triballs. 
@@ -39,7 +38,7 @@
           - 1 set of Alliance Elevation Bars
       ],
       [
-        #nb_heading([Triballs], level: 1)
+        #nb_heading([Triballs], level: 2)
         - 60 total Triballs can be in play
         - 2 Alliance Triballs per team
         - 22 Match Load Triballs per alliance
@@ -51,13 +50,13 @@
       [#image("/assets/field-elements/triball.png", height: 50%)],
       [#image("/assets/field-elements/elevation-bar.png")],
       [
-        #nb_heading([Elevation Bar], level: 1)
+        #nb_heading([Elevation Bar], level: 2)
         - Ground level to bar - 14.01 inches
         - Ground to top most level - 30.23 inches
         - One elevation bar per alliance
       ],
       [
-        #nb_heading([Goal], level: 1)
+        #nb_heading([Goal], level: 2)
         - Total length - 47.13 inches 
         - Gap length - 39.37 inches
         - Width - 19.20 inches
@@ -67,7 +66,7 @@
       ],
       [#image("/assets/field-elements/goal1.png")],
       [
-        #nb_heading([Match Load Zones], level: 1)
+        #nb_heading([Match Load Zones], level: 2)
         - Length - 30 inches
         - Height - 2.38 inches
         - Distance away from corner - 17.33 inches 
@@ -75,10 +74,9 @@
         - 2 per alliance 
       ],
       [#image("/assets/field-elements/load-zone.png")],
-      [#image("/assets/field-elements/load-zone.png")],
+      [#image("/assets/field-elements/skills-field.png")],
       [
-        // TODO: Get image for robot skills challenge
-        #nb_heading([Robot Skills Challenge], level: 1)
+        #nb_heading([Robot Skills Challenge], level: 2)
         - One minute long Matches in an effort to score as many points as possible.
         - These Matches consist of Driving Skills Matches, which are entirely driver-controlled, and Autonomous Coding Skills Matches, which are autonomous with limited human interaction.
         - Teams will be ranked based on their combined score in the two types of Matches.
@@ -87,12 +85,12 @@
       ],
     )
 
-    #nb_heading([Robot Rules], level: 1)
+    #nb_heading([Robot Rules], level: 2)
     - \<R4> Robot must fit within an 18” x 18” x 18” volume
     - \<SG2> Horizontal expansion is limited to 36”
     - There is NO limit on vertical expansion
 
-    #nb_heading([Autonomous], level: 1)
+    #nb_heading([Autonomous], level: 2)
     - \<SG1> Each robot must begin the match on their alliance's starting tiles that are adjacent to their alliance robot
     - \<SG9> Stay in your starting Zone during Autonomous: During the Autonomous Period, Robots may not contact foam tiles, Triballs, or Field Elements on the opposing Alliance's side of the Neutral Zone, or in the opposite Offensive Zone from which they began the Match.
     - \<SC7> Autonomous Win Point Conditions:
@@ -105,7 +103,7 @@
       \<SG9> makes a solo autonomous win point impossible to acheive unless you can consistently score into your goal from across the field. It is highly unlikely that teams will be able to do this, especially at the beginning of the season.
     ]
 
-    #nb_heading([Match Scoring], level: 1)
+    #nb_heading([Match Scoring], level: 2)
     #table(columns: 2, rows: 7,
       [Autonomous Bonus], [8 Points],
       [Each Triball Scored in a Goal], [5 Points],

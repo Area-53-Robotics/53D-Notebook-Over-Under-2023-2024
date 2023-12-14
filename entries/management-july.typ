@@ -8,7 +8,7 @@
   start_date: datetime(year: 2023, month: 7, day: 14),
   attendance: "Ajibola, Ishika, Eric, Emma",
   [
-    #nb_todo(schedule: "N/A")[
+    #nb_todo(date: datetime(year: 2023, month: 7, day: 14), schedule: "")[
       + Plan out the July meetings by creating a Gantt chart. (Everyone)
     ]
 

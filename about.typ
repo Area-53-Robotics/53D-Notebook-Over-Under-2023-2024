@@ -31,7 +31,7 @@
     - Management and collaboration using Git #footnote([See "Git" glossary entry])
     - Verification of notebook history using Git
     - The development of multiple branches (versions) of the notebook at the same time using Git
-    - Native scripting support, allowing for advance styling
+    - Native scripting support, allowing for advanced styling
     - Native support for math and code rendering
 
     /*
@@ -48,9 +48,28 @@
     )
     */
 
+    \
+    \
+    \
+    \
+    \
+    \
+    \
+    \
+    \
+    \
+    \
+    \
+    \
+    \
+    \
+    \
+    \
+    \
+
     #nb_heading([Notebook Entry Types], level: 1)
 
-    Entries all have 1 ouf ot 8 types that is displayed in the top left corner, labelled in the bottom right corner, and displayed in the table of contents. 6 out of 8 of our types are part of the engineering design process.
+    Entries all have 1 out of 8 types displayed in the top left corner, labeled in the bottom right corner, and shown in the table of contents. 6 out of 8 of our types are part of the engineering design process.
 
     Here are the existing types:
 
