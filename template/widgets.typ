@@ -293,9 +293,17 @@
           radius: 1.5pt,
         )
       )[
-        #text(size: 15pt, fill: color, [
+        #text(
+          size: 15pt,
+          fill: {if color != yellow {
+            color
+          } else {
+            let title-color = color.darken(20%)
+            title-color
+          }}
+        )[
           *#title*
-        ])
+        ]
         \
         #body
       ]
@@ -308,7 +316,7 @@
     #body
     #if schedule != "" [
       #line(length: 100%)
-      Schedule Status: #schedule
+      Monthly Schedule Status: #schedule
     ]
   ]
 }

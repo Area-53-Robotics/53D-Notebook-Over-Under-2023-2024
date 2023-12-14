@@ -11,6 +11,7 @@
 #let light-green = rgb("#8BC34A")
 #let lime = rgb("#CDDC39")
 #let yellow = rgb("#FFEB3B")
+#let yellowA700 = rgb("#FFD600")
 #let amber = rgb("#FFC107")
 #let orange = rgb("#FF9800")
 #let deep-orange = rgb("#FF5722")

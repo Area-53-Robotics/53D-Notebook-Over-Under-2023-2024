@@ -10,3 +10,6 @@
 #include "./brainstorm-drivetrain-1-drive-configurations.typ"
 #include "./select-drivetrain-1-drive-configurations.typ"
 #include "./brainstorm-drivetrain-1-wheel-types.typ"
+#include "./select-drivetrain-1-wheel types.typ"
+#include "./brainstorm-drivetrain-1-gear-ratio.typ"
+#include "./select-drivetrain-1-gear-ratio.typ"
