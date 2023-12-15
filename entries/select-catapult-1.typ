@@ -29,7 +29,6 @@
       columns: (1fr, 1fr, 1fr, 1fr),
       rows: 7,
       align: center + horizon,
-
     )
 
     #nb_admonition(type: "note")[

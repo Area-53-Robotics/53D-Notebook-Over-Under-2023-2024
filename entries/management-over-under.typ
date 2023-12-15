@@ -26,8 +26,10 @@
 
     #image("/assets/management/Over Under Gantt Chart.png")
 
+    /*
     #nb_admonition(type: "note")[
       We plan to adjust this gantt chart as the season goes on depending on new deadlines that come up, such as tournaments.
     ]
+    */
   ]
 )

@@ -26,16 +26,14 @@
       columns: 6,
       rows: 5,
       header-rows: 1,
+      align: center + horizon,
+      
       cellx(fill: gray)[*Gear Ratio*], cellx(fill: gray)[*Motor Cartridge*], cellx(fill: gray)[*Gear Ratio*], cellx(fill: gray)[*RPM*], cellx(fill: gray)[*Wheel Size*], cellx(fill: gray)[*in/sec*],
 
-      [], [200 RPM (Green Cartridge)], [60:36 Gear Ratio\ 5:3 Ratio
-], [333 RPM], [4 Inch Wheels], [71.995 in/sec],
-      [], [600 RPM (Blue Cartridge)], [36:60 Gear Ratio\ 3:5 Ratio
-], [360 RPM], [4 Inch Wheels], [77.754 in/sec],
-      [], [200 RPM (Green Cartridge)], [60:36 Gear Ratio\ 5:3 Ratio
-], [333 RPM], [3.25 Inch Wheels], [56.723 in/sec],
-      [], [600 RPM (Blue Cartridge)], [36:60 Gear Ratio\ 3:5 Ratio
-], [360 RPM], [3.25 Inch Wheels], [61.261 in/sec],
+      [#image("./200 RPM & 5-3 Ratio.png")], [200 RPM (Green Cartridge)], [60:36 Gear Ratio\ 5:3 Ratio], [333 RPM], [4 Inch Wheels], [71.995 in/sec],
+      [#image("./600 RPM & 3-5 Ratio.png")], [600 RPM (Blue Cartridge)], [36:60 Gear Ratio\ 3:5 Ratio ], [360 RPM], [4 Inch Wheels], [77.754 in/sec],
+      [#image("./200 RPM & 5-3 Ratio & 3.25 Inch.png")], [200 RPM (Green Cartridge)], [60:36 Gear Ratio\ 5:3 Ratio], [333 RPM], [3.25 Inch Wheels], [56.723 in/sec],
+      [#image("./600 RPM & 3-5 Ratio & 3.25 Inch.png")], [600 RPM (Blue Cartridge)], [36:60 Gear Ratio\ 3:5 Ratio], [360 RPM], [3.25 Inch Wheels], [61.261 in/sec],
     )
   ]
 )

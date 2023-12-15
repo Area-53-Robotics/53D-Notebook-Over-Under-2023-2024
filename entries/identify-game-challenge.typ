@@ -48,7 +48,7 @@
         - Weight of 103-138g
         - Abnormal shape (Reuleaux triangle)
       ],
-      [#image("/assets/field-elements/triball.png", height: 50%)],
+      [#image("/assets/field-elements/triball.png", height: 30%)],
       [#image("/assets/field-elements/elevation-bar.png")],
       [
         #nb_heading([Elevation Bar], level: 2)
@@ -66,6 +66,7 @@
         - One per alliance 
       ],
       [#image("/assets/field-elements/goal1.png")],
+      [#image("/assets/field-elements/load-zone.png")],
       [
         #nb_heading([Match Load Zones], level: 2)
         - Length - 30 inches
@@ -74,8 +75,6 @@
         - Degree - 45 degrees
         - 2 per alliance 
       ],
-      [#image("/assets/field-elements/load-zone.png")],
-      [#image("/assets/field-elements/skills-field.png")],
       [
         #nb_heading([Robot Skills Challenge], level: 2)
         - One minute long Matches in an effort to score as many points as possible.
@@ -84,6 +83,7 @@
         - The two (2) Blue Alliance Triball Preloads will not be used
         - All of the forty-four (44) Match Load Triballs will be located in the red Alliance Station
       ],
+      [#image("/assets/field-elements/skills-field.png")],
     )
 
     #nb_heading([Robot Rules], level: 2)
