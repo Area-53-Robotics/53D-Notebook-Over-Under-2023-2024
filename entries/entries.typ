@@ -15,9 +15,12 @@
 #include "./select-drivetrain-1-gear-ratio.typ"
 
 // August
+#include "./management-august.typ"
 #include "./build-drivetrain-1/entry.typ"
 
 // September
 #include "./program-drivetrain-1-driver-control/entry.typ"
-#include "./identify-outtake/entry.typ"
+#include "./identify-outtake.typ"
 #include "./brainstorm-outtake/entry.typ"
+#include "./select-catapult-1.typ"
+#include "./brainstorm-catapult-1/entry.typ"
