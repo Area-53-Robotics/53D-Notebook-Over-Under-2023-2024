@@ -52,6 +52,12 @@
   A command-line interface shell program used in macOS and Linux. The equivalent of it for Windows is Windows PowerShell.
 ])
 
+#nb_create_glossary_entry(
+  title: "Slip Gear",
+  category: "build",
+  definition: [
+A slip gear is a gear that has several consecutive teeth shaven off, so that another gear driven by the slip gear will "slip" when it rotates to the section of the slip gear that has no teeth. Slip gears are most frequently utilized in catapults.])
+
 // Old Glossary Entries
 #nb_create_glossary_entry(
   title: "Singleton Pattern",

@@ -20,3 +20,4 @@
 // September
 #include "./program-drivetrain-1-driver-control/entry.typ"
 #include "./identify-outtake/entry.typ"
+#include "./brainstorm-outtake/entry.typ"
