@@ -13,6 +13,16 @@
       + Build the chassis of one side of the drivetrain (Everyone)
     ]
 
-    #nb_heading([---], level: 1)
+    #grid(
+      columns: (1fr, 1fr),
+      rows: auto,
+      gutter: 50pt,
+      [
+        #nb_heading([2023/8/5], level: 1)
+
+        #lorem(6)
+      ],
+      [#image("/assets/Engineering Design Process.svg", width: auto)],
+    )
   ]
 )

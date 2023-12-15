@@ -32,7 +32,7 @@
         #nb_heading([Field Overview], level: 2)
         - Two Alliances, one “red” and one “blue”, composed of two teams on each side
         - 12ft x 12ft foam mat, surrounded by a perimeter and divided in half by a barrier spanning the length of the field.
-        -The VRC Over Under field consists of sixty Triballs. 
+        - The VRC Over Under field consists of sixty Triballs. 
         - Each Alliance has:
           - 1 Goal
           - 2 Match Load Zones

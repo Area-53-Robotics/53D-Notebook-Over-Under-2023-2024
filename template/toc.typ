@@ -23,12 +23,17 @@
 
             let info = entry_type_metadata.at(entry.type)
 
+            // let appendix_count = appendix_page_counter.final(loc).at(0)
+            // let page_count = entries.final(loc)
+
             [
               #box(baseline: 15%, nb_label(label: entry.type, size: 1em))
               #h(5pt)
               #box(fill: info.color, radius: 1pt, height: 1em, baseline: 15%)[
                 #align(center + horizon)[
-                  #h(2pt) #start_date #sym.dash.em #entry.title #h(2pt)
+                  // #link((page: {page_count + appendix_count}, x: 0pt, y: 0pt))[
+                    #h(2pt) #start_date #sym.dash.em #entry.title #h(2pt)
+                  // ]
                 ]
               ]#h(5pt)
               #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted")))
