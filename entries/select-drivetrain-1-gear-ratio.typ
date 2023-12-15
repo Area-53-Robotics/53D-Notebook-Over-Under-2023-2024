@@ -27,6 +27,24 @@
       - 0 - Incapable
     ]
 
+    #tablex(
+      columns: (1fr, 1fr, 1fr, 1fr, 1fr),
+      rows: 6,
+      align: center + horizon,
+
+      cellx()[], cellx()[5:3 Ratio;4 Inch Wheel; 200 RPM motor], cellx()[3:5 Ratio;4 Inch Wheel; 600 RPM motor], cellx()[5:3 Ratio: 3.25 Inch Wheel; 200 RPM motor], cellx()[3:5 Ratio; 3.25 Inch Wheel; 600 RPM motor],
+
+      cellx()[Inches per second], cellx(fill: green)[4], cellx(fill: green)[4], cellx(fill: red)[2], cellx(fill: yellow)[3],
+      
+      cellx()[RPM], cellx(fill: yellow)[3], cellx(fill: green)[4], cellx(fill: yellow)[3], cellx(fill: green)[4],
+
+      cellx()[Strength], cellx(fill: yellow)[3], cellx(fill: red)[2], cellx(fill: yellow)[3], cellx(fill: green)[4],
+
+      cellx()[Maneuverability], cellx(fill: red)[2], cellx(fill: yellow)[3], cellx(fill: red)[2], cellx(fill: green)[4],
+
+      cellx()[Total], cellx(fill: yellow.darken(20%))[12], cellx(fill: yellow.darken(20%))[13], cellx(fill: red.darken(20%))[12], cellx(fill: green.darken(20%))[15],
+    )
+
     #nb_admonition(type: "select")[
       We decided to use a 3.25 inch wheel powered by a 600 RPM motor geared with a 3:5 gear ratio.
     ]

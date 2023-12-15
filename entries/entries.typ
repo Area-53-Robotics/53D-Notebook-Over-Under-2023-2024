@@ -22,5 +22,5 @@
 #include "./program-drivetrain-1-driver-control/entry.typ"
 #include "./identify-outtake.typ"
 #include "./brainstorm-outtake/entry.typ"
-#include "./select-catapult-1.typ"
 #include "./brainstorm-catapult-1/entry.typ"
+#include "./select-catapult-1.typ"

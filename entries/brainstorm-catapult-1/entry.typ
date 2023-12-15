@@ -27,7 +27,7 @@
       cellx(align: center + horizon)[#image("./cata.svg") #image("./cata-front.svg")],
       [
         - *Angle* - Due to the catapult's nature, it will result in higher trajectories
-        - Familiarity - The majority of the club has constructed this catapult before
+        - *Familiarity* - The majority of the club has constructed this catapult before
       ],
       [
         - *Speed* - This version has a long rewind time, making fast cycles difficult

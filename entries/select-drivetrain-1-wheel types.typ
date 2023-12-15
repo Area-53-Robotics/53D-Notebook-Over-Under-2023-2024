@@ -29,5 +29,29 @@
       - 1 - Very Poor
       - 0 - Incapable
     ]
+
+    #tablex(
+      columns: (1fr, 1fr, 1fr, 1fr, 1fr),
+      rows: 9,
+      align: center + horizon,
+
+      cellx()[], cellx()[Omnis], cellx()[Traction], cellx()[Hybrid (Omni & Traction)], cellx()[Mecanums],
+
+      cellx()[Speed], cellx(fill: green)[4], cellx(fill: red)[2], cellx(fill: green)[4], cellx(fill: red)[2],
+
+      cellx()[Compactness], cellx(fill: yellow)[3], cellx(fill: green)[4], cellx(fill: yellow)[3], cellx(fill: red)[2],
+
+      cellx()[Strafing], cellx(fill: yellow)[3], cellx(fill: red.darken(30%))[1], cellx(fill: red)[2], cellx(fill: green)[4],
+
+      cellx()[Turning], cellx(fill: yellow)[3], cellx(fill: red)[2], cellx(fill: yellow)[3], cellx(fill: yellow)[3],
+
+      cellx()[Traction],cellx(fill: red)[2], cellx(fill: green)[4], cellx(fill: yellow)[3], cellx(fill: red)[2],
+
+      cellx()[Ease of Programming], cellx(fill: yellow)[3], cellx(fill: yellow)[3], cellx(fill: yellow)[3], cellx(fill: yellow)[3],
+
+      cellx()[Ease of Driving], cellx(fill: green)[4], cellx(fill: red)[2], cellx(fill: green)[4], cellx(fill: red)[2],
+
+      cellx()[*Total*], cellx(fill: green.darken(20%))[*22*], cellx(fill: yellow.darken(20%))[18], cellx(fill: green.darken(20%))[*22*], cellx(fill: yellow.darken(20%))[18],
+    )
   ]
 )

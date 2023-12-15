@@ -74,7 +74,7 @@
         ],
         nb_member(name: "Makhi Epps", picture: "./assets/members/makhi.jpg")[
           - Grade: 8
-          - First Season: TippingPoint
+          - First Season: Tipping Point
           - Builder
           - Designer
           - Driver

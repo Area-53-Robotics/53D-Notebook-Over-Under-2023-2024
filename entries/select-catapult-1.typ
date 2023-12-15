@@ -24,5 +24,16 @@
       - 1 - Very Poor
       - 0 - Incapable
     ]
+
+    #tablex(
+      columns: (1fr, 1fr, 1fr, 1fr),
+      rows: 7,
+      align: center + horizon,
+
+    )
+
+    #nb_admonition(type: "note")[
+      The scata was not scored because of how impractical it is for this season. Despite the score difference, we chose the low catapult because of its ability to descore. We believe that with enough power, it will fire triballs directly into the goal
+    ]
   ]
 )
