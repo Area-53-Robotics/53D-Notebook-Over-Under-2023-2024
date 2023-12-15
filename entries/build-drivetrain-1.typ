@@ -17,10 +17,15 @@
       columns: (1fr, 1fr),
       rows: auto,
       gutter: 50pt,
+      
       [
         #nb_heading([2023/8/5], level: 1)
 
-        #lorem(6)
+        - Gathered and cut 25 holes C-channel
+        - Examined spacing of wheel to gear distance
+        - Examined spacing of wheels and gear
+
+
       ],
       [#image("/assets/Engineering Design Process.svg", width: auto)],
     )
