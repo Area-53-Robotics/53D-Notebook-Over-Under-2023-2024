@@ -15,7 +15,7 @@
 
     #grid(
       columns: (1fr, 1fr),
-      rows: auto,
+      rows: 7,
       gutter: 50pt,
       
       [
@@ -48,12 +48,29 @@
         - Updated the framework of the drivetrain and rotated all the screws from facing inwards to outwards
         - Connected four wheels to their designated gear
         - Adjusted the spacing for the bearing blocks.
-        #nb_admonition(type:"Note:")[We also discussed some ideas regarding the forearm for the elevation bar task. We did not come to much of a conclusion regarding the forearm.]
+        #nb_admonition(type:"note")[We also discussed some ideas regarding the forearm for the elevation bar task. We did not come to much of a conclusion regarding the forearm.]
 
 
 
       ],
-      [#image("./8.5 build.png", width: auto)],
+      [#image("./8.18.png", width: auto)],
+
+       [#image("./8.25.png", width: 65%)
+       #image("./8.25 2.png", width: 75%)
+       ],
+      
+     [
+        #nb_heading([2023/8/25], level: 1)
+
+       - Changed the length of the c channel going between the sides of the drivetrain 
+      - Started to space the axles properly
+      #nb_admonition(type:"note")[The newer members had a coding lesson with some of the seniors about classes, and header files.]
+
+      
+
+      
+
+      ],
     )
   ]
 )
