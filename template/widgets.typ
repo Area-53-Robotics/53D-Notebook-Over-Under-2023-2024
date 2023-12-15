@@ -2,7 +2,7 @@
 #import "@preview/showybox:2.0.1": showybox
 #import "@preview/tablex:0.0.6": *
 
-#import "./globals.typ": appendix_page_counter, entry_type_metadata
+#import "./globals.typ": appendix_page_counter, entry_type_metadata, nb_solid_labels
 #import "./colors.typ": *
 
 // Returns the raw image data, not image content
@@ -384,14 +384,32 @@
 #let nb_label_box(type: "") = {
   let info = entry_type_metadata.at(type)
 
-  box(
-    fill: info.color.lighten(40%),
-    outset: 5pt,
-    radius: 1.5pt,
-    height: 0.5in,
-    width: 2in,
-    stroke: (paint: info.color, thickness: 1pt, dash: "dashed")
-  )
+  if nb_solid_labels == false {
+    box(
+      fill: info.color.lighten(40%),
+      outset: 5pt,
+      radius: 1.5pt,
+      height: 0.5in,
+      width: 2in,
+      stroke: (paint: info.color, thickness: 1pt, dash: "dashed")
+    )
+  } else {
+    box(
+      fill: info.color.lighten(40%),
+      outset: 5pt,
+      radius: 1.5pt,
+      height: 0.5in,
+      width: 2in,
+      stroke: (paint: info.color, thickness: 1pt,/* dash: "dashed"*/)
+    )[
+      #set text(16pt)
+
+      #align(center + horizon)[
+        #box(baseline: 35%, nb_label(label: type, size: 2em)) #h(10pt) *#info.name*
+      ]
+    ]
+  }
+
 }
 
 #let nb_side_margin_color(color: "") = {

@@ -13,5 +13,10 @@
 #include "./select-drivetrain-1-wheel types.typ"
 #include "./brainstorm-drivetrain-1-gear-ratio.typ"
 #include "./select-drivetrain-1-gear-ratio.typ"
+
+// August
 #include "./build-drivetrain-1/entry.typ"
+
+// September
 #include "./program-drivetrain-1-driver-control/entry.typ"
+#include "./identify-outtake/entry.typ"
