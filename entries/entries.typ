@@ -13,4 +13,4 @@
 #include "./select-drivetrain-1-wheel types.typ"
 #include "./brainstorm-drivetrain-1-gear-ratio.typ"
 #include "./select-drivetrain-1-gear-ratio.typ"
-#include "./build-drivetrain-1.typ"
+#include "./build-drivetrain-1/build-drivetrain-1.typ"
