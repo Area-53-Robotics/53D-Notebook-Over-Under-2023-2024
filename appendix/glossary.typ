@@ -38,6 +38,20 @@
   An API developed by students at Purdue SIGBots, used to control VEX robots. It functions as an alternative to VexCode V5.
 ])
 
+#nb_create_glossary_entry(
+  title: "Python",
+  category: "program",
+  definition: [
+  A general purpose, high-level programming language primarily used for data science. We utilize it to create graphs and other visual representations of data collected during our "Test" phases.
+])
+
+#nb_create_glossary_entry(
+  title: "Bash",
+  category: "program",
+  definition: [
+  A command-line interface shell program used in macOS and Linux. The equivalent of it for Windows is Windows PowerShell.
+])
+
 // Old Glossary Entries
 #nb_create_glossary_entry(
   title: "Singleton Pattern",
