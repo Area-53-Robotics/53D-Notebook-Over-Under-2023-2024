@@ -23,9 +23,9 @@
       align: left + top,
 
       cellx(fill: gray, align: center)[*Purposes of an Outtake*],
-      [Scoring - an outtake mechanism allows for precise control over the release or placement of game elements. This precision is crucial for accurately scoring points in designated zones.],
-      [Multi-handling - an outtake can be designed to handle different objects in various ways. This flexibility is valuable in scenarios where the robot needs to adapt its strategy based on the specific game elements available on the field.],
-      [Manipulation - outtake mechanisms enable robots to manipulate and interact with game elements beyond just collecting them. This capability is particularly valuable in games where robots need to perform specific tasks or actions with the collected objects.],
+      [*Scoring* - an outtake mechanism allows for precise control over the release or placement of game elements. This precision is crucial for accurately scoring points in designated zones.],
+      [*Multi-handling* - an outtake can be designed to handle different objects in various ways. This flexibility is valuable in scenarios where the robot needs to adapt its strategy based on the specific game elements available on the field.],
+      [*Manipulation* - outtake mechanisms enable robots to manipulate and interact with game elements beyond just collecting them. This capability is particularly valuable in games where robots need to perform specific tasks or actions with the collected objects.],
     )
 
     #tablex(

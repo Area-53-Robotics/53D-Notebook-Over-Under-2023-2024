@@ -7,7 +7,7 @@
   type: "build",
   start_date: datetime(year: 2023, month: 8, day: 5),
   end_date: datetime(year: 2023, month: 9, day: 15),
-  attendance: "Ishika, Eric, Eli",
+  attendance: "Ishika, Eric",
   [
     #nb_todo(date: datetime(year: 2023, month: 8, day: 5), schedule: "")[
       + Build the chassis of one side of the drivetrain (Everyone)
@@ -60,17 +60,37 @@
         #nb_admonition(type: "note")[The newer members had a coding lesson with some of the seniors about classes, and header files.]
       ],
 
-            [
-        #image("./8.25.png", width: 65%)
-        #image("./8.25 2.png", width: 75%)
+      [
+        #nb_heading([2023/8/26], level: 1)
+
+        - Worked on fixing the spacing of the two sides of the drivetrain.
+        - Flipped the direction of the screws on the gears.
+
+        #nb_admonition(type: "note")[Organization was a significant problem that we faced today, so we took time to organize our parts by size.]
       ],    
       [
-        #nb_heading([2023/8/25], level: 1)
+        #image("./8.26.png", width: 100%)
+      ],
 
-        - Changed the length of the c channel going between the sides of the drivetrain 
-        - Started to space the axles properly
+      [
+        #image("./9.8 1.png", width: 100%)
 
-        #nb_admonition(type: "note")[The newer members had a coding lesson with some of the seniors about classes, and header files.]
+      ],    
+      [
+        #nb_heading([2023/9/8], level: 1)
+        - Attached back cross-bar
+        - Attached brain
+        - Created front supports for the drive chassis
+      ],
+
+      [
+        #nb_heading([2023/9/15], level: 1)
+        - Attached back cross-bar
+        - Attached brain
+        - Created front supports for the drive chassis
+      ],    
+      [
+        #image("./9.15.jpg", height: 25%)
       ],
     )
   ]

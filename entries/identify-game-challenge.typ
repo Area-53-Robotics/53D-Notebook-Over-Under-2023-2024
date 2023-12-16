@@ -27,7 +27,7 @@
       rows: auto,
       gutter: 50pt,
 
-      [#image("/assets/field-elements/game-field.png")],
+      [#image("/assets/field-elements/game-field.png", width: 100%)],
       [
         #nb_heading([Field Overview], level: 2)
         - Two Alliances, one “red” and one “blue”, composed of two teams on each side

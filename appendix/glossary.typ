@@ -56,7 +56,33 @@
   title: "Slip Gear",
   category: "build",
   definition: [
-A slip gear is a gear that has several consecutive teeth shaven off, so that another gear driven by the slip gear will "slip" when it rotates to the section of the slip gear that has no teeth. Slip gears are most frequently utilized in catapults.])
+    A slip gear is a gear that has several consecutive teeth shaven off, so that another gear driven by the slip gear will "slip" when it rotates to the section of the slip gear that has no teeth. Slip gears are most frequently utilized in catapults.
+  ]
+)
+
+#nb_create_glossary_entry(
+  title: "Auton",
+  category: "program",
+  definition: [
+    Means one of the following:
+    1. The autonomous phase of a VRC match
+    2. The code for the autonomous phase of a VRC match
+  ],
+)
+
+#nb_create_glossary_entry(
+  title: "CAD",
+  category: "select",
+  definition: [
+  An acronym that stands for "Computer Aided Design. CAD programs are used at the industry level to plan out and test designs digitally. 53D uses Onshape as our CAD program.
+])
+
+#nb_create_glossary_entry(
+  title: "Onshape",
+  category: "select",
+  definition: [
+  A cloud-based CAD program with a readily available educational license. 53D uses it to plan out designs digitally before the "Build" phase.
+])
 
 // Old Glossary Entries
 #nb_create_glossary_entry(
@@ -94,13 +120,6 @@ A slip gear is a gear that has several consecutive teeth shaven off, so that ano
   ],
 )
 
-#nb_create_glossary_entry(
-  title: "Auton",
-  definition: [
-    It could either refer to: the code designed for the autonomous section of a
-    robotics match or the autonomous section of a robotics match.
-  ],
-)
 
 #nb_create_glossary_entry(
   title: "API",
@@ -122,9 +141,6 @@ A slip gear is a gear that has several consecutive teeth shaven off, so that ano
   An acronym that stands for Autonomous Win Point.
 ])
 
-#nb_create_glossary_entry(title: "CAD", definition: [
-  Computer aided design. Used for planning out designs virtually.
-])
 
 #nb_create_glossary_entry(
   title: "C++",

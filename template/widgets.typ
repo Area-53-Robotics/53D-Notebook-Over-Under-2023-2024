@@ -439,9 +439,14 @@
   )
 }
 
+
 #let nb_cad(path: "") = [
-  #set page(
+  #page(
+    paper: "us-letter",
     margin: 0em,
+    background: image(path),
+    header: none,
+    footer: none,
     foreground: [
       #align(right + bottom)[
         #box(
@@ -453,13 +458,9 @@
         )[#align(center + horizon)[#counter(page).display()]]
       ]
     ]
-  )
-  
-  #image(path)
+  )[]
+]
 
-  #set page(
-    margin: (left: 5em, bottom: 11em, right: 5em),
-    foreground: none,
-  )
-
+#let nb_constraint(body) = [
+  #set text(fill: red)[#underline()[#body]]
 ]
