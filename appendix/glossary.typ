@@ -85,6 +85,7 @@
 ])
 
 // Old Glossary Entries
+/*
 #nb_create_glossary_entry(
   title: "Singleton Pattern",
   definition: [
@@ -208,3 +209,4 @@
     bot, and the right joystick controls the right side of the bot.
   ],
 )
+*/

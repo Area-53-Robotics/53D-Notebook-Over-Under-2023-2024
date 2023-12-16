@@ -24,3 +24,5 @@
 #include "./brainstorm-outtake/entry.typ"
 #include "./brainstorm-catapult-1/entry.typ"
 #include "./select-catapult-1.typ"
+#include "./management-kanban-board.typ"
+#include "./build-low-catapult-1/entry.typ"
