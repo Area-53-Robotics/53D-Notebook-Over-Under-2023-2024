@@ -9,7 +9,7 @@
   attendance: "Ishika, Eric, Rory",
   [
     #nb_todo(date: datetime(year: 2023, month: 9, day: 30), schedule: "")[
-      + Evaluate our current project workflow and management to identify improvements that can be made.(Everyone)
+      + Evaluate our current project workflow and management to identify improvements that can be made. (Everyone)
       + Plan out the October meetings by creating a Gantt chart (Everyone)
       + Begin building the low catapult (Eric and Rory)
     ]
@@ -48,9 +48,9 @@
         - Correlates with the “Test” EDP step
     - Retrospect
       - This step is unique to the Scrum methodology, putting an emphasis on looking at past successes and failures to improve future designs.
-  + Definition of Done
-    - If the solution meets the definition of “done,” then restart the Scrum Methodology from the “Sprint Backlog” phase with a new task that needs to be completed.
-    - If the solution does not meet the definition of “done,” then restart the Iterative Cycle.
+    + Definition of Done
+      - If the solution meets the definition of “done,” then restart the Scrum Methodology from the “Sprint Backlog” phase with a new task that needs to be completed.
+      - If the solution does not meet the definition of “done,” then restart the Iterative Cycle.
 
     #nb_heading([Our Implementation], level: 1)
     We decided to use the Scrum Methodology because it correlated the best with both the fluidity habits of the engineering design process 53D had already been applying. 

@@ -98,7 +98,7 @@
 
     #align(center)[#image("./exponential-control.svg", width: 50%)]
 
-    We implemented this into our code by creating a function that takes in the joystick value as a paremeter and outputs the curved value as a float.
+    We implemented this into our code by creating a function that takes in the joystick value as a parameter and outputs the curved value as a float.
 
     ```cpp
       // Returns the curved output based off of the joystick value input as a parameter

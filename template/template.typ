@@ -33,7 +33,7 @@
   body,
 ) = {
   // Styling rules
-  set text(font: "Linux Libertine", size: 11pt)
+  set text(font: "Linux Libertine", size: 12pt)
   set page("us-letter")
 
   set heading()

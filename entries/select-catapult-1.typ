@@ -27,8 +27,8 @@
     ]
 
     #tablex(
-      columns: (1fr, 1fr, 1fr, 1fr), // 4
-      rows: 8, // 7
+      columns: (1fr, 1fr, 1fr, 1fr),
+      rows: 8,
       align: center + horizon,
 
       map-cells: cell => {

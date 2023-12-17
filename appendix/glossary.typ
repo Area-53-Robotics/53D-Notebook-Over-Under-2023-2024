@@ -14,7 +14,7 @@
   title: "Spin Up",
   category: "competition",
   definition: [
-  The 2023-24 Vex Robotics Challenge. It involved shooting frisbee-like discs into elevated baskets, scoring rollers, and expanding during the endgame.
+  The 2023-24 VEX Robotics Challenge. It involved shooting frisbee-like discs into elevated baskets, scoring rollers, and expanding during the endgame.
 ])
 
 #nb_create_glossary_entry(

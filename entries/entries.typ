@@ -26,3 +26,6 @@
 #include "./select-catapult-1.typ"
 #include "./management-kanban-board.typ"
 #include "./build-low-catapult-1/entry.typ"
+#include "./identify-wings-1.typ"
+#include "./brainstorm-wings-1/entry.typ"
+#include "./select-wings-1.typ"
