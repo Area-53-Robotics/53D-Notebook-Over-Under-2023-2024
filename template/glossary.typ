@@ -1,5 +1,5 @@
 #import "./colors.typ": *
-#import "./widgets.typ": *
+#import "./components/components.typ": *
 #import "./globals.typ": *
 
 #let nb_create_glossary_entry(title: none, category: "management", definition: none) = {
@@ -21,7 +21,9 @@
   #page(
     margin: (left: 5em, right: 5em),
     background: nb_side_margin_color(color: gray),
-    header: [#nb_heading(level: 0)[Glossary]<nb_heading_glossary>],
+    header: [
+      #nb_title[Glossary] <nb_glossary>
+    ],
     footer: nb_appendix_footer()
   )[
     // #v(20pt)

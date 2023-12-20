@@ -1,5 +1,5 @@
 #import "template/entries.typ": *
-#import "template/widgets.typ": *
+#import "template/components/components.typ": *
 #import "@preview/codetastic:0.2.2": qrcode
 
 #page(
@@ -7,16 +7,15 @@
   background: nb_side_margin_color(color: gray),
 
   header: [
-    #nb_heading([About Our Notebook], level: 0)
+    #nb_title([About Our Notebook])
   ],
   footer: [#nb_frontmatter_footer()],
   [
 
-    #nb_heading([How Was This Made?], level: 1)
+    = How Was This Made?
     This notebook was written with Typst, a programming language similar to Markdown and LaTeX. We write instructions about formatting in Typst, and they get automatically rendered into a printable PDF.
 
-
-    #nb_heading([Why Go Digital?], level: 1)
+    = Why Go Digital?
 
     We decided to use a digital notebook over a physical notebook this year for the following reasons:
 
@@ -24,7 +23,7 @@
     - Easier for multiple members to work on it simultaneously
     - Consistent styling throughout the notebook
 
-    #nb_heading([Why Use Typst?], level: 1)
+    = Why Use Typst?
 
     Typst gives us multiple benefits compared to Google Slides, the platform that we used last year.
 
@@ -35,7 +34,7 @@
     - Native support for math and code rendering
 
     /*
-    #nb_heading([Source Code], level: 1)
+    = Source Code
 
     #grid(
       columns: (1fr, 1fr),
@@ -66,8 +65,12 @@
     \
     \
     \
+    \
+    \
+    \
+    \
 
-    #nb_heading([Notebook Entry Types], level: 1)
+    = Notebook Entry Types
 
     Entries all have 1 out of 8 types displayed in the top left corner, labeled in the bottom right corner, and shown in the table of contents. 6 out of 8 of our types are part of the engineering design process.
 

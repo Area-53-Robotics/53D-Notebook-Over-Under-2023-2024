@@ -1,11 +1,12 @@
 #import "./entries.typ": *
 #import "./toc.typ": *
 #import "./colors.typ": *
-#import "./glossary.typ": nb_print_glossary
-#import "/appendix/resources.typ": nb_print_resources
-#import "/appendix/innovate.typ": nb_print_innovate
+#import "./icons/icons.typ": *
+#import "./glossary.typ": *
+#import "./components/components.typ": *
 
-#import "@preview/codly:0.1.0": *
+#import "/appendix/resources.typ": *
+#import "/appendix/innovate.typ": *
 
 #let program-icon(codepoint) = {
   box(
@@ -15,12 +16,6 @@
   )
   h(0.1em)
 }
-
-#codly(languages: (
-  cpp: (name: "C++", icon: program-icon("/template/program-icons/brand-cpp.svg"), color: rgb("#CE412B")),
-  python: (name: "Python", icon: program-icon("/template/program-icons/brand-python.svg"), color: rgb("#CE412B")),
-  powershell: (name: "Powershell", icon: program-icon("/template/program-icons/brand-powershell.svg"), color: rgb("#CE412B")),
-))
 
 #let notebook(
   team: "",
@@ -33,10 +28,9 @@
   body,
 ) = {
   // Styling rules
-  set text(font: "Linux Libertine", size: 12pt)
+  set text(font: "Linux Libertine", size: 11pt)
   set page("us-letter")
 
-  set heading()
   set footnote.entry(separator: none)
 
   show image: it => [
@@ -57,14 +51,12 @@
     _ #it.caption _
   ]
 
-  show raw.where(block: false): box.with(
-    fill: gray2,
-    inset: (x: 3pt, y: 0pt),
-    outset: (y: 3pt),
-    radius: 2pt,
-  )
+  // show raw.where(block: false): nb_raw_not_block
   
   show: codly-init.with()
+
+  // Headings
+  show heading: it => nb_heading(it)
 
   // Content
   align(center, [

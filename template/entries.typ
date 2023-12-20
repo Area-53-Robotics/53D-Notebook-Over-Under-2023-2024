@@ -1,6 +1,6 @@
 #import "./colors.typ" : *
 #import "./globals.typ": *
-#import "./widgets.typ": *
+#import "./components/components.typ": *
 
 #let create_entry(title: "", type: "", start_date: none, end_date: none, attendance: "", body) = {
   if start_date == none {
@@ -24,14 +24,15 @@
 
 #let print_entries() = {
   locate(loc => {
+    // make a second array for locations for toc linking?
     for entry in entries.final(loc) {
       [
-        #let info = entry_type_metadata.at(entry.type)
+        #let info = type_metadata.at(entry.type)
         #let type = entry.type
 
         #set page(
           header: [
-            #nb_heading(color: info.color, level: 0, beginning: [
+            #nb_title(color: info.color, beginning: [
               #nb_label(label: type, size: 2.5em)
             ], [
               #entry.title #h(1fr)

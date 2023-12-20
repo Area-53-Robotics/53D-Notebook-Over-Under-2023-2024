@@ -1,15 +1,15 @@
 #import "./entries.typ": *
-#import "./widgets.typ": *
+#import "./components/components.typ": *
 
 #let nb_toc() = {
   page(
     margin: (left: 5em, right: 5em, /*bottom: 4em*/),
     background: nb_side_margin_color(color: gray),
-    header: nb_heading([Table of Contents], level: 0),
+    header: nb_title[Table of Contents],
     footer: nb_frontmatter_footer(),
     [
 
-      #nb_heading([Entries], level: 1)
+      = Entries
 
       #locate(
         loc => {
@@ -21,7 +21,7 @@
             let start_date = entry.start_date.display("[year]/[month]/[day]")
             let end_date = if (not entry.start_date == entry.end_date) { entry.end_date.display("[year]/[month]/[day]") } else { none }
 
-            let info = entry_type_metadata.at(entry.type)
+            let info = type_metadata.at(entry.type)
 
             // let appendix_count = appendix_page_counter.final(loc).at(0)
             // let page_count = entries.final(loc)
@@ -42,11 +42,11 @@
           }
           [
 
-            #nb_heading([Appendix], level: 1)
+            = Appendix
 
-            #let glossary = query(selector(<nb_heading_glossary>), loc)
-            Glossary #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted"))) #counter(page).at(glossary.at(0).location()).at(0)
-            #counter(page).update(_ => 0)
+          #let glossary = query(selector(<nb_glossary>), loc)
+          Glossary #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted"))) #counter(page).at(glossary.at(0).location()).at(0)
+          #counter(page).update(_ => 0)
 
             #let resources = query(selector(<nb_heading_resources>), loc)
             Resources #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted"))) #counter(page).at(resources.at(0).location()).at(0)

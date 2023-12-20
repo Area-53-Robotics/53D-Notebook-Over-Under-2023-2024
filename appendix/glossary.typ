@@ -84,6 +84,22 @@
   A cloud-based CAD program with a readily available educational license. 53D uses it to plan out designs digitally before the "Build" phase.
 ])
 
+#nb_create_glossary_entry(
+  title: "Git",
+  category: "program",
+  definition: [
+    A version control system that tracks the changes made to the source code of a project. It allows the user to create checkpoints called "commits" and develop multiple branches of the project simulatenously.
+  ],
+)
+
+#nb_create_glossary_entry(
+  title: "GitHub",
+  category: "program",
+  definition: [
+    A commonly-used platform to store and manage git repositories.
+  ],
+)
+
 // Old Glossary Entries
 /*
 #nb_create_glossary_entry(
@@ -156,22 +172,6 @@
   definition: [
     A collection of code that serves as a base for other code to be written on top
     of.
-  ],
-)
-
-#nb_create_glossary_entry(
-  title: "Git",
-  definition: [
-    A version control system. Used to create saved points in time in your code
-    called commits.
-  ],
-)
-
-#nb_create_glossary_entry(
-  title: "GitHub",
-  definition: [
-    A collection of git repositories hosted by Microsoft. Allows us to make our code
-    easily accessible.
   ],
 )
 

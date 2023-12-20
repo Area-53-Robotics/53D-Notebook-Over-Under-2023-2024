@@ -1,11 +1,11 @@
 #import "/template/entries.typ": *
 #import "/template/colors.typ" : *
-#import "/template/widgets.typ" : *
+#import "template/components/components.typ": *
 
 #page(
   margin: (left: 5em, right: 5em),
   background: nb_side_margin_color(color: gray),
-  header: nb_heading([53D Members], level: 0),
+  header: nb_title([53D Members]),
   footer: [
     #nb_frontmatter_footer()
   ],
@@ -94,12 +94,9 @@
       \
       \
       
-      #nb_admonition(
-        type: "note",
-        [
-          The following people have left during the season:
-        ],
-      )
+      #nb_admonition(type: "note")[
+        The following people have left during the season:
+      ],
     
       #grid(
         columns: 2,
