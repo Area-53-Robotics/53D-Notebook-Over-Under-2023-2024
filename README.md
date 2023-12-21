@@ -19,7 +19,7 @@
 
 
 ## License
-The content of this notebook is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+The content of this notebook is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License][cc-by-nc-nd].
 
 The template that this notebook uses is licensed under [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
