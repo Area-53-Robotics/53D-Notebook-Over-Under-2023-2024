@@ -83,6 +83,6 @@
         #entry.body <nb_entry>
         #counter(footnote).update(0)
       ]
-      }
+    }
   })
 }

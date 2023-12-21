@@ -8,7 +8,7 @@
 )
 
 #nb_todo(date: datetime(year: 2023, month: 4, day: 29), schedule: "")[
-  + Identify our immediate thoughts and predictions after watching the game reveal (Everyone)
+  + Identify our immediate thoughts and predictions after watching the game reveal. (Everyone)
 ]
 
 = Game Object

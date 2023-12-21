@@ -8,10 +8,6 @@
   attendance: "Ajibola, Ishika, Eric, Rory",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 8, day: 5), schedule: "")[
-  + Build the chassis of one side of the drivetrain (Everyone)
-]
-
 #grid(
   columns: (1fr, 1fr),
   rows: auto,

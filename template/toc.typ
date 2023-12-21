@@ -29,7 +29,7 @@
             [
               #box(baseline: 15%, nb_label(label: entry.type, size: 1em))
               #h(5pt)
-              #box(fill: info.color, radius: 1pt, height: 1em, baseline: 15%)[
+              #box(fill: info.color.lighten(30%), radius: 1pt, height: 1em, baseline: 15%)[
                 #align(center + horizon)[
                   // #link((page: {page_count + appendix_count}, x: 0pt, y: 0pt))[
                     #h(2pt) #start_date #sym.dash.em #entry.title #h(2pt)
@@ -44,9 +44,9 @@
 
             = Appendix
 
-          #let glossary = query(selector(<nb_glossary>), loc)
-          Glossary #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted"))) #counter(page).at(glossary.at(0).location()).at(0)
-          #counter(page).update(_ => 0)
+            #let glossary = query(selector(<nb_glossary>), loc)
+            Glossary #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted"))) #counter(page).at(glossary.at(0).location()).at(0)
+            #counter(page).update(_ => 0)
 
             #let resources = query(selector(<nb_heading_resources>), loc)
             Resources #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted"))) #counter(page).at(resources.at(0).location()).at(0)

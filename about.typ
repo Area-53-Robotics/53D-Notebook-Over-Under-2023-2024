@@ -1,5 +1,6 @@
 #import "template/entries.typ": *
 #import "template/components/components.typ": *
+#import "@preview/tablex:0.0.7"
 #import "@preview/codetastic:0.2.2": qrcode
 
 #page(
@@ -76,26 +77,30 @@
 
     Here are the existing types:
 
-    #grid(
-      columns: 2,
-      rows: 8,
-      gutter: 25pt,
-      align(horizon)[#box(baseline: 30%, nb_label(label: "identify", size: 2em)) #h(10pt) *Identify the Problem*],
-      nb_label_box(type: "identify"),
-      align(horizon)[#box(baseline: 30%, nb_label(label: "brainstorm", size: 2em)) #h(10pt) *Brainstorm Solutions*],
-      nb_label_box(type: "brainstorm"),
-      align(horizon)[#box(baseline: 30%, nb_label(label: "select", size: 2em)) #h(10pt) *Select the Best Solution*],
-      nb_label_box(type: "select"),
-      align(horizon)[#box(baseline: 30%, nb_label(label: "build", size: 2em)) #h(10pt) *Build the Solution*],
-      nb_label_box(type: "build"),
-      align(horizon)[#box(baseline: 30%, nb_label(label: "program", size: 2em)) #h(10pt) *Program the Solution*],
-      nb_label_box(type: "program"),
-      align(horizon)[#box(baseline: 30%, nb_label(label: "test", size: 2em)) #h(10pt) *Test the Solution*],
-      nb_label_box(type: "test"),
-      align(horizon)[#box(baseline: 30%, nb_label(label: "management", size: 2em)) #h(10pt) *Team Management*],
-      nb_label_box(type: "management"),
-      align(horizon)[#box(baseline: 30%, nb_label(label: "competition", size: 2em)) #h(10pt) *Competition Reflection*],
-      nb_label_box(type: "competition"),
-    )
+    #align(center)[
+      #set text(size: 14pt)
+      #gridx(
+        columns: 2,
+        rows: 8,
+        gutter: 15pt,
+        align: (center + horizon),
+        [#box(baseline: 40%, nb_label(label: "identify", size: 3em)) #h(11pt) *Identify the Problem*],
+        nb_label_box(type: "identify"),
+        [#box(baseline: 40%, nb_label(label: "brainstorm", size: 3em)) #h(11pt) *Brainstorm Solutions*],
+        nb_label_box(type: "brainstorm"),
+        [#box(baseline: 40%, nb_label(label: "select", size: 3em)) #h(11pt) *Select the Best Solution*],
+        nb_label_box(type: "select"),
+        [#box(baseline: 40%, nb_label(label: "build", size: 3em)) #h(11pt) *Build the Solution*],
+        nb_label_box(type: "build"),
+        [#box(baseline: 40%, nb_label(label: "program", size: 3em)) #h(11pt) *Program the Solution*],
+        nb_label_box(type: "program"),
+        [#box(baseline: 40%, nb_label(label: "test", size: 3em)) #h(11pt) *Test the Solution*],
+        nb_label_box(type: "test"),
+        [#box(baseline: 40%, nb_label(label: "management", size: 3em)) #h(11pt) *Team Management*],
+        nb_label_box(type: "management"),
+        [#box(baseline: 40%, nb_label(label: "competition", size: 3em)) #h(11pt) *Competition Reflection*],
+        nb_label_box(type: "competition"),
+      )
+    ]
   ],
 )
