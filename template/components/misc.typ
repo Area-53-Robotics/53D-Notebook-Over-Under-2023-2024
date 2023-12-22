@@ -2,7 +2,7 @@
 #import "@preview/showybox:2.0.1": showybox
 #import "@preview/tablex:0.0.6": *
 
-#import "../globals.typ": appendix_page_counter
+#import "../globals.typ": frontmatter_page_counter, appendix_page_counter
 #import "../colors.typ": *
 #import "../icons/icons.typ": *
 #import "./admonitions.typ": *
@@ -12,7 +12,7 @@
 
 // FIXME: frontmatter is using the appendix counter
 #let nb_frontmatter_footer() = {
-  appendix_page_counter.step()
+  frontmatter_page_counter.step()
 
   align(right + bottom)[
     #box(
@@ -21,7 +21,7 @@
       radius: 1.5pt,
       height: auto,
       width: 20pt,
-    )[#align(center + horizon)[#appendix_page_counter.display("i")]]
+    )[#align(center + horizon)[#frontmatter_page_counter.display("i")]]
   ]
   v(2em)
 }

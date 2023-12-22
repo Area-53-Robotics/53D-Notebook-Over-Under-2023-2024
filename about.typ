@@ -47,7 +47,7 @@
       ],
       [
         == QR Code
-        #qrcode("https://github.com/Area-53-Robotics/53D-Over-Under-Notebook", size: 5pt),
+        #qrcode("https://github.com/Area-53-Robotics/53D-Over-Under-Notebook", size: 5pt)
       ],
     )
 
@@ -82,5 +82,5 @@
         nb_label_box(type: "competition"),
       )
     ]
-  ],
+  ]
 )

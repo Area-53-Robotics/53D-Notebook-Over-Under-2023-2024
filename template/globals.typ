@@ -1,7 +1,8 @@
 #import "./colors.typ": *
 // Global State
 
-#let appendix_page_counter = counter("frontmatter_page_counter")
+#let frontmatter_page_counter = counter("frontmatter_page_counter")
+#let appendix_page_counter = counter("appendix_page_counter")
 
 #let entries = state("entries", ())
 
