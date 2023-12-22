@@ -1,6 +1,6 @@
 # 53D-Over-Under-Notebook
 
-[![Build Typst Document](https://github.com/Area-53-Robotics/53D-Over-Under-Notebook/actions/workflows/build.yml/badge.svg)](https://github.com/Area-53-Robotics/53D-Over-Under-Notebook/actions/workflows/build.yml) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+[![Build Typst Document](https://github.com/Area-53-Robotics/53D-Over-Under-Notebook/actions/workflows/build.yml/badge.svg)](https://github.com/Area-53-Robotics/53D-Over-Under-Notebook/actions/workflows/build.yml) [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 53D's notebook for the 2023-24 VRC Over Under challenge. Written by Ajibola Ajani, Jin Hao Cao, and Ishika Saha.
 
@@ -12,10 +12,40 @@
 ## Typst Extensions Used
 - [tablex](https://github.com/PgBiel/typst-tablex/)    
 - [codly](https://github.com/Dherse/codly)
+- [codetastic](https://github.com/jneug/typst-codetastic)
 
 ## How to Compile
-- NOTE: Install the Orbitron font before compiling the notebook
-- View 53E's [README](https://github.com/Area-53-Robotics/53E-Notebook/blob/part2/README.md) for instructions on how to compile
+1. Install the required fonts:
+    - Linux Libertine
+    - Orbitron
+2. Install Typst
+
+Download a [release](https://github.com/typst/typst/releases/), and add it to your system's PATH. 
+
+You can also use a package manager:
+
+```
+# Windows
+winget install --id Typst.Typst
+
+# MacOS
+brew install typst
+
+# Arch Linux
+sudo pacman -S typst
+
+# Nix
+nix run nixpkgs#typst
+```
+3. Clone the repository
+```sh
+git clone https://github.com/Area-53-Robotics/53D-Over-Under-Notebook.git
+cd 53D-Over-Under-Notebook
+```
+4. Compile the project
+```sh
+typst compile main.typ
+```
 
 
 ## License
