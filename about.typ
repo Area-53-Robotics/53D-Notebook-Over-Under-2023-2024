@@ -34,42 +34,22 @@
     - Native scripting support, allowing for advanced styling
     - Native support for math and code rendering
 
-    /*
     = Source Code
 
-    #grid(
+    The source code for our notebook can be accessed on GitHub #footnote([See "GitHub" glossary entry]) using either of the following methods:
+    #gridx(
       columns: (1fr, 1fr),
       gutter: 20pt,
+      align: center,
       [
-        The source code can be found here: #link("https://github.com/Area-53-Robotics/53D-Over-Under-Notebook").
-        Alternatively, you can use the QR code to the left.
+        == Link
+        #link("https://github.com/Area-53-Robotics/53D-Over-Under-Notebook")
       ],
-      qrcode("https://github.com/Area-53-Robotics/53D-Over-Under-Notebook", size: 5pt),
+      [
+        == QR Code
+        #qrcode("https://github.com/Area-53-Robotics/53D-Over-Under-Notebook", size: 5pt),
+      ],
     )
-    */
-
-    \
-    \
-    \
-    \
-    \
-    \
-    \
-    \
-    \
-    \
-    \
-    \
-    \
-    \
-    \
-    \
-    \
-    \
-    \
-    \
-    \
-    \
 
     = Notebook Entry Types
 

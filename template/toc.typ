@@ -23,7 +23,7 @@
 
             let info = type_metadata.at(entry.type)
 
-            // let appendix_count = appendix_page_counter.final(loc).at(0)
+            // let frontmatter_count = frontmatter_page_counter.final(loc).at(0)
             // let page_count = entries.final(loc)
 
             [
@@ -31,7 +31,7 @@
               #h(5pt)
               #box(fill: info.color.lighten(30%), radius: 1pt, height: 1em, baseline: 15%)[
                 #align(center + horizon)[
-                  // #link((page: {page_count + appendix_count}, x: 0pt, y: 0pt))[
+                  // #link((page: {page_count + frontmatter_count}, x: 0pt, y: 0pt))[
                     #h(2pt) #start_date #sym.dash.em #entry.title #h(2pt)
                   // ]
                 ]
