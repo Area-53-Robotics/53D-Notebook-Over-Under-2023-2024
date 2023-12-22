@@ -1,0 +1,15 @@
+name: Build Typst Document
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+
+      - name: Spell Check with Typos
+        uses: crate-ci/typos@master
+        with: 
+          config: ./typos.toml
+          isolated: true

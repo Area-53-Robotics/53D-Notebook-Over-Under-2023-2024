@@ -88,7 +88,7 @@
   title: "Git",
   category: "program",
   definition: [
-    A version control system that tracks the changes made to the source code of a project. It allows the user to create checkpoints called "commits" and develop multiple branches of the project simulatenously.
+    A version control system that tracks the changes made to the source code of a project. It allows the user to create checkpoints called "commits" and develop multiple branches of the project simultaneously.
   ],
 )
 
@@ -97,6 +97,14 @@
   category: "program",
   definition: [
     A commonly-used platform to store and manage git repositories.
+  ],
+)
+
+#nb_create_glossary_entry(
+  title: "Visual Studio Code (VSCode)",
+  category: "program",
+  definition: [
+    A code editor developed by Microsoft with an embedded Git interface.
   ],
 )
 

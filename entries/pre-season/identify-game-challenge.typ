@@ -16,7 +16,7 @@
       [All images and diagrams are sourced from #link(
           "https://content.vexrobotics.com/docs/23-24/vrc-overunder/VRC-Manual-2324-1.1-Release.pdf",
         )],
-),
+)
 
 #grid(
   columns: (1fr, 1fr),
@@ -97,7 +97,7 @@
 - Autonomous Bonus: 8 pts
 
 #nb_admonition(type: "note")[
-  \<SG9> makes a solo autonomous win point impossible to acheive unless you can consistently score into your goal from across the field. It is highly unlikely that teams will be able to do this, especially at the beginning of the season.
+  \<SG9> makes a solo autonomous win point impossible to achieve unless you can consistently score into your goal from across the field. It is highly unlikely that teams will be able to do this, especially at the beginning of the season.
 ]
 
 == Match Scoring
@@ -108,7 +108,7 @@
   align: center + horizon,
   header-rows: 1,
 
-  cellx(fill: gray)[*Acheivement*], cellx(fill: gray)[*Point Value*],
+  cellx(fill: gray)[*Achievement*], cellx(fill: gray)[*Point Value*],
   [Autonomous Bonus], [8 Points],
   [Each Triball Scored in a Goal], [5 Points],
   [Each Triball Scored in an Offensive Zone], [2 Points],
