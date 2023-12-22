@@ -1,6 +1,6 @@
 # 53D-Over-Under-Notebook
 
-[![Build Typst Document](https://github.com/Area-53-Robotics/53D-Over-Under-Notebook/actions/workflows/build.yml/badge.svg)](https://github.com/Area-53-Robotics/53D-Over-Under-Notebook/actions/workflows/build.yml) [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Build Typst Document](https://github.com/Area-53-Robotics/53D-Over-Under-Notebook/actions/workflows/build.yml/badge.svg)](https://github.com/Area-53-Robotics/53D-Over-Under-Notebook/actions/workflows/build.yml) [![Spell Check](https://github.com/Area-53-Robotics/53D-Over-Under-Notebook/actions/workflows/typos.yml/badge.svg)](https://github.com/Area-53-Robotics/53D-Over-Under-Notebook/actions/workflows/typos.yml) [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 53D's notebook for the 2023-24 VRC Over Under challenge. Written by Ajibola Ajani, Jin Hao Cao, and Ishika Saha.
 

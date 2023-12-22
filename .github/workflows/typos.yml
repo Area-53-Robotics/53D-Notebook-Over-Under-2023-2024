@@ -1,4 +1,4 @@
-name: Build Typst Document
+name: Spell Check
 on: [push, workflow_dispatch]
 
 jobs:
