@@ -26,17 +26,17 @@
   v(2em)
 }
 
-#let nb_appendix_footer(color: none) = {
+#let nb_appendix_footer(color: gray) = {
   appendix_page_counter.step()
 
   align(right + bottom)[
     #box(
-      fill: gray,
+      fill: color,
       outset: 5pt,
       radius: 1.5pt,
       height: auto,
       width: 20pt,
-    )[#align(center + horizon)[#counter(page).display()]]
+    )[#align(center + horizon)[#appendix_page_counter.display()]]
   ]
   v(2em)
 }

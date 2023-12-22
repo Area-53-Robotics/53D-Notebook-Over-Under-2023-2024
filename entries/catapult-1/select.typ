@@ -68,3 +68,5 @@
 #nb_admonition(type: "select")[
   Despite the tie, we chose the low catapult because of its ability to descore. We believe that with enough power, it will consistently be able to fire triballs directly into the goal. This would give us versatility on both offense and defense.
 ]
+
+#nb_cad(path: "/assets/test.png")
