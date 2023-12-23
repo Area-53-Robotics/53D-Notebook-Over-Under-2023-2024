@@ -201,7 +201,7 @@
   let margin-width = 35pt
   locate(
     loc => {
-      if calc.rem(loc.page(), 2) == 1 {
+      if calc.odd(loc.page()) {
         align(left + horizon)[
           #rect(
             fill: color,

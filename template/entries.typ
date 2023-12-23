@@ -40,39 +40,83 @@
           ],
 
           footer: [
-            #tablex(
-              columns: (1fr, 1fr, 1fr, 1fr, 2fr, 35pt),
-              rows: 4,
-              align: left + horizon,
-              width: 1fr,
+            #locate(
+              loc => {
+                if calc.odd(loc.page()) {
+                  tablex(
+                    columns: (1fr, 1fr, 1fr, 1fr, 2fr, 35pt),
+                    rows: 4,
+                    align: left + horizon,
+                    width: 1fr,
 
-              hlinex(start: 0, end: 4, stroke: black + 1pt, y: 0),
-              hlinex(start: 0, end: 4, stroke: black + 1pt, y: 1),
-              hlinex(start: 0, end: 5, stroke: black + 1pt, y: 2),
-              hlinex(start: 0, end: 5, stroke: black + 1pt, y: 3),
-              hlinex(start: 0, end: 5, stroke: black + 1pt, y: 4),
-              vlinex(start: 0, end: 3, stroke: 0pt, x: 6),
+                    hlinex(start: 0, end: 4, stroke: black + 1pt, y: 0),
+                    hlinex(start: 0, end: 4, stroke: black + 1pt, y: 1),
+                    hlinex(start: 0, end: 5, stroke: black + 1pt, y: 2),
+                    hlinex(start: 0, end: 5, stroke: black + 1pt, y: 3),
+                    hlinex(start: 0, end: 5, stroke: black + 1pt, y: 4),
+                    vlinex(start: 0, end: 3, stroke: 0pt, x: 6),
 
-              colspanx(4)[#align(center)[#entry.title]], (), (), (),
-              colspanx(2, rowspanx(3)[
-                #align(center + horizon)[
-                  #nb_label_box(type: entry.type)
-                ]
-              ]),
-              (),
-              colspanx(4)[Designed By:], (), (), (), (), (),
-              colspanx(4)[Witnessed By:], (), (), (), (), (),
-              align(center)[#entry.start_date.display("[year]/[month]/[day]")], colspanx(4)[Attendance: #entry.attendance], (), (), (), (
-                align(center + horizon)[
-                  #box(
-                    fill: info.color,
-                    outset: 5pt,
-                    radius: 1.5pt,
-                    height: auto,
-                    width: 20pt,
-                  )[#counter(page).display()]
-                ]),
-            )  
+                    colspanx(4)[#align(center)[#entry.title]], (), (), (),
+                    colspanx(2, rowspanx(3)[
+                      #align(center + horizon)[
+                        #nb_label_box(type: entry.type)
+                      ]
+                    ]),
+                    (),
+                    colspanx(4)[Designed By:], (), (), (), (), (),
+                    colspanx(4)[Witnessed By:], (), (), (), (), (),
+                    align(center)[#entry.start_date.display("[year]/[month]/[day]")], colspanx(4)[Attendance: #entry.attendance], (), (), (), (
+                      align(center + horizon)[
+                        #box(
+                          fill: info.color,
+                          outset: 5pt,
+                          radius: 1.5pt,
+                          height: auto,
+                          width: 20pt,
+                        )[#counter(page).display()]
+                      ]),
+                  )
+                } else {
+                  tablex(
+                    columns: (35pt, 2fr, 1fr, 1fr, 1fr, 1fr),
+                    rows: 4,
+                    align: left + horizon,
+                    width: 1fr,
+
+                    hlinex(start: 2, end: 7, stroke: black + 1pt, y: 0),
+                    hlinex(start: 2, end: 7, stroke: black + 1pt, y: 1),
+                    hlinex(start: 2, end: 7, stroke: black + 1pt, y: 2),
+                    hlinex(start: 2, end: 7, stroke: black + 1pt, y: 3),
+                    hlinex(start: 1, end: 7, stroke: black + 1pt, y: 4),
+                    vlinex(start: 0, end: 3, stroke: 0pt, x: 0),
+
+                    colspanx(2, rowspanx(3)[
+                      #align(center + horizon)[
+                        #nb_label_box(type: entry.type)
+                      ]
+                    ]),
+                    (),
+                    colspanx(4)[#align(center)[#entry.title]], (), (), (),
+
+                    (), (), colspanx(4)[Designed By:], (), (), (),
+
+                    (), (), colspanx(4)[Witnessed By:], (), (), (),
+                    
+                    (
+                      align(center + horizon)[
+                        #box(
+                          fill: info.color,
+                          outset: 5pt,
+                          radius: 1.5pt,
+                          height: auto,
+                          width: 20pt,
+                        )[#counter(page).display()]
+                      ]
+                    ), colspanx(4)[Attendance: #entry.attendance], (), (), (), align(center)[#entry.start_date.display("[year]/[month]/[day]")]
+                  )
+                }
+              }
+            )
           ],
 
           margin: (left: 5em, bottom: 11em, right: 5em),
