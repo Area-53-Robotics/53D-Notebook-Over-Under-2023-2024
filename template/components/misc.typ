@@ -225,30 +225,40 @@
 }
 
 
-#let nb_cad(path: "") = [
+#let nb_cad(path: "", sheets: 1) = [
   // put a loc on here for index
-  #page(
-    paper: "us-letter",
-    margin: (left: 5em, bottom: 11em, right: 5em),
-    background: image(path),
-    header: none,
-    footer: [
-      #align(right + bottom)[
-      #box(
-        fill: gray,
-        outset: 5pt,
-        radius: 1.5pt,
-        height: auto,
-        width: 20pt,
-      )[#align(center + horizon)[#counter(page).display()]]
-    ]
-    #v(1em)
-    ],
-  )[]
+
+  #let current-sheet = 1
+  #let file-path = none
+
+  #while current-sheet <= sheets {
+    file-path = "/assets/cad/" + path + "/sheet" + str(current-sheet) + ".png"
+
+    page(
+      paper: "us-letter",
+      margin: (left: 5em, bottom: 11em, right: 5em),
+      background: image(file-path),
+      header: none,
+      footer: [
+        #align(right + bottom)[
+        #box(
+          fill: gray,
+          outset: 5pt,
+          radius: 1.5pt,
+          height: auto,
+          width: 20pt,
+        )[#align(center + horizon)[#counter(page).display()]]
+      ]
+      #v(1em)
+      ],
+    )[]
+
+    current-sheet = current-sheet + 1
+  }
 
   #pagebreak()
 
-  #align(center + horizon)[ THIS PAGE IS INTENTIONALLY LEFT BLANK]
+  #align(center + horizon)[THIS PAGE IS INTENTIONALLY LEFT BLANK]
 ]
 
 #let nb_constraint(body) = [

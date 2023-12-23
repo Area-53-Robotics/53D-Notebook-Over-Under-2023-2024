@@ -62,6 +62,8 @@
   [Total], cellx(fill: yellow.darken(20%))[12], cellx(fill: yellow.darken(20%))[13], cellx(fill: red.darken(20%))[12], cellx(fill: green.darken(20%))[15],
 )
 
-#nb_admonition(type: "select")[
+#nb_admonition(type: "select", title: "Final Selection")[
   We decided to use a 3.25 inch wheel powered by a 600 RPM motor geared with a 3:5 gear ratio.
 ]
+
+#nb_cad(path: "drivetrain-1", sheets: 5)

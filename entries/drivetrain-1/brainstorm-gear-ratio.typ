@@ -30,8 +30,7 @@ We used a publicly available spreadsheet #footnote([#link("https://docs.google.c
   cellx(fill: gray)[*Gear Ratio*], cellx(fill: gray)[*Motor Cartridge*], cellx(fill: gray)[*Gear Ratio*], cellx(fill: gray)[*RPM*], cellx(fill: gray)[*Wheel Size*], cellx(fill: gray)[*in/sec*],
 
   [#image("./brainstorm-gear-ratio/60.30 4 inch 200 RPM.png")], [200 RPM (Green Cartridge)], [60:36 Gear Ratio\ 5:3 Ratio], [333 RPM], [4 Inch Wheels], [71.995 in/sec],
-  [#image("./brainstorm-gear-ratio/36.60 4 inch 600 RPM.png")], [600 RPM (Blue Cartridge)], [36:60 Gear Ratio\ 3:5 Ratio ], [360 RPM], [4 Inch Wheels], [77.754 in/sec],
+  [#image("./brainstorm-gear-ratio/36.60 4 inch 600 RPM.png")], [600 RPM (Blue Cartridge)], [36:60 Gear Ratio\ 3:5 Ratio], [360 RPM], [4 Inch Wheels], [77.754 in/sec],
   [#image("./brainstorm-gear-ratio/60.36 3.25 200 RPM.png")], [200 RPM (Green Cartridge)], [60:36 Gear Ratio\ 5:3 Ratio], [333 RPM], [3.25 Inch Wheels], [56.723 in/sec],
   [#image("./brainstorm-gear-ratio/36.60 3.25 600 RPM.png")], [600 RPM (Blue Cartridge)], [36:60 Gear Ratio\ 3:5 Ratio], [360 RPM], [3.25 Inch Wheels], [61.261 in/sec],
 )
-
