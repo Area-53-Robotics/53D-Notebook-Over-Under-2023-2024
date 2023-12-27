@@ -17,7 +17,7 @@
         frame:(
           border-color: info.color,
           body-color: info.color.lighten(80%),
-          thickness: (left: 4pt),
+          thickness: (left: 4pt/*, right: 4pt, top: 4pt, bottom: 4pt*/),
           radius: 1.5pt,
         )
       )[

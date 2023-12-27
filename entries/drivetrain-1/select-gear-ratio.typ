@@ -66,4 +66,4 @@
   We decided to use a 3.25 inch wheel powered by a 600 RPM motor geared with a 3:5 gear ratio.
 ]
 
-#nb_cad(path: "drivetrain-1", sheets: 5)
+#nb_cad(folder: "drivetrain-1", sheets: 5)

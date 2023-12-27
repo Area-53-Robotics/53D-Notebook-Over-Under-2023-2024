@@ -1,6 +1,6 @@
 // I should have named  this file components.typ, can't change it now.
 #import "@preview/showybox:2.0.1": showybox
-#import "@preview/tablex:0.0.6": *
+#import "@preview/tablex:0.0.7": *
 
 #import "../globals.typ": frontmatter_page_counter, appendix_page_counter
 #import "../colors.typ": *
@@ -225,19 +225,19 @@
 }
 
 
-#let nb_cad(path: "", sheets: 1) = [
+#let nb_cad(folder: "", sheets: 1) = [
   // put a loc on here for index
 
   #let current-sheet = 1
-  #let file-path = none
+  #let path = none
 
   #while current-sheet <= sheets {
-    file-path = "/assets/cad/" + path + "/sheet" + str(current-sheet) + ".png"
+    path = "/assets/cad/" + folder + "/sheet" + str(current-sheet) + ".png"
 
     page(
       paper: "us-letter",
       margin: (left: 5em, bottom: 11em, right: 5em),
-      background: image(file-path),
+      background: image(path),
       header: none,
       footer: [
         #align(right + bottom)[

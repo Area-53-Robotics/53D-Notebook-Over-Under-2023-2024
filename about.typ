@@ -36,14 +36,28 @@
 
     = Source Code
 
-    The source code for our notebook can be accessed on GitHub #footnote([See "GitHub" glossary entry]) using either of the following methods:
+    The source code for our notebook can be accessed on 
+    #box(baseline: 12.5%)[
+      #box(
+        image("/template/program-icons/brand-github-filled.svg", height: 1em),
+        baseline: 10%
+        )
+      GitHub #footnote([See "GitHub" glossary entry])
+    ] using either of the following methods:
+
     #gridx(
       columns: (1fr, 1fr),
       gutter: 20pt,
       align: center,
       [
         == Link
-        #link("https://github.com/Area-53-Robotics/53D-Over-Under-Notebook")
+        #box[
+          #box(
+            image("/template/program-icons/brand-github-filled.svg", height: 1em),
+            baseline: 20%
+            )
+          #link("https://github.com/Area-53-Robotics/53D-Over-Under-Notebook")
+        ]
       ],
       [
         == QR Code

@@ -12,6 +12,7 @@
 ## Typst Extensions Used
 - [tablex](https://github.com/PgBiel/typst-tablex/)    
 - [codly](https://github.com/Dherse/codly)
+- [showybox](https://github.com/Pablo-Gonzalez-Calderon/showybox-package)
 - [codetastic](https://github.com/jneug/typst-codetastic)
 
 ## How to Compile

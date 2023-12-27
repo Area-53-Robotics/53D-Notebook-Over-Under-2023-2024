@@ -42,7 +42,7 @@
           footer: [
             #locate(
               loc => {
-                if calc.odd(loc.page()) {
+                if /* calc.odd(loc.page()) */ true {
                   tablex(
                     columns: (1fr, 1fr, 1fr, 1fr, 2fr, 35pt),
                     rows: 4,
