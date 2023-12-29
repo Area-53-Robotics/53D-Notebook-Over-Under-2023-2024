@@ -25,16 +25,16 @@
 ]
 
 #nb_decision_matrix(
-  properties: (
+  criteria: (
     ("Speed", 5),
     ("Range", 5),
     ("Power", 3),
     ("Difficulty Getting Blocked", 4),
-    ("Rapid Fire Capability", 3),
+    ("Rapid Fire Capability", 5),
     ("Goal Scoring Capability", 4),
     ),
   choices: (
-    ("Catapult", 2, 4, 3, 4, 3, 0),
+    ("Catapult", 2, 4, 4, 4, 3, 0),
     ("Scata", 0, 0, 0, 0, 0, 0),
     ("Low Catapult", 2, 3, 3, 2, 3, 4),
     ),

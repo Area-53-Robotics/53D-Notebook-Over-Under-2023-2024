@@ -30,7 +30,7 @@
 ]
 
 #nb_decision_matrix(
-  properties: (
+  criteria: (
     ("Speed", 5),
     ("Compactness", 2),
     ("Strafing", 3),

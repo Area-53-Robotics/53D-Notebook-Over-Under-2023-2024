@@ -6,6 +6,7 @@
 #let nb_shapes = read("./shapes-green.svg")
 #let nb_file = read("./file-code-blue.svg")
 #let nb_chart = read("./chart-simple-purple.svg")
+#let nb_book = read("./book-open-pink.svg")
 #let nb_folder = read("./folder-blue-gray.svg")
 #let nb_award = read("./award-alt-amber.svg")
 
@@ -19,6 +20,7 @@
 // Images are stored undecoded so they can be changed later
 #let type_metadata = (
   "identify": (icon: nb_question_mark, color: red, name: "Identify"),
+  "understand": (icon: nb_book, color: pink300, name: "Understand"),
   "brainstorm": (icon: nb_light_bulb, color: orange, name: "Brainstorm"),
   "select": (icon: nb_target, color: yellow, name: "Select"),
   "build": (icon: nb_shapes, color: green, name: "Build"),

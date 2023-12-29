@@ -1,5 +1,8 @@
+// All colors are part of the Material Colors 500 color set unless otherwise named
+
 #let red = rgb("#F44336")
 #let pink = rgb("#E91E63")
+#let pink300 = rgb("F06292")
 #let purple = rgb("#9C27B0")
 #let deep-purple = rgb("#673AB7")
 #let indigo = rgb("#3F51B5")

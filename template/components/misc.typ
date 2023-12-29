@@ -140,7 +140,6 @@
       ]
     ]
   }
-
 }
 
 #let nb_side_margin_color(color: "") = {

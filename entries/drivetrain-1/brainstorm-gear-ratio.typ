@@ -23,7 +23,7 @@ We used a publicly available spreadsheet #footnote([#link("https://docs.google.c
 
 #tablex(
   columns: 6,
-  rows: 5,
+  rows: (auto, 7em, 7em, 7em, 7em),
   header-rows: 1,
   align: center + horizon,
   

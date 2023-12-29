@@ -30,7 +30,7 @@
 ]
 
 #nb_decision_matrix(
-  properties: (
+  criteria: (
     ("Speed", 5),
     ("Turning", 4),
     ("Force", 4),

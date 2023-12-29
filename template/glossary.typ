@@ -2,7 +2,7 @@
 #import "./components/components.typ": *
 #import "./globals.typ": *
 
-#let nb_create_glossary_entry(title: none, category: "management", definition: none) = {
+#let nb_create_glossary_entry(title: none, category: none, definition: none) = {
   if type(title) == none {
     panic("no title")
   }
@@ -39,7 +39,11 @@
             #rect(
               radius: 5pt
             )[
-              #align(left)[#box(baseline: 30%, nb_label(label: entry.category, size: 2em)) #h(5pt) *#text(14pt)[#entry.title]*]
+              #align(left)[
+                #if entry.category != none [#box(baseline: 30%, nb_label(label: entry.category, size: 2em))]
+                #h(5pt)
+                *#text(14pt)[#entry.title]*
+              ]
               #line(length: 100%)
               #entry.definition
             ]

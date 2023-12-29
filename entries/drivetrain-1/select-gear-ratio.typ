@@ -27,7 +27,7 @@
 ]
 
 #nb_decision_matrix(
-  properties: (
+  criteria: (
     ("Inches per Second", 5),
     ("RPM", 4),
     ("Strength", 4),

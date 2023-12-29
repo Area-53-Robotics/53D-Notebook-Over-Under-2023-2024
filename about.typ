@@ -67,32 +67,52 @@
 
     = Notebook Entry Types
 
-    Entries all have 1 out of 8 types displayed in the top left corner, labeled in the bottom right corner, and shown in the table of contents. 6 out of 8 of our types are part of the engineering design process.
+    Entries all have 1 out of 9 types displayed in the top left corner, labeled in the bottom right corner, and shown in the table of contents. 7 out of 9 of our types are part of the engineering design process.
 
     Here are the existing types:
 
     #align(center)[
       #set text(size: 14pt)
       #gridx(
-        columns: 2,
+        columns: (auto, auto, auto),
         rows: 8,
-        gutter: 15pt,
+        gutter: 10pt,
         align: (center + horizon),
-        [#box(baseline: 40%, nb_label(label: "identify", size: 3em)) #h(11pt) *Identify the Problem*],
+
+        nb_label(label: "identify", size: 3em),
+        [*Identify the Problem*],
         nb_label_box(type: "identify"),
-        [#box(baseline: 40%, nb_label(label: "brainstorm", size: 3em)) #h(11pt) *Brainstorm Solutions*],
+
+        nb_label(label: "understand", size: 3em),
+        [*Understand the Concepts*],
+        nb_label_box(type: "understand"),
+
+        nb_label(label: "brainstorm", size: 3em),
+        [*Brainstorm Solutions*],
         nb_label_box(type: "brainstorm"),
-        [#box(baseline: 40%, nb_label(label: "select", size: 3em)) #h(11pt) *Select the Best Solution*],
+
+        nb_label(label: "select", size: 3em),
+        [*Select the Best Solution*],
         nb_label_box(type: "select"),
-        [#box(baseline: 40%, nb_label(label: "build", size: 3em)) #h(11pt) *Build the Solution*],
+
+        nb_label(label: "build", size: 3em),
+        [*Build the Solution*],
         nb_label_box(type: "build"),
-        [#box(baseline: 40%, nb_label(label: "program", size: 3em)) #h(11pt) *Program the Solution*],
+
+        nb_label(label: "program", size: 3em),
+        [*Program the Solution*],
         nb_label_box(type: "program"),
-        [#box(baseline: 40%, nb_label(label: "test", size: 3em)) #h(11pt) *Test the Solution*],
+
+        nb_label(label: "test", size: 3em),
+        [*Test the Solution*],
         nb_label_box(type: "test"),
-        [#box(baseline: 40%, nb_label(label: "management", size: 3em)) #h(11pt) *Team Management*],
+
+        nb_label(label: "management", size: 3em),
+        [*Team Management*],
         nb_label_box(type: "management"),
-        [#box(baseline: 40%, nb_label(label: "competition", size: 3em)) #h(11pt) *Competition Reflection*],
+
+        nb_label(label: "competition", size: 3em),
+        [*Competition Reflection*],
         nb_label_box(type: "competition"),
       )
     ]

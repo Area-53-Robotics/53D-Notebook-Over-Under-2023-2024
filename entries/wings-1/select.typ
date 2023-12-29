@@ -27,7 +27,7 @@
 ]
 
 #nb_decision_matrix(
-  properties: (
+  criteria: (
     ("Speed", 2),
     ("Consistency", 3),
     ("Energy Efficiency", 5),
