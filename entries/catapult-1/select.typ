@@ -24,41 +24,20 @@
   - 0 - Incapable
 ]
 
-#tablex(
-  columns: (1fr, 1fr, 1fr, 1fr),
-  rows: 8,
-  align: center + horizon,
-
-  map-cells: cell => {
-    
-  let fill-color = []
-    if cell.x > 0 and cell.y > 0 and cell.y < 7 {
-      let value = int(cell.content.text)
-      let fill-color = if value == 4 {
-        green
-      } else if value == 3 {
-        yellow
-      } else if value == 2 {
-        red
-      } else if value == 1 {
-        red.darken(20%)
-      } else {
-        red.darken(50%)
-      }
-      (..cell, fill: {
-        if cell.x > 0 and cell.y > 0 and cell.y < 7 {fill-color}
-      })
-    } else {cell}
-  },
-
-  [], [Catapult], [Scata], [Low Cata],
-  [Speed], [2], [0], [2],
-  [Range], [4], [0], [3],
-  [Power], [3], [0], [3],
-  [Difficulty getting blocked], [4], [0], [1],
-  [Rapid Fire Capability], [3], [0], [3],
-  [Goal Scoring Capability], [0], [0], [4],
-  [Score], cellx(fill: green.darken(20%))[16], cellx(fill: red.darken(50%))[0], cellx(fill: green.darken(20%))[16]
+#nb_decision_matrix(
+  properties: (
+    ("Speed", 5),
+    ("Range", 5),
+    ("Power", 3),
+    ("Difficulty Getting Blocked", 4),
+    ("Rapid Fire Capability", 3),
+    ("Goal Scoring Capability", 4),
+    ),
+  choices: (
+    ("Catapult", 2, 4, 3, 4, 3, 0),
+    ("Scata", 0, 0, 0, 0, 0, 0),
+    ("Low Catapult", 2, 3, 3, 2, 3, 4),
+    ),
 )
 
 #nb_admonition(type: "note")[

@@ -29,40 +29,20 @@
   - 0 - Incapable
 ]
 
-#tablex(
-  columns: (1fr, 1fr, 1fr, 1fr, 1fr),
-  rows: 9,
-  align: center + horizon,
-
-  map-cells: cell => {
-  let fill-color = []
-    if cell.x > 0 and cell.y > 0 and cell.y < 8 {
-      let value = int(cell.content.text)
-      let fill-color = if value == 4 {
-        green
-      } else if value == 3 {
-        yellow
-      } else if value == 2 {
-        red
-      } else if value == 1 {
-        red.darken(20%)
-      } else {
-        red.darken(50%)
-      }
-      (..cell, fill: {
-        if cell.x > 0 and cell.y > 0 and cell.y < 8 {fill-color}
-      })
-    } else {cell}
-  },
-
-  [], [Omnis], [Traction], [Hybrid (Omni & Traction)], [Mecanums],
-  [Speed], [4], [2], [4], [2],
-  [Compactness], [3], [4], [3], [2],
-  [Strafing], [3], [1], [2], [4],
-  [Turning], [3], [2], [3], [3],
-  [Traction],[2], [4], [3], [2],
-  [Ease of Programming], [3], [3], [3], [3],
-  [Ease of Driving], [4], [2], [4], [2],
-
-  [*Total*], cellx(fill: green.darken(20%))[*22*], cellx(fill: yellow.darken(20%))[18], cellx(fill: green.darken(20%))[*22*], cellx(fill: yellow.darken(20%))[18],
+#nb_decision_matrix(
+  properties: (
+    ("Speed", 5),
+    ("Compactness", 2),
+    ("Strafing", 3),
+    ("Turning", 3),
+    ("Traction", 4),
+    ("Ease of Programming", 2),
+    ("Ease of Driving", 2),
+    ),
+  choices: (
+    ("Omnis", 4, 3, 3, 3, 2, 3, 4),
+    ("Traction", 2, 4, 1, 2, 4, 3, 2),
+    ("Hybrid (Omnis & Traction)", 4, 3, 2, 3, 3, 3, 4),
+    ("Mecanums", 2, 2, 4, 3, 2, 3, 2),
+    ),
 )

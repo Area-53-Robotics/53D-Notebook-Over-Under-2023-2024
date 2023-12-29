@@ -5,4 +5,4 @@
 #import "headings.typ": *
 #import "title.typ": *
 #import "tournament.typ": *
-#import "tables.typ": *
+#import "decision-matrix.typ": *

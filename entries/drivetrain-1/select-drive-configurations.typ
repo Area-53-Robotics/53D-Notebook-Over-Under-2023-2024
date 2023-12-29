@@ -29,18 +29,19 @@
   - 0 - Incapable
 ]
 
-#tablex(
-  columns: (1fr, 1fr, 1fr, 1fr),
-  rows: 9,
-  center: center + horizon,
-  
-  cellx()[], cellx()[Tank Drive], cellx()[H-Drive], cellx()[Holonomic Drive],
-  cellx()[Speed], cellx(fill: yellow)[3], cellx(fill: yellow)[3], cellx(fill: green)[4],
-  cellx()[Turning], cellx(fill: yellow)[3], cellx(fill: yellow)[3], cellx(fill: green)[4],
-  cellx()[Force], cellx(fill: green)[4], cellx(fill: yellow)[3], cellx(fill: red)[2],
-  cellx()[Compactness], cellx(fill: green)[4], cellx(fill: red)[2], cellx(fill: red)[2],
-  cellx()[Omni-Directionality], cellx(fill: red)[2], cellx(fill: yellow)[3], cellx(fill: green)[4],
-  cellx()[Ease of Programming], cellx(fill: green)[4], cellx(fill: yellow)[3], cellx(fill: red)[2],
-  cellx()[Ease of Driving], cellx(fill: green)[4], cellx(fill: yellow)[3], cellx(fill: yellow)[3],
-  cellx()[*Total*], cellx(fill: green.darken(20%))[*24*], cellx(fill: red.darken(20%))[3], cellx(fill: yellow.darken(20%))[4],
+#nb_decision_matrix(
+  properties: (
+    ("Speed", 5),
+    ("Turning", 4),
+    ("Force", 4),
+    ("Compactness", 3),
+    ("Omni-Directionality", 2),
+    ("Ease of Programming", 2),
+    ("Ease of Driving", 2),
+    ),
+  choices: (
+    ("Tank Drive", 3, 3, 4, 4, 2, 4, 4),
+    ("H-Drive", 3, 3, 3, 2, 3, 3, 3),
+    ("Holonomic", 4, 4, 2, 2, 4, 2, 3),
+    ),
 )

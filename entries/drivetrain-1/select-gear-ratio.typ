@@ -26,44 +26,28 @@
   - 0 - Incapable
 ]
 
-#tablex(
-  columns: (1fr, 1fr, 1fr, 1fr, 1fr),
-  rows: 6,
-  align: center + horizon,
-
-  map-cells: cell => {
-  let fill-color = []
-    if cell.x > 0 and cell.y > 0 and cell.y < 5 {
-      let value = int(cell.content.text)
-      let fill-color = if value == 4 {
-        green
-      } else if value == 3 {
-        yellow
-      } else if value == 2 {
-        red
-      } else if value == 1 {
-        red.darken(20%)
-      } else {
-        red.darken(50%)
-      }
-      (..cell, fill: {
-        if cell.x > 0 and cell.y > 0 and cell.y < 7 {fill-color}
-      })
-    } else {cell}
-  },
-
-  [], [5:3 Ratio;4 Inch Wheel; 200 RPM motor], [3:5 Ratio;4 Inch Wheel; 600 RPM motor], [5:3 Ratio: 3.25 Inch Wheel; 200 RPM motor], [3:5 Ratio; 3.25 Inch Wheel; 600 RPM motor],
-
-  [Inches per second], [4], [4], [2], [3],
-  [RPM], [3], [4], [3], [4],
-  [Strength], [3], [2], [3], [4],
-  [Maneuverability], [2], [3], [2], [4],
-
-  [Total], cellx(fill: yellow.darken(20%))[12], cellx(fill: yellow.darken(20%))[13], cellx(fill: red.darken(20%))[12], cellx(fill: green.darken(20%))[15],
+#nb_decision_matrix(
+  properties: (
+    ("Inches per Second", 5),
+    ("RPM", 4),
+    ("Strength", 4),
+    ("Maneuverability", 4),
+    ),
+  choices: (
+    ("5:3 Ratio,\n4 Inch Wheel,\n200 RPM Motor", 4, 3, 3, 2),
+    ("3:5 Ratio,\n4 Inch Wheel,\n600 RPM Motor", 4, 4, 2, 3),
+    ("5:3 Ratio,\n3.25 Inch Wheel,\n200 RPM Motor", 2, 3, 3, 2),
+    ("3:5 Ratio,\n3.25 Inch Wheel,\n600 RPM Motor", 3, 4, 4, 4),
+    ),
 )
 
 #nb_admonition(type: "select", title: "Final Selection")[
   We decided to use a 3.25 inch wheel powered by a 600 RPM motor geared with a 3:5 gear ratio.
 ]
+
++ *Ratio* - The 3:5 Ratio contributes to a smoother motion, reduced friction, and improved torque distribution. It also offers us a versatile choice of suitable ratios and is compatible with most VEX robotics motors.
++ *Wheel Size* - The choice of a 3.25-inch wheel offers greater maneuverability due to its smaller size. The 3.25-inch wheel also strikes a balance between greater stability and smoother motion and enhances maneuverability and acceleration. 
++ *Motor* - A 600 RPM motor represents a deliberate compromise between speed and torque. The selection of this motor speed is likely driven by the specific requirements of the system. Higher RPM can deliver faster motion but may sacrifice torque, while lower RPM provides more torque at the expense of speed.
+
 
 #nb_cad(folder: "drivetrain-1", sheets: 5)
