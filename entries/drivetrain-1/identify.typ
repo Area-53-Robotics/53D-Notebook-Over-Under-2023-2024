@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create_entry.with(
-  title: "Drivetrain #1",
+  title: "Drivetrain #1 - Identify Design Goals and Constraints",
   type: "identify",
   start_date: datetime(year: 2023, month: 7, day: 15),
   attendance: "Ajibola, Ishika, Eric, Emma",

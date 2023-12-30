@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create_entry.with(
-  title: "Outtake",
+  title: "Outtake - Identify Design Goals and Constraints",
   type: "identify",
   start_date: datetime(year: 2023, month: 9, day: 16),
   attendance: "Ajibola, Ishika, Eric, Rory",

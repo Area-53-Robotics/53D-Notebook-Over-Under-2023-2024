@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create_entry.with(
-  title: "Wings #1",
+  title: "Wings #1 - Identify Design Goals and Constraints",
   type: "identify",
   start_date: datetime(year: 2023, month: 9, day: 22),
   attendance: "Ajibola, Ishika, Eric, Rory",
