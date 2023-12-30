@@ -35,7 +35,7 @@
 
   show image: it => [
     #align(center)[
-      #set text(font: "Linux Libertine")
+      #set text(font: "Virgil 3 YOFF")
       #it
     ]
   ]

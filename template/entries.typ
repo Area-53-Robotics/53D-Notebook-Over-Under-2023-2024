@@ -56,12 +56,22 @@
                     hlinex(start: 0, end: 5, stroke: black + 1pt, y: 4),
                     vlinex(start: 0, end: 3, stroke: 0pt, x: 6),
 
-                    colspanx(4)[#align(center)[#entry.title]], (), (), (),
-                    colspanx(2, rowspanx(3)[
+                    colspanx(4)[
+                      #align(center)[
+                        #link((page: frontmatter_page_counter.final(loc).at(0) + 2, x: 0pt, y: 0pt))[
+                          #text(fill: black)[
+                            _ #entry.title _
+                          ]
+                        ]
+                      ]
+                    ],
+                    (), (), (),
+
+                    cellx(colspan: 2, rowspan: 3)[
                       #align(center + horizon)[
                         #nb_label_box(type: entry.type)
                       ]
-                    ]),
+                    ],
                     (),
                     colspanx(4)[Designed By:], (), (), (), (), (),
                     colspanx(4)[Witnessed By:], (), (), (), (), (),
@@ -90,13 +100,21 @@
                     hlinex(start: 1, end: 7, stroke: black + 1pt, y: 4),
                     vlinex(start: 0, end: 3, stroke: 0pt, x: 0),
 
-                    colspanx(2, rowspanx(3)[
+                    cellx(colspan: 2, rowspan: 3)[
                       #align(center + horizon)[
                         #nb_label_box(type: entry.type)
                       ]
-                    ]),
+                    ],
                     (),
-                    colspanx(4)[#align(center)[#entry.title]], (), (), (),
+                    colspanx(4)[
+                      #align(center)[
+                        #link((page: frontmatter_page_counter.final(loc).at(0) + 2, x: 0pt, y: 0pt))[
+                          #text(fill: black)[
+                            _ #entry.title _
+                          ]
+                        ]
+                      ]
+                    ], (), (), (),
 
                     (), (), colspanx(4)[Designed By:], (), (), (),
 

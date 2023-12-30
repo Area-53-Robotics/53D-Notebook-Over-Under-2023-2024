@@ -21,7 +21,7 @@ Our team spent a lot of time talking and planning the foundation of our robot: t
 
   cellx(fill: gray, align: center)[*Aspects of the Drivetrain*],
   [*Mobility* - enables the robot to move in different directions. This includes forward and backward motion and strafing or lateral movement.],
-  [*Versatility* - different drivetrain setups, such as tank drive, holonomic (omnidirectional) drive, or mecanum drive, offer varying levels of maneuverability and are suited to different game strategies.],
+  [*Versatility* - different drivetrain setups, such as tank drive, holonomic (omni-directional) drive, or mecanum drive, offer varying levels of maneuverability and are suited to different game strategies.],
   [*Foundation* - the drivetrain serves as the robot's base, so its weight will be distributed on top of the drivetrain. Proper weight distribution is crucial for maintaining stability and preventing tipping during rapid movements or interacting with game elements.],
 )
 

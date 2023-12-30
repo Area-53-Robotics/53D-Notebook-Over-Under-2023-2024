@@ -7,6 +7,7 @@
 #include "./management/over-under.typ"
 #include "./management/july.typ"
 #include "./drivetrain-1/identify.typ"
+#include "./drivetrain-1/understand.typ"
 #include "./drivetrain-1/brainstorm-drive-configurations.typ"
 #include "./drivetrain-1/select-drive-configurations.typ"
 #include "./drivetrain-1/brainstorm-wheel-types.typ"

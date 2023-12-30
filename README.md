@@ -4,7 +4,6 @@
 
 53D's notebook for the 2023-24 VRC Over Under challenge. Written by Ajibola Ajani, Jin Hao Cao, and Ishika Saha.
 
-
 ## Special Thanks To
 - Felix for backend code support
 - Terry for notebooking advice
@@ -19,6 +18,7 @@
 1. Install the required fonts:
     - Linux Libertine
     - Orbitron
+    - Virgil 3 YOFF
 2. Install Typst
 
 Download a [release](https://github.com/typst/typst/releases/), and add it to your system's PATH. 
@@ -47,7 +47,6 @@ cd 53D-Over-Under-Notebook
 ```sh
 typst compile main.typ
 ```
-
 
 ## License
 The content of this notebook is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License][cc-by-nc-nd].

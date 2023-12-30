@@ -7,13 +7,14 @@
       fill: color,
       outset: 5pt,
       radius: 1.5pt,
-      body,
-      height: 1em,
+      height: auto,
       width: width,
       stroke: {
         if bottom-border-size != 0pt {(bottom: bottom-border-size + bottom-color)}
       }
-    )
+    )[
+      #align(horizon)[#body]
+    ]
   }
   
   if it.level == 1 {
