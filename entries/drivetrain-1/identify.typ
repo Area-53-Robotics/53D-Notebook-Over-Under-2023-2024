@@ -7,7 +7,7 @@
   attendance: "Ajibola, Ishika, Eric, Emma",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 7, day: 15), schedule: "On Schedule")[
+#nb_todo(date: datetime(year: 2023, month: 7, day: 15), monthly-schedule: "On")[
   + Identify the design constraints and goals for the drivetrain. (Everyone)
 ]
 

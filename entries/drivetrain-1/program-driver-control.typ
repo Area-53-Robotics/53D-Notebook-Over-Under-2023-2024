@@ -6,13 +6,8 @@
   title: "Drivetrain #1 - Driver Control",
   type: "program",
   start_date: datetime(year: 2023, month: 9, day: 15),
-  attendance: "Ajibola, Ishika, Eric",
+  attendance: "Ajibola, Ishika, Eric, Rory",
 )
-
-#nb_todo(date: datetime(year: 2023, month: 9, day: 15), schedule: "")[
-  + Program a versatile driver control system for the drivetrain. (Ajibola and Ishika)
-  + Test the speed output of the drivetrain (Eric)
-]
 
 Because basic tank drive code does not change between seasons, it did not take long for us to program the tank drive configuration for our drivetrain.
 

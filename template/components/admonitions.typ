@@ -38,3 +38,36 @@
     )
   )
 }
+
+#let nb_todo(date: none, monthly-schedule: none, yearly-schedule: none, attendance: none, body) = {
+  if monthly-schedule != none {
+    if ((monthly-schedule != "On") and (monthly-schedule != "Behind") and (monthly-schedule != "Ahead")) {
+      panic("Invalid monthly schedule status")
+    }
+  }
+
+  if yearly-schedule != none {
+    if yearly-schedule != "On" and "Behind" and "Ahead" {
+      panic("Invalid yearly schedule status")
+    }
+  }
+
+  nb_admonition(type: "management", title: [To-Do: (#date.display("[year]/[month]/[day]"))])[
+    #body
+    #if monthly-schedule != none or yearly-schedule != none or attendance != none [
+      #line(length: 100%)
+    ]
+
+    #if monthly-schedule != none [
+      - Monthly Schedule Status: #monthly-schedule Schedule
+    ]
+
+    #if yearly-schedule != none [
+      - Yearly Schedule Status: #yearly-schedule Schedule
+    ]
+
+    #if attendance != none [
+      - Attendance: #attendance
+    ]
+  ]
+}

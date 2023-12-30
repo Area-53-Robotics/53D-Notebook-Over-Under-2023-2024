@@ -7,7 +7,7 @@
   attendance: "Ajibola, Emma, Von, Eric",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 3, day: 17), schedule: "")[
+#nb_todo(date: datetime(year: 2023, month: 3, day: 17))[
   + Reflect on the Spin Up season and identify what we can improve on. (Everyone)
 ]
 

@@ -7,7 +7,7 @@
   attendance: "Ajibola, Ishika, Eric, Emma",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 7, day: 21), schedule: "On Schedule")[
+#nb_todo(date: datetime(year: 2023, month: 7, day: 21), monthly-schedule: "On")[
   + Select the best configuration for the drivetrain using a decision matrix. (Everyone)
 ]
 

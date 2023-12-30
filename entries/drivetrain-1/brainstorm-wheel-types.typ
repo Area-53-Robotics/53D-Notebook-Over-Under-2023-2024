@@ -7,7 +7,7 @@
   attendance: "Ajibola, Ishika, Eric, Emma",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 7, day: 22), schedule: "Behind Schedule")[
+#nb_todo(date: datetime(year: 2023, month: 7, day: 22), monthly-schedule: "Behind")[
   + Brainstorm possible wheel configurations for the tank drive. (Everyone)
 ]
 

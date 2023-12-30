@@ -7,7 +7,7 @@
   attendance: "Ajibola, Ishika, Eric, Emma",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 9, day: 23), schedule: "On Schedule")[
+#nb_todo(date: datetime(year: 2023, month: 9, day: 23), monthly-schedule: "On")[
   + Brainstorm possible outtake mechanisms. (Everyone)
 ]
 

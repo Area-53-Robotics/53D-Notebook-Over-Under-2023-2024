@@ -7,7 +7,7 @@
   attendance: "Ajibola, Ishika, Eric, Rory",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 9, day: 22), schedule: "On Schedule")[
+#nb_todo(date: datetime(year: 2023, month: 9, day: 22), monthly-schedule: "On")[
   + Identify the design constraints and goals for the wings. (Everyone)
 ]
 

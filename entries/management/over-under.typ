@@ -7,7 +7,7 @@
   attendance: "Ajibola, Ishika, Eric, Emma",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 7, day: 14), schedule: "")[
+#nb_todo(date: datetime(year: 2023, month: 7, day: 14))[
   + Plan out the Over Under season by creating a Gantt chart. (Everyone)
   + Plan out the July meetings by creating a Gantt chart. (Everyone)
 ]

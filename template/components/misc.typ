@@ -101,16 +101,6 @@
 
 // My Functions
 
-#let nb_todo(date: none, schedule: "", body) = {
-  nb_admonition(type: "management", title: [To-Do: (#date.display("[year]/[month]/[day]"))])[
-    #body
-    #if schedule != "" [
-      #line(length: 100%)
-      Monthly Schedule Status: #schedule
-    ]
-  ]
-}
-
 #let nb_label_box(type: "") = {
   let nb_solid_labels = true;
   let info = type_metadata.at(type)
