@@ -9,6 +9,7 @@
 
 #nb_todo(date: datetime(year: 2023, month: 9, day: 23), monthly-schedule: "On")[
   + Select the wings configuration using a decision matrix. (Everyone)
+  + Create a plan for the construction of the wings using CAD. (Ajibola)
 ]
 
 #nb_admonition(type: "select", title: "Decision Matrix")[

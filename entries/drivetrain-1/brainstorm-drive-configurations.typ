@@ -11,11 +11,7 @@
   + Brainstorm possible configurations for the drivetrain. (Everyone)
 ]
 
-While most of our team was already familiar with the different types of drives, we didn't have much information on the pros and cons of each. During our research, a very helpful resource was the BLRS Wiki Page on VEX Drivetrains #footnote(
-      [#link(
-          "https://wiki.purduesigbots.com/hardware/vex-drivetrains",
-        )],
-    ).
+While most of our team was already familiar with the different types of drives, we didn't have much information on the pros and cons of each. During our research, a very helpful resource was the BLRS Wiki Page on VEX Drivetrains #footnote[#link("https://wiki.purduesigbots.com/hardware/vex-drivetrains")].
 
 #tablex(
   columns: (1fr, 1fr, 1fr, 1fr),

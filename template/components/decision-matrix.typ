@@ -4,7 +4,7 @@
 #let nb_decision_matrix(criteria: (), choices: (), body: []) = [
   #set text(size: 13pt)
 
-  #box[
+  #align(center)[#box[
     #for choice in choices {
       if not (choice.len() - 1) == criteria.len() {
         panic("a choice did not have the right amount of criteria")
@@ -105,12 +105,11 @@
         (choice.last(),)
       },
     )
-  ]
+  ]]
 
   #text(size: 11pt)[#body]
 
-  #box[
-    = Weighted Decision Matrix
+  #align(center)[#box[
     #let weighted_choices = choices.map(
       choice => {
         choice = choice.enumerate().map(
@@ -157,6 +156,7 @@
       }
     }
 
+    = Weighted Decision Matrix
     #tablex(
 
       auto-lines: true,
@@ -235,5 +235,5 @@
         (choice.last(),)
       },
     )
-  ]
+  ]]
 ]

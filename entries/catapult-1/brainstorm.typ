@@ -8,8 +8,9 @@
 )
 
 #nb_todo(date: datetime(year: 2023, month: 9, day: 23), monthly-schedule: "On")[
-  + Brainstorm possible configurations for the drivetrain. (Everyone)
-  + Select the best and most versatile catapult option  using a decision matrix. (Everyone)
+  + Brainstorm possible configurations for the catapult. (Everyone)
+  + Select the best and most versatile catapult option using a decision matrix. (Everyone)
+  + Create a plan for the construction of the catapult using CAD. (Ajibola)
 ]
 
 #tablex(

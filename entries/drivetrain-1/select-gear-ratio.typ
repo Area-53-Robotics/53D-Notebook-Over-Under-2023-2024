@@ -4,11 +4,12 @@
   title: "Drivetrain #1 - Gear Ratio",
   type: "select",
   start_date: datetime(year: 2023, month: 7, day: 29),
-  attendance: "Ishika, Eric, Emma",
+  attendance: "Ajibola, Ishika, Eric, Emma",
 )
 
 #nb_todo(date: datetime(year: 2023, month: 7, day: 29), monthly-schedule: "Behind")[
   + Select the best gear ratio for the tank drive using a decision matrix. (Everyone)
+  + Create a plan for the construction of the drivetrain using CAD. (Ajibola)
 ]
 
 #nb_admonition(type: "select", title: "Decision Matrix")[

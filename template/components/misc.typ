@@ -176,15 +176,15 @@
       header: none,
       footer: [
         #align(right + bottom)[
-        #box(
-          fill: gray,
-          outset: 5pt,
-          radius: 1.5pt,
-          height: auto,
-          width: 20pt,
-        )[#align(center + horizon)[#counter(page).display()]]
-      ]
-      #v(1em)
+          #box(
+            fill: gray,
+            outset: 5pt,
+            radius: 1.5pt,
+            height: auto,
+            width: 20pt,
+          )[#align(center + horizon)[#counter(page).display()]]
+        ]
+        #v(1em)
       ],
     )[]
 
