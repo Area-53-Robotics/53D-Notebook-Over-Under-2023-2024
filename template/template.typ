@@ -85,9 +85,8 @@
 
   print_entries()
 
-  nb_print_glossary()
+  pagebreak()
+  pagebreak()
 
-  nb_print_resources()
-
-  nb_print_innovate()
+  print_appendix_entries()
 }

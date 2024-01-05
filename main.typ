@@ -1,5 +1,6 @@
 #import "template/template.typ": *
 #include "/entries/entries.typ"
+#include "/appendix/appendix_entries.typ"
 #include "/appendix/glossary.typ"
 
 #show: notebook.with(

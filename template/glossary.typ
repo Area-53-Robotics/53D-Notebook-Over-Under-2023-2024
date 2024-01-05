@@ -1,6 +1,7 @@
 #import "./colors.typ": *
 #import "./components/components.typ": *
 #import "./globals.typ": *
+#import "./entries.typ": *
 
 #let nb_create_glossary_entry(title: none, category: none, definition: none) = {
   if type(title) == none {
@@ -17,39 +18,32 @@
   })
 }
 
-#let nb_print_glossary() = [
-  #page(
-    margin: (left: 5em, right: 5em),
-    background: nb_side_margin_color(color: gray),
-    header: [
-      #nb_title[Glossary] <nb_glossary>
-    ],
-    footer: nb_appendix_footer()
-  )[
-    // #v(20pt)
+#show: create_appendix_entry.with(
+  title: "Glossary"
+)
 
-    #columns(
-      2,
-    )[
-      #locate(
-        loc => {
-          let sorted_glossary = glossary_entries.final(loc).sorted(key: ((title, _)) => title)
+// #v(20pt)
 
-          for entry in sorted_glossary [
-            #rect(
-              radius: 5pt
-            )[
-              #align(left)[
-                #if entry.category != none [#box(baseline: 30%, nb_label(label: entry.category, size: 2em))]
-                #h(5pt)
-                *#text(14pt)[#entry.title]*
-              ]
-              #line(length: 100%)
-              #entry.definition
-            ]
+#columns(
+  2,
+)[
+  #locate(
+    loc => {
+      let sorted_glossary = glossary_entries.final(loc).sorted(key: ((title, _)) => title)
+
+      for entry in sorted_glossary [
+        #rect(
+          radius: 5pt
+        )[
+          #align(left)[
+            #if entry.category != none [#box(baseline: 30%, nb_label(label: entry.category, size: 2em))]
+            #h(5pt)
+            *#text(14pt)[#entry.title]*
           ]
-        }
-      )
-    ]
-  ]
+          #line(length: 100%)
+          #entry.definition
+        ]
+      ]
+    }
+  )
 ]

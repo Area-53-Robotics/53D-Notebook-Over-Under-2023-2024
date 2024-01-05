@@ -96,7 +96,7 @@
       
       #nb_admonition(type: "note")[
         The following people have left during the season:
-      ],
+      ]
     
       #grid(
         columns: 2,

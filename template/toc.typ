@@ -18,6 +18,7 @@
 
           for (index, entry) in entries.final(loc).enumerate() {
             let page_number = counter(page).at(headings.at(index).location()).at(0)
+            // let page_number = entry_page_counter.at(headings.at(index).location()).at(0) + 1
             let start_date = entry.start_date.display("[year]/[month]/[day]")
             let end_date = if (not entry.start_date == entry.end_date) { entry.end_date.display("[year]/[month]/[day]") } else { none }
 
@@ -30,7 +31,7 @@
               #h(5pt)
               #box(fill: info.color.lighten(30%), radius: 1pt, height: 1em, baseline: 15%)[
                 #align(center + horizon)[
-                  #link((page: {page_number + frontmatter_count + 2}, x: 0pt, y: 0pt))[
+                  #link((page: {frontmatter_count + page_number + 2}, x: 0pt, y: 0pt))[
                     #text(fill: black)[
                       _#h(2pt) #start_date #sym.dash.em #entry.title #h(2pt)_
                     ]
@@ -41,20 +42,35 @@
               #page_number \
             ]
           }
+
           [
+            #parbreak()
 
             = Appendix
 
-            #let glossary = query(selector(<nb_glossary>), loc)
-            Glossary #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted"))) #counter(page).at(glossary.at(0).location()).at(0)
-            #counter(page).update(_ => 0)
+              #let appendix_headings = query(selector(<nb_appendix_entry>), loc)
+              #for (index, entry) in appendix_entries.final(loc).enumerate() {
+                let page_number = counter(page).at(appendix_headings.at(index).location()).at(0)
+                // let page_number = appendix_page_counter.at(appendix_headings.at(index).location()).at(0)
 
-            #let resources = query(selector(<nb_heading_resources>), loc)
-            Resources #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted"))) #counter(page).at(resources.at(0).location()).at(0)
-            #counter(page).update(_ => 0)
+                let frontmatter_count = frontmatter_page_counter.final(loc).at(0)
+                let entry_count = entry_page_counter.final(loc).at(0)
 
-            #let innovate = query(selector(<nb_heading_innovate>), loc)
-            Innovate Award Submission Information Form #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted"))) #counter(page).at(innovate.at(0).location()).at(0)
+                [
+                  #box(radius: 1pt, height: 1em, baseline: 15%)[
+                    #align(center + horizon)[
+                      #link((page: {frontmatter_count + entry_count + page_number + 8}, x: 0pt, y: 0pt))[
+                        #text(fill: black)[
+                          _ #entry.title _
+                        ]
+                      ]
+                    ]
+                  ]#h(5pt)
+                  #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted")))
+                  A-#page_number \
+                ]
+              }
+
             #counter(page).update(_ => 0)
           ]
         },
