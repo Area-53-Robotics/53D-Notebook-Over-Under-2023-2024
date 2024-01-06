@@ -88,5 +88,10 @@
   pagebreak()
   pagebreak()
 
+  print_program_entries()
+
+  pagebreak()
+  pagebreak()
+
   print_appendix_entries()
 }

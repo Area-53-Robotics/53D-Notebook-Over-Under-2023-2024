@@ -1,5 +1,4 @@
 #import "/template/entries.typ": *
-#import "/template/components/components.typ": *
 
 #show: create_appendix_entry.with(
   title: "Innovate Award Submission Information Form"

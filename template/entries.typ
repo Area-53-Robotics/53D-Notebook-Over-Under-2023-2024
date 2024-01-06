@@ -44,7 +44,7 @@
               loc => {
                   entry_page_counter.step()
 
-                if /* calc.odd(loc.page()) */ true {
+                if /*calc.odd(loc.page()) == */true {
                   tablex(
                     columns: (1fr, 1fr, 1fr, 1fr, 2fr, 35pt),
                     rows: 4,
@@ -163,6 +163,16 @@
   })
 }
 
+#let create_program_entry(title: "", body) = {
+  program_entries.update(x => {
+    x.push((
+      title: title,
+      body: body,
+    ))
+    x
+  })
+}
+
 #let print_appendix_entries() = {
   locate(loc => {
     // make a second array for locations for toc linking?
@@ -181,5 +191,28 @@
         #counter(footnote).update(0)
       ]
     }
+  })
+}
+
+#let print_program_entries() = {
+  locate(loc => {
+    // make a second array for locations for toc linking?
+    for entry in program_entries.final(loc) {
+      [
+        #set page(
+          margin: (left: 5em, right: 5em),
+          background: nb_side_margin_color(color: blue),
+          header: [
+            #nb_title(color: blue)[#entry.title]
+          ],
+          footer: nb_program_footer()
+        )
+
+        #entry.body <nb_program_entry>
+        #counter(footnote).update(0)
+      ]
+    }
+    
+    counter(page).update(_ => 0)
   })
 }

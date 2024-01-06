@@ -40,3 +40,7 @@
 #let nb_change_icon_color(raw_icon: "", fill: red) = {
   return raw_icon.replace("<path", "<path style=\"fill: " + fill.to-hex() + "\"")
 }
+
+#let nb_change_icon_stroke(raw_icon: "", stroke: red) = {
+  return raw_icon.replace("stroke=\"currentColor\"", "stroke=\"" + stroke.to-hex() + "\"")
+}

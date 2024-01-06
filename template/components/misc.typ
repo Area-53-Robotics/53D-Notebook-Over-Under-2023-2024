@@ -2,7 +2,7 @@
 #import "@preview/showybox:2.0.1": showybox
 #import "@preview/tablex:0.0.7": *
 
-#import "../globals.typ": frontmatter_page_counter, appendix_page_counter
+#import "../globals.typ": frontmatter_page_counter, entry_page_counter, appendix_page_counter
 #import "../colors.typ": *
 #import "../icons/icons.typ": *
 #import "./admonitions.typ": *
@@ -116,6 +116,8 @@
       background: image(path),
       header: none,
       footer: [
+        #entry_page_counter.step()
+        
         #align(right + bottom)[
           #box(
             fill: gray,

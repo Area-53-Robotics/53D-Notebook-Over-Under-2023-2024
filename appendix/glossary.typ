@@ -1,8 +1,5 @@
 #import "/template/glossary.typ": *
 
-// TODO: Color code glossary entries
-// TODO: Add LVGL glossary entry
-
 #nb_create_glossary_entry(
   title: "Area 53",
   category: "management",
@@ -21,7 +18,7 @@
   title: "RPM",
   category: "build",
   definition: [
-  An acronym that stands for "Rotations per Minute." Used to interpret the speed of motors and motorized subsystems.
+  An acronym for "Rotations per Minute." Used to interpret the speed of motors and motorized subsystems.
 ])
 
 #nb_create_glossary_entry(
@@ -74,7 +71,7 @@
   title: "CAD",
   category: "select",
   definition: [
-  An acronym that stands for "Computer Aided Design. CAD programs are used at the industry level to plan out and test designs digitally. 53D uses Onshape as our CAD program.
+  An acronym for "Computer Aided Design". CAD programs are used at the industry level to plan out and test designs digitally. 53D uses Onshape as our CAD program.
 ])
 
 #nb_create_glossary_entry(
@@ -105,6 +102,14 @@
   category: "program",
   definition: [
     A code editor developed by Microsoft with an embedded Git interface.
+  ],
+)
+
+#nb_create_glossary_entry(
+  title: "LVGL",
+  category: "program",
+  definition: [
+    An acronym for "Light and Versatile Graphics Library". It is used to create embedded GUIS into microprosessors such as the VEX brain.
   ],
 )
 
@@ -163,7 +168,7 @@
 )
 
 #nb_create_glossary_entry(title: "AWP", definition: [
-  An acronym that stands for Autonomous Win Point.
+  An acronym for Autonomous Win Point.
 ])
 
 

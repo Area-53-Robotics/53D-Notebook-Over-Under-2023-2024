@@ -1,4 +1,4 @@
-#import "../globals.typ": frontmatter_page_counter, appendix_page_counter
+#import "../globals.typ": frontmatter_page_counter, appendix_page_counter, program_page_counter
 
 // FIXME: frontmatter is using the appendix counter
 #let nb_frontmatter_footer() = {
@@ -27,6 +27,21 @@
       height: auto,
       width: 20pt,
     )[#align(center + horizon)[A-#counter(page).display()]]
+  ]
+  v(2em)
+}
+
+#let nb_program_footer(color: blue) = {
+  program_page_counter.step()
+
+  align(right + bottom)[
+    #box(
+      fill: color,
+      outset: 5pt,
+      radius: 1.5pt,
+      height: auto,
+      width: 20pt,
+    )[#align(center + horizon)[P-#counter(page).display()]]
   ]
   v(2em)
 }

@@ -7,44 +7,88 @@
     background: nb_side_margin_color(color: gray),
     header: nb_title[Table of Contents],
     footer: nb_frontmatter_footer(),
-    [
-
-      = Entries
+  )[
 
       #locate(
         loc => {
-          // FIXME: its not displaying the page number correctly
-          let headings = query(selector(<nb_entry>), loc)
+          box[
 
-          for (index, entry) in entries.final(loc).enumerate() {
-            let page_number = counter(page).at(headings.at(index).location()).at(0)
-            // let page_number = entry_page_counter.at(headings.at(index).location()).at(0) + 1
-            let start_date = entry.start_date.display("[year]/[month]/[day]")
-            let end_date = if (not entry.start_date == entry.end_date) { entry.end_date.display("[year]/[month]/[day]") } else { none }
+            = Entries
 
-            let info = type_metadata.at(entry.type)
+            #let headings = query(selector(<nb_entry>), loc)
 
-            let frontmatter_count = frontmatter_page_counter.final(loc).at(0)
+            #for (index, entry) in entries.final(loc).enumerate() {
+              let page_number = counter(page).at(headings.at(index).location()).at(0)
+              // let page_number = entry_page_counter.at(headings.at(index).location()).at(0) + 1
+              let start_date = entry.start_date.display("[year]/[month]/[day]")
+              let end_date = if (not entry.start_date == entry.end_date) { entry.end_date.display("[year]/[month]/[day]") } else { none }
 
-            [
-              #box(baseline: 15%, nb_label(label: entry.type, size: 1em))
-              #h(5pt)
-              #box(fill: info.color.lighten(30%), radius: 1pt, height: 1em, baseline: 15%)[
-                #align(center + horizon)[
-                  #link((page: {frontmatter_count + page_number + 2}, x: 0pt, y: 0pt))[
-                    #text(fill: black)[
-                      _#h(2pt) #start_date #sym.dash.em #entry.title #h(2pt)_
+              let info = type_metadata.at(entry.type)
+
+              let frontmatter_count = frontmatter_page_counter.final(loc).at(0)
+
+              [
+                #box(baseline: 15%, nb_label(label: entry.type, size: 1em))
+                #h(5pt)
+                #box(fill: info.color.lighten(30%), radius: 1pt, height: 1em, baseline: 15%)[
+                  #align(center + horizon)[
+                    #link((page: {frontmatter_count + page_number + 2}, x: 0pt, y: 0pt))[
+                      #text(fill: black)[
+                        _#h(2pt) #start_date #sym.dash.em #entry.title #h(2pt)_
+                      ]
                     ]
                   ]
-                ]
-              ]#h(5pt)
-              #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted")))
-              #page_number \
-            ]
-          }
+                ]#h(5pt)
+                #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted")))
+                #page_number \
+              ]
+            }
+          ]
+        }
+      )
+  ]
 
-          [
-            #parbreak()
+  page(
+    margin: (left: 5em, right: 5em, /*bottom: 4em*/),
+    background: nb_side_margin_color(color: gray),
+    header: nb_title[Table of Contents],
+    footer: nb_frontmatter_footer(),
+  )[
+
+      #locate(
+        loc => {
+          box[
+
+            = Program
+
+              #let program_headings = query(selector(<nb_program_entry>), loc)
+              #for (index, entry) in program_entries.final(loc).enumerate() {
+                let page_number = counter(page).at(program_headings.at(index).location()).at(0)
+                // let page_number = program_page_counter.at(program_headings.at(index).location()).at(0)
+
+                let frontmatter_count = frontmatter_page_counter.final(loc).at(0)
+                let entry_count = entry_page_counter.final(loc).at(0)
+
+                [
+                  #box(radius: 1pt, height: 1em, baseline: 15%)[
+                    #align(center + horizon)[
+                      #link((page: {frontmatter_count + entry_count + page_number + 3}, x: 0pt, y: 0pt))[
+                        #text(fill: black)[
+                          _ #entry.title _
+                        ]
+                      ]
+                    ]
+                  ]#h(5pt)
+                  #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted")))
+                  P-#page_number \
+                ]
+              }
+
+            #counter(page).update(_ => 0)
+          ]
+          parbreak()
+
+          box[
 
             = Appendix
 
@@ -55,11 +99,12 @@
 
                 let frontmatter_count = frontmatter_page_counter.final(loc).at(0)
                 let entry_count = entry_page_counter.final(loc).at(0)
+                let program_count = program_page_counter.final(loc).at(0)
 
                 [
                   #box(radius: 1pt, height: 1em, baseline: 15%)[
                     #align(center + horizon)[
-                      #link((page: {frontmatter_count + entry_count + page_number + 8}, x: 0pt, y: 0pt))[
+                      #link((page: {frontmatter_count + entry_count + program_count + page_number + 4}, x: 0pt, y: 0pt))[
                         #text(fill: black)[
                           _ #entry.title _
                         ]
@@ -73,8 +118,7 @@
 
             #counter(page).update(_ => 0)
           ]
-        },
+        }
       )
-    ]
-  )
+  ]
 }
