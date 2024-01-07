@@ -22,7 +22,6 @@
   box(width: 1fr, baseline: -0.3em, line(length: 100%, stroke: (dash: "dotted")))
 }
 
-
 #locate(loc => [
   #let program_entries = query(selector(<nb_program_entry>), loc)
 
@@ -41,7 +40,13 @@
       ]
     ]
     #line-fill 
-    #if bold == true and under == false [*#body, docs begin on pg. P-#counter(page).at(program_entries.at(num).location()).at(0)*] else if bold == false and under == true [#underline[#body, docs begin on pg. P-#counter(page).at(program_entries.at(num).location()).at(0)]] else if bold == true and under == true [#underline[*#body, docs begin on pg. P-#counter(page).at(program_entries.at(num).location()).at(0)*]]
+    #if bold == true and under == false [
+      *#body, docs begin on pg. P-#counter(page).at(program_entries.at(num).location()).at(0)*
+    ] else if bold == false and under == true [
+      #underline[#body, docs begin on pg. P-#counter(page).at(program_entries.at(num).location()).at(0)]
+    ] else if bold == true and under == true [
+      #underline[*#body, docs begin on pg. P-#counter(page).at(program_entries.at(num).location()).at(0)*]
+    ]
   ]
 
   #set list(
