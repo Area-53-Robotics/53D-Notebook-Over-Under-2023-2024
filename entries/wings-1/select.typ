@@ -7,24 +7,20 @@
   attendance: "Ajibola, Ishika, Eric, Emma"
 )
 
-#nb_todo(date: datetime(year: 2023, month: 9, day: 23), monthly-schedule: "On")[
-  + Select the wings configuration using a decision matrix. (Everyone)
-  + Create a plan for the construction of the wings using CAD. (Ajibola)
-]
+#nb_todo(
+  date: datetime(year: 2023, month: 9, day: 23), 
+  monthly-schedule: "On",
+  (
+    (true, "Select the wings configuration using a decision matrix. (Everyone)"),
+    (true, "Create a plan for the construction of the wings using CAD. (Ajibola)"),
+  )
+)
 
-#nb_admonition(type: "select", title: "Decision Matrix")[
-  *Ranking Criteria:*
+#nb_matrix_criteria[ 
   - Speed -
   - Consistency -
   - Energy Efficiency -
   - Strength -
-
-  *Number Key:*
-  - 4 - Excellent
-  - 3 - Fair
-  - 2 - Poor
-  - 1 - Very Poor
-  - 0 - Incapable
 ]
 
 #nb_decision_matrix(

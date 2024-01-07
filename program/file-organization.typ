@@ -81,6 +81,6 @@
     - #icon("brand-git") .gitignore #line-fill Git config file
     - #icon(color: orange, "letter-m") common.mk #line-fill PROS build configs
     - #icon(color: orange, "letter-m") Makefile #line-fill PROS build configs
-    - #icon("info-circle") project.pros #line-fill Program configurations such as program title and slot
+    - #icon("align-justified") project.pros #line-fill Program upload configurations such as program title and slot
     - #icon(color: blue.darken(30%), "info-circle") README.md #line-fill GitHub repository description
 ])

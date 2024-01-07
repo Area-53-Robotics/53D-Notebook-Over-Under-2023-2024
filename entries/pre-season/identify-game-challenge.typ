@@ -8,9 +8,12 @@
   attendance: "Ajibola, Emma, Von, Eric",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 4, day: 30))[
-  + Analyze the game challenge rules to identify the game objectives for the season. (Everyone)
-]
+#nb_todo(
+  date: datetime(year: 2023, month: 4, day: 30),
+  (
+    (true, "Analyze the game challenge rules to identify the game objectives for the season. (Everyone)"),
+  )
+)
 
 = Field Elements #footnote(
       [All images and diagrams are sourced from #link(

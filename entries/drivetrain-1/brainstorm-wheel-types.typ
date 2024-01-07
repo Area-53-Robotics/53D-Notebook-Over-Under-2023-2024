@@ -7,9 +7,13 @@
   attendance: "Ajibola, Ishika, Eric, Emma",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 7, day: 22), monthly-schedule: "Behind")[
-  + Brainstorm possible wheel configurations for the tank drive. (Everyone)
-]
+#nb_todo(
+  date: datetime(year: 2023, month: 7, day: 22),
+  monthly-schedule: "Behind",
+  (
+    (true, "Brainstorm possible wheel configurations for the tank drive. (Everyone)"),
+  )
+)
 
 = Wheel Types
 

@@ -7,12 +7,15 @@
   attendance: "Ajibola, Ishika, Eric, Emma",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 7, day: 22), monthly-schedule: "Behind")[
-  + Select the best wheel configurations for the tank drive using a decision matrix. (Everyone)
-]
+#nb_todo(
+  date: datetime(year: 2023, month: 7, day: 22),
+  monthly-schedule: "Behind",
+  (
+    (true, "Select the best wheel configurations for the tank drive using a decision matrix. (Everyone)"),
+  )
+)
 
-#nb_admonition(type: "select", title: "Decision Matrix")[
-  *Ranking Criteria:*
+#nb_matrix_criteria[
   - Speed - The maximum speed of the wheel configuration.
   - Compactness - How little space the wheel configuration takes up.
   - Strafing - The ability of the wheel configuration to move from side-to-side.
@@ -20,13 +23,6 @@
   - Traction - The grip of the wheels of the wheel configuration onto the surface below it.
   - Ease of Programming - How easy the drivetrain configuration is to program.
   - Ease of Driving - How easy the drivetrain configuration is to drive.
-
-  *Number Key:*
-  - 4 - Excellent
-  - 3 - Fair
-  - 2 - Poor
-  - 1 - Very Poor
-  - 0 - Incapable
 ]
 
 #nb_decision_matrix(

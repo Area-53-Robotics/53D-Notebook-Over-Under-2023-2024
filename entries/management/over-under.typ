@@ -7,10 +7,13 @@
   attendance: "Ajibola, Ishika, Eric, Emma",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 7, day: 14))[
-  + Plan out the Over Under season by creating a Gantt chart. (Everyone)
-  + Plan out the July meetings by creating a Gantt chart. (Everyone)
-]
+#nb_todo(
+  date: datetime(year: 2023, month: 12, day: 1),
+  (
+    (true, "Plan out the Over Under season by creating a Gantt chart. (Everyone)"),
+    (true, "Plan out the July meetings by creating a Gantt chart. (Everyone)"),
+  )
+)
 
 Before continuing with the engineering design process, we decided to take the time to make a general plan for what the timeline of the robot's construction would look like. We did not do this at the beginning of the Spin Up season last year, making us very disorganized when we got into the heavy competition season in December-January. We especially wanted to dedicate a significant amount of time to a few tasks:
 - Initial Drivetrain: The drivetrain is the robot's core, and we want to try to get it right the first time.

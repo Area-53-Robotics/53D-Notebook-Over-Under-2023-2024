@@ -7,9 +7,13 @@
   attendance: "Ajibola, Ishika, Eric, Rory",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 9, day: 16), monthly-schedule: "On")[
-  + Identify the design constraints and goals for the outtake. (Everyone)
-]
+#nb_todo(
+  date: datetime(year: 2023, month: 9, day: 16),
+  monthly-schedule: "On",
+  (
+    (true, "Identify the design constraints and goals for the outtake. (Everyone)"),
+  )
+)
 
 During the team discussion about the outtake, our group engaged in a collaborative conversation where each member had the opportunity to express their thoughts about what should go into an outtake. 
 

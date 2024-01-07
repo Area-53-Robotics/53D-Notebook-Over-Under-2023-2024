@@ -40,11 +40,14 @@
       
       cellx(colspan: 2)[
         = 2023/8/11
-        #nb_todo(date: datetime(year: 2023, month: 8, day: 11))[
-          + Create the left drivetrain chassis (Eric and Rory)
-          + Attach the bearing blocks (Eric and Rory)
-          + Attach the gears and wheels (Ajibola and Ishika)
-        ]
+        #nb_todo(
+          date: datetime(year: 2023, month: 8, day: 11),
+          (
+            (true, "Create the left drivetrain chassis (Eric and Rory)"),
+            (true, "Attach the bearing blocks (Eric and Rory)"),
+            (true, "Attach the gears and wheels (Ajibola and Ishika)"),
+          )
+        )
       ],
       cellx(align: horizon)[#image("./build/8.11 build drive.png", height: 80%)],
       [
@@ -69,10 +72,13 @@
 
       cellx(colspan: 2)[
         = 2023/8/18
-        #nb_todo(date: datetime(year: 2023, month: 8, day: 18))[
-          + Finish attaching the gears on the drivetrain (Eric and Rory)
-          + Finish attaching the wheels on the drivetrain (Ajibola and Ishika)
-        ]
+        #nb_todo(
+          date: datetime(year: 2023, month: 8, day: 18),
+          (
+            (true, "Finish attaching the gears on the drivetrain (Eric and Rory)"),
+            (true, "Finish attaching the wheels on the drivetrain (Ajibola and Ishika)"),
+          )
+        )
       ],
       [
         Unfortunately, due to time constraints, we couldn't finish creating the the left side. We planned to follow the drive configuration on sheet 4 of the Drivetrain CAD to get the exact spacing that we needed. This will ensure that the left side aligns precisely with the design specifications, maintaining consistency and accuracy in the overall structure. Overall, we wanted to spend this meeting finishing what we previously left off on last meeting.
@@ -96,11 +102,14 @@
 
       cellx(colspan: 2)[
         = 2023/8/25
-        #nb_todo(date: datetime(year: 2023, month: 8, day: 25))[
-            + Attach the motors (Rory)
-            + Troubleshoot any friction problems (Ajibola)
-            + Troubleshoot any instances of bending (Eric)
-        ]
+        #nb_todo(
+          date: datetime(year: 2023, month: 8, day: 25),
+          (
+            (true, "Attach the motors (Rory)"),
+            (true, "Troubleshoot any friction problems (Ajibola)"),
+            (true, "Troubleshoot any instances of bending (Eric)"),
+          )
+        )
       ],
 
       box(height: 15em)[
@@ -131,10 +140,13 @@
 
       cellx(colspan: 2)[
         = 2023/8/26
-        #nb_todo(date: datetime(year: 2023, month: 8, day: 26))[
-            + Fix the spacing problems with the drivetrain (Eric and Rory)
-            + Start building the chassis of the right side drivetrain chassis (Ajibola and Ishika)
-        ]
+        #nb_todo(
+          date: datetime(year: 2023, month: 8, day: 26),
+          (
+            (true, "Fix the spacing problems with the drivetrain (Eric and Rory)"),
+            (true, "Start building the chassis of the right side drivetrain chassis (Ajibola and Ishika)"),
+          )
+        )
       ],
 
       [
@@ -168,11 +180,14 @@
       
       cellx(colspan: 2)[
         = 2023/9/8
-        #nb_todo(date: datetime(year: 2023, month: 9, day: 8))[
-            + Attach the right side chassis together (Rory)
-            + Attach the gears and wheels together (Eric)
-            + Create the bracing (Ajibola and Ishika)
-        ]
+        #nb_todo(
+          date: datetime(year: 2023, month: 9, day: 8),
+          (
+            (true, "Attach the right side chassis together (Rory)"),
+            (true, "Attach the gears and wheels together (Eric)"),
+            (true, "Create the bracing (Ajibola and Ishika)"),
+          )
+        )
       ],
       [
         #image("./build/9.8 1.png")
@@ -201,12 +216,15 @@
       
       cellx(colspan: 2)[
         = 2023/9/15
-        #nb_todo(date: datetime(year: 2023, month: 9, day: 15))[
-          + Attach both sides of the drivetrain to eachother (Eric)
-          + Mount the brain and radio (Rory)
-          + Program a versatile driver control system for the drivetrain. (Ajibola and Ishika)
-          + Test the speed output of the drivetrain (Everyone)
-        ]
+        #nb_todo(
+          date: datetime(year: 2023, month: 9, day: 15),
+          (
+            (true, "Attach both sides of the drivetrain to eachother (Eric)"),
+            (true, "Mount the brain and radio (Rory)"),
+            (true, "Program a versatile driver control system for the drivetrain. (Ajibola and Ishika)"),
+            (true, "Test the speed output of the drivetrain (Everyone)"),
+          )
+        )
       ],
 
       [

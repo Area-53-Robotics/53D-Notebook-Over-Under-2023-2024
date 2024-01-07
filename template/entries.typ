@@ -50,11 +50,13 @@
                     rows: 4,
                     align: left + horizon,
                     width: 1fr,
+                    auto_hlines: false,
 
                     hlinex(start: 0, end: 4, stroke: black + 1pt, y: 0),
                     hlinex(start: 0, end: 4, stroke: black + 1pt, y: 1),
                     hlinex(start: 0, end: 5, stroke: black + 1pt, y: 2),
                     hlinex(start: 0, end: 5, stroke: black + 1pt, y: 3),
+                    // hlinex(start: 5, end: 6, stroke: white + 2pt, y: 3),
                     hlinex(start: 0, end: 5, stroke: black + 1pt, y: 4),
                     vlinex(start: 0, end: 3, stroke: 0pt, x: 6),
 
@@ -94,6 +96,7 @@
                     rows: 4,
                     align: left + horizon,
                     width: 1fr,
+                    auto_hlines: false,
 
                     hlinex(start: 2, end: 7, stroke: black + 1pt, y: 0),
                     hlinex(start: 2, end: 7, stroke: black + 1pt, y: 1),

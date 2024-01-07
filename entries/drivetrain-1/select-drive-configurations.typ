@@ -7,12 +7,15 @@
   attendance: "Ajibola, Ishika, Eric, Emma",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 7, day: 21), monthly-schedule: "On")[
-  + Select the best configuration for the drivetrain using a decision matrix. (Everyone)
-]
+#nb_todo(
+  date: datetime(year: 2023, month: 7, day: 21),
+  monthly-schedule: "On",
+  (
+    (true, "Select the best configuration for the drivetrain using a decision matrix. (Everyone)"),
+  )
+)
 
-#nb_admonition(type: "select", title: "Decision Matrix")[
-  *Ranking Criteria:*
+#nb_matrix_criteria[
   - Speed - The maximum speed of the drivetrain configuration.
   - Turning - The smoothness of the turns made with the drivetrain configuration.
   - Force - How much force the drivetrain configuration can generate.
@@ -20,13 +23,6 @@
   - Omni-Directionality - The ability of the drivetrain configuration to move in multiple directions.
   - Ease of Programming - How easy the drivetrain configuration is to program.
   - Ease of Driving - How easy the drivetrain configuration is to drive.
-
-  *Number Key:*
-  - 4 - Excellent
-  - 3 - Fair
-  - 2 - Poor
-  - 1 - Very Poor
-  - 0 - Incapable
 ]
 
 #nb_decision_matrix(

@@ -7,9 +7,13 @@
   attendance: "Ajibola, Ishika, Eric, Emma",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 7, day: 28), monthly-schedule: "Behind")[
-  + Brainstorm possible gear ratios for the tank drive. (Everyone)
-]
+#nb_todo(
+  date: datetime(year: 2023, month: 7, day: 28),
+  monthly-schedule: "Behind",
+  (
+    (true, "Brainstorm possible gear ratios for the tank drive. (Everyone)"),
+  )
+)
 
 We used a publicly available spreadsheet #footnote([#link("https://docs.google.com/spreadsheets/d/1RSoLv3tnpiCgFyHb0QayxK-42r9MgVRD_4QQmeFM618/edit#gid=0")]) to help us collect the data needed for each gear ratio.
 

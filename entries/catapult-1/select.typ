@@ -7,21 +7,14 @@
   attendance: "Ajibola, Ishika, Eric, Emma",
 )
 
-#nb_admonition(type: "select", title: "Decision Matrix")[
-  *Ranking Criteria:*
+
+#nb_matrix_criteria[
   - Speed - The cycle time of the catapult option.
   - Range - How far shots made by this capault option can go.
   - Power - How much force the catapult generates when shooting.
   - Difficulty getting blocked - If the catapult option will be able to avoid blockers. 
   - Rapid Fire Capability - How fast the catapult can shoot when set to shoot automatically. Useful for skills runs.
   - Goal Scoring Capability - How often the catapult can shoot into the goal from their non-offensive zone.
-
-  *Number Key:*
-  - 4 - Excellent
-  - 3 - Fair
-  - 2 - Poor
-  - 1 - Very Poor
-  - 0 - Incapable
 ]
 
 #nb_decision_matrix(

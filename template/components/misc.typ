@@ -120,7 +120,7 @@
         
         #align(right + bottom)[
           #box(
-            fill: gray,
+            fill: yellow,
             outset: 5pt,
             radius: 1.5pt,
             height: auto,

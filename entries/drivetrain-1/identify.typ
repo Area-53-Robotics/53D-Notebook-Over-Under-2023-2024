@@ -7,9 +7,13 @@
   attendance: "Ajibola, Ishika, Eric, Emma",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 7, day: 15), monthly-schedule: "On")[
-  + Identify the design constraints and goals for the drivetrain. (Everyone)
-]
+#nb_todo(
+  date: datetime(year: 2023, month: 7, day: 15),
+  monthly-schedule: "On",
+  (
+    (true, "Identify the design constraints and goals for the drivetrain. (Everyone)"),
+  )
+)
 
 Our team spent a lot of time talking and planning the foundation of our robot: the drivetrain. The drivetrain's shape determines what other subsystems we can build in the future, making it even more critical. However, before getting into the technical aspects, we figured out how the drivetrain fits into our overall game plan, ensuring it helps us do well in the competition.
 

@@ -7,9 +7,13 @@
   attendance: "Ajibola, Ishika, Eric, Rory",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 9, day: 22), monthly-schedule: "On")[
-  + Identify the design constraints and goals for the wings. (Everyone)
-]
+#nb_todo(
+  date: datetime(year: 2023, month: 9, day: 22),
+  monthly-schedule: "On",
+  (
+    (true, "Identify the design constraints and goals for the wings. (Everyone)"),
+  )
+)
 
 During our team talk about wing design, everyone shared their thoughts. We had a big and open discussion where everyone could say what they thought about the best way to design our project's wings. It was a team effort, and everyone had a chance to speak up and share their ideas.
 

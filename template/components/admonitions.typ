@@ -1,6 +1,7 @@
 #import "../colors.typ": *
 #import "../icons/icons.typ": *
 #import "@preview/showybox:2.0.1": showybox
+#import "@preview/tablex:0.0.7": *
 
 #let nb_admonition(type: "", title: none, body) = {
   let info = type_metadata.at(type)
@@ -53,7 +54,35 @@
   }
 
   nb_admonition(type: "management", title: [To-Do: (#date.display("[year]/[month]/[day]"))])[
-    #body
+    #gridx(
+      columns: 2,
+      align: left + horizon,
+      inset: (rest: 0pt),
+
+      map-cols: (col, cells) => cells.map(c =>
+        if col == 0 {
+          (..c, inset: (rest: 0pt))
+        } else if col == 1 {
+          (..c, inset: (left: 3pt, rest: 0pt))
+        } else {
+          c
+        }
+      ),
+
+      ..for (completed, task) in body {
+        (
+          {
+            if completed == true {
+              image("/template/tabler-icons/square-check-filled.svg", height: 1em)
+            } else {
+              image("/template/tabler-icons/square.svg", height: 1em)
+            }
+          },
+          task
+        )
+      }
+    )
+
     #if monthly-schedule != none or yearly-schedule != none or attendance != none [
       #line(length: 100%)
     ]
@@ -71,3 +100,37 @@
     ]
   ]
 }
+
+#let nb_matrix_criteria(body) = [
+  #nb_admonition(type: "select", title: "Decision Matrix")[
+    *Ranking Criteria:*
+    #body
+
+    *Number Ranking Key:*
+    #set text(size: 13pt)
+    #tablex(
+      rows: 2,
+      columns: (1fr, 1fr, 1fr, 1fr, 1fr),
+      align: center + horizon,
+
+      map-cols: (col, cells) => cells.map(c =>
+        if col == 0 {
+          (..c, fill: green.lighten(10%))
+        } else if col == 1 {
+          (..c, fill: yellow.lighten(10%))
+        } else if col == 2 {
+          (..c, fill: red.lighten(10%))
+        } else if col == 3 {
+          (..c, fill: red.darken(10%))
+        } else if col == 4 {
+          (..c, fill: red.darken(40%))
+        } else {
+          c
+        }
+      ),
+
+      [4], [3], [2], [1], [0],
+      [Excellent], [Fair], [Poor], [Very Poor], [Incapable],
+    )
+  ]
+]

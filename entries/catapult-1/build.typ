@@ -44,11 +44,14 @@
 
       cellx(colspan: 2)[
         = 2023/10/6
-        #nb_todo(date: datetime(year: 2023, month: 10, day: 6))[
-          + Figure out a way to mount the catapult (Makhi, Eric, and Rory)
-          + Center the catapult (Ajibola and Ishika)
-          + Test the catapult (Everyone)
-        ]
+        #nb_todo(
+          date: datetime(year: 2023, month: 10, day: 6),
+          (
+            (true, "Figure out a way to mount the catapult (Makhi, Eric, and Rory)"),
+            (true, "Center the catapult (Ajibola and Ishika)"),
+            (true, "Test the catapult (Everyone)"),
+          )
+        )
       ],
       [#image("./build/10.06.png")],
       [
@@ -73,16 +76,19 @@
 
       cellx(colspan: 2)[
         = 2023/10/7
-        #nb_todo(date: datetime(year: 2023, month: 10, day: 7))[
-          + Brace the catapult (Makhi and Eric)
-          + Test the catapult (Everyone)
-        ]
+        #nb_todo(
+          date: datetime(year: 2023, month: 10, day: 7),
+          (
+            (true, "Brace the catapult (Makhi and Eric)"),
+            (true, "Test the catapult (Everyone)"),
+          )
+        )
       ],
       [
         While some of the members were working on the catapult, the wings were also completed. We wanted this meeting to be both an educational meeting for the new builders of the different sub systems, as well as a meeting to test both the catapult and the wings. The final catapult turned out almost exactly as planned on sheets 2 and 3 of the Catapult CAD.
 
         == Build Steps
-        - Added the motor cartridges to the intake
+        // - Added the motor cartridges to the intake
         - Attached triangle braces to help brace the catapult
           - *Reason:* Triangle braces are one of the stronger braces. When force is applied to a triangle, the load is evenly distributed among its sides and vertices.
         - #text(red)[Problem:] Similar to the problem last meeting, a lack of tension on the rubberband connecting to the catapult arm.

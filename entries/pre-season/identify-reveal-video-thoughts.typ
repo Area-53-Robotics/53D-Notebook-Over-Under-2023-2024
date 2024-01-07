@@ -7,9 +7,12 @@
   attendance: "Ajibola, Emma, Von, Eric",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 4, day: 29))[
-  + Identify our immediate thoughts and predictions after watching the game reveal. (Everyone)
-]
+#nb_todo(
+  date: datetime(year: 2023, month: 4, day: 29),
+  (
+    (true, "Identify our immediate thoughts and predictions after watching the game reveal. (Everyone)"),
+  )
+)
 
 = Game Object
 The triballs have a weird shape, which might make them harder to intake and hold than previous game objects like the Spin Up disks and the Tipping Point rings.

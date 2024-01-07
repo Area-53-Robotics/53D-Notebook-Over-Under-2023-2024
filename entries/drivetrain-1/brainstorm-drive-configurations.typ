@@ -7,9 +7,13 @@
   attendance: "Ajibola, Ishika, Eric, Emma",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 7, day: 21), monthly-schedule: "On")[
-  + Brainstorm possible configurations for the drivetrain. (Everyone)
-]
+#nb_todo(
+  date: datetime(year: 2023, month: 7, day: 21),
+  monthly-schedule: "On",
+  (
+    (true, "Brainstorm possible configurations for the drivetrain. (Everyone)"),
+  )
+)
 
 While most of our team was already familiar with the different types of drives, we didn't have much information on the pros and cons of each. During our research, a very helpful resource was the BLRS Wiki Page on VEX Drivetrains #footnote[#link("https://wiki.purduesigbots.com/hardware/vex-drivetrains")].
 

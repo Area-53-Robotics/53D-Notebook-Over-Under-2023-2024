@@ -7,13 +7,15 @@
   attendance: "Ajibola, Ishika, Eric, Rory, Makhi,",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 9, day: 30))[
-  + Evaluate our current project workflow and management to identify improvements that can be made. (Everyone)
-  + Plan out the October meetings by creating a Gantt chart (Everyone)
-  + Create the gear box of the catapult
-  + Being building the catapult arm (Eric, Rory, and Ishika)
-  + Slip the gears and tension it with rubber bands (Ajibola and Makhi)
-]
+#nb_todo(
+  date: datetime(year: 2023, month: 9, day: 30),
+  (
+    (true, "Evaluate our current project workflow and management to identify improvements that can be made. (Everyone)"),
+    (true, "Plan out the October meetings by creating a Gantt chart (Everyone)"),
+    (true, "Create the gear box of the catapult (Eric, Rory, and Ishika)"),
+    (true, "Slip the gears and tension it with rubber bands (Ajibola and Makhi)"),
+  )
+)
 
 Before our usual practice time today, a guest speaker came in to teach all of the 53 squads new project management strategies. We were taught about the Waterfall methodology and the Agile methodology and were subsequently encouraged to pick one of them to implement.
 

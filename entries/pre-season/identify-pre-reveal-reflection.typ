@@ -7,9 +7,12 @@
   attendance: "Ajibola, Emma, Von, Eric",
 )
 
-#nb_todo(date: datetime(year: 2023, month: 3, day: 17))[
-  + Reflect on the Spin Up season and identify what we can improve on. (Everyone)
-]
+#nb_todo(
+  date: datetime(year: 2023, month: 3, day: 17),
+  (
+    (true, "Reflect on the Spin Up season and identify what we can improve on. (Everyone)"),
+  )
+)
 
 = Overall
 53D had a great season during Spin Up, managing to make it to the States championship and qualifying for the elimination matches as the 17th ranked team out of 90. The team has gained a wealth of knowledge about building strategies and how to assess build quality, which will be invaluable for the upcoming season.
