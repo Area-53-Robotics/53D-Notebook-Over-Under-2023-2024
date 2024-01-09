@@ -5,7 +5,7 @@
 #show: page.with(
   margin: (left: 5em, right: 5em),
   background: nb_side_margin_color(color: gray),
-  header: nb_title([Meet the Team]),
+  header: nb_title[Meet the Team],
   footer: [
     #nb_frontmatter_footer()
   ]

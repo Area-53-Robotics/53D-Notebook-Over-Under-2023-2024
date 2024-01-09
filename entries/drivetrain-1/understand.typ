@@ -51,7 +51,7 @@
 
     + *Third Law* (Action and Reaction): For every action, there is an equal and opposite reaction.
 
-    == How do gear ratios relate to the drive train?
+    == How do the laws of motion relate to the drive train?
 
     Newton's laws of motion directly influence the behavior of a drive train in the following ways:
 

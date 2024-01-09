@@ -77,7 +77,6 @@
   if nb_solid_labels == false {
     box(
       fill: info.color.lighten(40%),
-      outset: 5pt,
       radius: 1.5pt,
       height: 0.5in,
       width: 2in,
@@ -86,7 +85,6 @@
   } else {
     box(
       fill: info.color.lighten(40%),
-      outset: 5pt,
       radius: 1.5pt,
       height: 0.5in,
       width: 2in,
@@ -95,7 +93,7 @@
       #set text(16pt)
 
       #align(center + horizon)[
-        #box(baseline: 35%, nb_label(label: type, size: 2em)) #h(10pt) *#info.name*
+        #box(baseline: 35%, nb_label(label: type, size: 2em)) #h(7pt) *#info.name*
       ]
     ]
   }

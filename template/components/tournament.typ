@@ -54,3 +54,13 @@
     ]
   }
 }
+
+#let nb_tournament_match(
+  match: "",
+  red_alliance: (teams: ("", ""), score: 0),
+  blue_alliance: (teams: ("", ""), score: 0),
+  won: false,
+  auton: false,
+  awp: false,
+  notes: [],
+) = {}
