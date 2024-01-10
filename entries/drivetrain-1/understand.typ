@@ -37,7 +37,7 @@
 
     == How do they relate to to the drivetrain?
 
-    Structural dynamics helps in analyzing and understanding the vibrations induced in the components of the drive train during operation. Vibrations can be critical, affecting the performance and lifespan of various elements, such as gears, bearings, and axles.
+    Structural dynamics helps in analyzing and understanding the vibrations induced in the components of the drivetrain during operation. Vibrations can be critical, affecting the performance and lifespan of various elements, such as gears, bearings, and axles.
   ],
   [
     = Newton's Laws of Motion
@@ -45,7 +45,7 @@
 
     + *First Law* (Law of Inertia): An object at rest remains at rest, and an object in motion continues in motion with a constant velocity unless acted upon by a net external force.
 
-    + *Second Law* ($#sym.Sigma F = m a$): /*The acceleration of an object is directly related to the net force acting upon it and inversely related to its mass.*/
+    + *Second Law* ($#sym.Sigma F = m a$): The acceleration of an object is directly related to the net force acting upon it and inversely related to its mass.
 
     #nb_admonition(type: "equation")[
       If:
@@ -56,9 +56,11 @@
       $ #sym.Sigma F = m a $
     ]
 
-    + *Third Law* (Action and Reaction): For every action, there is an equal and opposite reaction.
+    3. *Third Law* (Action and Reaction): For every action, there is an equal and opposite reaction.
 
     #nb_admonition(type: "equation")[
+      /*
+      */
       If:
       - $F_"in"$ is the force that the first object exerts on the second object
       - $F_"out"$ is the force that the second object exerts back on the first object
@@ -74,12 +76,10 @@
   cellx(colspan: 2)[
     == How do they relate to the drivetrain?
 
-    Newton's laws of motion directly influence the behavior of a drive train in the following ways:
+    Newton's laws of motion directly influence the behavior of a drivetrain in the following ways:
 
-    *Initiating Motion*: The first law explains the initial state of rest or motion.
-
-    *Acceleration and Forces*: The second law governs how the forces applied by the drive train's motors result in acceleration or deceleration, influencing the robot's speed and direction.
-
-    *Interaction with the Ground*: The third law is evident in the interaction between the wheels of the drive train and the surface, which is essential for the robot's mobility.
+    - *Initiating Motion*: The first law explains the initial state of rest or motion.
+    - *Acceleration and Forces*: The second law governs how the forces applied by the drivetrain's motors result in acceleration or deceleration, influencing the robot's speed and direction.
+    - *Interaction with the Ground*: The third law is evident in the interaction between the wheels of the drivetrain and the surface, which is essential for the robot's mobility.
   ]
 )

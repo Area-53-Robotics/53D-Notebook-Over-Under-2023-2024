@@ -17,87 +17,76 @@
 
 = Wheel Types
 
-#tablex(
-  columns: (1fr, 1fr, 1fr),
-  rows: 4,
-  header-rows: 1,
-  align: left + top,
-
-  cellx()[*Wheel Type*], 
-  cellx(fill: green)[*Pros*], 
-  cellx(fill: red)[*Cons*],
-
-  cellx(align: center + horizon)[
-    *Omni*
-    #image("brainstorm-wheel-types/OmniWheel.excalidraw.svg", height: 70%)],
-  [
-    - *Omnidirectional Movement* - enabling the robot to move forward, backward, and sideways with ease
+#nb_pro_con(
+  name: "Omni",
+  image: image("brainstorm-wheel-types/OmniWheel.excalidraw.svg", height: 70%),
+  pros: [
+    - * Partially Omnidirectional Movement* - Enabling the robot to move forward, backward, and sideways with ease
     - *Strafing* - The ability to strafe easily allow the robot to navigate around obstacles, align with targets, or avoid opponents
-    - *Versatility* - Omni wheels are versatile and can be incorporated into various drive train configuration
+    - *Versatility* - Omni wheels are versatile and can be incorporated into various drivetrain configuration
   ],
-  [
+  cons: [
     - *Reduced Traction* - Omni wheels  have less traction compared to other wheel types, which would make us easy to push around by other teams
     - *Limited Load-Bearing Capacity* - Omni wheels have a lower load-bearing capacity compared to some other wheel types
-    - *Less stability at high speed* - Omni wheels can lead to less stability at high speeds or during rapid acceleration and deceleration. This instability may affect the robot's ability to maintain control.
+    - *Less Stability at High Speed* - Omni wheels can lead to less stability at high speeds or during rapid acceleration and deceleration. This instability may affect the robot's ability to maintain control.
   ],
+)
 
-  cellx(align: center + horizon)[
-    *Traction*
-    #image("brainstorm-wheel-types/TractionWheel.excalidraw.svg", height: 12em)],
-  [
+#colbreak()
+
+#nb_pro_con(
+  name: "Traction",
+  image: image("brainstorm-wheel-types/TractionWheel.excalidraw.svg", height: 12em),
+  pros: [
     - *High Traction* - Traction wheels are designed to maximize grip on the surface
     - *Stability* - Traction wheels contribute to the stability of the robot, especially at higher speeds or during rapid acceleration and deceleration. 
     - *Pushing Power* - well-suited for applications that require the robot to exert pushing or pulling forces
   ],
-  [
+  cons: [
     - *Limited Maneuverability* - Traction wheels are typically designed for straightforward movement
     - *Wheel Scrubbing* - Traction wheels in a tank drive configuration may experience wheel scrubbing during turns, causing excessive wears
   ],
-  
-  cellx(align: center + horizon)[
-    *Mecanum*
-    #image("brainstorm-wheel-types/MecanumWheel.excalidraw.svg", height: 12em)],
-  [
+)
+
+#nb_pro_con(
+  name: "Mecanum",
+  image: image("brainstorm-wheel-types/MecanumWheel.excalidraw.svg", height: 12em),
+  pros: [
     - *Omnidirectional Movement* - Mecanum wheels enable omnidirectional movement
     - *Simple Control System* - The control system for mecanum wheels is relatively simple compared to some other omnidirectional drive systems.
   ],
-  [
+  cons: [
     - *Complex Programming* - Programming a mecanum drive system can be more complex compared to traditional drive systems
     - *Reduced Traction* - Mecanum wheels may have reduced traction compared to other wheel types
   ],
 )
 
+#colbreak()
+
 = Tank Drive Configurations
 
-#tablex(
-  columns: (1fr, 1fr, 1fr),
-  rows: 5,
-  header-rows: 1,
-  align: left + top,
-
-  cellx()[*Tank Drive Config*], 
-  cellx(fill: green)[*Pros*], 
-  cellx(fill: red)[*Cons*],
-
-  cellx(align: center + horizon)[
-    #image("brainstorm-wheel-types/TankDriveOmnis.excalidraw.svg", height: 12em)],
-  [
+#nb_pro_con(
+  name: "Tank Drive with Omnis",
+  image: image("brainstorm-wheel-types/TankDriveOmnis.excalidraw.svg", height: 12em),
+  pros: [
     - *Basic Maneuverability* - Excels in basic maneuverability (forward, backward, and turns)
     - *Pivoting* - Wheels can pivot easily, putting less stress on the motors
     - *Availability* - Area 53 has multiple omnis of different sizes in storage
   ],
-  [
+  cons: [
     - *Low Traction* - Makes it easier to be pushed around by other teams, which could inhibit our ability to score and match load
     - *Strafing* - Omni wheels cannot strafe diagonally, and a tank drive with omnis cannot strafe side-to-side on command
   ],
+)
 
-  cellx(align: center + horizon)[
-    #image("brainstorm-wheel-types/TankDriveTraction.excalidraw.svg", height: 12em)],
-  [
+#nb_pro_con(
+  name: "Tank Drive with Traction",
+  image: image("brainstorm-wheel-types/TankDriveTraction.excalidraw.svg", height: 12em),
+  pros: [
     - *Immovability* - Cannot be pushed from the side by other teams, making it easier to match load
     - *Force* - Generates a lot of traction, which makes it easier to push other teams
   ],
-  [
+  cons: [
     - *Maneuverability* - Cannot strafe side-to-side or diagonally, severely limiting our movement
     - *Inefficient Turns* - Makes it harder for the driver to make quick responses on the field
     - *Slow* - Has the slowest speed out of all the wheel types
@@ -105,32 +94,38 @@
     - *Availability* - Area 53 does not currently have many 3.25” traction wheels in storage, so if we want to use that size we will have to delay construction
     - *Wheel Durability* - A full traction drive displays wear and tear on the wheel quicker than any other drivetrain.
   ],
-  
-  cellx(align: center + horizon)[
-    #image("brainstorm-wheel-types/TankDriveOmnis+Traction.excalidraw.svg", height: 12em)],
-  [
+)
+
+#colbreak()
+
+#nb_pro_con(
+  name: "Tank Drive w/ Omnis & Traction",
+  image: image("brainstorm-wheel-types/TankDriveOmnis+Traction.excalidraw.svg", height: 12em),
+  pros: [
     - *Motor Strain* - Has a decreased strain on motors compared to full traction wheels
     - *Immovability* - More protected against pushing compared to a full omni configuration
     - *Versatility* - The combination allows for smooth transitions between omnidirectional movement and enhanced traction.
   ],
-  [
+  cons: [
     - *Turning* - Less ability to turn in place compared to omnis
   ],
+)
 
-  cellx(align: center + horizon)[
-    #image("brainstorm-wheel-types/TankDriveMecanums.excalidraw.svg", height: 12em)],
-  [
-    - Relatively simple to build
-    - Difficult to move from the side
-    - Able to strafe
-    - Can get into more precise positions than a full omni drive
+#nb_pro_con(
+  name: "Tank Drive with Mecanums",
+  image: image("brainstorm-wheel-types/TankDriveMecanums.excalidraw.svg", height: 12em),
+  pros: [
+    - *Build Difficulty* - Relatively simple to build
+    - *Lateral Movement* - Difficult to move from the side
+    - *Strafing* - Able to strafe
+    - *Driving Precision* - Can get into more precise positions than a full omni drive
   ],
-  [
+  cons: [
     - *Driving* - Driving can be clunky, especially because nobody on 53D has driven a mecanum configuration before
     - *Building Precision* - Wheels have to be orientated in a certain matter to allow strafing
     - *Less Traction* - Due to the mecanum rollers, mecanum wheels have less surface area than omnis and traction wheels, causing them to have less traction.
-    - Weigh more than omnis
-    - Requires more complex programming
-    - Requires more torque from the motors
+    - *Weight* - Weigh more than omnis
+    - *Programming* - Requires more complex programming
+    - *Torque* - Requires more torque from the motors
   ],
 )

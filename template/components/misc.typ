@@ -52,23 +52,53 @@
   )
 }
 
-#let nb_pro_con(pros: [], cons: []) = [
-  #let cell = rect.with(width: 100%, inset: 5pt)
-  #grid(
-    columns: (1fr, 1fr),
-    column-gutter: 4pt,
-    cell(fill: green, radius: (top: 1.5pt))[*Pros*],
-    cell(fill: red, radius: (top: 1.5pt))[*Cons*],
-    cell(fill: green.lighten(80%), radius: (bottom: 1.5pt))[
-      #pros
-    ],
-    cell(fill: red.lighten(80%), radius: (bottom: 1.5pt))[
-      #cons
-    ],
-  )
-]
-
 // My Functions
+
+#let nb_pro_con(name: none, image: [], pros: [], cons: [], notes: []) = [
+  #assert(name != none, message: "No name given")
+  #assert(pros != [], message: "No pros recorded")
+  #assert(cons != [], message: "No cons recorded")
+
+  #if notes != [] {
+    tablex(
+      columns: (40%, 1fr, 1fr),
+      rows: 4,
+      align: left + top,
+
+      cellx(align: center, fill: gray)[*#name*],
+      cellx(fill: green)[*Pros*],
+      cellx(fill: red)[*Cons*],
+      cellx(align: center + horizon, rowspan: 3)[#image],
+      [
+        #pros
+      ],
+      [
+        #cons
+      ],
+      cellx(colspan: 2, fill: gray)[*Notes*],
+      cellx(colspan: 2)[
+        #notes
+      ],
+    )
+  } else {
+    tablex(
+      columns: (40%, 1fr, 1fr),
+      rows: 2,
+      align: left + top,
+
+      cellx(align: center, fill: gray)[*#name*],
+      cellx(fill: green)[*Pros*],
+      cellx(fill: red)[*Cons*],
+      cellx(align: center + horizon)[#image],
+      [
+        #pros
+      ],
+      [
+        #cons
+      ],
+    )
+  }
+]
 
 #let nb_label_box(type: "") = {
   let nb_solid_labels = true;
