@@ -174,3 +174,9 @@
 #let glossary_footnote(body) = [
   #footnote[See "#body" glossary entry]
 ]
+
+#let vex-rule(body) = [
+  #text(red.darken(20%))[
+    *<#body>*
+  ]
+]

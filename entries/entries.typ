@@ -43,4 +43,8 @@
 #include "./wings-1/program.typ"
 #include "./wings-1/test.typ"
 
+// October
+#include "./intake-1/identify.typ"
+#include "./intake-1/understand.typ"
+
 // #include "./tournament-test2.typ"
