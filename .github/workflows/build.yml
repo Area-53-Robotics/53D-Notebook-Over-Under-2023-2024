@@ -12,11 +12,8 @@ jobs:
         uses: actions/checkout@v4.1.1
 
       - name: Install Typst
-        uses: baptiste0928/cargo-install@v2.2.0
-        with:
-          crate: typst-cli
-          git: https://github.com/typst/typst
-          branch: main
+        uses: yusancky/setup-typst@v3
+        id: setup-typst
 
       - name: Compile Notebook
         run: typst compile main.typ --font-path ./assets/fonts/
