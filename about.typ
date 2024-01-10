@@ -66,7 +66,7 @@ The source code for our notebook can be accessed on
 
 = Notebook Entry Types
 
-Entries all have 1 out of 9 types displayed in the top left corner, labeled in the bottom right corner, and shown in the table of contents. 7 out of 9 of our types are part of the engineering design process.
+Entries all have 1 out of 9 types displayed in the top left corner, labeled in the bottom right corner, and shown in the table of contents. The 6 types with a black border are part of the engineering design process.
 
 Here are the existing types:
 
@@ -77,6 +77,9 @@ Here are the existing types:
     rows: 8,
     gutter: 10pt,
     align: (center + horizon),
+    
+    vlinex(start: 0, end: 1, stop-pre-gutter: true, stroke: 2pt, x: 0),
+    vlinex(start: 2, end: 7, stop-pre-gutter: true, stroke: 2pt, x: 0),
 
     nb_label(label: "identify", size: 3em),
     [*Identify the Problem*],

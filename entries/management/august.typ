@@ -16,6 +16,9 @@
   )
 )
 
+#nb_admonition(type: "note")[
+  Today Area 53 #glossary_footnote[Area 53] had a reshuffling of team members. Emma and Von left our team, and Makhi joined.
+]
 Keeping on track with our goal to be more organized this season, we planned out our goals for the upcoming august meetings. We knew that the drivetrain would take a long time to complete, so we dedicated a lot of time to building it.
 
 #image("/assets/management/August Over Under Gantt Chart.png")

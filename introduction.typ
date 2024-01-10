@@ -65,6 +65,7 @@
       - Builder
       - Notebooker
       - Designer
+      - Join Date: 2023/12/09
     ],
     nb_member(name: "Ishika Saha", picture: "./assets/members/ishika.png")[
       - Grade: 9
