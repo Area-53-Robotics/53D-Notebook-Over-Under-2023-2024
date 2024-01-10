@@ -8,10 +8,12 @@
 )
 
 #nb_todo(
-  date: datetime(year: 2023, month: 12, day: 1),
+  date: datetime(year: 2023, month: 7, day: 14),
   (
     (true, "Plan out the Over Under season by creating a Gantt chart. (Everyone)"),
     (true, "Plan out the July meetings by creating a Gantt chart. (Everyone)"),
+    (true, "Brainstorm match strategies to build our bot around (Everyone)"),
+    (true, "Select a match strategy to use for the first robot iteration (Everyone)"),
   )
 )
 

@@ -62,7 +62,7 @@
 
                     colspanx(4)[
                       #align(center)[
-                        #link((page: frontmatter_page_counter.final(loc).at(0) + 2, x: 0pt, y: 0pt))[
+                        #link((page: frontmatter_page_counter.final(loc).at(0) + 2 - 1, x: 0pt, y: 0pt))[
                           #text(fill: black)[
                             _ #entry.title _
                           ]
@@ -113,7 +113,7 @@
                     (),
                     colspanx(4)[
                       #align(center)[
-                        #link((page: frontmatter_page_counter.final(loc).at(0) + 2, x: 0pt, y: 0pt))[
+                        #link((page: frontmatter_page_counter.final(loc).at(0) + 2 - 1, x: 0pt, y: 0pt))[
                           #text(fill: black)[
                             _ #entry.title _
                           ]

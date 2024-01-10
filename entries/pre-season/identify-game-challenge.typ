@@ -1,8 +1,8 @@
 #import "/template/template.typ": *
-#import "@preview/tablex:0.0.6": *
+#import "@preview/tablex:0.0.7": *
 
 #show: create_entry.with(
-  title: "Game Challenge Analysis",
+  title: "Game Challenge - Analysis",
   type: "identify",
   start_date: datetime(year: 2023, month: 4, day: 30),
   attendance: "Ajibola, Emma, Von, Eric",
@@ -15,11 +15,8 @@
   )
 )
 
-= Field Elements #footnote(
-      [All images and diagrams are sourced from #link(
-          "https://content.vexrobotics.com/docs/23-24/vrc-overunder/VRC-Manual-2324-1.1-Release.pdf",
-        )],
-)
+= Field Elements #footnote[All images and diagrams are sourced from   #link("https://content.vexrobotics.com/docs/23-24/vrc-overunder/VRC-Manual-2324-1.1-Release.pdf")]
+
 
 #grid(
   columns: (1fr, 1fr),

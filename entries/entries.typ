@@ -6,6 +6,8 @@
 // July
 #include "./management/over-under.typ"
 #include "./management/july.typ"
+#include "./pre-season/brainstorm.typ"
+#include "./pre-season/select.typ"
 #include "./drivetrain-1/identify.typ"
 #include "./drivetrain-1/understand.typ"
 #include "./drivetrain-1/brainstorm-drive-configurations.typ"

@@ -2,7 +2,7 @@ name: Spell Check
 on: [push, workflow_dispatch]
 
 jobs:
-  build:
+  spelling:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
