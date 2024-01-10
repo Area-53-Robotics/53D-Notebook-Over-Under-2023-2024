@@ -15,9 +15,16 @@
   )
 )
 
-During the team discussion about the outtake, our group engaged in a collaborative conversation where each member had the opportunity to express their thoughts about what should go into an outtake. 
+#grid(
+  columns: 2,
 
-The outtake is a mechanism or system that facilitates the controlled release, expulsion, or transfer of objects from the robot to the surrounding environment.
+  [
+    During the team discussion about the outtake, our group engaged in a collaborative conversation where each member had the opportunity to express their thoughts about what should go into an outtake. 
+
+    The outtake is a mechanism or system that facilitates the controlled release, expulsion, or transfer of objects from the robot to the surrounding environment.
+  ],
+  box(height: 30%)[#image("/assets/identify/identify-outtake.svg")]
+)
 
 #tablex(
   columns: (1fr),

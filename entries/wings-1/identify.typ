@@ -16,10 +16,16 @@
   )
 )
 
-During our team talk about wing design, everyone shared their thoughts. We had a big and open discussion where everyone could say what they thought about the best way to design our project's wings. It was a team effort, and everyone had a chance to speak up and share their ideas.
+#grid(
+  columns: 2,
 
-Wings are a special subsystem commonly found on each side of the drivetrain. Their primary function is to expand outwards, effectively increasing the total width of the robot. This allows us to push as many triballs as possible. This is especially useful after all match loads have been fired, causing an abundance of triballs on the field. 
+  [
+    During our team talk about wing design, everyone shared their thoughts. We had a big and open discussion where everyone could say what they thought about the best way to design our project's wings. It was a team effort, and everyone had a chance to speak up and share their ideas.
 
+    Wings are a special subsystem commonly found on each side of the drivetrain. Their primary function is to expand outwards, effectively increasing the total width of the robot. This allows us to push as many triballs as possible. This is especially useful after all match loads have been fired, causing an abundance of triballs on the field.
+  ],
+  box(height: 35%)[#image("/assets/identify/identify-wings.svg")]
+)
 
 #tablex(
   columns: (1fr),

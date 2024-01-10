@@ -15,7 +15,7 @@
   align: left,
 
   cellx(colspan: 2)[
-    = Gear Ratio
+    = Gear Ratios
   ],
   [#image("./understand/DT stem - Gear ratio.svg")],
   [
@@ -39,15 +39,22 @@
 
     Structural dynamics helps in analyzing and understanding the vibrations induced in the components of the drive train during operation. Vibrations can be critical, affecting the performance and lifespan of various elements, such as gears, bearings, and axles.
   ],
-  cellx(colspan: 2)[
-    = Newton's Laws of Motion
-  ],
   [
+    = Newton's Laws of Motion
     == What are Newton's Laws of Motion?
 
     + *First Law* (Law of Inertia): An object at rest remains at rest, and an object in motion continues in motion with a constant velocity unless acted upon by a net external force.
 
-    + *Second Law* (F = ma): The acceleration of an object is directly proportional to the net force acting upon it and inversely proportional to its mass.
+    + *Second Law* ($#sym.Sigma F = m a$): The acceleration of an object is directly proportional to the net force acting upon it and inversely proportional to its mass.
+
+    #nb_admonition(type: "equation")[
+      If:
+      - $#sym.Sigma F$ is the net force acting on an object
+      - $m$ is the mass of the object
+      - $a$ is the acceleration of the object
+
+      $ #sym.Sigma F = m a $
+    ]
 
     + *Third Law* (Action and Reaction): For every action, there is an equal and opposite reaction.
 
@@ -61,9 +68,9 @@
 
     *Interaction with the Ground*: The third law is evident in the interaction between the wheels of the drive train and the surface, which is essential for the robot's mobility.
   ],
-  [
-    #image("./understand/Newton's first law.svg")
-    #image("./understand/Newton's second law.svg")
-    #image("./understand/Newton's third law.svg")
+  cellx(align: center + horizon)[
+    #image("./understand/Newton's First law.excalidraw.svg")
+    #image("./understand/Newton's Second law.excalidraw.svg")
+    #image("./understand/Newton's Third law.excalidraw.svg")
   ],
 )

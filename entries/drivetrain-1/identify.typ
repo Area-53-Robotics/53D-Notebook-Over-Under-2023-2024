@@ -23,7 +23,7 @@
   [
     Our team spent a lot of time talking and planning the foundation of our robot: the drivetrain. The drivetrain's shape determines what other subsystems we can build in the future, making it even more critical. However, before getting into the technical aspects, we figured out how the drivetrain fits into our overall game plan, ensuring it helps us do well in the competition.
   ],
-  // [#image("/assets/identify/identify-drivetrain.svg", height: 1%)]
+  box(height: 25%)[#image("/assets/identify/identify-drivetrain.svg")]
 )
 
 #tablex(
