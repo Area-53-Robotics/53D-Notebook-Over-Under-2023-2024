@@ -1,5 +1,6 @@
 #import "./entries.typ": *
 #import "./components/components.typ": *
+#import "./globals.typ": *
 
 #let nb_toc() = {
   page(
@@ -34,7 +35,7 @@
                   #align(center + horizon)[
                     #link((page: {frontmatter_count + page_number + 2}, x: 0pt, y: 0pt))[
                       #text(fill: black)[
-                        _#h(2pt) #start_date #sym.dash.em #entry.title #h(2pt)_
+                        _#h(2pt) #start_date #sym.dash.em #info.name: #entry.title #h(2pt)_
                       ]
                     ]
                   ]

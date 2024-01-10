@@ -52,7 +52,7 @@
     - *Weight* - The hatching pattern of the wings added to the motors creates a lot of weight
   ],
   [
-    - Not reliable for this season. 
+    - Not reliable for this season
   ],
   
   cellx(align: center + horizon)[#image("./brainstorm/Motorized vertical expansion.svg")
