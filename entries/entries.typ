@@ -35,4 +35,10 @@
 #include "./management/october.typ"
 #include "./wings-1/build.typ"
 
+#include "./catapult-1/program.typ"
+#include "./catapult-1/test.typ"
+
+#include "./wings-1/program.typ"
+#include "./wings-1/test.typ"
+
 // #include "./tournament-test2.typ"
