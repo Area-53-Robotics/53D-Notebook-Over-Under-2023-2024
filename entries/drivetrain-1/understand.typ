@@ -17,27 +17,27 @@
   cellx(colspan: 2)[
     = Gear Ratio
   ],
-  [Placeholder],
+  [#image("./understand/DT stem - Gear ratio.svg")],
   [
     == What are gear ratios?
     Gear ratios provide mechanical advantage. Depending on whether the driven gear has more or fewer teeth than the driving gear, the gear ratio can result in either an increase (mechanical advantage for torque) or a decrease (mechanical advantage for speed) in rotational speed or force.
 
-    == How do gear ratios relate to the drive train?
+    == How do they relate to the drivetrain?
 
     Gear ratios are crucial for optimizing the performance of motorized systems. They are used to achieve the desired balance between speed and torque, allowing robots to move efficiently.
   ],
   cellx(colspan: 2)[
     = Structural Dynamics
   ],
-  [Placeholder],
+  [#image("./understand/Structural dynamics.svg")],
   [
     == What are structural dynamics?
 
     Determining the natural frequencies of a structure is crucial in understanding how it will respond to dynamic loads. These frequencies represent the inherent vibration characteristics of the structure.
 
-    == How do structural dynamics relate to drive train?
+    == How do they relate to to the drivetrain?
 
-    Structural dynamics helps in analyzing and understanding the vibrations induced in the components of the drive train during operation. Vibrations can be critical, affecting the performance and lifespan of various elements, such as gears, bearings, and structural members.
+    Structural dynamics helps in analyzing and understanding the vibrations induced in the components of the drive train during operation. Vibrations can be critical, affecting the performance and lifespan of various elements, such as gears, bearings, and axles.
   ],
   cellx(colspan: 2)[
     = Newton's Laws of Motion
@@ -51,7 +51,7 @@
 
     + *Third Law* (Action and Reaction): For every action, there is an equal and opposite reaction.
 
-    == How do the laws of motion relate to the drive train?
+    == How do they relate to the drivetrain?
 
     Newton's laws of motion directly influence the behavior of a drive train in the following ways:
 
@@ -61,5 +61,9 @@
 
     *Interaction with the Ground*: The third law is evident in the interaction between the wheels of the drive train and the surface, which is essential for the robot's mobility.
   ],
-  [Placeholder],
+  [
+    #image("./understand/Newton's first law.svg")
+    #image("./understand/Newton's second law.svg")
+    #image("./understand/Newton's third law.svg")
+  ],
 )

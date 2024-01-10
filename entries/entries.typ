@@ -29,5 +29,8 @@
 #include "./management/kanban-board.typ"
 #include "./catapult-1/build.typ"
 #include "./wings-1/identify.typ"
+#include "./wings-1/understand.typ"
 #include "./wings-1/brainstorm.typ"
 #include "./wings-1/select.typ"
+
+// #include "./tournament-test2.typ"

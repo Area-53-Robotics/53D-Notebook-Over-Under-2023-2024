@@ -78,6 +78,7 @@
       - Builder
       - Designer
       - Driver
+      - Join Date: 2023/08/05
     ],
     nb_member(name: "Eric Singer", picture: "./assets/members/eric.png")[
       - Grade: 9
@@ -107,12 +108,14 @@
       - First Season: Spin Up
       - Notebooker
       - Builder
+      - Leave Date: 2023/08/05
     ],
     nb_member(name: "Von Skaggs", picture: "./assets/members/von.jpg", color: gray)[
       - Grade: 10
       - First Season: Tipping Point
       - Lead Builder
       - Designer
+      - Leave Date: 2023/08/05
     ],
   )
 ]

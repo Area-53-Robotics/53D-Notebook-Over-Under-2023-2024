@@ -12,6 +12,7 @@
   monthly-schedule: "On",
   (
     (true, "Identify the design constraints and goals for the wings. (Everyone)"),
+    (true, "Determine the mathematical and scientific concepts involved in wing design (Everyone)"),
   )
 )
 
