@@ -31,7 +31,7 @@ Because basic tank drive code does not change between seasons, it did not take l
 ```
 
 #nb_admonition(type: "note")[
-  PROS #footnote([See "PROS" glossary entry]) takes joystick input from the closed interval [-127, 127], and controls motors using the same interval.
+  PROS #glossary_footnote[PROS] takes joystick input from the closed interval [-127, 127], and controls motors using the same interval.
 ]
 
 After verifying that the basic tank drive code worked as intended, we brainstormed some programming features that could help our driver drive more effectively while on the field.

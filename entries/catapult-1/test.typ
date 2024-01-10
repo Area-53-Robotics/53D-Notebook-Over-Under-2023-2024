@@ -87,4 +87,4 @@ The catapult was hitting around 5 to 6 feet. While the variance was tolerable, t
 
 
 == Conclusion
-Although we are not satisfied with the catapult's consistency, we hope to tune it better before the upcoming tournament. 
+Although we are not satisfied with the catapult's consistency, we hope to tune it better before the upcoming tournament.

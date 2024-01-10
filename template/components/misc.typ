@@ -138,5 +138,9 @@
 ]
 
 #let nb_constraint(body) = [
-  #set text(fill: red)[#underline()[#body]]
+  #set text(fill: red)[#underline[#body]]
+]
+
+#let glossary_footnote(body) = [
+  #footnote[See "#body" glossary entry]
 ]

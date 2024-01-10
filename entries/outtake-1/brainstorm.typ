@@ -33,7 +33,7 @@
     - *Consistent Trajectories* - Well-designed catapults can provide consistent trajectories for launched game elements. Consistency in launch angles and distances enhances the predictability of the robot's performance, allowing for more accurate scoring.
   ],
   [
-    - *Risk of Overturning* - Risk of over-slipping or underslipping the drive gear #footnote([See "Slip Gear" glossary entry]).
+    - *Risk of Overturning* - Risk of over-slipping or underslipping the drive gear #glossary_footnote[Slip Gear].
     - *Speed* - While some catapult designs allow for rapid successive shots, achieving a high rate of fire with precision can be challenging. Reload times, tensioning mechanisms, and consistency in launching may limit the overall rapid-fire capability.
   ],
   [
