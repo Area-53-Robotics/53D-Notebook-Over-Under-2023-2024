@@ -13,6 +13,9 @@
   (
     (true, "Identify the design constraints and goals for the intake. (Everyone)"),
     (true, "Determine the mathematical and scientific concepts involved in intake design (Everyone)"),
+    (true, "Brainstorm possible configurations for the intake. (Everyone)"),
+    (true, "Select the intake configuration using a decision matrix. (Everyone)"),
+    (true, "Create a plan for the construction of the intake using CAD. (Ajibola)"),
   )
 )
 
@@ -38,6 +41,8 @@
   [*Control* - Once the intake gathers the objects, other subsystems take over to perform specific tasks.],
   [*Handling* - The intake allows us to manipulate and handle a single triball at a time. This prevents any unpredictability of its movement.],
 )
+
+#colbreak()
 
 #tablex(
   columns: (1fr, 1fr),

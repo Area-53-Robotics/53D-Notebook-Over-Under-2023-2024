@@ -55,7 +55,7 @@
     - The wings need to be long enough to plow as much triballs as possible
   ],
   [
-    - At all points throughout the game, the robot must satisfy \<SG2>: Horizontal expansion is limited to 36”
+    - At all points throughout the game, the robot must satisfy #vex-rule[SG2]: Horizontal expansion is limited to 36”
     - Because of the angle the wings need to extend out from, leverage will be a serious problem
       - The further away the extension mechanism is away from the pivot point, the more force required to push it out
       - The wings need to be light. However, making it light will sacrifice the wing's strength. 

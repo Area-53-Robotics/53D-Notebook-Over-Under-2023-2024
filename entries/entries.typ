@@ -22,6 +22,7 @@
 #include "./drivetrain-1/build.typ"
 
 // September
+#include "./management/september.typ"
 #include "./drivetrain-1/program-driver-control.typ"
 #include "./drivetrain-1/test.typ"
 #include "./outtake-1/identify.typ"
@@ -46,5 +47,14 @@
 // October
 #include "./intake-1/identify.typ"
 #include "./intake-1/understand.typ"
+#include "./intake-1/brainstorm.typ"
+#include "./intake-1/select.typ"
+#include "./competition/area-53-scrimmage.typ"
+#include "./intake-1/build.typ"
+
+// November
+#include "./management/november.typ"
+#include "./intake-1/program.typ"
+#include "./intake-1/test.typ"
 
 // #include "./tournament-test2.typ"

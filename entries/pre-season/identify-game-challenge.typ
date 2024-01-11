@@ -83,14 +83,14 @@
 )
 
 == Robot Rules
-- \<R4> Robot must fit within an 18” x 18” x 18” volume
-- \<SG2> Horizontal expansion is limited to 36”
+- #vex-rule[R4] Robot must fit within an 18” x 18” x 18” volume
+- #vex-rule[SG2] Horizontal expansion is limited to 36”
 - There is NO limit on vertical expansion
 
 == Autonomous
-- \<SG1> Each robot must begin the match on their alliance's starting tiles that are adjacent to their alliance robot
-- \<SG9> Stay in your starting Zone during Autonomous: During the Autonomous Period, Robots may not contact foam tiles, Triballs, or Field Elements on the opposing Alliance's side of the Neutral Zone, or in the opposite Offensive Zone from which they began the Match.
-- \<SC7> Autonomous Win Point Conditions:
+- #vex-rule[SG1] Each robot must begin the match on their alliance's starting tiles that are adjacent to their alliance robot
+- #vex-rule[SG9] Stay in your starting Zone during Autonomous: During the Autonomous Period, Robots may not contact foam tiles, Triballs, or Field Elements on the opposing Alliance's side of the Neutral Zone, or in the opposite Offensive Zone from which they began the Match.
+- #vex-rule[SC7] Autonomous Win Point Conditions:
   - Removed the triball from the Alliance's Match Load Zone that coincides with their Starting Tiles
   - Scored at least one Alliance Triball in the Alliance's own Goal
   - Ended the Autonomous Period with at least one Robot contacting their own Elevation Bar
