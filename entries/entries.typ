@@ -56,5 +56,3 @@
 #include "./management/november.typ"
 #include "./intake-1/program.typ"
 #include "./intake-1/test.typ"
-
-// #include "./tournament-test2.typ"

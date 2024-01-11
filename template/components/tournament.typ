@@ -1,66 +1,197 @@
-#let nb_tournament(matches: ((
-  match: "",
-  red_alliance: (teams: ("", ""), score: 0),
-  blue_alliance: (teams: ("", ""), score: 0),
-  won: false,
-  auton: false,
-  awp: false,
-  notes: [],
-),)) = {
-  for match in matches {
-    let color = if match.won { green } else { red }
-    let cell = rect.with(fill: color.lighten(80%), width: 100%, height: 30pt)
-    let header_cell = cell.with(fill: color, height: 20pt)
-    let alliance_info(alliance: none) = {
-      cell[
-        #grid(columns: (1fr, 1fr), [
-          #alliance.teams.at(0) \
-          #alliance.teams.at(1) \
-        ], [
-          #set text(size: 15pt)
-          #set align(horizon + center)
-          #alliance.score
-        ])
-      ]
-    }
-
-    let bool_icon(input) = {
-      cell[
-        #set align(horizon + center)
-        #if input { image("/template/icons/check.svg", width: 1.5em) } else { image("/template/icons/x.svg", width: 1.5em) }
-      ]
-    }
-
-    grid(
-      columns: (1fr, 1fr, 1fr, 1fr, 1fr),
-      header_cell(radius: (top-left: 1.5pt))[*Match*],
-      header_cell[*Red Alliance*],
-      header_cell[*Blue Alliance*],
-      header_cell[*Auton Bonus*],
-      header_cell(radius: (top-right: 1.5pt))[*AWP*],
-      cell[#match.match],
-      alliance_info(alliance: match.red_alliance),
-      alliance_info(alliance: match.blue_alliance),
-      bool_icon(match.auton),
-      bool_icon(match.awp),
-    )
-
-    if not match.at("notes", default: none) == none [
-      === Notes
-
-      #match.notes
-    ] else [
-
-    ]
-  }
-}
+#import "@preview/showybox:2.0.1": *
+#import "@preview/tablex:0.0.7": *
 
 #let nb_tournament_match(
   match: "",
   red_alliance: (teams: ("", ""), score: 0),
   blue_alliance: (teams: ("", ""), score: 0),
   won: false,
-  auton: false,
+  auton: "Tie",
   awp: false,
-  notes: [],
-) = {}
+  strategy: [],
+  auton_notes: [],
+  match_notes: [],
+  subsystems: (
+    overperformed: none,
+    satisfactory: none,
+    underperformed: none,
+  )
+) = {
+  assert((auton == "Red") or (auton == "Blue") or (auton == "Tie"), message: "Invalid auton winner")
+  show: showybox.with(
+    frame:(
+      border-color: {
+        if won == true {
+          green
+        } else {
+          red
+        }
+      },
+      body-color: none,
+      thickness: (left: 4pt/*, right: 4pt, top: 4pt, bottom: 4pt*/),
+      radius: 1.5pt,
+    )
+  )
+
+  show "53D": it => underline[*#it*]
+
+  grid(
+    columns: (20%, auto),
+    rows: 1,
+    column-gutter: 5pt,
+
+    align(horizon)[
+      #grid(
+        columns: 1,
+        rows: 3,
+
+        rect(
+          radius: (top: 5pt),
+          width: 100%,
+          fill: gray,
+          stroke: black + 1pt
+        )[
+          #align(center)[
+            *#match:* 
+            #if won == true [
+              Win
+            ] else [
+              Loss
+            ]
+          ]
+        ],
+
+        rect(
+          width: 100%,
+          fill: red.lighten(20%),
+          stroke: black + 1pt
+        )[
+          #grid(
+            columns: (50%, 50%),
+            rows: 1,
+
+            [
+              #red_alliance.teams.first() \
+              #red_alliance.teams.last()
+            ],
+
+            align(center)[
+              #text(size: 16pt)[
+                #red_alliance.score
+              ]
+            ]
+          )
+        ],
+
+        rect(
+          radius: (bottom: 5pt),
+          width: 100%,
+          fill: blue.lighten(20%),
+          stroke: black + 1pt
+        )[
+          #grid(
+            columns: (50%, 50%),
+            rows: 1,
+
+            [
+              #blue_alliance.teams.first() \
+              #blue_alliance.teams.last()
+            ],
+
+            align(center)[
+              #text(size: 16pt)[
+                #blue_alliance.score
+              ]
+            ]
+          )
+        ],
+      )
+    ],
+
+    align(horizon)[
+      #grid(
+        columns: 1,
+        rows: 4,
+        row-gutter: 5pt,
+
+        rect(
+          radius: 5pt,
+          width: 100%
+        )[
+          *Strategy:* \
+          #strategy
+        ],
+
+        rect(
+          radius: 5pt,
+          width: 100%,
+          inset: 0pt
+        )[
+          #grid(
+            columns: (25%, 75%),
+            rows: 1,
+
+            rect(
+              stroke: (right: 1pt)
+            )[
+              #align(center)[
+
+                *Auton Bonus:*
+                #if auton == "Red" {
+                  text(size: 16pt, fill: red)[Red]
+                } else if auton == "Blue" {
+                  text(size: 16pt, fill: blue)[Blue]
+                } else {
+                  text(size: 16pt, fill: gray)[Tie]
+                }
+
+                #line(length: 100%)
+
+                  #grid(
+                    columns: 2,
+                    rows: 1,
+                    column-gutter: 1pt,
+
+                    [*AWP:*],
+                    [
+                      #if awp == false {
+                        image("/template/tabler-icons/square.svg", height: 2em)
+                      } else {
+                        image("/template/tabler-icons/square-check-filled.svg", height: 2em)
+                      }
+                    ]
+                  )
+              ]
+            ],
+
+            rect(
+              stroke: (left: 1pt)
+            )[
+              *Auton Notes:* \
+              #auton_notes
+            ]
+          )
+        ],
+
+        rect(
+          radius: 5pt,
+          width: 100%
+        )[
+          *Match Notes:* \
+          #match_notes
+        ],
+
+        rect(
+          radius: 5pt,
+          width: 100%
+        )[
+          *Subsystem Performance:* \
+          - Overperformed: #subsystems.overperformed \
+          - Satisfactory: #subsystems.satisfactory \
+          - Underperformed: #subsystems.underperformed
+        ],
+
+      )
+    ],
+  )
+}
