@@ -44,7 +44,7 @@
               loc => {
                   entry_page_counter.step()
 
-                if /*calc.odd(loc.page()) == */true {
+                if calc.odd(loc.page()) {
                   tablex(
                     columns: (1fr, 1fr, 1fr, 1fr, 2fr, 35pt),
                     rows: 4,
@@ -135,7 +135,7 @@
                           width: 20pt,
                         )[#counter(page).display()]
                       ]
-                    ), colspanx(4)[Attendance: #entry.attendance], (), (), (), align(center)[#entry.start_date.display("[year]/[month]/[day]")]
+                    ), cellx(colspan: 4, align: right)[Attendance: #entry.attendance], (), (), (), align(center)[#entry.start_date.display("[year]/[month]/[day]")]
                   )
                 }
               }

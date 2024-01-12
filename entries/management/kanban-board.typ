@@ -9,6 +9,8 @@
 
 #nb_todo(
   date: datetime(year: 2023, month: 9, day: 30),
+  monthly-schedule: "On",
+  yearly-schedule: "On",
   (
     (true, "Evaluate our current project workflow to identify possible improvements (Everyone)"),
     (true, "Create the gear box of the catapult (Eric, Rory, and Ishika)"),

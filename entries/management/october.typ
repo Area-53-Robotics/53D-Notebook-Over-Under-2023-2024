@@ -15,3 +15,6 @@
   )
 )
 
+With the Area 53 Scrimmage upcoming on on 2023/10/21, we need to finish the creation of the catapult and wings ASAP. We plan to speed up the engineering design process to ensure we are ready for the scrimmage.
+
+#image("./gantt-charts/october-gantt-chart.png")

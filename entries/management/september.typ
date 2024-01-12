@@ -19,5 +19,6 @@
   )
 )
 
-= ---
+As this is the first meeting of the month, we planned out the meetings for the upcoming month with a gantt chart. An important date that we have to keep in mind is that on 2023/10/21, Area 53#glossary_footnote[Area 53] will be hosting a scrimmage for us to practice using our robots in a competitive environment. Due to the upcoming time constraint, we are planning to have two design cycles in parallel during the upcoming month: the wings and the outtake.
+
 #image("./gantt-charts/september-gantt-chart.png")

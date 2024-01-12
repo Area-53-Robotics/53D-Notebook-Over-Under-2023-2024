@@ -46,6 +46,8 @@
         = 2023/10/6
         #nb_todo(
           date: datetime(year: 2023, month: 10, day: 6),
+          monthly-schedule: "On",
+          yearly-schedule: "On",
           (
             (true, "Figure out a way to mount the catapult (Makhi, Eric, and Rory)"),
             (true, "Center the catapult (Ajibola and Ishika)"),
@@ -78,6 +80,8 @@
         = 2023/10/7
         #nb_todo(
           date: datetime(year: 2023, month: 10, day: 7),
+          monthly-schedule: "On",
+          yearly-schedule: "On",
           (
             (true, "Brace the catapult (Makhi and Eric)"),
             (true, "Test the catapult (Everyone)"),

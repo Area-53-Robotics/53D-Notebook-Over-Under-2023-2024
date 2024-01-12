@@ -10,6 +10,7 @@
 #nb_todo(
   date: datetime(year: 2023, month: 10, day: 14),
   monthly-schedule: "On",
+  yearly-schedule: "On",
   (
     (true, "Identify the design constraints and goals for the intake. (Everyone)"),
     (true, "Determine the mathematical and scientific concepts involved in intake design (Everyone)"),

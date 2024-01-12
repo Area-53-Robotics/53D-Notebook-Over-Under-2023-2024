@@ -15,7 +15,7 @@
   )
 )
 
-= Field Elements #footnote[All images and diagrams are sourced from   #link("https://content.vexrobotics.com/docs/23-24/vrc-overunder/VRC-Manual-2324-1.1-Release.pdf")]
+= Field Elements #footnote[All images and diagrams are sourced from #link("https://content.vexrobotics.com/docs/23-24/vrc-overunder/VRC-Manual-2324-1.1-Release.pdf")]
 
 
 #grid(
@@ -117,3 +117,6 @@
   [Elevation - 3rd Tier], [10 Points],
   [Elevation - 4th Tier], [5 Points]
 )
+
+#colbreak()
+#colbreak()

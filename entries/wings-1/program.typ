@@ -54,7 +54,7 @@ void PneumaticWings() {
 ```
 
 To make the wings usable during driver control, we used the following code to make the wings toggleable by pressing LEFT on the controller:
-#align(center)[*53D_OverUnder/src/global.cpp*]
+#align(center)[*53D_OverUnder/src/opcontrol.cpp*]
 ```cpp
 void opcontrol() {
 	while (true) {

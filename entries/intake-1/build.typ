@@ -22,6 +22,8 @@
         = 2023/10/27
         #nb_todo(
           date: datetime(year: 2023, month: 10, day: 27),
+          monthly-schedule: "On",
+          yearly-schedule: "On",
           (
             (true, "Create the support where the intake will rest and pivot on (Makhi)"),
             (true, "Attach the axle and flex wheels (Eric & Rory)"),
@@ -55,6 +57,8 @@
         = 2023/10/28
         #nb_todo(
           date: datetime(year: 2023, month: 10, day: 6),
+          monthly-schedule: "On",
+          yearly-schedule: "On",
           (
             (true, "Re-brace the intake (Makhi, Eric, and Rory)"),
             (true, "Program the intake to be usable for driver control (Ajibola & Ishika)"),

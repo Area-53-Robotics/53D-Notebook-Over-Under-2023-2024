@@ -53,6 +53,7 @@
 #include "./competition/area-53-scrimmage.typ"
 #include "./intake-1/build.typ"
 
+/*
 // November
 #include "./management/november.typ"
 #include "./intake-1/program.typ"
@@ -61,3 +62,4 @@
 // tournaments
 #include "./competition/dulaney.typ"
 #include "./competition/hereford.typ"
+*/
