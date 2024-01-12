@@ -18,7 +18,7 @@
   )
 )
 
-We used a publicly available spreadsheet #footnote([#link("https://docs.google.com/spreadsheets/d/1RSoLv3tnpiCgFyHb0QayxK-42r9MgVRD_4QQmeFM618/edit#gid=0")]) to help us collect the data needed for each gear ratio.
+The last important factor that goes into a drivetrain is the gear ratio that is used. Gear ratios affect the torque and speed output of a subsystem, and is a critical part of drivetrain creation. We used a publicly available spreadsheet #footnote([#link("https://docs.google.com/spreadsheets/d/1RSoLv3tnpiCgFyHb0QayxK-42r9MgVRD_4QQmeFM618/edit#gid=0")]) to help us collect the data needed for each gear ratio.
 
 #nb_admonition(type: "equation")[
   $"Gear Ratio" = "# Driven Gear Teeth"/"# Driving Gear Teeth" = "Driven : Driving"$

@@ -31,12 +31,11 @@
 
 #nb_admonition(type: "select", title: "Final Selection")[
   We decided to use a 3.25 inch wheel powered by a 600 RPM motor geared with a 3:5 gear ratio.
+
+  + *Ratio* - The 3:5 Ratio contributes to a smoother motion, reduced friction, and improved torque distribution. It also offers us a versatile choice of suitable ratios and is compatible with most VEX robotics motors.
+  + *Wheel Size* - The choice of a 3.25-inch wheel offers greater maneuverability due to its smaller size. The 3.25-inch wheel also strikes a balance between greater stability and smoother motion and enhances maneuverability and acceleration. 
+  + *Motor* - A 600 RPM motor represents a deliberate compromise between speed and torque. The selection of this motor speed is likely driven by the specific requirements of the system. Higher RPM can deliver faster motion but may sacrifice torque, while lower RPM provides more torque at the expense of speed.
 ]
-
-+ *Ratio* - The 3:5 Ratio contributes to a smoother motion, reduced friction, and improved torque distribution. It also offers us a versatile choice of suitable ratios and is compatible with most VEX robotics motors.
-+ *Wheel Size* - The choice of a 3.25-inch wheel offers greater maneuverability due to its smaller size. The 3.25-inch wheel also strikes a balance between greater stability and smoother motion and enhances maneuverability and acceleration. 
-+ *Motor* - A 600 RPM motor represents a deliberate compromise between speed and torque. The selection of this motor speed is likely driven by the specific requirements of the system. Higher RPM can deliver faster motion but may sacrifice torque, while lower RPM provides more torque at the expense of speed.
-
 
 #nb_cad(
   folder: "drivetrain-1",

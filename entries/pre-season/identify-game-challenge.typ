@@ -142,3 +142,7 @@
   [Elevation - 3rd Tier], [10 Points],
   [Elevation - 4th Tier], [5 Points]
 )
+
+#nb_admonition(type: "note")[
+  We will be going on summer break hiatus until July.
+]

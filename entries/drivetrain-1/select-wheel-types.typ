@@ -7,6 +7,8 @@
   attendance: "Ajibola, Ishika, Eric, Emma",
 )
 
+Different wheel configurations can have very different purposes. To determine which wheel configuration would be best for us to use, we created an unweighted and a weighted decision matrix.
+
 #nb_matrix_criteria[
   - Speed - The maximum speed of the wheel configuration.
   - Compactness - How little space the wheel configuration takes up.
@@ -26,11 +28,15 @@
     ("Traction", 4),
     ("Ease of Programming", 2),
     ("Ease of Driving", 2),
-    ),
+  ),
   choices: (
     ("Omnis", 4, 3, 3, 3, 2, 3, 4),
     ("Traction", 2, 4, 1, 2, 4, 3, 2),
     ("Hybrid (Omnis & Traction)", 4, 3, 2, 3, 3, 3, 4),
     ("Mecanums", 2, 2, 4, 3, 2, 3, 2),
-    ),
+  ),
 )
+
+#nb_admonition(type: "select", title: "Final Selection")[
+  A hybrid wheel configuration meets the most of the criteria we identified for for the wneel configurations. Many other teams use a similar wheel configuration, so we will be able to do research on methods to build a drivetrain with it.
+]

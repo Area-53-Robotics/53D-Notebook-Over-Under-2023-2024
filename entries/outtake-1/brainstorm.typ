@@ -23,6 +23,8 @@
   )
 )
 
+Outtaking methods remain relatively consistent between seasons, so we were easily able to identify most of the pros and cons of each outtake method.
+
 #nb_pro_con(
   name: "Catapult",
   image: image("./brainstorm/Catapult outtake.svg"),

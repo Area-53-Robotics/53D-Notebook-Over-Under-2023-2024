@@ -17,6 +17,8 @@
   )
 )
 
+Now that we have chosen to use a tank drive configuration, our next step is to brainstorm different wheel types to use with it. Due to the simplicity of a tank drive, there are multiple different combinations of wheel types that we can use, depending on what our goals are.
+
 = Wheel Types
 
 #nb_pro_con(
@@ -69,7 +71,7 @@
 
 #nb_pro_con(
   name: "Tank Drive with Omnis",
-  image: image("brainstorm-wheel-types/TankDriveOmnis.excalidraw.svg", height: 12em),
+  image: image("brainstorm-wheel-types/TankDriveOmnis.excalidraw.svg", height: 14em),
   pros: [
     - *Basic Maneuverability* - Excels in basic maneuverability (forward, backward, and turns)
     - *Pivoting* - Wheels can pivot easily, putting less stress on the motors
@@ -83,7 +85,7 @@
 
 #nb_pro_con(
   name: "Tank Drive with Traction",
-  image: image("brainstorm-wheel-types/TankDriveTraction.excalidraw.svg", height: 12em),
+  image: image("brainstorm-wheel-types/TankDriveTraction.excalidraw.svg", height: 14em),
   pros: [
     - *Immovability* - Cannot be pushed from the side by other teams, making it easier to match load
     - *Force* - Generates a lot of traction, which makes it easier to push other teams
@@ -102,7 +104,7 @@
 
 #nb_pro_con(
   name: "Tank Drive w/ Omnis & Traction",
-  image: image("brainstorm-wheel-types/TankDriveOmnis+Traction.excalidraw.svg", height: 12em),
+  image: image("brainstorm-wheel-types/TankDriveOmnis+Traction.excalidraw.svg", height: 14em),
   pros: [
     - *Motor Strain* - Has a decreased strain on motors compared to full traction wheels
     - *Immovability* - More protected against pushing compared to a full omni configuration
@@ -115,7 +117,7 @@
 
 #nb_pro_con(
   name: "Tank Drive with Mecanums",
-  image: image("brainstorm-wheel-types/TankDriveMecanums.excalidraw.svg", height: 12em),
+  image: image("brainstorm-wheel-types/TankDriveMecanums.excalidraw.svg", height: 14em),
   pros: [
     - *Build Difficulty* - Relatively simple to build
     - *Lateral Movement* - Difficult to move from the side

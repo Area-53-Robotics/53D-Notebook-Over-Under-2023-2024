@@ -1,19 +1,21 @@
 #import "/template/template.typ": *
 
 #show: create_entry.with(
-  title: "Game Challenge - Strategies",
+  title: "Game Challenge - Design Strategies",
   type: "brainstorm",
   start_date: datetime(year: 2023, month: 7, day: 14),
   attendance: "Ajibola, Ishika, Eric, Emma"
 )
 
+Before beginning the construction of our robot, we wanted to take time to brainstorm different strategies for how to approach the game challenge.
+
 #nb_pro_con(
   name: "Heavy Bot",
   image: image("./brainstorm/Heavy bot.excalidraw.svg"),
   pros: [
-    - *Stability* - The heavier a bot is, the more stability it has
+    - *Stability* - Allows for more flexibility in weight distribution, which in turn allows for better stability
     - *Increased Traction* - The added weight can improve traction, allowing the robot to better grip the playing surface
-    - *Defense* - A heavier bot more easily withstand being push around
+    - *Defense* - A heavier bot can more easily withstand being push around due to having more inertia
   ],
   cons: [
     - *Power* - A heavier bot requires more power to move
@@ -51,7 +53,8 @@
     - *Weight* - A descore robot is the the lightest of the three options
   ],
   cons: [
-    *Match Specific* - The strategy of this robot heavily depends on the enemy team double zoning to enable us to descore
+    - *Match Specific* - The strategy of this robot heavily depends on the enemy team double zoning to enable us to descore
+    - *Wasted Space* - This robot sacrifices a lot of the legal 18 in#super[3] volume for a robot, which makes some tasks, such as elevation above A tier, impossible.
   ],
   notes: [
     - Having a descore bot will prevent most enemy teams from double zoning in fear of getting their triballs descored

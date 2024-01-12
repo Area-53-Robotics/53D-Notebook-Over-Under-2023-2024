@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create_entry.with(
-  title: "Game Challenge - Strategies",
+  title: "Game Challenge - Design Strategies",
   type: "select",
   start_date: datetime(year: 2023, month: 7, day: 14),
   attendance: "Ajibola, Ishika, Eric, Emma"
@@ -31,3 +31,7 @@
     ("Descore", 2, 4, 2, 4, 4, 3),
   ),
 )
+
+#nb_admonition(type: "select", title: "Final Selection")[
+  A descore-focused robot meets the most of the criteria we identified for the robot design strategy. However, as the meta evolves throughout the season, we may switch the design strategy in later design cycles.
+]
