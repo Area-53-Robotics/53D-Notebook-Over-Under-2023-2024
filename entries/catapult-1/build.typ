@@ -20,7 +20,7 @@
 
       [
         = 2023/9/30
-        Directly after the drivetrain was finished being built, we wanted to start working on the catapult as soon as possible. Thankfully, a few of the members on the team already had experience with building one. When building the drivetrain, we got held back when we weren't following the CAD design. We don't plan to make the same mistake during the catapult build session.
+        Directly after the drivetrain was finished being built, we wanted to start working on the catapult as soon as possible. Thankfully, a few of the members on the team already had experience with building one. When building the drivetrain, we got held back when we were not following the CAD design. We do not plan to make the same mistake during the catapult build session.
 
         == Build Steps
         - Gathered C-channel

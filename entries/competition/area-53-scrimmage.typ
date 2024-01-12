@@ -7,14 +7,12 @@
   attendance: "Ajibola, Ishika, Makhi, Eric, Rory"
 )
 
-#nb_todo(
-  date: datetime(year: 2023, month: 12, day: 1),
-  (
-    (true, ""),
-  )
-)
+#nb_admonition(type: "note")[
+  This "competition" is a small scrimmage with all 6 Area 53#glossary_footnote[Area 53] and one team from AHC, a local team.
+]
 
 = Competition Goals
+- Test each subsystem in a competitive environment to identify problems.
 
 = Matches
 #nb_tournament_match(
@@ -25,15 +23,15 @@
   auton: "Tie",
   awp: false,
   strategy: [
-    53E shoots from our match load zone into our offensive zone, and we score the shot triballs
+    53E shoots from our match load zone into our offensive zone, and we score the shot triballs.
   ],
   auton_notes: [
     - Nobody had a working auton
   ],
   match_notes: [
-    - The broken reverse function triggered mid round, making us incapable of driving correctly for the rest of the round
-    - We went over the barrier without communicating with 53E, double zoning might have hand an impact
-    - Our strategy failed because 53E was not able to shoot over the barrier allowing F to get scores
+    - The broken reverse function triggered mid match, making us incapable of driving correctly for the rest of the match
+    - We went over the barrier without communicating with 53E, which put us at risk of double zoning multiple times during the match
+    - Our strategy failed because 53E was not able to shoot their triballs over the barrier, so 53F scored those triballs into their goal
   ],
   subsystems: (
     overperformed: "Drivetrain, Intake",
@@ -49,13 +47,14 @@
   won: true,
   auton: "Tie",
   awp: false,
-  strategy: [We used the same strategy from the previous match. We allowed 53E to shoot triballs while we scored the shot triballs. It worked decently well],
+  strategy: [We used the same strategy from the previous match. We allowed 53E to shoot triballs while we scored the shot triballs.],
   auton_notes: [Nobody had a working auton],
   match_notes: [
   - 53E did a good job at rapid firing triballs
   - 53B attempted to block 53E but failed to get under the barrier
   - We played defense against AHC, not allowing them from scoring much triballs
-  - Wings didn't deploy
+  - The wings failed to deploy this round, we are uncertain if it is a mechanical issue or if the wings did not have enough air pressure
+  - Our strategy succeeded this round
   ],
   subsystems: (
     overperformed: "Drivetrain, Intake",
@@ -63,6 +62,7 @@
     underperformed: "Wings",
   )
 )
+
 #nb_tournament_match(
   match: "Q5",
   red_alliance: (teams: ("53D", "53C"), score: 47),
@@ -71,13 +71,12 @@
   auton: "Tie",
   awp: false,
   strategy: [
-    Our strategy was to have us on the non-goal side pushing triballs onto the goal side. 53C will delieve the triballs to our goal.
+    We play most of the match on the non-offensive zone pushing triballs onto the offensive zone. 53C will push the triballs to our goal.
 ],
   auton_notes: [Nobody had a working auton],
   match_notes: [
-- Both of our bots could not shoot
-- In the last 45 - 15 seconds one of our wires got stuck in the drivetrain, disabling us
-
+    - Both of our bots could not shoot
+    - In the last 30 seconds one of our wires got stuck in the drivetrain, disabling us
   ],
   subsystems: (
     overperformed: "Intake",
@@ -94,15 +93,15 @@
   auton: "Tie",
   awp: false,
   strategy: [
-    Our strategy was to have us in the non offensive zone pushing triballs over and AHC scoring
+    We play in the non-offensive zone pushing triballs over to the offensive zone for AHC to score
   ],
   auton_notes: [
     Nobody had a working auton
   ],
   match_notes: [
-    - During the match we took advantage of the many times the other team was double zoned to de score a lot of their triballs
-    - Our teammate wasn’t moving most of the round and we still almost won by descoring 
-
+    - During the match we took advantage of the many times the other team was double zoned to descore a lot of their triballs
+    - Our teammate was unable to move most of the round and we still almost won by descoring 
+    - Our intended strategy failed this round, but this round also shows that a descore strategy has a lot of potential
   ],
   subsystems: (
     overperformed: "Drivetrain, Intake",
@@ -119,15 +118,15 @@
   auton: "Tie",
   awp: false,
   strategy: [
-    We wanted to do the same strategy as last round. We will be in the non offensive zone, pushing triballs to our alliance
+    We wanted to do the same strategy as last round. We will be in the non-offensive zone, pushing triballs over to AHC to score into our goal.
   ],
   auton_notes: [
     Nobody had a working auton
   ],
   match_notes: [
-  - 53E's battery fell out mid match 
-  - Makhi did more pinning than would normally be allowed
-
+    - 53E's battery fell out mid match, weakening the red alliance's defenses
+    - We were too aggressive, and pinned another bot for longer than 5 seconds, violating rule #vex-rule[G16] No holding for more than a 5-count
+    - Our strategy succeeded, although most of the success could be attributed to 53E's battery falling out
   ],
   subsystems: (
     overperformed: "Drivetrain, Intake",
@@ -144,15 +143,15 @@
   auton: "Tie",
   awp: false,
   strategy: [
-    We did the same strategy as last round. Push triballs to our alliance partner as having them score for us
+    We did the same strategy as last round. Push triballs to over to AHC so that they can score the triballs into our goal.
   ],
   auton_notes: [
     Nobody had a working auton
   ],
   match_notes: [
-  - Our battery died midway through the match
-  - 3700 AHC struggled to scored as 53F played defense heavily on them
-
+    - Our battery died midway through the match
+    - AHC struggled to score as 53F played defense heavily on them
+    - Our strategy failed, but only because our battery died, not because of driver mistakes
   ],
   subsystems: (
     overperformed: "Intake",
@@ -162,15 +161,41 @@
 )
 
 
-= Scrimmage Reflection
+= Subsystem Reflection
 == Drivetrain
-Our drivetrain performed admirably throughout the scrimmage, showcasing its agility and maneuverability on the field. The robot navigated swiftly, allowing us to strategically position ourselves.
+#grid(
+  columns: 2,
+  [
+    Our drivetrain performed admirably throughout the scrimmage, showcasing its agility and maneuverability on the field. The robot navigated swiftly, allowing us to strategically position ourselves.
+  ],
+  [#image("./area-53-scrimmage/Drivetrain Performance.svg")]
+)
+
 
 == Low Catapult
-Our Catapult struggled to shoot over to the other side. This is bad because we can't fire triballs to the other side for our alliance partner. We noticed that it didn't have enough torque to sent the triballs to where we want them to be.
+#grid(
+  columns: 2,
+  [
+    Our Catapult struggled to shoot over to the other side. This is bad because we cannot fire triballs to the other side for our alliance partner. We noticed that it did not have enough torque to sent the triballs to where we want them to be.
+  ],
+  [#image("./area-53-scrimmage/Catapult Performance.svg")]
+)
 
 == Wings
-Didn't work as intended. They aren't as responsive as we liked them to be and struggled to extend.
+#grid(
+  columns: 2,
+  [
+    Did not work as intended. They were not as responsive as we wanted them to be, and as a result they struggled to extend.
+  ],
+  [#image("./area-53-scrimmage/Wings Performance.svg")]
+)
+
 
 == Rubberband Intake
-It successfully executed the ejection or placement of triballs as intended. This reliability in the outtake process played a crucial role in our team's ability to execute strategic moves and contribute points to the overall score.
+#grid(
+  columns: 2,
+  [
+    It successfully executed the ejection or placement of triballs as intended. This reliability in the outtake process played a crucial role in our team's ability to execute strategic moves and contribute points to the overall score.
+  ],
+  [#image("./area-53-scrimmage/Intake Performance.svg")]
+)

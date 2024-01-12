@@ -85,7 +85,7 @@
         )
       ],
       [
-        Unfortunately, due to time constraints, we couldn't finish creating the the left side. We planned to follow the drive configuration on sheet 4 of the Drivetrain CAD to get the exact spacing that we needed. This will ensure that the left side aligns precisely with the design specifications, maintaining consistency and accuracy in the overall structure. Overall, we wanted to spend this meeting finishing what we previously left off on last meeting.
+        Unfortunately, due to time constraints, we could not finish creating the the left side. We planned to follow the drive configuration on sheet 4 of the Drivetrain CAD to get the exact spacing that we needed. This will ensure that the left side aligns precisely with the design specifications, maintaining consistency and accuracy in the overall structure. Overall, we wanted to spend this meeting finishing what we previously left off on last meeting.
 
         == Build Steps
         - Reconstructed the framework of the drivetrain and rotated all the screws from facing inwards to outwards
@@ -132,7 +132,7 @@
       ],
 
       cellx(colspan: 2)[
-        Fortunately, we didn't ran into any major issues with our drivetrain which means this side of the drivetrain was a success. However, there was a small spacing error that we found towards the end of the meeting
+        Fortunately, we did not run into any major issues with our drivetrain which means this side of the drivetrain was a success. However, there was a small spacing error that we found towards the end of the meeting.
 
         #nb_admonition(type: "note")[Ishika was not assigned any building tasks so she could attend a programming lesson with some of the seniors about classes and header files.]
       ]

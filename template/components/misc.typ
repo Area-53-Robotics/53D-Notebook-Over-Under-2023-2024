@@ -1,4 +1,3 @@
-// I should have named  this file components.typ, can't change it now.
 #import "@preview/showybox:2.0.1": showybox
 #import "@preview/tablex:0.0.7": *
 

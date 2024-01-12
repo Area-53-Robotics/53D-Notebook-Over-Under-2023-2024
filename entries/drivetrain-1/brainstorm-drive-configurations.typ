@@ -17,7 +17,7 @@
   )
 )
 
-While most of our team was already familiar with the different types of drives, we didn't have much information on the pros and cons of each. During our research, a very helpful resource was the BLRS Wiki Page on VEX Drivetrains #footnote[#link("https://wiki.purduesigbots.com/hardware/vex-drivetrains")].
+While most of our team was already familiar with the different types of drives, we did not have much information on the pros and cons of each. During our research, a very helpful resource was the BLRS Wiki Page on VEX Drivetrains #footnote[#link("https://wiki.purduesigbots.com/hardware/vex-drivetrains")].
 
 #nb_pro_con(
   name: "Tank Drive",
@@ -28,7 +28,7 @@ While most of our team was already familiar with the different types of drives, 
     - Generates lots of force, making it easier to push other robots and triballs
   ],
   cons: [
-    - Can't strafe or drive omni-directional, limiting our mobility
+    - Cannot strafe or drive omni-directional, limiting our mobility
     - Able to be pushed sideways, making us vulnerable to offense from other teams
     - Shaky drive when not constructed well
   ],

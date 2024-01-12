@@ -4,7 +4,7 @@
   title: "Catapult #1 - Low Catapult",
   type: "test",
   start_date: datetime(year: 2023, month: 10, day: 7),
-  attendance: ""
+  attendance: "Ajibola, Ishika, Eric, Rory, Makhi"
 )
 
 To ensure that our catapult was functioning that the level that we wanted, we tested the catauplt on two of the "Purposes of an Outtake" that we identified on 2023/9/16.

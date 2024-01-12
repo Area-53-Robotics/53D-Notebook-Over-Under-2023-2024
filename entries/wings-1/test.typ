@@ -4,7 +4,7 @@
   title: "Wings #1",
   type: "test",
   start_date: datetime(year: 2023, month: 10, day: 13),
-  attendance: ""
+  attendance: "Ajibola, Ishika, Eric, Rory, Makhi"
 )
 
 To ensure that our wings are usable throughout the round, we tested the air loss of the wings as they are continuously deployed.

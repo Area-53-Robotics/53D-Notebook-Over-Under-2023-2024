@@ -13,7 +13,7 @@
   pros: [
     - *Speed* - Using pneumatics, the pressurized air allows for quick extensions
     - *Weight* - This wing design allows for light and agile designs
-    - *Energy* - Doesn't require motors to operate
+    - *Energy* - Does not require motors to operate
     - *Compactness* - The most compact of the designs we came up with
   ],
   cons: [
