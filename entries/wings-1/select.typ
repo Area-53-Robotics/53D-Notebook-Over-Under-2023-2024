@@ -7,34 +7,25 @@
   attendance: "Ajibola, Ishika, Eric, Emma"
 )
 
-#nb_todo(
-  date: datetime(year: 2023, month: 9, day: 23), 
-  monthly-schedule: "On",
-  (
-    (true, "Select the wings configuration using a decision matrix. (Everyone)"),
-    (true, "Create a plan for the construction of the wings using CAD. (Ajibola)"),
-  )
-)
-
 #nb_matrix_criteria[ 
-  - Speed -
-  - Consistency -
-  - Energy Efficiency -
-  - Strength -
+  - Speed - How fast the wings can deploy
+  - Consistency - How consistently the wings can deploy
+  - Pneumatic Efficiency - How little air it takes to deploy the wings
+  - Strength - How much pushing power the wings can exert on objects
 ]
 
 #nb_decision_matrix(
   criteria: (
-    ("Speed", 2),
+    ("Speed", 4),
     ("Consistency", 3),
-    ("Energy Efficiency", 5),
+    ("Pneumatic Efficiency", 4),
     ("Strength", 5),
-    ),
+  ),
   choices: (
     ("Horizontal Pneumatic", 4, 2, 3, 3),
     ("Horizontal Motorized", 0, 0, 0, 0),
     ("Vertical Motorized", 0, 0, 0, 0),
-    ),
+  ),
 )
 
 #nb_admonition(type: "note")[

@@ -7,14 +7,6 @@
   attendance: "Ajibola, Ishika, Eric, Makhi",
 )
 
-#nb_todo(
-  date: datetime(year: 2023, month: 9, day: 23),
-  monthly-schedule: "On",
-  (
-    (true, "Brainstorm possible configurations for the wings. (Everyone)"),
-  )
-)
-
 #nb_pro_con(
   name: "Horizontal Pneumatic",
   image: image("./brainstorm/Horizontally penumatic wings.svg"),

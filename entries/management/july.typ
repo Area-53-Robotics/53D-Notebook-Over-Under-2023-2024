@@ -9,4 +9,4 @@
 
 After planning out the season, we also took the time to plan out our work for July. We had to keep in mind that most of our members would miss some July meetings for their summer activities. Here is what we came up with:
 
-#image("/assets/management/July Over Under Gantt Chart.png")
+#image("./gantt-charts/july-gantt-chart.png")

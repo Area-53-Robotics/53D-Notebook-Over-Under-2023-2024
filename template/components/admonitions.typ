@@ -93,11 +93,10 @@
 
     #if yearly-schedule != none [
       #v(-3pt)
-      - Yearly Schedule Status: 
       #if yearly-schedule == "Ahead" [
-        #yearly-schedule of Schedule
+        - Yearly Schedule Status: #yearly-schedule of Schedule
       ] else [
-        #yearly-schedule Schedule
+        - Yearly Schedule Status: #yearly-schedule Schedule
       ]
     ]
 

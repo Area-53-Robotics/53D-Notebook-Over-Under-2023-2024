@@ -4,14 +4,22 @@
   title: "Outtake",
   type: "brainstorm",
   start_date: datetime(year: 2023, month: 9, day: 23),
-  attendance: "Ajibola, Ishika, Eric, Makhi",
+  attendance: "Ajibola, Ishika, Makhi, Eric, Rory",
 )
 
 #nb_todo(
   date: datetime(year: 2023, month: 9, day: 23),
   monthly-schedule: "On",
+  yearly-schedule: "Ahead",
   (
-    (true, "Brainstorm possible outtake mechanisms. (Everyone)"),
+    (true, "Brainstorm possible outtake mechanisms. (Ajibola, Makhi, & Ishika)"),
+    (true, "Select the best outtake mechanism using a decision matrix. (Ajibola, Makhi, & Ishika)"),
+    (true, "Brainstorm possible configurations for the catapult. (Ajibola, Makhi, & Ishika)"),
+    (true, "Select the best catapult option using a decision matrix. (Ajibola, Makhi, & Ishika)"),
+    (true, "Create a plan for the construction of the catapult using CAD. (Ajibola)"),
+    (true, "Brainstorm possible configurations for the wings. (Eric & Rory)"),
+    (true, "Select the best wings configuration using a decision matrix. (Eric & Rory)"),
+    (true, "Create a plan for the construction of the wings using CAD. (Ajibola)"),
   )
 )
 

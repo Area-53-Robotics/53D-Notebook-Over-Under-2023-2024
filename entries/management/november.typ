@@ -15,3 +15,4 @@
 )
 
 = ---
+// #image("./gantt-charts/november-gantt-chart.png")

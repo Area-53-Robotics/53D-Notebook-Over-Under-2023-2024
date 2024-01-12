@@ -3,17 +3,15 @@
 #show: create_entry.with(
   title: "October Gantt Chart",
   type: "management",
-  start_date: datetime(year: 2023, month: 9, day: 30),
+  start_date: datetime(year: 2023, month: 10, day: 7),
   attendance: "Ajibola, Ishika, Eric, Rory, Makhi"
 )
 
 
 #nb_todo(
-  date: datetime(year: 2023, month: 9, day: 30),
+  date: datetime(year: 2023, month: 10, day: 7),
   (
     (true, "Plan out the October meetings by creating a Gantt chart (Everyone)"),
-    (true, "Attach the c-channel to a hinge on the drivetrain (Ajibola, Ishika, & Makhi)"),
-    (true, "Attach the pneumatic piston (Eric & Rory)"),
   )
 )
 

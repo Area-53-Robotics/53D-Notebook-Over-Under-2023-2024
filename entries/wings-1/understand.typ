@@ -22,7 +22,8 @@
     == What is mechanical leverage?
 
     Mechanical leverage refers to the mechanical advantage gained by using a lever or a similar simple machine. It involves the use of a lever to amplify force or motion. The concept is based on the principle of torque, which is the rotational force around an axis. Leverage allows a smaller force applied at one point to create a larger force at another point, or to achieve a greater displacement. 
-
+  ],
+  cellx(colspan: 2)[
     == How does it relate to the wings?
 
     The fulcrum of the wings is the pivot point, where the wings freely move from. When you are closer to the pivot point on the wing, you generally need to apply more force to achieve the same amount of torque (rotational force). This is because torque is the product of force and the distance from the point of rotation (fulcrum). The equation for torque is:
@@ -38,6 +39,17 @@
       ]
     ]
   ],
+)
+
+#colbreak()
+
+#tablex(
+  columns: 2,
+  rows: 6,
+  auto-lines: false,
+  gutter: 5pt,
+  align: left,
+
   cellx(colspan: 2)[
     = Torque
   ],
@@ -50,8 +62,16 @@
     == How does it relate to the wings?
 
     Torque is responsible for the rotation of an object around an axis. Simply, the longer the wings, the greater the torque necessary to exert the same amount of force. 
-
   ],
+)
+
+#tablex(
+  columns: 2,
+  rows: 6,
+  auto-lines: false,
+  gutter: 5pt,
+  align: left,
+
   cellx(colspan: 2)[
     = Equilibrium
   ],

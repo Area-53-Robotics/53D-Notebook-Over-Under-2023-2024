@@ -36,17 +36,16 @@
 #include "./wings-1/brainstorm.typ"
 #include "./wings-1/select.typ"
 #include "./management/kanban-board.typ"
-#include "./management/october.typ"
 #include "./catapult-1/build.typ"
 #include "./wings-1/build.typ"
 
-#include "./catapult-1/program.typ"
-#include "./catapult-1/test.typ"
-
-#include "./wings-1/program.typ"
-#include "./wings-1/test.typ"
 
 // October
+#include "./management/october.typ"
+#include "./catapult-1/program.typ"
+#include "./catapult-1/test.typ"
+#include "./wings-1/program.typ"
+#include "./wings-1/test.typ"
 #include "./intake-1/identify.typ"
 #include "./intake-1/understand.typ"
 #include "./intake-1/brainstorm.typ"

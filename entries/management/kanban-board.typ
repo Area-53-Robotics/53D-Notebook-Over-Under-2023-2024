@@ -10,10 +10,11 @@
 #nb_todo(
   date: datetime(year: 2023, month: 9, day: 30),
   (
-    (true, "Evaluate our current project workflow and management to identify improvements that can be made. (Everyone)"),
-    (true, "Plan out the October meetings by creating a Gantt chart (Everyone)"),
+    (true, "Evaluate our current project workflow to identify possible improvements (Everyone)"),
     (true, "Create the gear box of the catapult (Eric, Rory, and Ishika)"),
     (true, "Slip the gears and tension it with rubber bands (Ajibola and Makhi)"),
+    (true, "Attach the c-channel to a hinge on the drivetrain (Ajibola, Ishika, & Makhi)"),
+    (true, "Attach the pneumatic piston to the newly attached c-channel (Eric & Rory)"),
   )
 )
 

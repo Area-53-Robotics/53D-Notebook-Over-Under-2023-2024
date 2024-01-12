@@ -20,3 +20,4 @@
 )
 
 = ---
+#image("./gantt-charts/september-gantt-chart.png")
