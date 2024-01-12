@@ -7,14 +7,6 @@
   attendance: "Ajibola, Ishika, Eric, Emma",
 )
 
-#nb_todo(
-  date: datetime(year: 2023, month: 7, day: 29),
-  (
-    (true, "Select the best gear ratio for the tank drive using a decision matrix. (Everyone)"),
-    (true, "Create a plan for the construction of the drivetrain using CAD. (Ajibola)"),
-  )
-)
-
 #nb_matrix_criteria[
   - Inches per Second - The expected speed of the drivetrain using the gear ratio.
   - RPM - The expected output RPM using the gear ratio.

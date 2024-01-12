@@ -10,6 +10,7 @@
 #nb_todo(
   date: datetime(year: 2023, month: 9, day: 16),
   monthly-schedule: "On",
+  yearly-schedule: "Ahead",
   (
     (true, "Identify the design constraints and goals for the outtake. (Everyone)"),
   )
@@ -23,7 +24,7 @@
 
     The outtake is a mechanism or system that facilitates the controlled release, expulsion, or transfer of objects from the robot to the surrounding environment.
   ],
-  box(height: 30%)[#image("/assets/identify/identify-outtake.svg")]
+  box(height: 25%)[#image("/assets/identify/identify-outtake.svg")]
 )
 
 #tablex(

@@ -9,6 +9,8 @@
 
 #nb_todo(
   date: datetime(year: 2023, month: 8, day: 5),
+  monthly-schedule: "On",
+  yearly-schedule: "On",
   (
     (true, "Plan out the August meetings by creating a Gantt chart (Everyone)"),
     (true, "Build the gear configurations for the left side of the drivetrain (Eric and Makhi)"),

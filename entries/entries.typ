@@ -23,19 +23,21 @@
 
 // September
 #include "./management/september.typ"
+#include "./drivetrain-1/build2.typ"
 #include "./drivetrain-1/program-driver-control.typ"
 #include "./drivetrain-1/test.typ"
 #include "./outtake-1/identify.typ"
-#include "./outtake-1/brainstorm.typ"
-#include "./catapult-1/brainstorm.typ"
-#include "./catapult-1/select.typ"
-#include "./management/kanban-board.typ"
-#include "./catapult-1/build.typ"
 #include "./wings-1/identify.typ"
 #include "./wings-1/understand.typ"
+#include "./outtake-1/brainstorm.typ"
+#include "./outtake-1/select.typ"
+#include "./catapult-1/brainstorm.typ"
+#include "./catapult-1/select.typ"
 #include "./wings-1/brainstorm.typ"
 #include "./wings-1/select.typ"
+#include "./management/kanban-board.typ"
 #include "./management/october.typ"
+#include "./catapult-1/build.typ"
 #include "./wings-1/build.typ"
 
 #include "./catapult-1/program.typ"
@@ -56,3 +58,7 @@
 #include "./management/november.typ"
 #include "./intake-1/program.typ"
 #include "./intake-1/test.typ"
+
+// tournaments
+#include "./competition/dulaney.typ"
+#include "./competition/hereford.typ"

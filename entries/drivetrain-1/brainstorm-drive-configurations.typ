@@ -10,8 +10,10 @@
 #nb_todo(
   date: datetime(year: 2023, month: 7, day: 21),
   monthly-schedule: "On",
+  yearly-schedule: "On",
   (
     (true, "Brainstorm possible configurations for the drivetrain. (Everyone)"),
+    (true, "Select the best configuration for the drivetrain using a decision matrix. (Everyone)"),
   )
 )
 

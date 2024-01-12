@@ -41,6 +41,7 @@
     column-gutter: 5pt,
 
     align(horizon)[
+      #set text(size: 13pt)
       #grid(
         columns: 1,
         rows: 3,
@@ -52,7 +53,7 @@
           stroke: black + 1pt
         )[
           #align(center)[
-            *#match:* 
+            *#match* \
             #if won == true [
               Win
             ] else [
@@ -76,7 +77,7 @@
             ],
 
             align(center)[
-              #text(size: 16pt)[
+              #text(size: 19pt)[
                 #red_alliance.score
               ]
             ]
@@ -99,7 +100,7 @@
             ],
 
             align(center)[
-              #text(size: 16pt)[
+              #text(size: 19pt)[
                 #blue_alliance.score
               ]
             ]
@@ -136,7 +137,7 @@
             )[
               #align(center)[
 
-                *Auton Bonus:*
+                #text(size: 13pt)[*Auton Bonus:*]
                 #if auton == "Red" {
                   text(size: 16pt, fill: red)[Red]
                 } else if auton == "Blue" {
@@ -150,9 +151,9 @@
                   #grid(
                     columns: 2,
                     rows: 1,
-                    column-gutter: 1pt,
+                    column-gutter: 2pt,
 
-                    [*AWP:*],
+                    text(size: 13pt)[*AWP:*],
                     [
                       #if awp == false {
                         image("/template/tabler-icons/square.svg", height: 2em)
@@ -167,7 +168,7 @@
             rect(
               stroke: (left: 1pt)
             )[
-              *Auton Notes:* \
+              #text(size: 13pt)[*Auton Notes:*] \
               #auton_notes
             ]
           )
@@ -177,7 +178,7 @@
           radius: 5pt,
           width: 100%
         )[
-          *Match Notes:* \
+          #text(size: 13pt)[*Match Notes:*] \
           #match_notes
         ],
 
@@ -185,7 +186,7 @@
           radius: 5pt,
           width: 100%
         )[
-          *Subsystem Performance:* \
+          #text(size: 13pt)[*Subsystem Performance:*] \
           - Overperformed: #subsystems.overperformed \
           - Satisfactory: #subsystems.satisfactory \
           - Underperformed: #subsystems.underperformed

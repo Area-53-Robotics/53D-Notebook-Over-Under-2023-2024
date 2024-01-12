@@ -10,7 +10,7 @@
 
 #nb_matrix_criteria[
   - Speed - The cycle time of the catapult option.
-  - Range - How far shots made by this capault option can go.
+  - Range - How far shots made by this catapult option can go.
   - Power - How much force the catapult generates when shooting.
   - Difficulty getting blocked - If the catapult option will be able to avoid blockers. 
   - Rapid Fire Capability - How fast the catapult can shoot when set to shoot automatically. Useful for skills runs.

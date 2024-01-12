@@ -4,13 +4,18 @@
   title: "September Gantt Chart",
   type: "management",
   start_date: datetime(year: 2023, month: 9, day: 8),
-  attendance: ""
+  attendance: "Ajibola, Ishika, Eric, Rory, Makhi"
 )
 
 #nb_todo(
   date: datetime(year: 2023, month: 9, day: 8),
+  monthly-schedule: "On",
+  yearly-schedule: "On",
   (
-    (true, ""),
+    (true, "Plan out the September meetings by creating a Gantt chart. (Everyone)"),
+    (true, "Attach the right side chassis together (Rory)"),
+    (true, "Attach the gears and wheels together (Eric)"),
+    (true, "Create the bracing for the drivetrain (Ajibola and Ishika)"),
   )
 )
 

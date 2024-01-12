@@ -14,6 +14,67 @@
   )
 )
 
+= Competition Goals
+
+= Matches
+#nb_tournament_match(
+  match: "Q1",
+  red_alliance: (teams: ("53F", "53C"), score: 55),
+  blue_alliance: (teams: ("53D", "53E"), score: 46),
+  won: false,
+  auton: "Tie",
+  awp: false,
+  strategy: [
+    53E shoots from our match load zone into our offensive zone, and we score the shot triballs
+  ],
+  auton_notes: [
+    - Nobody had a working auton
+  ],
+  match_notes: [
+    - The broken reverse function triggered mid round, making us incapable of driving correctly for the rest of the round
+    - We went over the barrier without communicating with 53E, double zoning might have hand an impact
+    - Our strategy failed because 53E was not able to shoot over the barrier allowing F to get scores
+  ],
+  subsystems: (
+    overperformed: "Drivetrain, Intake",
+    satisfactory: "Catapult",
+    underperformed: "Wings",
+  )
+)
+
+#nb_tournament_match(
+  match: "Q1",
+  red_alliance: (teams: ("53D", "Sub1"), score: 99),
+  blue_alliance: (teams: ("Sub2", "Sub3"), score: 1),
+  won: true,
+  auton: "Tie",
+  awp: true,
+  strategy: [],
+  auton_notes: [],
+  match_notes: [],
+  subsystems: (
+    overperformed: "",
+    satisfactory: "",
+    underperformed: "",
+  )
+)
+#nb_tournament_match(
+  match: "Q1",
+  red_alliance: (teams: ("53D", "Sub1"), score: 99),
+  blue_alliance: (teams: ("Sub2", "Sub3"), score: 1),
+  won: true,
+  auton: "Tie",
+  awp: true,
+  strategy: [],
+  auton_notes: [],
+  match_notes: [],
+  subsystems: (
+    overperformed: "",
+    satisfactory: "",
+    underperformed: "",
+  )
+)
+
 = Scrimmage Reflection
 == Drivetrain
 Our drivetrain performed admirably throughout the scrimmage, showcasing its agility and maneuverability on the field. The robot navigated swiftly, allowing us to strategically position ourselves.

@@ -10,8 +10,11 @@
 #nb_todo(
   date: datetime(year: 2023, month: 7, day: 28),
   monthly-schedule: "Behind",
+  yearly-schedule: "On",
   (
     (true, "Brainstorm possible gear ratios for the tank drive. (Everyone)"),
+    (true, "Select the best gear ratio for the tank drive using a decision matrix. (Everyone)"),
+    (true, "Create a plan for the construction of the drivetrain using CAD. (Ajibola)"),
   )
 )
 

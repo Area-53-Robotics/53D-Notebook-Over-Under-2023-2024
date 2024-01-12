@@ -7,14 +7,6 @@
   attendance: "Ajibola, Ishika, Eric, Emma",
 )
 
-#nb_todo(
-  date: datetime(year: 2023, month: 7, day: 22),
-  monthly-schedule: "Behind",
-  (
-    (true, "Select the best wheel configurations for the tank drive using a decision matrix. (Everyone)"),
-  )
-)
-
 #nb_matrix_criteria[
   - Speed - The maximum speed of the wheel configuration.
   - Compactness - How little space the wheel configuration takes up.

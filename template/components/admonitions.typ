@@ -48,7 +48,7 @@
   }
 
   if yearly-schedule != none {
-    if yearly-schedule != "On" and "Behind" and "Ahead" {
+    if ((yearly-schedule != "On") and (yearly-schedule != "Behind") and (yearly-schedule != "Ahead")) {
       panic("Invalid yearly schedule status")
     }
   }
@@ -92,10 +92,17 @@
     ]
 
     #if yearly-schedule != none [
-      - Yearly Schedule Status: #yearly-schedule Schedule
+      #v(-3pt)
+      - Yearly Schedule Status: 
+      #if yearly-schedule == "Ahead" [
+        #yearly-schedule of Schedule
+      ] else [
+        #yearly-schedule Schedule
+      ]
     ]
 
     #if attendance != none [
+      #v(-3pt)
       - Attendance: #attendance
     ]
   ]

@@ -6,16 +6,16 @@
 )
 
 = autonomous.cpp <autonomous.cpp>
-#raw(block: true, lang: "cpp", read("53D_Over_Under/src/autonomous.cpp"))
+#raw(block: true, lang: "cpp", read("src/autonomous.cpp"))
 
 = autonSelector.cpp <autonSelector.cpp>
-#raw(block: true, lang: "cpp", read("53D_Over_Under/src/autonSelector.cpp"))
+#raw(block: true, lang: "cpp", read("src/autonSelector.cpp"))
 
 = global.cpp <global.cpp>
-#raw(block: true, lang: "cpp", read("53D_Over_Under/src/global.cpp"))
+#raw(block: true, lang: "cpp", read("src/global.cpp"))
 
 = main.cpp <main.cpp>
-#raw(block: true, lang: "cpp", read("53D_Over_Under/src/main.cpp"))
+#raw(block: true, lang: "cpp", read("src/main.cpp"))
 
 = opcontrol.cpp <opcontrol.cpp>
-#raw(block: true, lang: "cpp", read("53D_Over_Under/src/opcontrol.cpp"))
+#raw(block: true, lang: "cpp", read("src/opcontrol.cpp"))

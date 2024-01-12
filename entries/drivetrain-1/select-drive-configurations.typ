@@ -7,14 +7,6 @@
   attendance: "Ajibola, Ishika, Eric, Emma",
 )
 
-#nb_todo(
-  date: datetime(year: 2023, month: 7, day: 21),
-  monthly-schedule: "On",
-  (
-    (true, "Select the best configuration for the drivetrain using a decision matrix. (Everyone)"),
-  )
-)
-
 #nb_matrix_criteria[
   - Speed - The maximum speed of the drivetrain configuration.
   - Turning - The smoothness of the turns made with the drivetrain configuration.
