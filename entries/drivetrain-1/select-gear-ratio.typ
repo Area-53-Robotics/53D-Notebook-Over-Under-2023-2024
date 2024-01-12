@@ -38,4 +38,8 @@
 + *Motor* - A 600 RPM motor represents a deliberate compromise between speed and torque. The selection of this motor speed is likely driven by the specific requirements of the system. Higher RPM can deliver faster motion but may sacrifice torque, while lower RPM provides more torque at the expense of speed.
 
 
-#nb_cad(folder: "drivetrain-1", sheets: 5)
+#nb_cad(
+  folder: "drivetrain-1",
+  sheets: 5,
+  add-views: ("Isometric", "Top", "Side", "Front")
+)

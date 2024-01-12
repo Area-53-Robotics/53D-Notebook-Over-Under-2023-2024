@@ -31,3 +31,9 @@
 #nb_admonition(type: "note")[
   Because of the high wattage cost, we will not evaluate horizontally motorized wings and vertically motorized wings. 
 ]
+
+#nb_cad(
+  folder: "wings-1",
+  sheets: 3,
+  add-views: ("Isometric", "Top", "Side", "Front")
+)

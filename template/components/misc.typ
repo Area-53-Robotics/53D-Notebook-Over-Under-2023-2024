@@ -129,7 +129,7 @@
   }
 }
 
-#let nb_cad(folder: "", sheets: 1) = [
+#let nb_cad(folder: "", sheets: 1, add-views: none) = [
   // put a loc on here for index
 
   #let current-sheet = 1
@@ -164,7 +164,25 @@
 
   #pagebreak()
 
-  #align(center + horizon)[THIS PAGE IS INTENTIONALLY LEFT BLANK]
+  // #align(center + horizon)[THIS PAGE IS INTENTIONALLY LEFT BLANK]
+
+  /*
+  #add-views.map(
+    c => image("/assets/cad/" + folder + "/" + str(c) + ".png")
+  )
+  */
+
+  #align(horizon)[
+
+  #grid(
+    columns: (50%, 50%),
+    rows: (50%, 50%),
+
+  ..for view in add-views {
+      (image("/assets/cad/" + folder + "/" + str(view) + ".png"),)
+    },
+  )
+  ]
 ]
 
 #let nb_constraint(body) = [

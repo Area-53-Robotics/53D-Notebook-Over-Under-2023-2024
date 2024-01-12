@@ -27,3 +27,9 @@
     ("Flywheel", 3, 2, 1, 2),
   ),
 )
+
+#nb_cad(
+  folder: "intake-1",
+  sheets: 3,
+  add-views: ("Isometric", "Top", "Side", "Front")
+)
