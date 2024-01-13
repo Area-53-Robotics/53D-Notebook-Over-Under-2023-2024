@@ -142,45 +142,46 @@
       margin: (left: 5em, bottom: 11em, right: 5em),
       background: image(path),
       header: none,
-      footer: [
-        #entry_page_counter.step()
-        
-        #align(right + bottom)[
-          #box(
-            fill: yellow,
-            outset: 5pt,
-            radius: 1.5pt,
-            height: auto,
-            width: 20pt,
-          )[#align(center + horizon)[#counter(page).display()]]
-        ]
-        #v(1em)
-      ],
+      footer: {
+        locate(
+          loc => {
+            entry_page_counter.step()
+            
+            align(
+              if calc.odd(loc.page()) {
+                right + bottom
+              } else {
+                left + bottom
+              }
+            )[
+              #box(
+                fill: yellow,
+                outset: 5pt,
+                radius: 1.5pt,
+                height: auto,
+                width: 20pt,
+              )[#align(center + horizon)[#counter(page).display()]]
+            ]
+            v(1em)
+          }
+        )
+      },
     )[]
 
     current-sheet = current-sheet + 1
   }
 
-  #pagebreak()
+  pagebreak()
 
-  // #align(center + horizon)[THIS PAGE IS INTENTIONALLY LEFT BLANK]
+  align(horizon)[
+    #grid(
+      columns: (50%, 50%),
+      rows: (50%, 50%),
 
-  /*
-  #add-views.map(
-    c => image("/assets/cad/" + folder + "/" + str(c) + ".png")
-  )
-  */
-
-  #align(horizon)[
-
-  #grid(
-    columns: (50%, 50%),
-    rows: (50%, 50%),
-
-  ..for view in add-views {
-      (image("/assets/cad/" + folder + "/" + str(view) + ".png"),)
-    },
-  )
+    ..for view in add-views {
+        (image("/assets/cad/" + folder + "/" + str(view) + ".png"),)
+      },
+    )
   ]
 ]
 
