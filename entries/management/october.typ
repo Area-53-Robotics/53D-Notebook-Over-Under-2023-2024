@@ -12,6 +12,8 @@
   date: datetime(year: 2023, month: 10, day: 7),
   (
     (true, "Plan out the October meetings by creating a Gantt chart (Everyone)"),
+    (true, "Program the catapult to be usable during driver control. (Ajibola and Ishika)"),
+    (true, "Test the catapult (Everyone)"),
   )
 )
 

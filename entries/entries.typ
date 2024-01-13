@@ -53,13 +53,14 @@
 #include "./competition/area-53-scrimmage.typ"
 #include "./intake-1/build.typ"
 
-/*
 // November
 #include "./management/november.typ"
 #include "./intake-1/program.typ"
 #include "./intake-1/test.typ"
-
-// tournaments
 #include "./competition/dulaney.typ"
-#include "./competition/hereford.typ"
-*/
+
+// Fake November
+#include "./drivetrain-2/brainstorm.typ"
+#include "./drivetrain-2/select.typ"
+#include "./kicker-1/identify.typ"
+#include "./kicker-1/brainstorm.typ"

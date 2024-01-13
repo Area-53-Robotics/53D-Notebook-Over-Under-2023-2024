@@ -57,6 +57,6 @@
   [
     - It must fit within the 18-inch cubed limit.
     - It must be able to grab and hold onto the triball's abnormal shape
-    - Height of the outtake needs to be low enough so we can cross under the elevation bar if needed. 
+    - Height of the outtake needs to be low enough so we can cross under the elevation bar if needed.
   ],
 )

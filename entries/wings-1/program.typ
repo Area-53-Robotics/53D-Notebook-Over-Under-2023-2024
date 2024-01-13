@@ -7,8 +7,18 @@
   attendance: "Ajibola, Ishika, Eric, Rory, Makhi"
 )
 
+#nb_todo(
+  date: datetime(year: 2023, month: 10, day: 13),
+  monthly-schedule: "On",
+  yearly-schedule: "On",
+  (
+    (true, "Program the wings to be usable during driver control. (Ajibola and Ishika)"),
+    (true, "Test the wings (Everyone)"),
+  )
+)
+
 = PROS Documentation
-Neither of the programmers on our team had experience programming pneumatics with PROS#glossary_footnote[PROS] V4, so we used the PROS API#footnote[https://purduesigbots.github.io/pros-doxygen-docs/classpros_1_1adi_1_1DigitalOut.html] to learn how to program them.
+Neither of the programmers on our team had experience programming pneumatics with PROS#glossary_footnote[PROS] V4, so we used the PROS API #footnote[https://purduesigbots.github.io/pros-doxygen-docs/classpros_1_1adi_1_1DigitalOut.html] to learn how to program them.
 
 Pneumatic pistons only have two states:
 - a "deactivated" state represented by the integer ```cpp 0``` or the boolean ```cpp false```

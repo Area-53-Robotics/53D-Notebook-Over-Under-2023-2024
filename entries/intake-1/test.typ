@@ -4,7 +4,7 @@
   title: "Intake #1",
   type: "test",
   start_date: datetime(year: 2023, month: 11, day: 3),
-  attendance: ""
+  attendance: "Ajibola, Ishika, Makhi, Eric, Rory"
 )
 
 To ensure that our intake was functioning that the level that we wanted, we tested the catauplt on two of the "Purposes of an Outtake" that we identified on 2023/9/16. The two that we chose to test are "Game Element Acquisition" and "Handling."
@@ -15,7 +15,7 @@ To ensure that our intake was functioning that the level that we wanted, we test
 - Controller
 - 30 Triballs
 - Notebook and pen to write down results
-
+/*
 == Procedures
 + Set the robot flat on the field against the field perimeter
 + Place a triball on the catapult and fire it
@@ -89,3 +89,4 @@ The catapult was hitting around 5 to 6 feet. While the variance was tolerable, t
 
 == Conclusion
 Although we are not satisfied with the catapult's consistency, we hope to tune it better before the upcoming tournament.
+*/
