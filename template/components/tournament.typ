@@ -18,6 +18,7 @@
   )
 ) = {
   assert((auton == "Red") or (auton == "Blue") or (auton == "Tie"), message: "Invalid auton winner")
+  
   show: showybox.with(
     frame:(
       border-color: {
@@ -129,7 +130,7 @@
           inset: 0pt
         )[
           #grid(
-            columns: (25%, 75%),
+            columns: (25%, 17%, 50%),
             rows: 1,
 
             rect(
@@ -145,23 +146,27 @@
                 } else {
                   text(size: 16pt, fill: gray)[Tie]
                 }
+              ]
+            ],
 
-                #line(length: 100%)
+            rect(
+              stroke: ( right: 1pt)
+            )[
+              #align(center)[
+                #grid(
+                  columns: 2,
+                  rows: 1,
+                  column-gutter: 2pt,
 
-                  #grid(
-                    columns: 2,
-                    rows: 1,
-                    column-gutter: 2pt,
-
-                    text(size: 13pt)[*AWP:*],
-                    [
-                      #if awp == false {
-                        image("/template/tabler-icons/square.svg", height: 2em)
-                      } else {
-                        image("/template/tabler-icons/square-check-filled.svg", height: 2em)
-                      }
-                    ]
-                  )
+                  text(size: 13pt)[*AWP:*],
+                  [
+                    #if awp == false {
+                      image("/template/tabler-icons/square.svg", height: 2em)
+                    } else {
+                      image("/template/tabler-icons/square-check-filled.svg", height: 2em)
+                    }
+                  ]
+                )
               ]
             ],
 
