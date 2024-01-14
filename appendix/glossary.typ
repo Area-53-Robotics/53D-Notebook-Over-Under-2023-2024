@@ -109,7 +109,7 @@
   title: "LVGL",
   category: "program",
   definition: [
-    An acronym for "Light and Versatile Graphics Library". It is used to create embedded GUIS into microprosessors such as the VEX brain.
+    An acronym for "Light and Versatile Graphics Library". It is used to create embedded GUIs into microprosessors such as the VEX brain.
   ],
 )
 

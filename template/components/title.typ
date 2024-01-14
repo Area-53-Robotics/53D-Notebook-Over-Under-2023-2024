@@ -1,6 +1,6 @@
 #import "../colors.typ": *
 
-#let nb_title(color: gray, beginning: none, end: none, body) = {
+#let nb_title(color: gray, beginning: none, beginning-fill: none, end: none, body) = {
   
   let highlight(color: none, body, width: auto, bottom-border-size: 0pt, bottom-color: color) = {
     box(
@@ -19,16 +19,25 @@
   set text(size: 18pt, weight: "bold")
 
   if not beginning == none {
-    box(baseline: 30%, align(left)[#beginning])
+    if beginning-fill != none {
+      highlight(color: color, bottom-border-size: 5pt, bottom-color: color)[
+        #box(baseline: -30%, beginning)
+      ]
+      h(5pt)
+    } else {
+      box(baseline: 30%, align(left)[#beginning])
+    }
     h(10pt)
   }
+
   if not end == none {
     highlight(color: color)[
       #end
     ]
     h(10pt)
   }
-    highlight(color: color.lighten(50%), width: 1fr, bottom-border-size: 5pt, bottom-color: color)[
+
+  highlight(color: color.lighten(50%), width: 1fr, bottom-border-size: 5pt, bottom-color: color)[
     #box(baseline: -30%, body)
   ]
 }

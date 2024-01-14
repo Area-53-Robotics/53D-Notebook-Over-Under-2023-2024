@@ -32,11 +32,14 @@
 
         #set page(
           header: [
-            #nb_title(color: info.color, beginning: [
-              #nb_label(label: type, size: 2.5em)
-            ], [
+            #nb_title(
+              color: info.color,
+              beginning: [
+                #nb_label(label: type, size: 2.5em)
+              ]
+            )[
               #entry.title #h(1fr)
-            ])
+            ]
           ],
 
           footer: [
@@ -185,7 +188,10 @@
           margin: (left: 5em, right: 5em),
           background: nb_side_margin_color(color: gray),
           header: [
-            #nb_title[#entry.title]
+            #nb_title(
+              beginning: [Appendix:],
+              beginning-fill: gray
+            )[#entry.title]
           ],
           footer: nb_appendix_footer()
         )
@@ -206,7 +212,11 @@
           margin: (left: 5em, right: 5em),
           background: nb_side_margin_color(color: blue),
           header: [
-            #nb_title(color: blue)[#entry.title]
+            #nb_title(
+              color: blue,
+              beginning: [Program:],
+              beginning-fill: blue
+            )[#entry.title]
           ],
           footer: nb_program_footer()
         )
