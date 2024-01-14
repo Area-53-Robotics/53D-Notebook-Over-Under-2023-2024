@@ -60,7 +60,7 @@ After the Dulaney tournament, we realized that it would be best if we started re
     - *Middle Barrier Climbing* - Since the wheels are bigger than 2.75 wheels, it will have an easier time getting over the middle barrier
   ],
   cons: [
-    - *Center of Gravity* - Having bigger wheels will result in having a higer center of gravity and lower stability
+    - *Center of Gravity* - Having bigger wheels will result in having a higher center of gravity and lower stability
   ],
   notes: [
     - Has the same output speed in  in/s as the 450 RPM drivetrain

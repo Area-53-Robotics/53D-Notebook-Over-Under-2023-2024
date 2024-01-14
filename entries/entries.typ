@@ -64,3 +64,4 @@
 #include "./drivetrain-2/select.typ"
 #include "./kicker-1/identify.typ"
 #include "./kicker-1/brainstorm.typ"
+#include "./kicker-1/select.typ"
