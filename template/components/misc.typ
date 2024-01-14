@@ -171,9 +171,9 @@
     current-sheet = current-sheet + 1
   }
 
-  pagebreak()
+  #pagebreak()
 
-  align(horizon)[
+  #align(horizon)[
     #grid(
       columns: (50%, 50%),
       rows: (50%, 50%),

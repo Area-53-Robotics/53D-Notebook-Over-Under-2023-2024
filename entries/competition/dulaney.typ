@@ -58,8 +58,8 @@
 
 #nb_tournament_match(
   match: "Q21",
-  red_alliance: (teams: ("1727B ", "18391A"), score: 94),
-  blue_alliance: (teams: ("53D ", "1893C"), score: 75),
+  red_alliance: (teams: ("1727B", "18391A"), score: 94),
+  blue_alliance: (teams: ("53D", "1893C"), score: 75),
   won: false,
   auton: "Tie",
   awp: false,
@@ -82,11 +82,11 @@
 
 #nb_tournament_match(
   match: "Q30",
-  red_alliance: (teams: ("53A ", "99009A "), score: 43),
-  blue_alliance: (teams: ("53D ", "1727D"), score: 26),
+  red_alliance: (teams: ("53A", "99009A"), score: 43),
+  blue_alliance: (teams: ("53D", "1727D"), score: 26),
   won: false,
   auton: "Red",
-  awp: true,
+  awp: false,
   strategy: [We stay on offensive side and push triballs in that they push over the barrier
 ],
   auton_notes: [- 53A's teammates won them the AWP & Bonus
@@ -106,8 +106,8 @@
 
 #nb_tournament_match(
   match: "Q39",
-  red_alliance: (teams: ("53D ", "23098B"), score: 66),
-  blue_alliance: (teams: ("7135D ", "1893X"), score: 43),
+  red_alliance: (teams: ("53D", "23098B"), score: 66),
+  blue_alliance: (teams: ("7135D", "1893X"), score: 43),
   won: true,
   auton: "Tie",
   awp: false,
@@ -130,7 +130,7 @@
 #nb_tournament_match(
   match: "Q47",
   red_alliance: (teams: ("5588H", "19391C"), score: 63),
-  blue_alliance: (teams: ("53D  ", "21146S "), score: 97),
+  blue_alliance: (teams: ("53D", "21146S"), score: 97),
   won: true,
   auton: "Blue",
   awp: false,
@@ -179,7 +179,7 @@
 )
 
 = Subsystem Reflection
-~== Drivetrain
+== Drivetrain
 === Yellow
 - The robot's drive-train exhibited a commendable level of performance, allowing for effective maneuverability on the field. Despite its overall decent functionality, the team encountered some challenges that impacted the drive-train's reliability during the competition. During the start of the match, the motors had a tendency to break, affecting the responsiveness of the drivetrain.
 

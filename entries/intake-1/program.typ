@@ -20,8 +20,8 @@
 = Intake Driver Control
 #nb_admonition(type: "identify", title: "Mini-Identify: Intake Driver Control")[
   Makhi, our driver, identified that he wants the intake to:
-  - Intake (take in a triball) when holding down R1 on the controller
-  - Outtake (release the held triball) when holding down R1 on the controller
+  - Intake (take in a triball) when holding down L1 on the controller
+  - Outtake (release the held triball) when holding down L2 on the controller
 ]
 
 First, we declared a global intake motor class to use throughout the program.
@@ -59,9 +59,8 @@ While working on the driver control version of the intake code, we were simultan
 
 ```cpp
 /*
-  Takes in one parameters:
+  Takes in one parameter:
   msec - How many milliseconds do you want the itnake to spin for
-  // isReverse - do you want the intake to spin backwards
 */
 void AutonIntake(unsigned short int msec) {
   // The intake spins forward at 200 RPM

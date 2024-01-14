@@ -167,6 +167,25 @@
   columns: 2,
   [
     Our drivetrain performed admirably throughout the scrimmage, showcasing its agility and maneuverability on the field. The robot navigated swiftly, allowing us to strategically position ourselves.
+
+    #align(center)[
+      #tablex(
+        columns: 2,
+        rows: 4,
+        align: center + horizon,
+
+        map-rows: (col, cells) => cells.map(c => {
+          if col == 0 {
+            (..c, fill: gray.lighten(20%))
+          } else {c}
+        }),
+
+        [Performance], [Matches],
+        [Overperformed], [4],
+        [Satisfactory], [1],
+        [Underperformed], [1]
+      )
+    ]
   ],
   [#image("./area-53-scrimmage/Drivetrain Performance.svg")]
 )
@@ -178,6 +197,25 @@
   columns: 2,
   [
     Our Catapult struggled to shoot over to the other side. This is bad because we cannot fire triballs to the other side for our alliance partner. We noticed that it did not have enough torque to sent the triballs to where we want them to be.
+
+    #align(center)[
+      #tablex(
+        columns: 2,
+        rows: 4,
+        align: center + horizon,
+
+        map-rows: (col, cells) => cells.map(c => {
+          if col == 0 {
+            (..c, fill: gray.lighten(20%))
+          } else {c}
+        }),
+
+        [Performance], [Matches],
+        [Overperformed], [0],
+        [Satisfactory], [6],
+        [Underperformed], [0]
+      )
+    ]
   ],
   [#image("./area-53-scrimmage/Catapult Performance.svg")]
 )
@@ -187,6 +225,25 @@
   columns: 2,
   [
     Did not work as intended. They were not as responsive as we wanted them to be, and as a result they struggled to extend.
+
+    #align(center)[
+      #tablex(
+        columns: 2,
+        rows: 4,
+        align: center + horizon,
+
+        map-rows: (col, cells) => cells.map(c => {
+          if col == 0 {
+            (..c, fill: gray.lighten(20%))
+          } else {c}
+        }),
+
+        [Performance], [Matches],
+        [Overperformed], [0],
+        [Satisfactory], [0],
+        [Underperformed], [6]
+      )
+    ]
   ],
   [#image("./area-53-scrimmage/Wings Performance.svg")]
 )
@@ -197,6 +254,25 @@
   columns: 2,
   [
     It successfully executed the ejection or placement of triballs as intended. This reliability in the outtake process played a crucial role in our team's ability to execute strategic moves and contribute points to the overall score.
+
+    #align(center)[
+      #tablex(
+        columns: 2,
+        rows: 4,
+        align: center + horizon,
+
+        map-rows: (col, cells) => cells.map(c => {
+          if col == 0 {
+            (..c, fill: gray.lighten(20%))
+          } else {c}
+        }),
+
+        [Performance], [Matches],
+        [Overperformed], [6],
+        [Satisfactory], [0],
+        [Underperformed], [0]
+      )
+    ]
   ],
   [#image("./area-53-scrimmage/Intake Performance.svg")]
 )

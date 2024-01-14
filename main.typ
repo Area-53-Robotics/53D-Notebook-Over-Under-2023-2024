@@ -7,8 +7,10 @@
 #show: notebook.with(
   team: "53D",
   organization: "Area 53",
+  count: (current: 1, total: 2),
   cover: "/assets/logos/logo.png",
-  season: "Over Under 2023 - 2024",
+  year: "2023 - 2024",
+  season: "Over Under",
   about: [
     #include "about.typ"
   ],

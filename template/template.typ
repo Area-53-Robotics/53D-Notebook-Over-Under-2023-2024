@@ -20,7 +20,9 @@
 #let notebook(
   team: "",
   organization: "",
+  count: (current: 1, total: 1),
   cover: "",
+  year: "",
   season: "",
   about: [],
   intro: [],
@@ -34,7 +36,7 @@
   set footnote.entry(separator: none)
 
   show image: it => [
-    #align(center)[
+    #align(center)[ 
       #set text(font: "Virgil 3 YOFF")
       #it
     ]
@@ -59,20 +61,21 @@
   show heading: it => nb_heading(it)
 
   // Content
-  align(center, [
+  align(center)[
     // Title Page
     #set text(size: 24pt, font: "Orbitron")
       #text(size: 28pt)[
-        53D Engineering Notebook
+        #team Engineering Notebook \
+        #count.current of #count.total
       ]
 
       #image(cover, height: 70%)
 
-      2023 - 2024 \
+      #year \
       VEX Robotics Challenge \
       // #line(length: 50%, stroke: (thickness: 2.5pt, cap: "round"))
-      Over Under
-  ])
+      #season
+  ]
 
   pagebreak()
   pagebreak()
