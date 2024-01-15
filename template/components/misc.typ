@@ -1,7 +1,7 @@
 #import "@preview/showybox:2.0.1": showybox
 #import "@preview/tablex:0.0.7": *
 
-#import "../globals.typ": frontmatter_page_counter, entry_page_counter, appendix_page_counter
+#import "../globals.typ": frontmatter_page_counter, entry_page_counter, appendix_page_counter, entries
 #import "../colors.typ": *
 #import "../icons/icons.typ": *
 #import "./admonitions.typ": *
@@ -53,14 +53,14 @@
 
 // My Functions
 
-#let nb_pro_con(name: none, image: [], pros: [], cons: [], notes: []) = [
+#let nb_pro_con(name: none, image: [], image-width: 40%, pros: [], cons: [], notes: []) = [
   #assert(name != none, message: "No name given")
   #assert(pros != [], message: "No pros recorded")
   #assert(cons != [], message: "No cons recorded")
 
   #if notes != [] {
     tablex(
-      columns: (40%, 1fr, 1fr),
+      columns: (image-width, 1fr, 1fr),
       rows: 4,
       align: left + top,
 
@@ -198,3 +198,64 @@
     *<#body>*
   ]
 ]
+
+#let nb_entry_reference(
+  date: none,
+  type: none,
+  title: none,
+  body: [entry on],
+) = {
+  locate(
+    loc => {
+
+      let valid_entries = entries.final(loc).enumerate()
+
+      if date != none {
+        valid_entries = valid_entries.filter(
+          entry => {
+            entry.last().start_date.display("[year]/[month]/[day]").match(date.display("[year]/[month]/[day]")) != none
+          }
+        )
+      }
+
+      if type != none {
+        valid_entries = valid_entries.filter(
+          entry => {
+            entry.last().type.match(type) != none
+          }
+        )
+      }
+
+      if title != none {
+        valid_entries = valid_entries.filter(
+          entry => {
+            entry.last().title.match(title) != none
+          }
+        )
+      }
+
+      assert(valid_entries.len() > 0, message: "No entries meet the given attributes")
+      assert(valid_entries.len() <= 1, message: "More than one entry meet the given attributes")
+
+      let entry = valid_entries.first()
+      let info = type_metadata.at(entry.last().type)
+      let page = counter(page).at(query(selector(<nb_entry>), loc).at(entry.first()).location()).at(0)
+
+      [
+        #box(baseline: 0.15em)[
+          #box(baseline: 15%, nb_label(label: entry.last().type, size: 1em))
+          #h(1pt)
+          #box(fill: info.color.lighten(30%), radius: 1pt, height: 1em, baseline: 15%)[
+            #align(center + horizon)[
+              #link((page: {frontmatter_page_counter.final(loc).at(0) + page + 2}, x: 0pt, y: 0pt))[
+                #text(fill: black)[
+                  _#h(2pt) #entry.last().start_date.display("[year]/[month]/[day]") #sym.dash.em #info.name: #entry.last().title #h(2pt)_
+                ]
+              ]
+            ]
+          ]
+        ] #body pg. #page #h(-0.2em)
+      ]
+    }
+  )
+}
