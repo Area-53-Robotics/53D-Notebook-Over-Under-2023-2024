@@ -259,3 +259,56 @@
     }
   )
 }
+
+#let nb_gantt_chart_key(
+  intended_color: color.rgb(207,226,243,255),
+  is-vertical: false
+) = {
+  align(center)[
+    #if is-vertical == false {
+      tablex(
+        columns: 4,
+        rows: 2,
+        align: center + horizon,
+
+        fill: (col, row) => {
+          if row == 1 {
+            if col == 0 {intended_color}
+            else if col == 1 {color.rgb(204,0,0,255)}
+            else if col == 2 {color.rgb(241,194,50,255)}
+            else if col == 3 {color.rgb(106,168,79,255)}
+            else {white}
+          }
+        },
+
+        cellx(colspan: 4)[Key],
+        [Intended Schedule],
+        [Behind Schedule],
+        [On Schedule],
+        [Ahead of Schedule],
+      )
+    } else {
+      tablex(
+        columns: 2,
+        rows: 3,
+        align: center + horizon,
+
+        fill: (col, row) => {
+          if col == 1 {
+            if row == 1 {intended_color}
+            else if row == 2 {color.rgb(204,0,0,255)}
+            else if row == 3 {color.rgb(241,194,50,255)}
+            else if row == 4 {color.rgb(106,168,79,255)}
+            else {white}
+          }
+        },
+
+        cellx(colspan: 2)[Key],
+        [Intended Schedule], [],
+        [Behind Schedule], [],
+        [On Schedule], [],
+        [Ahead of Schedule], [],
+      )
+    }
+  ]
+}

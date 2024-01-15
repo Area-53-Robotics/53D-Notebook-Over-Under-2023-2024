@@ -61,8 +61,8 @@
           yearly-schedule: "On",
           (
             (true, "Re-brace the intake (Makhi, Eric, and Rory)"),
-            (true, "Program the intake to be usable for driver control (Ajibola & Ishika)"),
-            (true, "Test the intake (Everyone)"),
+            (false, "Program the intake to be usable for driver control (Ajibola & Ishika)"),
+            (false, "Test the intake (Everyone)"),
           )
         )
       ],

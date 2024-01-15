@@ -30,7 +30,7 @@ Another thing we had to keep in mind was that all of Area 53 are planning to att
 
 Because we are attending the Signature Events, Area 53 does not plan to send any teams to the U.S. Open. This means that the Over Under season will end for 53D after the States Competition if we do not qualify for Worlds. The States Competition is on March 1st, so our bot must be completed before then. Here is the completed gantt chart:
 
-#image("./gantt-charts/over-under-gantt-chart.png")
+#image("./gantt-charts/over-under-season-gantt-chart.png")
 
 /*
 #nb_admonition(type: "note")[

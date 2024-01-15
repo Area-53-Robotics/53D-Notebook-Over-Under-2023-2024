@@ -21,6 +21,7 @@ void opcontrol() {
 		SetDriveMotors();
 
 		if(Controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_A)) DirectionToggle();
+    	// When LEFT is pressed on the controller, the PneumaticWings() function is called, opening/closing the wings
 		if(Controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_LEFT)) PneumaticWings();
 
 		if(Controller.get_digital(pros::E_CONTROLLER_DIGITAL_L1)) IntakeMotor.move(127);

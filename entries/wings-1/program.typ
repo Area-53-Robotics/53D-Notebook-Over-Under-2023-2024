@@ -68,9 +68,10 @@ To make the wings usable during driver control, we used the following code to ma
 ```cpp
 void opcontrol() {
 	while (true) {
-		SetDriveMotors();
+		// ... non-relevant prior lines of code excluded
 
-		if(Controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_A)) DirectionToggle();
+    // When LEFT is pressed on the controller, the PneumaticWings() function is called, opening/closing the wings
+		if(Controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_LEFT)) PneumaticWings();
 
 		// Creates a 20 millisecond delay between each loop of the driver control code to prevent the starving of PROS kernel resources
 		pros::delay(20);
