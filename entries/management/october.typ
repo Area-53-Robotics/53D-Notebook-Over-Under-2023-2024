@@ -20,7 +20,7 @@
 
 = September Management Evaluation
 #image("./gantt-charts/september-post-gantt-chart.png")
-We were able to save time last month by getting ahead on the construcion of the wings and catapult.
+We were able to save time last month by getting ahead on the construction of the wings and catapult.
 
 = October Gantt Chart
 With the Area 53 Scrimmage upcoming on on 2023/10/21, we need to finish the creation of the catapult and wings ASAP. We plan to speed up the engineering design process for these subsystems to ensure we are ready for the scrimmage.

@@ -7,32 +7,38 @@
   attendance: "Ajibola, Ishika, Makhi, Eric, Rory"
 )
 
-To ensure that our intake was functioning that the level that we wanted, we tested the catauplt on two of the "Purposes of an Outtake" that we identified on 2023/9/16. The two that we chose to test are "Game Element Acquisition" and "Handling."
+To ensure that our intake was functioning that the level that we wanted, we tested the catapult on two of the "Purposes of an Outtake" that we identified in our #nb_entry_reference(date: datetime(year: 2023, month: 9, day: 16), type: "identify"). The two that we chose to test are "Game Element Acquisition" and "Handling."
 
-= Stationary Intake Reliability Test (Game Element Acquisition)
-== Materials
-- Robot
-- Controller
-- 30 Triballs
-- Notebook and pen to write down results
-/*
-== Procedures
-+ Set the robot flat on the field against the field perimeter
-+ Place a triball on the catapult and fire it
-+ After the triball has finished moving, measure the distance of the triball from the center of the robot
-+ Repeat steps 2-3 for a total of 5 trials
+= Intake Reliability Test (Game Element Acquisition)
+
+#v(1em)
+
+#grid(
+  columns: 2,
+  rows: 1,
+  column-gutter: 1em,
+
+  [
+    == Materials
+    - Robot
+    - Controller
+    - 30 Triballs
+    - Notebook and pen to write down results
+  ],
+
+  [
+    == Procedures
+    + Set the robot flat on the field with the back (non-intake side) against the field perimeter
+    + Place a triball 4 inches in front of the robot
+    + Drive the robot forward while attempting to intake the triball
+    + Repeat step 3 until the triball has successfully been intook
+    + Write down how many attempts it took to complete step 3
+    + Remove the triball from the intake
+    + Repeat steps 1-6 with a different triball for a total of 30 trials
+  ],
+)
 
 == Results
-#align(center)[
-  #tablex(
-    columns: 6,
-    rows: 2,
-
-    cellx(fill: gray.lighten(20%))[Trial \#], [Trial 1], [Trial 2], [Trial 3], [Trial 4], [Trial 5],
-    cellx(fill: gray.lighten(20%))[Distance (ft)], [5.62], [4.93], [5.34], [5.56], [5.65],
-  )
-]
-
 #gridx(
   columns: 2,
   align: center + horizon,
@@ -40,53 +46,87 @@ To ensure that our intake was functioning that the level that we wanted, we test
   [
     #tablex(
       columns: 2,
+      rows: 3,
       align: center + horizon,
 
-      cellx(fill: gray.lighten(20%), colspan: 2)[Statistics],
-      [Average], [5.42],
-      [Range], [0.72],
-      [Variance], [	0.059833333333333],
-      [Standard Deviation], [0.2446085307861],
+      fill: (col, row) => {
+        if col == 0 {
+          gray.lighten(20%)
+        } else {
+          white
+        }
+      },
+
+      [1 Attempt Needed], [17],
+      [2 Attempts Needed], [8],
+      [3 Attempts Needed], [5],
     )
   ],
 
-  // [#image("./test/Triball Distance from Robot.svg")]
+  [#image("./test/Intake Reliability Performance.svg")]
 )
 
 == Conclusion
-The catapult was hitting around 5 to 6 feet. While the variance was tolerable, the middle bar is 6 feet away from the sides of the field perimeter that are perpendicular to it. We are not sure if the catapult will be enough to consistency hit triballs over the middle barrier.
+We are a bit unhappy with the consistency and reliability of our intake. While the intake did succeed, we want it to take the least attempts possible to intake so that we can save time during matches. We hope to tune the intake better after the next tournament.
 
 #colbreak()
 
-= Amount of Triballs Over the Middle Barrier (Manipulation)
-== Materials
-- Robot
-- 30 Triballs
-- Notebook and pen to record data
+= Release Test (Handling)
 
-== Procedures
-+ Set the robot flat on the field against the field perimeter
-+ Place a triball on the catapult and fire it
-+ After the triball has finished moving, note down whether the triball crossed the barrier or not
-+ Remove the triball from the field
-+ Repeat steps 2-4 for a total of 30 trials
+#v(1em)
+
+#grid(
+  columns: 2,
+  rows: 1,
+  column-gutter: 1em,
+
+  [
+    == Materials
+    - Robot
+    - Controller
+    - 30 Triballs
+    - Notebook and pen to write down results
+  ],
+
+  [
+    == Procedures
+    + Clear the goal of all triballs
+    + Set the robot flat on the field 6 inches away from the goal with the front (intake side) facing the goal
+    + Place a triball inside of the intake
+    + Drive the robot towards the goal
+    + Attempt to relese the triball into the goal
+    + Repeat step 5 until the triball has successfully been released
+    + Write down how many attempts it took to complete step 5
+    + Repeat steps 1-7 with a different triball for a total of 30 trials
+  ],
+)
 
 == Results
+#gridx(
+  columns: 2,
+  align: center + horizon,
 
-#align(center)[
-  #tablex(
-    columns: 2,
-    align: center + horizon,
+  [
+    #tablex(
+      columns: 2,
+      rows: 2,
+      align: center + horizon,
 
-    cellx(fill: gray.lighten(20%))[\# Succeeded], cellx(fill: gray.lighten(20%))[\# Failed],
-    [23], [7]
-  )
-]
+      fill: (col, row) => {
+        if col == 0 {
+          gray.lighten(20%)
+        } else {
+          white
+        }
+      },
 
+      [1 Attempt Needed], [27],
+      [2 Attempts Needed], [3],
+    )
+  ],
 
-// #image("./test/Count of Triballs Crossing the Middle Barrier.svg", height: 30%)
-
+  [#image("./test/Intake Release Performance.svg")]
+)
 
 == Conclusion
-Although we are not satisfied with the catapult's consistency, we hope to tune it better before the upcoming tournament.
-*/
+We are very satisfied with how reliable the intake is at releasing the triballs into the net. This skill is especially crucial for our robot because we are a descore robot, so we lack other functionalities that other teams will have such as elevation.

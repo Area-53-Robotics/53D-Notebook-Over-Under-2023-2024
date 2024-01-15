@@ -17,7 +17,7 @@
 = Competition Goals
 - Evaluate other Maryland robots to identify what is succeeding and what is failing
 - Make it to the elimination rounds
-- Acheive a win rate of at least 50%
+- Achieve a win rate of at least 50%
 
 = Matches
 #nb_tournament_match(
@@ -66,7 +66,7 @@
 )
 
 #nb_admonition(type: "note")[
-  We could not get the catauplt to work due to gear slippage, so we decided to disable it for the rest of the tournament and focus on fixing the intake and wings.
+  We could not get the catapult to work due to gear slippage, so we decided to disable it for the rest of the tournament and focus on fixing the intake and wings.
 ]
 
 #nb_tournament_match(

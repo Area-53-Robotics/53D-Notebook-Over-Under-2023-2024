@@ -7,7 +7,7 @@
   attendance: "Ajibola, Ishika, Eric, Rory, Makhi"
 )
 
-To ensure that our catapult was functioning that the level that we wanted, we tested the catauplt on two of the "Purposes of an Outtake" that we identified on 2023/9/16.
+To ensure that our catapult was functioning that the level that we wanted, we tested the catapult on two of the "Purposes of an Outtake" that we identified on 2023/9/16.
 
 = Triball Distance from Robot (Scoring)
 == Materials
