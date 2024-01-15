@@ -176,7 +176,7 @@
 
         map-rows: (col, cells) => cells.map(c => {
           if col == 0 {
-            (..c, fill: gray.lighten(20%))
+            (..c, fill: gray.lighten(20%), content: [*#c.content*])
           } else {c}
         }),
 
@@ -206,7 +206,7 @@
 
         map-rows: (col, cells) => cells.map(c => {
           if col == 0 {
-            (..c, fill: gray.lighten(20%))
+            (..c, fill: gray.lighten(20%), content: [*#c.content*])
           } else {c}
         }),
 
@@ -234,7 +234,7 @@
 
         map-rows: (col, cells) => cells.map(c => {
           if col == 0 {
-            (..c, fill: gray.lighten(20%))
+            (..c, fill: gray.lighten(20%), content: [*#c.content*])
           } else {c}
         }),
 
@@ -263,7 +263,7 @@
 
         map-rows: (col, cells) => cells.map(c => {
           if col == 0 {
-            (..c, fill: gray.lighten(20%))
+            (..c, fill: gray.lighten(20%), content: [*#c.content*])
           } else {c}
         }),
 

@@ -57,7 +57,7 @@
 #include "./management/november.typ"
 #include "./intake-1/program.typ"
 #include "./intake-1/test.typ"
-#include "./competition/dulaney.typ"
+#include "./competition/dulaney-royal-rumble.typ"
 
 // Fake November
 #include "./drivetrain-2/brainstorm.typ"

@@ -18,6 +18,7 @@
   )
 ) = {
   assert((auton == "Red") or (auton == "Blue") or (auton == "Tie"), message: "Invalid auton winner")
+
   
   show: showybox.with(
     frame:(
@@ -111,6 +112,11 @@
     ],
 
     align(horizon)[
+      #show red_alliance.teams.first(): it => text(red.lighten(20%))[#it]
+      #show red_alliance.teams.last(): it => text(red.lighten(20%))[#it]
+      #show blue_alliance.teams.last(): it => text(blue.lighten(20%))[#it]
+      #show blue_alliance.teams.last(): it => text(blue.lighten(20%))[#it]
+
       #grid(
         columns: 1,
         rows: 4,

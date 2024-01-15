@@ -26,7 +26,7 @@
       cellx(colspan: 2)[
         == Build Steps
         - Gathered and cut 25 holes C-channel
-          - *Reason:* We want to make this drive-train as short as possible. Having a longer drivetrain means less agile in tight spaces.
+          - *Reason:* We want to make this drivetrain as short as possible. Having a longer drivetrain means less agile in tight spaces.
         - Examined spacing of wheel to gear distance
         - Examined spacing of wheels and gears
       ],

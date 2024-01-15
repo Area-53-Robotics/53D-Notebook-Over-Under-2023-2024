@@ -13,8 +13,8 @@
 = Matches
 #nb_tournament_match(
   match: "Q1",
-  red_alliance: (teams: ("9290A ", "9080H"), score: 124),
-  blue_alliance: (teams: ("53D ", "1727K"), score: 45),
+  red_alliance: (teams: ("9290A", "9080H"), score: 124),
+  blue_alliance: (teams: ("53D", "1727K"), score: 45),
   won: false,
   auton: "Red",
   awp: false,
@@ -35,7 +35,7 @@
 
 #nb_tournament_match(
   match: "Q19",
-  red_alliance: (teams: ("934Z ", "53D"), score: 21),
+  red_alliance: (teams: ("934Z", "53D"), score: 21),
   blue_alliance: (teams: ("1893P ", "53C"), score: 107),
   won: false,
   auton: "Blue",
@@ -58,7 +58,7 @@
 
 #nb_tournament_match(
   match: "Q28",
-  red_alliance: (teams: ("53E ", "960Z"), score: 59),
+  red_alliance: (teams: ("53E", "960Z"), score: 59),
   blue_alliance: (teams: ("53D", "9080C"), score: 122),
   won: true,
   auton: "Red",
@@ -80,8 +80,8 @@
 
 #nb_tournament_match(
   match: "Q41",
-  red_alliance: (teams: ("53D ", "9290B"), score: 142),
-  blue_alliance: (teams: ("1893J ", "1893X"), score: 79),
+  red_alliance: (teams: ("53D", "9290B"), score: 142),
+  blue_alliance: (teams: ("1893J", "1893X"), score: 79),
   won: true,
   auton: "Blue",
   awp: false,
@@ -104,8 +104,8 @@
 
 #nb_tournament_match(
   match: "Q49",
-  red_alliance: (teams: ("53D ", "5588B"), score: 79),
-  blue_alliance: (teams: ("929N ", "9290D"), score: 102),
+  red_alliance: (teams: ("53D", "5588B"), score: 79),
+  blue_alliance: (teams: ("929N", "9290D"), score: 102),
   won: false,
   auton: "Red",
   awp: false,
@@ -116,9 +116,8 @@
   ],
   match_notes: [
     - 929N had a very consistent launching mechanism  
-- 9290D pushed us around while we tried to match. Regardless, we did managed to shoot majority of the triballs
-- Our teammate got jammed and did not elevate. Instead, the other alliance managed to make an A level elevation  
-
+    - 9290D pushed us around while we tried to match. Regardless, we did managed to shoot majority of the triballs
+    - Our teammate got jammed and did not elevate. Instead, the other alliance managed to make an A level elevation
   ],
   subsystems: (
     overperformed: "Catapult, Intake",
@@ -129,8 +128,8 @@
 
 #nb_tournament_match(
   match: "Q59",
-  red_alliance: (teams: ("7135B ", "82856A"), score: 77),
-  blue_alliance: (teams: ("53D ", "7135E"), score: 39),
+  red_alliance: (teams: ("7135B", "82856A"), score: 77),
+  blue_alliance: (teams: ("53D", "7135E"), score: 39),
   won: false,
   auton: "Tie",
   awp: false,
@@ -150,7 +149,6 @@
     underperformed: "Drivetrain",
   )
 )
-
 
 = Subsystem Reflection
 == Drivetrain
@@ -194,4 +192,4 @@
 
 == Eric
 - While our driving exhibited excellence, particularly in effective descoring maneuvers, our subsystems revealed areas that require improvement and thorough testing. The catapult, in particular, posed a challenge as it operated at a slower pace compared to other teams and exhibited inconsistency. It's evident that additional testing is imperative before the next tournament to address these issues and ensure optimal performance.
-- I suggest we should rebuild the drive-train that isn’t focus on descoring
+- I suggest we should rebuild the drivetrain that isn’t focus on descoring
