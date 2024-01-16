@@ -45,7 +45,7 @@
 #include "./catapult-1/program.typ"
 #include "./catapult-1/test.typ"
 #include "./wings-1/program.typ"
-#include "./wings-1/test.typ"
+#include "./wings-1/test-1.typ"
 #include "./intake-1/identify.typ"
 #include "./intake-1/understand.typ"
 #include "./intake-1/brainstorm.typ"
@@ -58,13 +58,15 @@
 #include "./intake-1/program.typ"
 #include "./intake-1/test.typ"
 #include "./competition/dulaney-royal-rumble.typ"
-#include "./catapult-1/build2.typ"
+#include "./catapult-2/build-1.typ"
 
 #include "./wedges-1/build.typ"
 // -- insert wedge entries
 
-#include "./catapult-1/build3.typ"
+#include "./catapult-2/build-2.typ"
 #include "./wings-1/build2.typ"
+#include "./catapult-2/test.typ"
+#include "./wings-1/test-2.typ"
 
 /*
 #include "./drivetrain-2/brainstorm.typ"

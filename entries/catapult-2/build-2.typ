@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create_entry.with(
-  title: "Catapult #1 - Improvements",
+  title: "Catapult #2 - Catapult #1 Improvements",
   type: "build",
   start_date: datetime(year: 2023, month: 11, day: 17),
   end_date: none,
@@ -29,7 +29,7 @@
         )
       )
     ],
-    [#image("./build2/11-17.png")],
+    [#image("./build/11-17.png")],
     [
       After the previous meeting, we found that lowering the catapult base came with some problems. One problem is the chain that we used for the catapult began to slip. We hope to complete the catapult and solve these issues in order to start working on the other subsystems.
 

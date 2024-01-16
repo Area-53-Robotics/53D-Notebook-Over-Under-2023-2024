@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create_entry.with(
-  title: "Catapult #1 - Improvements",
+  title: "Catapult #2 - Catapult #1 Improvements",
   type: "build",
   start_date: datetime(year: 2023, month: 11, day: 10),
   end_date: none,
@@ -51,6 +51,6 @@ We don't plan on making any major rebuilds until the winter break in December. R
             - This failed because electronics such as the brain prevent us from lowering the catapult base as far as we need
           - #text(green)[Solution:] Create a ramp that helps triballs travel to the catapult.
     ],
-    [#image("./build2/11-10.png", height: 100%)],
+    [#image("./build/11-10.png", height: 100%)],
   ),
 )
