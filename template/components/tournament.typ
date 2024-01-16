@@ -136,7 +136,7 @@
           inset: 0pt
         )[
           #grid(
-            columns: (25%, 17%, 50%),
+            columns: (25%, 17%, 58%),
             rows: 1,
 
             rect(
@@ -156,7 +156,7 @@
             ],
 
             rect(
-              stroke: ( right: 1pt)
+              stroke: (right: 1pt)
             )[
               #align(center)[
                 #grid(
@@ -177,7 +177,8 @@
             ],
 
             rect(
-              stroke: (left: 1pt)
+              stroke: (left: 1pt),
+              width: 100%
             )[
               #text(size: 13pt)[*Auton Notes:*] \
               #auton_notes

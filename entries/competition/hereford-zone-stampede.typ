@@ -7,6 +7,13 @@
   attendance: "Ajibola, Ishika, Makhi, Eric, Rory"
 )
 
+#nb_admonition(type: "competition", title: "Competition Results")[
+  - *Rank:* 32/42
+  - *Qualification Matches Wins/Losses/Ties:* 2/4/0
+  // - *Overall Wins/Losses/Ties:* 2/4/0
+  - *Eliminated in:* N/A
+]
+
 = Competition Goals
 - Qualify for the elimination matches
 
@@ -18,13 +25,16 @@
   won: false,
   auton: "Red",
   awp: false,
-  strategy: [Our ally match loads and shoots while we push them into our goal, if they get blocked, we'll double sone and use either our wedge or catapult to move triballs into our offensive zone because neither of their opponents can descore],
-  auton_notes: [- We lost because our bot was touching the triball at the end of the auton, not making it count
-],
+  strategy: [
+    Our ally 1727K match loads and shoots triballs into our offensive zone while we push them into our goal. If they get blocked by the red alliance, we'll double zone and use either our wedge or catapult to move triballs into our offensive zone. We do not have to worry about getting our triballs descored because neither of the red alliance teams can descore.
+  ],
+  auton_notes: [
+    - Our robot was touching the triball that we pushed at the end of the auton, so it was not counted
+      - This caused us to lose auton
+  ],
   match_notes: [
     - Our drivetrain stopped working because a screw got caught in the right drive
-- Our alliance partners bot didn't work because they ran the wrong code
-
+    - Our alliance partners' (1727K) robot didn't work because they ran the wrong program
   ],
   subsystems: (
     overperformed: "Intake",
@@ -36,18 +46,20 @@
 #nb_tournament_match(
   match: "Q19",
   red_alliance: (teams: ("934Z", "53D"), score: 21),
-  blue_alliance: (teams: ("1893P ", "53C"), score: 107),
+  blue_alliance: (teams: ("1893P", "53C"), score: 107),
   won: false,
   auton: "Blue",
   awp: false,
-  strategy: [They're gonna match load and shoot onto our offensive zone, while we push. Our ally partner can elevate to A tier, which matches C's ability to elevate to A tier
+  strategy: [
+    934Z match loads and shoots triballs onto our offensive zone, while we push them into our goal. 934Z can elevate to A tier, which should cancel out 53C's A tier elevation.
 ],
-  auton_notes: [- We lost auton because our bot was still touching the triball at the end of auton
+  auton_notes: [
+    - We lost this auton the same way we lost the last auton: our robot was touching the triball that we scored at the end of the auton, so it was not counted
 ],
   match_notes: [
-    - The 1893P have no shooting mech, all they can do is push
-- Our teammates battery dc/ed for most of the match
-- Our drivetrain stopped working mid-match again, we think that this time it was because of the gears slipping
+    // - The 1893P have no shooting mech, all they can do is push
+    - 934Z's battery disconnected for most of the match
+    - Our drivetrain stopped working mid-match again, we think that this time it was because of the gears slipping
   ],
   subsystems: (
     overperformed: "Intake",
@@ -63,18 +75,20 @@
   won: true,
   auton: "Red",
   awp: false,
-  strategy: [We match load because our drivetrain wasn't working, while our teammate does elevation and pushing the triballs into the goal
-],
-  auton_notes: [- We lost auton because our bot was still touching the triball at the end of auton
-],
+  strategy: [
+    Our drivetrain is not working, so we match load and shoot triballs into the offensive zone while 9080C pushes the triballs into the goal.
+  ],
+  auton_notes: [
+    - We lost auton because our robot was still touching the triball at the end of auton
+  ],
   match_notes: [
-    - 53E's teammate wasn't doing much because they're a clawbot, so we were able to outcycle them
-    - Our teammate managed an A tier elevation
+    - 960Z wasn't doing much because they're a clawbot, so we were able to outcycle them in scoring triballs
+    - 9080C achieved an A tier elevation, sealing the win for us
   ],
   subsystems: (
     overperformed: "Catapult, Intake",
-    satisfactory: "Wings, Drivetrain",
-    underperformed: "",
+    satisfactory: "Wings",
+    underperformed: "Drivetrain",
   )
 )
 
@@ -85,20 +99,22 @@
   won: true,
   auton: "Blue",
   awp: false,
-  strategy: [our alliance partner has a very consistent puncher, so they shoot and we score into the goal
+  strategy: [
+    9290B has a very consistent puncher, so they match load and shoot triballs into the offensive zone while we push the triballs into our goal.
 ],
-  auton_notes: [- We lost auton, our triball didn't go completely under the net
+  auton_notes: [
+    - The triball that we pushed didn't go completely under the net, so it was not scored
 ],
   match_notes: [
-    - 1893J tried to block our teammates shots, but they were too slow doing it while we kept scoring into the goal
+    - 1893J tried to block our 9290B's shots, but they were too slow doing it
+      - We took advantage of this opening to repeatedly score into the goal
     - Our drivetrain and wings were working consistently this round, allowing us to consistently and quickly push triballs into the goal.
-- The other teams bot 1893X got elevation
-
+    - 1893X managed to elevate, but the point difference we created negated it
   ],
   subsystems: (
     overperformed: "Catapult, Intake",
-    satisfactory: "Wings",
-    underperformed: "Drivetrain",
+    satisfactory: "Wings, Drivetrain",
+    underperformed: "",
   )
 )
 
@@ -109,20 +125,21 @@
   won: false,
   auton: "Red",
   awp: false,
-  strategy: [We match load while our team tried to push as much triballs under the net with their wings 
-],
+  strategy: [
+    We match load and shoot triballs into our offensive zone while 5588B pushes as much triballs under the net as possible with their wings.
+  ],
   auton_notes: [
-    - We managed to win auton this time. The robot managed to not touch the auton after auton
+    - Our robot did not touch the triball after auton, so we won the auton bonus
   ],
   match_notes: [
-    - 929N had a very consistent launching mechanism  
-    - 9290D pushed us around while we tried to match. Regardless, we did managed to shoot majority of the triballs
-    - Our teammate got jammed and did not elevate. Instead, the other alliance managed to make an A level elevation
+    - 929N had a more consistent launching mechanism than we did, so they were able to score faster
+    - 9290D pushed us around while we tried to match load. Regardless, we managed to shoot the majority of our match loads over the barrier
+    - 5588B got jammed and was not able to elevate, which became match losing when 929N managed to get an A tier elevation
   ],
   subsystems: (
-    overperformed: "Catapult, Intake",
-    satisfactory: "Wings",
-    underperformed: "Drivetrain",
+    overperformed: "Wings, Drivetrain",
+    satisfactory: "Catapult, Intake",
+    underperformed: "",
   )
 )
 
@@ -133,55 +150,172 @@
   won: false,
   auton: "Tie",
   awp: false,
-  strategy: [We match loads while our team tried to push as much triballs since they were a push bot. 
-],
-  auton_notes: [- No one won auton. Our robot touched the triball, not counting it. 
-],
+  strategy: [
+    We match load and shoot triballs into our offensive zone while our 7135E pushes as much triballs as they can into the goal. 7135E is a push bot, so we will have to rely on our catapult's shooting speed.
+  ],
+  auton_notes: [
+    - Our robot was still touching the triball at the end of auton, discounting it. 
+  ],
   match_notes: [
-   - 7135E did their best to collect the triballs while pushing 7135B
-- Our team mate wasn't doing much because they could only push triballs one at a time
-- the triballs started to pile up at the right side elevation bar 
-
+    - 7135E did their best to collect the triballs while pushing 7135B
+    - However, 7135E wasn't pushing many because they could only push triballs one at a time
+    - We ended up losing because the red alliance could work together faster in scoring.
   ],
   subsystems: (
     overperformed: "Intake, Catapult",
-    satisfactory: "Wings",
-    underperformed: "Drivetrain",
+    satisfactory: "Wings, Drivetrain",
+    underperformed: "",
   )
 )
 
 = Subsystem Reflection
-== Drivetrain
-=== Red
-- Gave us the most trouble this tournament. Zipties got caught in the drivetrain in the first match. Gear slippage made one side of the drivetrain nearly unusable in the second match. After that it was workable, but what Makhi did is a temporary fix.
-- Our plan to fix these problems is a complete rebuild of the drivetrain after our Dec. 16 Tournament.
+#v(0.5em)
+#box[
+  == Drivetrain
+  #grid(
+  columns: 2,
+  [
+    - Gave us the most trouble this tournament. Zipties got caught in the drivetrain in the first match. Gear slippage made one side of the drivetrain nearly unusable in the second match. After that it was workable, but what Makhi did is a temporary fix.
+    - Our plan to fix these problems is a complete rebuild of the drivetrain after our Dec. 16 Tournament.
 
-== Intake
-=== Green
-- Worked consistently, we even managed to intake into the cata a few times.
-- In the future, we might want to make the catapult longer to grab triballs easier, and maybe even reach the inside of the match load zone for AWP.
+    #align(center)[
+      #tablex(
+        columns: 2,
+        rows: 4,
+        align: center + horizon,
 
-== Catapult
-=== Yellow 
-- Worked consistently, but the cycling was a bit slow compared to other teams. Maybe if we increase the banding, and add PID to the catapult, we might be able to get the cycle time a bit faster.
-- Also important to note that Makhi used the manual catapult, control instead of the automatic catapult control most of the tournament 
-- Only got the auto catapult code working post our last qual, so getting the auto catapult code consistent might also make it faster.
-- Auto catapult control wasn't working at the beginning of the tournament (even though it worked the night before), so we had to use manual control during the tournament.
-== Wings
-=== Green
-- They worked every round . We managed to push quite a few triballs at a time with them.
-- We are planning to add guards to each wing to make them more sturdy.
+        map-rows: (col, cells) => cells.map(c => {
+          if col == 0 {
+            (..c, fill: gray.lighten(20%), content: [*#c.content*])
+          } else {c}
+        }),
 
+        [Performance], [Matches],
+        [Overperformed], [1],
+        [Satisfactory], [2],
+        [Underperformed], [3]
+      )
+    ]
+  ],
+  align(horizon)[#image("./hereford-zone-stampede/Drivetrain Performance.svg")]
+  )
+]
+
+#box[
+  == Intake
+  #grid(
+  columns: 2,
+  [
+    - Worked consistently, we even managed to intake into the cata a few times.
+    - In the future, we might want to make the catapult longer to grab triballs easier, and maybe even reach the inside of the match load zone for AWP.
+
+    #align(center)[
+      #tablex(
+        columns: 2,
+        rows: 4,
+        align: center + horizon,
+
+        map-rows: (col, cells) => cells.map(c => {
+          if col == 0 {
+            (..c, fill: gray.lighten(20%), content: [*#c.content*])
+          } else {c}
+        }),
+
+        [Performance], [Matches],
+        [Overperformed], [5],
+        [Satisfactory], [1],
+        [Underperformed], [0]
+      )
+    ]
+  ],
+  align(horizon)[#image("./hereford-zone-stampede/Intake Performance.svg")]
+  )
+]
+
+#box[
+  == Catapult
+  #grid(
+  columns: 2,
+  [
+    - Worked consistently, but the cycling was a bit slow compared to other teams. Maybe if we increase the banding, and add PID to the catapult, we might be able to get the cycle time a bit faster.
+    - Also important to note that Makhi used the manual catapult control instead of the automatic catapult control most of the tournament 
+    - Only got the auto catapult code working post our last qual, so getting the auto catapult code consistent might also make it faster.
+    - Auto catapult control wasn't working at the beginning of the tournament (even though it worked the night before), so we had to use manual control during the tournament.
+
+    #align(center)[
+      #tablex(
+        columns: 2,
+        rows: 4,
+        align: center + horizon,
+
+        map-rows: (col, cells) => cells.map(c => {
+          if col == 0 {
+            (..c, fill: gray.lighten(20%), content: [*#c.content*])
+          } else {c}
+        }),
+
+        [Performance], [Matches],
+        [Overperformed], [2],
+        [Satisfactory], [4],
+        [Underperformed], [0]
+      )
+    ]
+  ],
+  align(horizon)[#image("./hereford-zone-stampede/Catapult Performance.svg")]
+  )
+]
+
+#box[
+  == Wings
+  #grid(
+  columns: 2,
+  [
+  - They worked every round . We managed to push quite a few triballs at a time with them.
+  - We are planning to add guards to each wing to make them more sturdy.
+
+    #align(center)[
+      #tablex(
+        columns: 2,
+        rows: 4,
+        align: center + horizon,
+
+        map-rows: (col, cells) => cells.map(c => {
+          if col == 0 {
+            (..c, fill: gray.lighten(20%), content: [*#c.content*])
+          } else {c}
+        }),
+
+        [Performance], [Matches],
+        [Overperformed], [1],
+        [Satisfactory], [5],
+        [Underperformed], [0]
+      )
+    ]
+  ],
+  align(horizon)[#image("./hereford-zone-stampede/Wings Performance.svg")]
+  )
+]
+
+= Skills
+#nb_admonition(type: "competition")[
+  - *Driver Skills Score:* 24
+  - *Programming Skills Score:* N/A
+  - *Total Skills Score:* 24
+]
+
+Our biggest takeaway from our driver skills run was that Eric and Rory need more practice match loading.
 
 = Individual Reflections
 == Ajibola
-- I learned about better notebooking techniques, specifically that reflecting on each individual subsystem is more important than reflection on each individual match. Also explaining the methods behind the testing phase in the design process.
-- We need to spend more time before tournaments practicing match loading and auton. Better time management might help with this.
+- I am a bit dissapointed with the performance of the drivetrain during this tournament. The problems with the drivetrain did not show up during our testing, so we need to start performing more scrutinous tests.
+- We also need to spend more time before tournaments practicing match loading and auton. Better time management might help with this.
 
 == Ishika 
 - The de-scoring thing cannot be our main point because in bigger matches it will be harder to do this with more resourceful teams. A lot of our functions stopped working after being hit so we need to work on keeping them safe. 
 - Everything surrounds the functions of the robot and keeping the robot safe.
 - We should work on making sure everything is set to work before the next tournament. We do not want to be fixing major problems at the next tournament.
+
+#colbreak()
 
 == Makhi 
 - Our driving was great with the use of descoring however our subsystems need work and testing
@@ -192,4 +326,4 @@
 
 == Eric
 - While our driving exhibited excellence, particularly in effective descoring maneuvers, our subsystems revealed areas that require improvement and thorough testing. The catapult, in particular, posed a challenge as it operated at a slower pace compared to other teams and exhibited inconsistency. It's evident that additional testing is imperative before the next tournament to address these issues and ensure optimal performance.
-- I suggest we should rebuild the drivetrain that isn’t focus on descoring
+- I suggest that we rebuild the drivetrain to not just focus on descoring

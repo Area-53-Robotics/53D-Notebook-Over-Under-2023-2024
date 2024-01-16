@@ -17,7 +17,7 @@ Today we redid the catapult test from our
 
 . This test focuses on two aspects of the catapult that we identified in our
 
-#nb_entry_reference(date: datetime(year: 2023, month: 9, day: 16), type: "identify", title: "Outtake")
+// #nb_entry_reference(date: datetime(year: 2023, month: 9, day: 16), type: "identify", title: "Outtake")
 
 , being _Scoring_ and _Multihandling_.
 

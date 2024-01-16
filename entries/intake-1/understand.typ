@@ -89,14 +89,6 @@
     == What is tension?
 
     Tension refers to the force that is transmitted through a string, rope, cable, or any flexible connector when it is pulled tight by forces acting from opposite ends. Tension is a pulling force, and it is always directed along the length of the flexible connector.
-
-    #nb_admonition(type: "equation")[
-      If:
-      - $F_"in"$ is the force that the first object exerts on the second object
-      - $F_"out"$ is the force that the second object exerts back on the first object
-
-      $ F_"in" = F_"out" $
-    ]
   ],
   [
     #image("./understand/Tension.excalidraw.svg")

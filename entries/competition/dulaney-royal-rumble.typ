@@ -19,6 +19,9 @@
 - Make it to the elimination rounds
 - Achieve a win rate of at least 50%
 
+= Skills
+We did not queue for the skills line before it closed, so we were unable to run skills during this tournament.
+
 = Matches
 #nb_tournament_match(
   match: "Q8",
@@ -282,6 +285,8 @@
   ],
   [#image("./dulaney-royal-rumble/Intake Performance.svg")]
 )
+
+#colbreak()
 
 == Wings
 #grid(

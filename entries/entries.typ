@@ -65,8 +65,13 @@
 
 #include "./catapult-2/build-2.typ"
 #include "./wings-1/build2.typ"
+
+// December
+#include "./catapult-2/program.typ"
 #include "./catapult-2/test.typ"
 #include "./wings-1/test-2.typ"
+#include "./autonomous/hereford-auton.typ"
+#include "./competition/hereford-zone-stampede.typ"
 
 /*
 #include "./drivetrain-2/brainstorm.typ"
