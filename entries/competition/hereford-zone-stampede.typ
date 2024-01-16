@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create_entry.with(
-  title: "Hereford Stampede Competition",
+  title: "Hereford Zone Stampede",
   type: "competition",
   start_date: datetime(year: 2023, month: 12, day: 2),
   attendance: "Ajibola, Ishika, Makhi, Eric, Rory"

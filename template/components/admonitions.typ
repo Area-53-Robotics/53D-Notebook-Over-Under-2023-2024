@@ -1,7 +1,7 @@
 #import "../colors.typ": *
 #import "../icons/icons.typ": *
 #import "@preview/showybox:2.0.1": showybox
-#import "@preview/tablex:0.0.7": *
+#import "@preview/tablex:0.0.8": *
 
 #let nb_admonition(type: "", title: none, body) = {
   let info = type_metadata.at(type)

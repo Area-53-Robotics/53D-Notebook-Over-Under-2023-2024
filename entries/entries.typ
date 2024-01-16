@@ -58,10 +58,18 @@
 #include "./intake-1/program.typ"
 #include "./intake-1/test.typ"
 #include "./competition/dulaney-royal-rumble.typ"
+#include "./catapult-1/build2.typ"
 
-// Fake November
+#include "./wedges-1/build.typ"
+// -- insert wedge entries
+
+#include "./catapult-1/build3.typ"
+#include "./wings-1/build2.typ"
+
+/*
 #include "./drivetrain-2/brainstorm.typ"
 #include "./drivetrain-2/select.typ"
 #include "./kicker-1/identify.typ"
 #include "./kicker-1/brainstorm.typ"
 #include "./kicker-1/select.typ"
+*/

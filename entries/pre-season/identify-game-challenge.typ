@@ -1,5 +1,5 @@
 #import "/template/template.typ": *
-#import "@preview/tablex:0.0.7": *
+#import "@preview/tablex:0.0.8": *
 
 #show: create_entry.with(
   title: "Game Challenge - Analysis",

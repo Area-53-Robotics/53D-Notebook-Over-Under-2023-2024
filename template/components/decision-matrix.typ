@@ -1,4 +1,4 @@
-#import "@preview/tablex:0.0.7": *
+#import "@preview/tablex:0.0.8": *
 #import "../colors.typ": *
 
 #let nb_decision_matrix(criteria: (), choices: (), body: []) = [

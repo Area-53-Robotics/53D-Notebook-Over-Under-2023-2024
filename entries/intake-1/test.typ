@@ -94,7 +94,7 @@ We are a bit unhappy with the consistency and reliability of our intake. While t
     + Set the robot flat on the field 6 inches away from the goal with the front (intake side) facing the goal
     + Place a triball inside of the intake
     + Drive the robot towards the goal
-    + Attempt to relese the triball into the goal
+    + Attempt to release the triball into the goal
     + Repeat step 5 until the triball has successfully been released
     + Write down how many attempts it took to complete step 5
     + Repeat steps 1-7 with a different triball for a total of 30 trials

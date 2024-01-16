@@ -1,6 +1,6 @@
 #import "template/entries.typ": *
 #import "template/components/components.typ": *
-#import "@preview/tablex:0.0.7"
+#import "@preview/tablex:0.0.8"
 #import "@preview/codetastic:0.2.2": qrcode
 
 #show: page.with(

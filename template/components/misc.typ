@@ -1,5 +1,5 @@
 #import "@preview/showybox:2.0.1": showybox
-#import "@preview/tablex:0.0.7": *
+#import "@preview/tablex:0.0.8": *
 
 #import "../globals.typ": frontmatter_page_counter, entry_page_counter, appendix_page_counter, entries
 #import "../colors.typ": *

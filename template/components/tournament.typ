@@ -1,5 +1,5 @@
 #import "@preview/showybox:2.0.1": *
-#import "@preview/tablex:0.0.7": *
+#import "@preview/tablex:0.0.8": *
 
 #let nb_tournament_match(
   match: "",
