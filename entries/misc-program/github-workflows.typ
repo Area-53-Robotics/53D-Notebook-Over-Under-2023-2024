@@ -16,15 +16,15 @@
 )
 
 #nb_admonition(type: "note")[
-  The work done today was done during thanksgiving break, and not at an official Area 53 meeting. Only Ajibola worked on the code, and Ishika peer reviewed it afterward.
+  The work done today was done during Thanksgiving break, and not at an official Area 53 meeting. Only Ajibola worked on the code, and Ishika peer reviewed it afterward.
 ]
 
-We decided to dedicate some time during our break to streamline our our usage of GitHub repositories. #glossary_footnote[Repository] We determined that we can do this by using GitHub workflows, which can be used to automate tasks after changes are made to a repository.
+We decided to dedicate some time during our break to streamline our our usage of GitHub repositories. #glossary_footnote[Repository] We determined that we can do this by using GitHub workflows, which can be used to automate tasks after commits (changes) are made to a repository.
 
 #nb_admonition(type: "identify", title: "Sub-Identify: GitHub Workflows")[
-  Some aspects of GitHub repositories that we wanted to automate are:
+  Some aspects of our GitHub repositories that we wanted to automate are:
   - Checking whether the new version of a program that has been committed to the repository is error-free
-  - Automatically uploading the new version of the digital notebook to GitHub and to discord when changes are made
+  - Automatically uploading the new version of the digital notebook to GitHub and to Discord when changes are made
   - Automatically performing spell checks on the notebook when changes are made
 ]
 
@@ -42,7 +42,7 @@ Here is the final workflow code:
 #align(center)[*53D_OverUnder/.github/workflows/pros-build.yml*]
 #raw(block: true, lang: "yml", read("./github-workflows/pros-build.yml"))
 
-When the workflow succeeds, we get a message in our discord that looks like this:
+When the workflow succeeds, we get a message in our Discord that looks like this:
 
 #image("./github-workflows/pros-build-test.png")
 
@@ -51,7 +51,7 @@ One major disadvantage of writing our notebook using Typst #glossary_footnote[Ty
 
 To solve this, we created a GitHub workflow that compiles the notebook when changes are made to it and uploads it to both GitHub and Discord. The notebook getting uploaded to GitHub and Discord gives us a few benefits:
 - Discord is a cross-platform application, so the digital notebook can be accessed by anyone on our team, at any time, on any device, including phones, tablets, and laptops.
-  - Team members can reference the called when they need to, such as being able to cross-reference the CAD designs when rebuilding a subsystem or replacing a part.
+  - Team members can reference the notebook whenever they need to, such as being able to cross-reference the CAD designs when rebuilding a subsystem or replacing a part.
 - We now have a contingency copy of the notebook saved to GitHub if anything were to happen to the printed physical version.
 
 Here is the final workflow code:
@@ -72,6 +72,6 @@ Here is the final workflow code:
 #align(center)[*53D-Over-Under-Notebook/.github/workflows/typos.yml*]
 #raw(block: true, lang: "yml", read("/.github/workflows/typos.yml"))
 
-When the workflow is completed, if there is a spelling error in the notebook a workflow failure message will be sent to our discord that looks like this:
+When the workflow is completed, if there is a spelling error in the notebook a workflow failure message will be sent to our Discord that looks like this:
 
 #image("./github-workflows/notebook-spelling-message.png", height: 17em)
