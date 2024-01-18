@@ -113,6 +113,25 @@
   ],
 )
 
+#nb_create_glossary_entry(
+  title: "Repository",
+  category: "program",
+  definition: [
+    A centralized digital storage that developers use to make and manage changes to an application's source code
+  ],
+)
+
+#nb_create_glossary_entry(
+  title: "PID",
+  category: "program",
+  definition: [
+    A controller for subsystems that creates efficient and accurate movements. It has three terms that are added together to calculate output:
+    - #underline[*P*]roportional term
+    - #underline[*I*]ntegral term
+    - #underline[*D*]erivative term
+  ],
+)
+
 // Old Glossary Entries
 /*
 #nb_create_glossary_entry(

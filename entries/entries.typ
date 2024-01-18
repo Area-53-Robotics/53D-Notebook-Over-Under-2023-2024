@@ -65,6 +65,7 @@
 
 #include "./catapult-2/build-2.typ"
 #include "./wings-1/build2.typ"
+#include "./misc-program/github-workflows.typ"
 
 // December
 #include "./catapult-2/program.typ"

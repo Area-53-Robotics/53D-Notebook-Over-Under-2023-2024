@@ -181,7 +181,6 @@
 
 #let print_appendix_entries() = {
   locate(loc => {
-    // make a second array for locations for toc linking?
     for entry in appendix_entries.final(loc) {
       [
         #set page(
@@ -189,7 +188,7 @@
           background: nb_side_margin_color(color: gray),
           header: [
             #nb_title(
-              beginning: [Appendix:],
+              beginning: [Appendix #appendix_entry_counter.display("A"):],
               beginning-fill: gray
             )[#entry.title]
           ],
@@ -198,6 +197,7 @@
 
         #entry.body <nb_appendix_entry>
         #counter(footnote).update(0)
+        #appendix_entry_counter.step()
       ]
     }
   })

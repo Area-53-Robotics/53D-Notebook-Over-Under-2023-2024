@@ -15,6 +15,7 @@
     cpp: (name: "C++", icon: program-icon("/template/tabler-icons/brand-cpp.svg"), color: blue),
     py: (name: "Python", icon: program-icon("/template/tabler-icons/brand-python.svg"), color: yellow),
     sh: (name: "Bash", icon: program-icon("/template/tabler-icons/brand-powershell.svg"), color: gray),
+    yml: (name: "YAML", icon: program-icon("/template/tabler-icons/brand-github-filled.svg"), color: purple),
   ),
   breakable: true,
   // set breakable lines to false when the next codly update comes out

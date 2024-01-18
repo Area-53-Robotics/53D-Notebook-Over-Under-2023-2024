@@ -1,0 +1,50 @@
+name: Build PROS Project
+
+# This GitHub workflow will be triggered when:
+on:
+  # a change is pushed to the repository
+  push:
+    branches: '*'
+  # or when a pull request is made on the repository
+  pull_request:
+    branches: '*'
+
+jobs:
+  build:
+    # The workflow is ran on a Ubuntu Linux virtual machine
+    runs-on: ubuntu-latest
+    
+    steps:
+    # Installs the ARM toolchain, which is the project compilation toolchain that PROS uses
+    - name: Install ARM Toolchain
+      uses: fiam/arm-none-eabi-gcc@v1
+      with:
+        release: '10-2020-q4'
+
+    # Installs Python so that the workflow is compatible with any Python programs we write to log data when testing
+    - name: Setup Python
+      uses: actions/setup-python@v4.7.1
+      with:
+        python-version: '3.12'
+
+    # Installs the PROS command line interface to run PROS commands
+    - name: PIP Install PROS CLI
+      uses: BSFishy/pip-action@v1
+      with:
+        packages: pros-cli
+
+    # Verifies the version of PROS to verify that the PROS installation was successful
+    - name: Test PROS Install 
+      run: pros --version
+
+    # Checks the virtual machine out of the repository so the workflow can access it through commands
+    - name: Checkout
+      uses: actions/checkout@v4.1.1
+
+    # Verifies that PROS templates such as LVGL are properly installed
+    - name: Verify Template Installations
+      run: pros c info-project
+
+    # Attempts to build the project
+    - name: Build PROS Project  
+      run: pros make clean all

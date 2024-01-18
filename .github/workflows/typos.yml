@@ -1,13 +1,17 @@
 name: Spell Check
+# This GitHub workflow will be triggered when a change is pushed to the repository or when a team member activates it manually
 on: [push, workflow_dispatch]
 
 jobs:
   spelling:
+    # The workflow is ran on a Ubuntu Linux virtual machine
     runs-on: ubuntu-latest
     steps:
+      # Checks the virtual machine out of the repository so the workflow can access it through commands
       - name: Checkout
         uses: actions/checkout@v4.1.1
 
+      # Runs Typos spell check on the notebook source code
       - name: Spell Check with Typos
         uses: crate-ci/typos@master
         with: 

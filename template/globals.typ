@@ -12,3 +12,5 @@
 #let program_entries = state("program_entries", ())
 
 #let glossary_entries = state("glossary_entries", ())
+
+#let appendix_entry_counter = counter("appendix_entry_counter")

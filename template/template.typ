@@ -77,6 +77,8 @@
       #season
   ]
 
+  appendix_entry_counter.update(_ => 1)
+  
   pagebreak()
   pagebreak()
 
@@ -95,6 +97,7 @@
 
   pagebreak()
   pagebreak()
+
 
   print_appendix_entries()
 }
