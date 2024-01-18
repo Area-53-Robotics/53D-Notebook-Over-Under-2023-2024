@@ -29,7 +29,7 @@ We decided to dedicate some time during our break to streamline our our usage of
 ]
 
 = Robot Code Compilation Workflow
-A major problem we have faced throughout the year is that when one of our programmers makes a change to the program and pushes it to the repository, they may not have checked for compilation errors in the program. This can slow down work when another programmer downlaods the changes to their computer and are not able to find out where the error is coming from.
+A major problem we have faced throughout the year is that when one of our programmers makes a change to the program and pushes it to the repository, they may not have checked for compilation errors in the program. This can slow down work when another programmer downloads the changes to their computer and are not able to find out where the error is coming from.
 
 We solved this problem by creating a workflow that tests if the program has no compilation errors. The workflow creates a Linux virtual machine that attempts to build the code in the ```cpp 53D_OverUnder``` repository.
 - If the build succeeds, we will get a success message and no further steps are taken
@@ -49,7 +49,7 @@ When the workflow succeeds, we get a message in our discord that looks like this
 = Digital Notebook Compilation Workflow
 One major disadvantage of writing our notebook using Typst #glossary_footnote[Typst] instead of doing it physically is that the members on our team who do not have easy access to a computer cannot access the digital notebook on demand.
 
-To solve this, we created a GitHub workflow that compiles the notebook when changes are made to it and uploads it to both GitHub and Discord. The notebook getting uplaoded to GitHub and Discord gives us a few benefits:
+To solve this, we created a GitHub workflow that compiles the notebook when changes are made to it and uploads it to both GitHub and Discord. The notebook getting uploaded to GitHub and Discord gives us a few benefits:
 - Discord is a cross-platform application, so the digital notebook can be accessed by anyone on our team, at any time, on any device, including phones, tablets, and laptops.
   - Team members can reference the called when they need to, such as being able to cross-reference the CAD designs when rebuilding a subsystem or replacing a part.
 - We now have a contingency copy of the notebook saved to GitHub if anything were to happen to the printed physical version.

@@ -7,7 +7,7 @@
   attendance: "Ajibola, Ishika, Makhi, Rory, Eric",
 )
 
-After brainstorming the different RPM drivetrains, we needed to select one to build. We collectively determined that the criteria used to select this drivetrain should be the same as the criteria we used to evaluate the wheel configurations on 2023/07/22, minus the "Omni-Directionality" criteria.
+After brainstorming the different RPM drivetrains, we needed to select one to build. We collectively determined that the criteria used to select this drivetrain should be the same as the criteria we used to evaluate the wheel configurations in our #nb_entry_reference(date: datetime(year: 2023, month: 7, day: 22), type: "select", title: "Drivetrain #1"), minus the "Omni-Directionality" criteria.
 
 #nb_matrix_criteria[
   - Speed - The maximum speed of the drivetrain configuration.

@@ -13,6 +13,7 @@
 - [codly](https://github.com/Dherse/codly)
 - [showybox](https://github.com/Pablo-Gonzalez-Calderon/showybox-package)
 - [codetastic](https://github.com/jneug/typst-codetastic)
+- [cetz](https://github.com/johannes-wolf/cetz)
 
 ## How to Compile
 1. Install the required fonts:

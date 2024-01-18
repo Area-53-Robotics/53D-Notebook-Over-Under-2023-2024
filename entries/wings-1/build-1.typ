@@ -41,7 +41,7 @@
         - Rubber band the piston to a standoff on the side the chassis for tension
           - *Reason:* The wings had a hard time remaining closed since the wing bounce off the side of the drivetrain. 
       ],
-      [#image("./build/9-30.jpg")],
+      [#image("./build-1/9-30.jpg")],
     )
   ],
   
@@ -62,7 +62,7 @@
           )
         )
       ],
-      [#image("./build/10-6.jpg")],
+      [#image("./build-1/10-6.jpg")],
       [
         With the majority of the wings construction finished, we wanted to add boxing to the wings to ensure that everything would work well. Boxing is a construction technique that increases the stability of the joint or mechanism. We referenced our CAD of the wings for a better understanding of how the boxing of the wings should look like. It is important to properly box our wings because they are only supported one one end.
 

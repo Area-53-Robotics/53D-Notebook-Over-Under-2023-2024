@@ -37,7 +37,7 @@
 #include "./wings-1/select.typ"
 #include "./management/kanban-board.typ"
 #include "./catapult-1/build.typ"
-#include "./wings-1/build.typ"
+#include "./wings-1/build-1.typ"
 
 
 // October
@@ -64,7 +64,7 @@
 // -- insert wedge entries
 
 #include "./catapult-2/build-2.typ"
-#include "./wings-1/build2.typ"
+#include "./wings-1/build-2.typ"
 #include "./misc-program/github-workflows.typ"
 
 // December
@@ -74,10 +74,13 @@
 #include "./autonomous/hereford-auton.typ"
 #include "./competition/hereford-zone-stampede.typ"
 
-/*
+// -- re-select game strategy entry?
+
 #include "./drivetrain-2/brainstorm.typ"
 #include "./drivetrain-2/select.typ"
+#include "./drivetrain-2/build.typ"
 #include "./kicker-1/identify.typ"
 #include "./kicker-1/brainstorm.typ"
 #include "./kicker-1/select.typ"
+/*
 */

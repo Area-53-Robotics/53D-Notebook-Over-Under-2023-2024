@@ -26,12 +26,11 @@ After brainstorming the different kicker designs, we had to pick one to begin bu
     ("Range", 3),
     ("Energy Efficiency", 1),
     ("Reliability", 2),
-    ("Ease of Driving", 2),
   ),
   choices: (
-    ("Kicker", 3, 3, 4, 4, 2, 4, 4),
-    ("Double Kicker", 0, 0, 0, 0, 0, 0, 0),
-    ("Upside Down Kicker", 4, 4, 2, 2, 4, 2, 3),
+    ("Kicker", 4, 4, 3, 3, 4, 3),
+    ("Double Kicker", 0, 0, 0, 0, 0, 0),
+    ("Upside Down Kicker", 4, 2, 3, 4, 4, 2),
   ),
 )
 

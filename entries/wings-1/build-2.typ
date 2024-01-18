@@ -40,7 +40,7 @@
         - We replaced the C-channel with a plate.
           - *Reason:* This seemed to help with the piston generating enough torque to push out the wings.
       ],
-      [#image("./build2/11-18.png")],
+      [#image("./build-2/11-18.png")],
     )
   ],
 )
