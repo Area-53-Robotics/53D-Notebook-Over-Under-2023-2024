@@ -59,8 +59,6 @@
     3. *Third Law* (Action and Reaction): For every action, there is an equal and opposite reaction.
 
     #nb_admonition(type: "equation")[
-      /*
-      */
       If:
       - $F_"in"$ is the force that the first object exerts on the second object
       - $F_"out"$ is the force that the second object exerts back on the first object

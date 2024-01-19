@@ -78,9 +78,11 @@
 
 #include "./drivetrain-2/brainstorm.typ"
 #include "./drivetrain-2/select.typ"
-#include "./drivetrain-2/build.typ"
 #include "./kicker-1/identify.typ"
+#include "./kicker-1/understand.typ"
 #include "./kicker-1/brainstorm.typ"
 #include "./kicker-1/select.typ"
-/*
-*/
+#include "./drivetrain-2/build.typ"
+#include "./kicker-1/build.typ"
+#include "./intake-1/build-2.typ"
+#include "./wings-1/build-3.typ"

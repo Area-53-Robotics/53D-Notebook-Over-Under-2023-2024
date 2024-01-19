@@ -54,6 +54,6 @@
     - *Limited Adaptability* - An upside-down kicker may not be as adaptable to all game scenarios
   ],
   notes: [
-    - Might be harder to make since most of the team are newer builders
+    - Might be harder to build since most of the team are newer builders
   ],
 )

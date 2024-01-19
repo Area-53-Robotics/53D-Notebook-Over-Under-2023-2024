@@ -132,6 +132,14 @@
   ],
 )
 
+#nb_create_glossary_entry(
+  title: "Boxing",
+  category: "build",
+  definition: [
+    A building technique that involves placing one C-channel into another and connecting them using long screws with spacers. This increases the stability of the subsystem it is used on.
+  ],
+)
+
 // Old Glossary Entries
 /*
 #nb_create_glossary_entry(

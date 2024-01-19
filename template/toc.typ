@@ -135,7 +135,7 @@
           */
 
           box[
-
+/*
             = Appendix
 
               #let appendix_headings = query(selector(<nb_appendix_entry>), loc)
@@ -161,7 +161,7 @@
                   A-#page_number \
                 ]
               }
-
+*/
             #counter(page).update(_ => 0)
           ]
         }
