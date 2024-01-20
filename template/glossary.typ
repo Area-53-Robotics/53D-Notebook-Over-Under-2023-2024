@@ -37,7 +37,7 @@
           radius: 5pt
         )[
           #align(left)[
-            #if entry.category != none [#box(baseline: 30%, nb_label(label: entry.category, size: 2em))]
+            #if entry.category != none [#box(baseline: 30%, nb_icon(label: entry.category, size: 2em))]
             #h(5pt)
             *#text(14pt)[#entry.title]*
           ]

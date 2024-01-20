@@ -65,7 +65,6 @@
       - Builder
       - Notebooker
       - Designer
-      - Join Date: 2023/12/09
     ],
     nb_member(name: "Ishika Saha", picture: "./assets/members/ishika.png")[
       - Grade: 9
@@ -79,7 +78,6 @@
       - Builder
       - Designer
       - Driver
-      - Join Date: 2023/08/05
     ],
     nb_member(name: "Eric Singer", picture: "./assets/members/eric.png")[
       - Grade: 9
@@ -93,8 +91,7 @@
     ],
   )
 
-  \
-  \
+  #colbreak()
   
   #nb_admonition(type: "note")[
     The following people have left during the season:

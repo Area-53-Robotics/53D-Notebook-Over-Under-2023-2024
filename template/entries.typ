@@ -35,7 +35,7 @@
             #nb_title(
               color: info.color,
               beginning: [
-                #nb_label(label: type, size: 2.5em)
+                #nb_icon(label: type, size: 2.5em)
               ]
             )[
               #entry.title #h(1fr)
@@ -76,7 +76,7 @@
 
                     cellx(colspan: 2, rowspan: 3)[
                       #align(center + horizon)[
-                        #nb_label_box(type: entry.type)
+                        #nb_icon_box(type: entry.type)
                       ]
                     ],
                     (),
@@ -110,7 +110,7 @@
 
                     cellx(colspan: 2, rowspan: 3)[
                       #align(center + horizon)[
-                        #nb_label_box(type: entry.type)
+                        #nb_icon_box(type: entry.type)
                       ]
                     ],
                     (),

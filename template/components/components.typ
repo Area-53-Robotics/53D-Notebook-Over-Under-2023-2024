@@ -1,9 +1,10 @@
 #import "admonitions.typ": *
 #import "codly.typ": *
 #import "decision-matrix.typ": *
+#import "entry-components.typ": *
 #import "graphs.typ": *
-#import "misc.typ": *
 #import "headings.typ": *
 #import "page.typ": *
+#import "text-format.typ": *
 #import "title.typ": *
 #import "tournament.typ": *

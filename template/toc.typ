@@ -37,7 +37,7 @@
               let frontmatter_count = frontmatter_page_counter.final(loc).at(0)
 
               [
-                #box(baseline: 15%, nb_label(label: entry.type, size: 1em))
+                #box(baseline: 15%, nb_icon(label: entry.type, size: 1em))
                 #h(5pt)
                 #box(fill: info.color.lighten(30%), radius: 1pt, height: 1em, baseline: 15%)[
                   #align(center + horizon)[
@@ -82,7 +82,7 @@
                 let frontmatter_count = frontmatter_page_counter.final(loc).at(0)
 
                 [
-                  #box(baseline: 15%, nb_label(label: entry.type, size: 1em))
+                  #box(baseline: 15%, nb_icon(label: entry.type, size: 1em))
                   #h(5pt)
                   #box(fill: info.color.lighten(30%), radius: 1pt, height: 1em, baseline: 15%)[
                     #align(center + horizon)[

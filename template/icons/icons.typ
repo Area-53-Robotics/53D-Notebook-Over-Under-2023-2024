@@ -44,3 +44,10 @@
 #let nb_change_icon_stroke(raw_icon: "", stroke: red) = {
   return raw_icon.replace("stroke=\"currentColor\"", "stroke=\"" + stroke.to-hex() + "\"")
 }
+
+#let nb_icon(label: "", size: 0.7em) = {
+  let data = type_metadata.at(label)
+  let raw_icon = data.icon
+  
+  image.decode(raw_icon, height: size)
+}

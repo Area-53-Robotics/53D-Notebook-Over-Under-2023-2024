@@ -81,40 +81,40 @@ Here are the existing types:
     vlinex(start: 0, end: 1, stop-pre-gutter: true, stroke: 2pt, x: 0),
     vlinex(start: 2, end: 7, stop-pre-gutter: true, stroke: 2pt, x: 0),
 
-    nb_label(label: "identify", size: 3em),
+    nb_icon(label: "identify", size: 3em),
     [*Identify the Problem*],
-    nb_label_box(type: "identify"),
+    nb_icon_box(type: "identify"),
 
-    nb_label(label: "understand", size: 3em),
+    nb_icon(label: "understand", size: 3em),
     [*Understand the Concepts*],
-    nb_label_box(type: "understand"),
+    nb_icon_box(type: "understand"),
 
-    nb_label(label: "brainstorm", size: 3em),
+    nb_icon(label: "brainstorm", size: 3em),
     [*Brainstorm Solutions*],
-    nb_label_box(type: "brainstorm"),
+    nb_icon_box(type: "brainstorm"),
 
-    nb_label(label: "select", size: 3em),
+    nb_icon(label: "select", size: 3em),
     [*Select the Best Solution*],
-    nb_label_box(type: "select"),
+    nb_icon_box(type: "select"),
 
-    nb_label(label: "build", size: 3em),
+    nb_icon(label: "build", size: 3em),
     [*Build the Solution*],
-    nb_label_box(type: "build"),
+    nb_icon_box(type: "build"),
 
-    nb_label(label: "program", size: 3em),
+    nb_icon(label: "program", size: 3em),
     [*Program the Solution*],
-    nb_label_box(type: "program"),
+    nb_icon_box(type: "program"),
 
-    nb_label(label: "test", size: 3em),
+    nb_icon(label: "test", size: 3em),
     [*Test the Solution*],
-    nb_label_box(type: "test"),
+    nb_icon_box(type: "test"),
 
-    nb_label(label: "management", size: 3em),
+    nb_icon(label: "management", size: 3em),
     [*Team Management*],
-    nb_label_box(type: "management"),
+    nb_icon_box(type: "management"),
 
-    nb_label(label: "competition", size: 3em),
+    nb_icon(label: "competition", size: 3em),
     [*Competition Reflection*],
-    nb_label_box(type: "competition"),
+    nb_icon_box(type: "competition"),
   )
 ]

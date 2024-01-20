@@ -1,6 +1,35 @@
 #import "../globals.typ": frontmatter_page_counter, appendix_page_counter, program_page_counter
+#import "../icons/icons.typ": *
 
-// FIXME: frontmatter is using the appendix counter
+#let nb_icon_box(type: "") = {
+  let nb_solid_labels = true;
+  let info = type_metadata.at(type)
+
+  if nb_solid_labels == false {
+    box(
+      fill: info.color.lighten(40%),
+      radius: 1.5pt,
+      height: 0.5in,
+      width: 2in,
+      stroke: (paint: info.color, thickness: 1pt, dash: "dashed")
+    )
+  } else {
+    box(
+      fill: info.color.lighten(40%),
+      radius: 1.5pt,
+      height: 0.5in,
+      width: 2in,
+      stroke: (paint: info.color, thickness: 1pt,/* dash: "dashed"*/)
+    )[
+      #set text(16pt)
+
+      #align(center + horizon)[
+        #box(baseline: 35%, nb_icon(label: type, size: 2em)) #h(7pt) *#info.name*
+      ]
+    ]
+  }
+}
+
 #let nb_frontmatter_footer() = {
   locate(
     loc => {
