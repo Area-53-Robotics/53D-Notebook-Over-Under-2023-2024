@@ -35,5 +35,5 @@ After brainstorming the different RPM drivetrains, we needed to select one to bu
 )
 
 #nb_admonition(type: "select", title: "Final Selection")[
-  A 450 RPM drivetrain satisfies most of the criteria we identified without any major drawbacks, such as a significant decrease in RPM or torque.
+  A 450 RPM drivetrain satisfies most of the criteria we identified without any major drawbacks, such as a significant decrease in torque.
 ]

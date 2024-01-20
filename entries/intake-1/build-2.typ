@@ -50,7 +50,7 @@ The Valley Mall tournament serves as a motivating deadline, driving our team's c
       - Boxed the platform and tensioned the kicker with rubber bands
 
       #nb_admonition(type: "note")[
-        We originally used collars instead of spacers for the intake spacing. We did this because it would make the spacing stronger. However we backtracked on this idea after realizing that we do not have enough spacers to implement this for both sides of the drivetrain.
+        We originally used collars instead of spacers for the intake spacing. We did this because it would make the spacing stronger. However we backtracked on this idea after realizing that we do not have enough collars to implement this for both sides of the drivetrain.
       ]
     ]
   ),

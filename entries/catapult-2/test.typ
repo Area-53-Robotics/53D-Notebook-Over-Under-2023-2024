@@ -7,19 +7,7 @@
   attendance: "Ajibola, Ishika, Eric, Rory, Makhi"
 )
 
-Today we redid the catapult test from our
-
-#nb_entry_reference(date: datetime(year: 2023, month: 10, day: 7), type: "test", title: "Catapult #1")
-
-#h(0.5em) to test the effectiveness of the improvements we made in our
-
-#nb_entry_reference(date: datetime(year: 2023, month: 11, day: 17), type: "build", title: "Catapult #2")
-
-. This test focuses on two aspects of the catapult that we identified in our
-
-// #nb_entry_reference(date: datetime(year: 2023, month: 9, day: 16), type: "identify", title: "Outtake")
-
-, being _Scoring_ and _Multihandling_.
+Today we redid the catapult test from our #nb_entry_reference(date: datetime(year: 2023, month: 10, day: 7), type: "test", title: "Catapult #1") #h(0.5em) to test the effectiveness of the improvements we recently made to the catapult. This test focuses on two aspects of the catapult that we identified in our #nb_entry_reference(date: datetime(year: 2023, month: 9, day: 16), type: "identify", title: "Outtake"), being _Scoring_ and _Multihandling_.
 
 = Triball Distance from Robot (Scoring)
 == Materials
@@ -64,10 +52,10 @@ Today we redid the catapult test from our
   [#image("./test/Triball Distance from Robot.svg")]
 )
 
+#colbreak()
+
 == Conclusion
 We are very pleased with this result. With a 2 feet improvement from the previous catapult, we are very confident that we can consistently get triballs over the middle bar. The range, variance, and standard deviation also decreased with our new catapult compared to our old catapult, meaning that the shots that we make will also more consistently land in the same area.
-
-#colbreak()
 
 = Amount of Triballs Over the Middle Barrier (Manipulation)
 == Materials

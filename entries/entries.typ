@@ -58,6 +58,7 @@
 #include "./intake-1/program.typ"
 #include "./intake-1/test.typ"
 #include "./competition/dulaney-royal-rumble.typ"
+
 #include "./catapult-2/build-1.typ"
 
 #include "./wedges-1/build.typ"
@@ -74,6 +75,13 @@
 #include "./autonomous/hereford-auton.typ"
 #include "./competition/hereford-zone-stampede.typ"
 
+#include "./flywheel-1/identify.typ"
+#include "./flywheel-1/brainstorm.typ"
+#include "./flywheel-1/select.typ"
+#include "./flywheel-1/build.typ"
+#include "./flywheel-1/program.typ"
+
+/*
 // -- re-select game strategy entry?
 
 #include "./drivetrain-2/brainstorm.typ"
@@ -86,3 +94,4 @@
 #include "./kicker-1/build.typ"
 #include "./intake-1/build-2.typ"
 #include "./wings-1/build-3.typ"
+*/

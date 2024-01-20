@@ -199,6 +199,7 @@
   ]
 ]
 
+// ! You can only have two entry references in an entry without getting the "did not converge" error
 #let nb_entry_reference(
   date: none,
   type: none,
@@ -242,19 +243,16 @@
       let page = counter(page).at(query(selector(<nb_entry>), loc).at(entry.first()).location()).at(0)
 
       [
-        #box(baseline: 0.15em)[
-          #box(baseline: 15%, nb_label(label: entry.last().type, size: 1em))
-          #h(1pt)
-          #box(fill: info.color.lighten(30%), radius: 1pt, height: 1em, baseline: 15%)[
-            #align(center + horizon)[
-              #link((page: {frontmatter_page_counter.final(loc).at(0) + page + 2}, x: 0pt, y: 0pt))[
-                #text(fill: black)[
-                  _#h(2pt) #entry.last().start_date.display("[year]/[month]/[day]") #sym.dash.em #info.name: #entry.last().title #h(2pt)_
-                ]
-              ]
+        #box(baseline: 15%, nb_label(label: entry.last().type, size: 1em))
+        #h(1pt)
+        #highlight(fill: info.color.lighten(30%))[
+          #link((page: {frontmatter_page_counter.final(loc).at(0) + page + 2}, x: 0pt, y: 0pt))[
+            #text(fill: black)[
+              _#h(2pt) #entry.last().start_date.display("[year]/[month]/[day]") #sym.dash.em #info.name: #entry.last().title #h(2pt)_
             ]
           ]
-        ] #body pg. #page #h(-0.2em)
+        ]
+        #body pg. #page #h(-0.2em)
       ]
     }
   )

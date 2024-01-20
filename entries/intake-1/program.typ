@@ -30,7 +30,8 @@ First, we declared a global intake motor class to use throughout the program.
 // ... non-relevant prior lines of code excluded
 
 // Declares the speed (blue cartridge) motor connected to port 15 in the program with motor telemetry units set to degrees
-pros::Motor IntakeMotor(11, pros::v5::MotorGears::blue);```
+pros::Motor IntakeMotor(11, pros::v5::MotorGears::blue);
+```
 
 We made driver control of the intake possible with the following lines of code:
 

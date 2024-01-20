@@ -297,7 +297,7 @@
 ]
 
 = Skills
-#nb_admonition(type: "competition")[
+#nb_admonition(type: "competition", title: "Skills Performance")[
   - *Driver Skills Score:* 24
   - *Programming Skills Score:* N/A
   - *Total Skills Score:* 24

@@ -32,7 +32,7 @@
   title: "PROS",
   category: "program",
   definition: [
-  An API developed by students at Purdue SIGBots, used to control VEX robots. It functions as an alternative to VexCode V5.
+  An API developed by students at Purdue SIGBots, used to control VEX robots. It functions as an alternative to VEXCode V5.
 ])
 
 #nb_create_glossary_entry(
@@ -140,6 +140,30 @@
   ],
 )
 
+#nb_create_glossary_entry(
+  title: "Telemetry",
+  category: "program",
+  definition: [
+    The collection of data from sensors on the robot.
+  ],
+)
+
+#nb_create_glossary_entry(
+  title: "AWP",
+  category: "competition",
+  definition: [
+    An acronym for Autonomous Win Point.
+  ],
+)
+
+#nb_create_glossary_entry(
+  title: "C++",
+  category: "program",
+  definition: [
+    An object-oriented programming language used in VEXCode V5 and PROS.
+  ],
+)
+
 // Old Glossary Entries
 /*
 #nb_create_glossary_entry(
@@ -194,18 +218,6 @@
   ],
 )
 
-#nb_create_glossary_entry(title: "AWP", definition: [
-  An acronym for Autonomous Win Point.
-])
-
-
-#nb_create_glossary_entry(
-  title: "C++",
-  definition: [
-    A low level programming language that is a superset of C's functionality,
-    originally called C with Classes.
-  ],
-)
 
 #nb_create_glossary_entry(
   title: "Framework",

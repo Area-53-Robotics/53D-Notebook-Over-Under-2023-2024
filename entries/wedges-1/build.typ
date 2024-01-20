@@ -8,7 +8,7 @@
   attendance: "Ajibola, Ishika, Eric, Rory, Makhi",
 )
 
-We don't plan on making any major rebuilds until the winter break in December. Right now, what we're focusing on is tuning the robot for the Hereford Zone Stampede Tournament on 2023/12/02. We are satisfied with the strategy behind our current robot because it allows us to descore when the opposing team double zones, and the Dulaney tournament showed that we are one of the only teams that takes advantage of this aspect of the game. However, we noticed that the catapult was lacking, and we would need to fix it before the Hereford tournament.
+From observing robots from the higher level and other robots at the tournament, we recognized the power of wedges. Robots equipped with wedges can effectively block, push, or redirect opponents, disrupting their planned maneuvers and potentially limiting their scoring opportunities.
 
 #gridx(
   columns: 1,

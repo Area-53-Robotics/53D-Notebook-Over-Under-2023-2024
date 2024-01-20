@@ -7,14 +7,11 @@
   attendance: "Ajibola, Ishika, Makhi, Eric, Rory"
 )
 
-#nb_admonition(type: "note")[
-  This "competition" is a small scrimmage with all 6 Area 53#glossary_footnote[Area 53] teams and one team from AHC, a local team.
-]
-
 = Competition Goals
-- Test each subsystem in a competitive environment to identify problems.
+- We hope to get skills done in order to qualify for States.
 
 = Matches
+/*
 #nb_tournament_match(
   match: "Q3",
   red_alliance: (teams: ("53F", "53C"), score: 55),
@@ -276,3 +273,4 @@
   ],
   [#image("./area-53-scrimmage/Intake Performance.svg")]
 )
+*/
