@@ -1,7 +1,8 @@
 #import "/template/entries.typ": *
 
 #show: create_appendix_entry.with(
-  title: "Resources"
+  title: "Resources",
+  updated: datetime(year: 2024, month: 1, day: 20)
 )
 
 // Put the list in alphabetical order

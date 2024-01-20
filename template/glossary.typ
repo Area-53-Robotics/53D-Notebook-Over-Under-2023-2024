@@ -19,7 +19,8 @@
 }
 
 #show: create_appendix_entry.with(
-  title: "Glossary"
+  title: "Glossary",
+  updated: datetime.today()
 )
 
 // #v(20pt)

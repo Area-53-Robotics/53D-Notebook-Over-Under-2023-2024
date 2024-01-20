@@ -75,13 +75,13 @@
 #include "./autonomous/hereford-auton.typ"
 #include "./competition/hereford-zone-stampede.typ"
 
+/*
 #include "./flywheel-1/identify.typ"
 #include "./flywheel-1/brainstorm.typ"
 #include "./flywheel-1/select.typ"
 #include "./flywheel-1/build.typ"
 #include "./flywheel-1/program.typ"
 
-/*
 // -- re-select game strategy entry?
 
 #include "./drivetrain-2/brainstorm.typ"

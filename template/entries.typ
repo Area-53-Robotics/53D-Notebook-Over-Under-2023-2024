@@ -159,10 +159,11 @@
   })
 }
 
-#let create_appendix_entry(title: "", body) = {
+#let create_appendix_entry(title: "", updated: none, body) = {
   appendix_entries.update(x => {
     x.push((
       title: title,
+      updated: updated,
       body: body,
     ))
     x
@@ -192,7 +193,7 @@
               beginning-fill: gray
             )[#entry.title]
           ],
-          footer: nb_appendix_footer()
+          footer: nb_appendix_footer(updated: entry.updated)
         )
 
         #entry.body <nb_appendix_entry>

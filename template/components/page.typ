@@ -25,15 +25,18 @@
   )
 }
 
-#let nb_appendix_footer(color: gray) = {
+#let nb_appendix_footer(color: gray, updated: none) = {
   locate(
     loc => {
       appendix_page_counter.step()
+      align(left)[
+        Updated #updated.display("[year]/[month]/[day]")
+      ]
       align(
         if calc.odd(loc.page()) == true {
-          right + bottom
+          right
         } else {
-          left + bottom
+          left
         }
       )[
         #box(
@@ -44,7 +47,7 @@
           width: 20pt,
         )[#align(center + horizon)[A-#counter(page).display()]]
         ]
-      v(2em)
+      // v(2em)
     }
   )
 }
