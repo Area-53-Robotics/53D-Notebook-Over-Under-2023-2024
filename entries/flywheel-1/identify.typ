@@ -27,7 +27,7 @@
 
     The purposes, design goals, and design constraints remain the same as those that we identified in our #nb_entry_reference(  title: "Outtake", type: "identify", date: datetime(year: 2023, month: 9, day: 16)).
   ],
-  box(height: 35%)[#image("/assets/identify/identify-flywheel.svg")]
+  box(height: 35%)[#image("/assets/identify/identify-flywheel.excalidraw.svg")]
 )
 
 #tablex(

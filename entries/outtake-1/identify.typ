@@ -24,7 +24,7 @@
 
     The outtake is a mechanism or system that facilitates the controlled release, expulsion, or transfer of objects from the robot to the surrounding environment.
   ],
-  box(height: 25%)[#image("/assets/identify/identify-outtake.svg")]
+  box(height: 25%)[#image("/assets/identify/identify-outtake.excalidraw.svg")]
 )
 
 #tablex(

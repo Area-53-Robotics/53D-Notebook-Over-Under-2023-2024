@@ -27,7 +27,7 @@
 
     A kicker is a mechanism designed to launch or propel triballs, typically with a quick and forceful action in a kicking motion.
   ],
-  box(height: 25%)[#image("/assets/identify/identify-kicker.svg")]
+  box(height: 25%)[#image("/assets/identify/identify-kicker.excalidraw.svg")]
 )
 
 #tablex(

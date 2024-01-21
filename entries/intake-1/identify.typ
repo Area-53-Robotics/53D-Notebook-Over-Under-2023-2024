@@ -28,7 +28,7 @@
 
     An intake refers to a mechanism designed to gather or take in game elements during a competition. The intake is a crucial component of a robot's design, and its effectiveness is essential for successfully manipulating and controlling the game objects based on the specific challenges of the season.
   ],
-  box(height: 35%)[#image("/assets/identify/identify-intake.svg")]
+  box(height: 35%)[#image("/assets/identify/identify-intake.excalidraw.svg")]
 )
 
 #tablex(

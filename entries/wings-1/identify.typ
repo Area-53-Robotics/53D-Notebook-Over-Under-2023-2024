@@ -25,7 +25,7 @@
 
     Wings are a special subsystem commonly found on each side of the drivetrain. Their primary function is to expand outwards, effectively increasing the total width of the robot. This allows us to push as many triballs as possible. This is especially useful after all match loads have been fired, causing an abundance of triballs on the field.
   ],
-  box(height: 35%)[#image("/assets/identify/identify-wings.svg")]
+  box(height: 35%)[#image("/assets/identify/identify-wings.excalidraw.svg")]
 )
 
 #tablex(
