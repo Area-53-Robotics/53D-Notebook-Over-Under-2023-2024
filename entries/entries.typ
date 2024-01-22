@@ -1,3 +1,4 @@
+/*
 // April
 #include "./pre-season/identify-pre-reveal-reflection.typ"
 #include "./pre-season/identify-reveal-video-thoughts.typ"
@@ -57,7 +58,7 @@
 #include "./intake-1/program.typ"
 #include "./intake-1/test.typ"
 #include "./competition/dulaney-royal-rumble.typ"
-/*
+*/
 #include "./catapult-2/build-1.typ"
 #include "./wedges-1/build.typ"
 #include "./catapult-2/build-2.typ"
@@ -94,4 +95,3 @@
 #include "./kicker-1/build.typ"
 #include "./intake-1/build-2.typ"
 #include "./wings-1/build-3.typ"
-*/

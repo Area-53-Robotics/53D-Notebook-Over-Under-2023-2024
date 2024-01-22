@@ -17,7 +17,7 @@
   )
 )
 
-To ensure that our flywheel was ready for the Capital Beltway Challenge tournament tomorrow, we tested the flywheel on the _Game Element Acquisition_ and _Handling_ "Purposes of an Outtake" that we identified in our #nb_entry_reference(date: datetime(year: 2023, month: 9, day: 16), type: "identify"), along with testing the speed of the flywheel.
+To ensure that our flywheel was ready for the Capital Beltway Challenge tournament tomorrow, we tested the flywheel on the _Game Element Acquisition_ and _Handling_ "Purposes of an Outtake" that we identified in our #past_nb_entry_reference(date: datetime(year: 2023, month: 9, day: 16), type: "identify"), along with testing the speed of the flywheel.
 
 = Speed and Acceleration Test
 == Objective

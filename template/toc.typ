@@ -41,7 +41,7 @@
                 #h(5pt)
                 #box(fill: info.color.lighten(30%), radius: 1pt, height: 1em, baseline: 15%)[
                   #align(center + horizon)[
-                    #link((page: {frontmatter_count + page_number + 2}, x: 0pt, y: 0pt))[
+                    #link((page: {frontmatter_count + page_number + 2 - 133}, x: 0pt, y: 0pt))[
                       #text(fill: black)[
                         _#h(2pt) #start_date #sym.dash.em #info.name: #entry.title #h(2pt)_
                       ]
@@ -101,7 +101,6 @@
             parbreak()
           }
 
-          /*
           box[
 
             = Program
@@ -132,10 +131,9 @@
             #counter(page).update(_ => 0)
           ]
           parbreak()
-          */
 
           box[
-/*
+
             = Appendix
 
               #let appendix_headings = query(selector(<nb_appendix_entry>), loc)
@@ -161,8 +159,8 @@
                   A-#page_number \
                 ]
               }
-*/
-            #counter(page).update(_ => 0)
+
+            #counter(page).update(_ => 133)
           ]
         }
       )

@@ -10,63 +10,55 @@
   witnessed: "Ishika",
 )
 
-
 #gridx(
-  columns: 1,
+  columns: 2,
   rows: auto,
-  auto-hlines: false,
 
-
-  gridx(
-    columns: 2,
-    rows: auto,
-
-    cellx(colspan: 2)[
-      = #datetime(year: 2023, month: 11, day: 11).display("[year]/[month]/[day]")
-      #nb_todo(
-        date: datetime(year: 2023, month: 11, day: 11),
-        monthly-schedule: "Off",
-        yearly-schedule: "On",
-        (
-          (true, "Brainstorm possible wedges for the robot (Everyone)"),
-          (true, "Select the best wedges for the robot using a decision matrix (Everyone)"),
-          (true, "Create a plan for the construction of the wedges using CAD (Ajibola)"),
-          (true, "Attach wedges to the robot (Makhi, Eric, Rory, and Ishika)"),
-          (false, "Finish tuning the catapult tower (Makhi, Eric, and Rory)"),
-        )
+  cellx(colspan: 2)[
+    = #datetime(year: 2023, month: 11, day: 11).display("[year]/[month]/[day]")
+    #nb_todo(
+      date: datetime(year: 2023, month: 11, day: 11),
+      monthly-schedule: "Off",
+      yearly-schedule: "On",
+      (
+        (true, "Brainstorm possible wedges for the robot (Everyone)"),
+        (true, "Select the best wedges for the robot using a decision matrix (Everyone)"),
+        (true, "Create a plan for the construction of the wedges using CAD (Ajibola)"),
+        (true, "Attach wedges to the robot (Makhi, Eric, Rory, and Ishika)"),
+        (false, "Finish tuning the catapult tower (Makhi, Eric, and Rory)"),
       )
+    )
 
-      From observing robots from the higher level and other robots at the tournament, we recognized the power of wedges. Robots equipped with wedges can effectively block, push, or redirect opponents, disrupting their planned maneuvers and potentially limiting their scoring opportunities.
-    ],
+    From observing robots from the higher level and other robots at the tournament, we recognized the power of wedges. Robots equipped with wedges can effectively block, push, or redirect opponents, disrupting their planned maneuvers and potentially limiting their scoring opportunities.
+  ],
 
-    cellx(colspan: 2)[
-      #tablex(
-        columns: 2,
-        align: center + horizon,
+  cellx(colspan: 2)[
+    #tablex(
+      columns: 2,
+      align: center + horizon,
 
-        cellx(fill: gray.lighten(20%))[Aggressive Wedges], cellx(fill: gray.lighten(20%))[Passive Wedges],
-        [#image("./build/Aggressive wedges.excalidraw.svg")], [#image("./build/Passive wedges.excalidraw.svg")],
+      cellx(fill: gray.lighten(20%))[Aggressive Wedges], cellx(fill: gray.lighten(20%))[Passive Wedges],
+      [#image("./build/Aggressive wedges.excalidraw.svg")], [#image("./build/Passive wedges.excalidraw.svg")],
 
-        [Used to get under the other alliance bot and tilt them over or unbalance them],
-        [Used to push triballs over the middle bar],
-      )
-    ],
+      [Used to get under the other alliance bot and tilt them over or unbalance them],
+      [Used to push triballs over the middle bar],
+    )
+  ],
 
-    [
-      == Build Steps
-      - Assembled wedges to the front of the robot
-        - Wedges serve two purposes in the game. They can be offensive, upsetting the balance of enemies bots
-        - They can be used of defense, helping push triball over the middle barrier
-      - Passive wedges:
-        - Used collars and stand offs and set them at a 45 degree angle 
-        - Cut a 8” lexan sheet and attached it to the front of the standoff using zip ties
-      - Worked on tensioning the catapult since the catapult base was lowered from last meeting
-        - Readjusted the stopper of the catapult
-    ],
-    [#image("./build/11-11.png")],
-  ),
-
-  nb_admonition(type: "note")[
-    Having the tower so low on the ground led to some clearance problems for us. Instead of using gears, we had to use sprockets and chains to connect the catapult axles.
-  ]
+  [
+    == Build Steps
+    - Assembled wedges to the front of the robot
+      - Wedges serve two purposes in the game. They can be offensive, upsetting the balance of enemies bots
+      - They can be used of defense, helping push triball over the middle barrier
+    - Passive wedges:
+      - Used collars and stand offs and set them at a 45 degree angle 
+      - Cut a 8” lexan sheet and attached it to the front of the standoff using zip ties
+    - Worked on tensioning the catapult since the catapult base was lowered from last meeting
+      - Readjusted the stopper of the catapult
+  ],
+  [#image("./build/11-11.png")],
 )
+
+#nb_admonition(type: "note")[
+  Having the tower so low on the ground led to some clearance problems for us. Instead of using gears, we had to use sprockets and chains to connect the catapult axles.
+]

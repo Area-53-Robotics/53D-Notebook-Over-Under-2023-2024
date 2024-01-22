@@ -53,7 +53,7 @@
       - Attach pneumatic to the wings
 
       #nb_admonition(type: "note")[
-        Today we received the gears that we needed to complete the drivetrain build that we started in our #nb_entry_reference(date: datetime(year: 2023, month: 1, day: 4), type: "build", title: "Drivetrain #2").
+        Today we received the gears that we needed to complete the drivetrain build that we started in our #nb_entry_reference(date: datetime(year: 2024, month: 1, day: 4), type: "build", title: "Drivetrain #2").
       ]
     ]
   ),

@@ -228,12 +228,12 @@
   locate(
     loc => {
 
-      let valid_entries = entries.final(loc).enumerate()
+      let valid_entries = full-entry-list
 
       if date != none {
         valid_entries = valid_entries.filter(
           entry => {
-            entry.last().start_date.display("[year]/[month]/[day]").match(date.display("[year]/[month]/[day]")) != none
+            entry.start_date.display("[year]/[month]/[day]").match(date.display("[year]/[month]/[day]")) != none
           }
         )
       }
@@ -241,7 +241,7 @@
       if type != none {
         valid_entries = valid_entries.filter(
           entry => {
-            entry.last().type.match(type) != none
+            entry.type.match(type) != none
           }
         )
       }
@@ -249,7 +249,7 @@
       if title != none {
         valid_entries = valid_entries.filter(
           entry => {
-            entry.last().title.match(title) != none
+            entry.title.match(title) != none
           }
         )
       }
@@ -258,18 +258,14 @@
       assert(valid_entries.len() <= 1, message: "More than one entry meet the given attributes")
 
       let entry = valid_entries.first()
-      let info = type_metadata.at(entry.last().type)
-      let page = counter(page).at(query(selector(<nb_entry>), loc).at(entry.first()).location()).at(0)
+      let info = type_metadata.at(entry.type)
+      let page = entry.body
 
       [
-        #box(baseline: 15%, nb_icon(label: entry.last().type, size: 1em))
+        #box(baseline: 15%, nb_icon(label: entry.type, size: 1em))
         #h(1pt)
         #highlight(fill: info.color.lighten(30%))[
-          #link((page: {frontmatter_page_counter.final(loc).at(0) + page + 2}, x: 0pt, y: 0pt))[
-            #text(fill: black)[
-              _#h(2pt) #entry.last().start_date.display("[year]/[month]/[day]") #sym.dash.em #info.name: #entry.last().title #h(2pt)_
-            ]
-          ]
+          #h(2pt) #entry.start_date.display("[year]/[month]/[day]") #sym.dash.em #info.name: #entry.title #h(2pt)
         ]
         #body pg. #page #h(-0.2em)
       ]

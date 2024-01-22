@@ -9,7 +9,7 @@
   witnessed: "Ishika",
 )
 
-Today we redid the wings test from our #nb_entry_reference(date: datetime(year: 2023, month: 10, day: 13), type: "test", title: "Wings #1") #h(0.5em) to test the effectiveness of the improvements we made in our #nb_entry_reference(date: datetime(year: 2023, month: 11, day: 18), type: "build", title: "Wings #1").
+Today we redid the wings test from our #past_nb_entry_reference(date: datetime(year: 2023, month: 10, day: 13), type: "test", title: "Wings #1") #h(0.5em) to test the effectiveness of the improvements we made in our #nb_entry_reference(date: datetime(year: 2023, month: 11, day: 18), type: "build", title: "Wings #1").
 We tested the air loss of the wings as they are continuously deployed to ensure that our wings are usable throughout the round.
 
 = Air Loss

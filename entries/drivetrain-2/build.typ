@@ -3,8 +3,8 @@
 #show: create_entry.with(
   title: "Drivetrain #2",
   type: "build",
-  start_date: datetime(year: 2023, month: 1, day: 4),
-  end_date: datetime(year: 2023, month: 1, day: 4),
+  start_date: datetime(year: 2024, month: 1, day: 4),
+  end_date: datetime(year: 2024, month: 1, day: 4),
   attendance: "Ajibola, Jin, Ishika, Rory, Makhi",
   designed: "Jin",
   witnessed: "Ajibola",

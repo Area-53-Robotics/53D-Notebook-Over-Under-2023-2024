@@ -84,15 +84,14 @@
   pagebreak()
   pagebreak()
 
-  about
+  // about
 
-  intro
+  // intro
 
   nb_toc()
 
   print_entries()
 
-  /*
   pagebreak()
   pagebreak()
 
@@ -102,7 +101,6 @@
   pagebreak()
 
   print_appendix_entries()
-  */
 
   // signature-list()
 
