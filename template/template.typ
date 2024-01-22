@@ -60,7 +60,7 @@
   // Headings
   show heading: it => nb_heading(it)
 
-  // set raw(theme: "/assets/halcyon2.tmTheme")
+  set raw(theme: "/assets/vscode_light.tmTheme")
 
   // Content
   align(center)[

@@ -43,6 +43,7 @@
       - Changed the axle that held the rubber bands
         - We want to make it as low as possible to ensure proper tension
         - We must be careful of wear, otherwise the catapult could break at a crucial time, such as in the middle of a competition match
+        - Attached a rotation sensor to the bottom axle with a sprocket
     ],
   ),
 )

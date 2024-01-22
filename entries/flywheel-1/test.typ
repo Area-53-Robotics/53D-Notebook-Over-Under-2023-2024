@@ -9,9 +9,11 @@
   witnessed: "Makhi",
 )
 
-// To ensure that our intake was functioning that the level that we wanted, we tested the catapult on two of the "Purposes of an Outtake" that we identified in our #nb_entry_reference(date: datetime(year: 2023, month: 9, day: 16), type: "identify"). The two that we chose to test are "Game Element Acquisition" and "Handling."
+To ensure that our flywheel was functioning that the level that we wanted, we tested the flywheel on the _Game Element Acquisition_ and _Handling_ Purposes of an Outtake that we identified in our #nb_entry_reference(date: datetime(year: 2023, month: 9, day: 16), type: "identify"), along with testing the speed of the flywheel.
 
 = Speed and Acceleration Test
+== Objective
+We want the flywheel to reach its maximum speed and remain stable at that speed within 5 seconds of the flywheel's activation.
 
 #v(1em)
 
@@ -36,6 +38,9 @@
   ],
 )
 
+== Data Collection
+To collect the data from this test, we used the following code to get the speed of the flywheel
+
 == Results
 #gridx(
   columns: 2,
@@ -43,25 +48,46 @@
 
   [
     #tablex(
-      columns: 2,
-      rows: 3,
+      columns: 6,
+      rows: 2,
       align: center + horizon,
 
       fill: (col, row) => {
         if col == 0 {
-          gray.lighten(20%)
+          if row == 1 {
+            gray.lighten(20%)
+          } else {
+            white
+          }
         } else {
-          white
+          if row == 0 {
+            gray.lighten(20%)
+          } else {
+            white
+          }
         }
       },
 
-      [1 Attempt Needed], [17],
-      [2 Attempts Needed], [8],
-      [3 Attempts Needed], [5],
+      hlinex(start: 1, y: 0),
+      vlinex(start: 1, x: 0),
+
+      [], [Trial 1], [Trial 2], [Trial 3], [Trial 4], [Trial 5],
+      [Velocity], [504.02], [502.67], [503.04], [503.96], [502.88],
     )
   ],
 
-  [#image("./test/Intake Reliability Performance.svg")]
+  tablex(
+    columns: 2,
+    align: center + horizon,
+
+    cellx(fill: gray.lighten(20%), colspan: 2)[Statistics],
+    [Average], [503.314],
+    [Range], [1.35],
+    [Variance], [0.31878399999998],
+    [Standard Deviation], [0.56460959963499],
+  ),
+
+  // [#image("./test/Intake Reliability Performance.svg")]
 )
 
 == Conclusion
@@ -123,7 +149,7 @@ We are a bit unhappy with the consistency and reliability of our intake. While t
     )
   ],
 
-  [#image("./test/Intake Release Performance.svg")]
+  // [#image("./test/Intake Release Performance.svg")]
 )
 
 == Conclusion

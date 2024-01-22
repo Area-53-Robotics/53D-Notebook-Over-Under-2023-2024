@@ -58,7 +58,7 @@ To solve this, we created a GitHub workflow that compiles the notebook when chan
 
 Here is the final workflow code:
 
-#align(center)[*53D-Over-Under-Notebook/.github/workflows/build.yml*]
+#align(center)[*53D_OverUnder-Over-Under-Notebook/.github/workflows/build.yml*]
 #raw(block: true, lang: "yml", read("/.github/workflows/build.yml"))
 
 When the workflow is completed, the notebook can be downloaded from our Discord by team members from a message that looks like this:
@@ -71,7 +71,7 @@ The last problem that we addressed using GitHub workflows is spell checking the 
 
 Here is the final workflow code:
 
-#align(center)[*53D-Over-Under-Notebook/.github/workflows/typos.yml*]
+#align(center)[*53D_OverUnder-Over-Under-Notebook/.github/workflows/typos.yml*]
 #raw(block: true, lang: "yml", read("/.github/workflows/typos.yml"))
 
 When the workflow is completed, if there is are no detected spelling errors in the notebook, a workflow success message will be sent to our Discord that looks like this:
