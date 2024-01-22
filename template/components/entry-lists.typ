@@ -1,7 +1,5 @@
 #let entry-list-1 = (
  (
- 0,
- (
  title: "Pre-Reveal Reflection",
  type: "identify",
  start_date: datetime(year: 2023, month: 3, day: 17),
@@ -11,9 +9,6 @@
  witnessed: "Eric",
  body: 1,
  ),
- ),
- (
- 1,
  (
  title: "Reveal Video Thoughts",
  type: "identify",
@@ -24,9 +19,6 @@
  witnessed: "Eric",
  body: 3,
  ),
- ),
- (
- 2,
  (
  title: "Game Challenge - Analysis",
  type: "identify",
@@ -37,9 +29,6 @@
  witnessed: "Eric",
  body: 4,
  ),
- ),
- (
- 3,
  (
  title: "Over Under Season Gantt Chart",
  type: "management",
@@ -50,9 +39,6 @@
  witnessed: "Ishika",
  body: 10,
  ),
- ),
- (
- 4,
  (
  title: "July Gantt Chart",
  type: "management",
@@ -63,9 +49,6 @@
  witnessed: "Ishika",
  body: 11,
  ),
- ),
- (
- 5,
  (
  title: "Game Challenge - Design Strategies",
  type: "brainstorm",
@@ -76,9 +59,6 @@
  witnessed: "Ajibola",
  body: 12,
  ),
- ),
- (
- 6,
  (
  title: "Game Challenge - Design Strategies",
  type: "select",
@@ -89,9 +69,6 @@
  witnessed: "Ishika",
  body: 14,
  ),
- ),
- (
- 7,
  (
  title: "Drivetrain #1 - Identify Design Goals and Constraints",
  type: "identify",
@@ -102,9 +79,6 @@
  witnessed: "Ishika",
  body: 16,
  ),
- ),
- (
- 8,
  (
  title: "Drivetrain #1",
  type: "understand",
@@ -115,9 +89,6 @@
  witnessed: "Eric",
  body: 17,
  ),
- ),
- (
- 9,
  (
  title: "Drivetrain #1 - Drive Configurations",
  type: "brainstorm",
@@ -128,9 +99,6 @@
  witnessed: "Ishika",
  body: 19,
  ),
- ),
- (
- 10,
  (
  title: "Drivetrain #1 - Drive Configurations",
  type: "select",
@@ -141,9 +109,6 @@
  witnessed: "Ishika",
  body: 21,
  ),
- ),
- (
- 11,
  (
  title: "Drivetrain #1 - Wheel Types",
  type: "brainstorm",
@@ -154,9 +119,6 @@
  witnessed: "Eric",
  body: 23,
  ),
- ),
- (
- 12,
  (
  title: "Drivetrain #1 - Wheel Types",
  type: "select",
@@ -167,9 +129,6 @@
  witnessed: "Eric",
  body: 27,
  ),
- ),
- (
- 13,
  (
  title: "Drivetrain #1 - Gear Ratio",
  type: "brainstorm",
@@ -180,9 +139,6 @@
  witnessed: "Eric",
  body: 29,
  ),
- ),
- (
- 14,
  (
  title: "Drivetrain #1 - Gear Ratio",
  type: "select",
@@ -193,9 +149,6 @@
  witnessed: "Ishika",
  body: 31,
  ),
- ),
- (
- 15,
  (
  title: "August Gantt Chart",
  type: "management",
@@ -206,9 +159,6 @@
  witnessed: "Makhi",
  body: 39,
  ),
- ),
- (
- 16,
  (
  title: "Drivetrain #1",
  type: "build",
@@ -219,9 +169,6 @@
  witnessed: "Rory",
  body: 40,
  ),
- ),
- (
- 17,
  (
  title: "September Gantt Chart",
  type: "management",
@@ -232,9 +179,6 @@
  witnessed: "Rory",
  body: 45,
  ),
- ),
-  (
- 18,
  (
  title: "Drivetrain #1",
  type: "build",
@@ -245,9 +189,6 @@
  witnessed: "Ajibola",
  body: 46,
  ),
- ),
- (
- 19,
  (
  title: "Drivetrain #1 - Driver Control",
  type: "program",
@@ -258,9 +199,6 @@
  witnessed: "Ishika",
  body: 48,
  ),
- ),
- (
- 20,
  (
  title: "Drivetrain #1",
  type: "test",
@@ -271,9 +209,6 @@
  witnessed: "Ishika",
  body: 55,
  ),
- ),
- (
- 21,
  (
  title: "Outtake - Identify Design Goals and Constraints",
  type: "identify",
@@ -284,9 +219,6 @@
  witnessed: "Eric",
  body: 58,
  ),
- ),
- (
- 22,
  (
  title: "Wings #1 - Identify Design Goals and Constraints",
  type: "identify",
@@ -297,9 +229,6 @@
  witnessed: "Ajibola",
  body: 59,
  ),
- ),
- (
- 23,
  (
  title: "Wings #1",
  type: "understand",
@@ -310,9 +239,6 @@
  witnessed: "Ajibola",
  body: 60,
  ),
- ),
- (
- 24,
  (
  title: "Outtake",
  type: "brainstorm",
@@ -323,9 +249,6 @@
  witnessed: "Makhi",
  body: 62,
  ),
- ),
- (
- 25,
  (
  title: "Outtake #1",
  type: "select",
@@ -336,9 +259,6 @@
  witnessed: "Eric",
  body: 65,
  ),
- ),
- (
- 26,
  (
  title: "Catapult #1",
  type: "brainstorm",
@@ -349,9 +269,6 @@
  witnessed: "Makhi",
  body: 67,
  ),
- ),
- (
- 27,
  (
  title: "Catapult #1",
  type: "select",
@@ -362,9 +279,6 @@
  witnessed: "Eric",
  body: 69,
  ),
- ),
- (
- 28,
  (
  title: "Wings #1",
  type: "brainstorm",
@@ -375,9 +289,6 @@
  witnessed: "Makhi",
  body: 78,
  ),
- ),
- (
- 29,
  (
  title: "Wings #1",
  type: "select",
@@ -388,9 +299,6 @@
  witnessed: "Makhi",
  body: 80,
  ),
- ),
- (
- 30,
  (
  title: "Kanban Board",
  type: "management",
@@ -401,9 +309,6 @@
  witnessed: "Ishika",
  body: 85,
  ),
- ),
- (
- 31,
  (
  title: "Catapult #1 - Low Catapult",
  type: "build",
@@ -414,9 +319,6 @@
  witnessed: "Rory",
  body: 88,
  ),
- ),
- (
- 32,
  (
  title: "Wings #1",
  type: "build",
@@ -427,9 +329,6 @@
  witnessed: "Rory",
  body: 91,
  ),
- ),
- (
- 33,
  (
  title: "October Gantt Chart",
  type: "management",
@@ -440,9 +339,6 @@
  witnessed: "Ishika",
  body: 93,
  ),
- ),
- (
- 34,
  (
  title: "Catapult #1 - Low Catapult",
  type: "program",
@@ -453,9 +349,6 @@
  witnessed: "Ajibola",
  body: 94,
  ),
- ),
- (
- 35,
  (
  title: "Catapult #1 - Low Catapult",
  type: "test",
@@ -466,9 +359,6 @@
  witnessed: "Makhi",
  body: 96,
  ),
- ),
- (
- 36,
  (
  title: "Wings #1",
  type: "program",
@@ -479,9 +369,6 @@
  witnessed: "Ishika",
  body: 98,
  ),
- ),
- (
- 37,
  (
  title: "Wings #1",
  type: "test",
@@ -492,9 +379,6 @@
  witnessed: "Rory",
  body: 100,
  ),
- ),
- (
- 38,
  (
  title: "Intake #1 - Identify Design Goals and Constraints",
  type: "identify",
@@ -505,9 +389,6 @@
  witnessed: "Eric",
  body: 102,
  ),
- ),
- (
- 39,
  (
  title: "Intake #1",
  type: "understand",
@@ -517,111 +398,6 @@
  designed: "Ajibola",
  witnessed: "Eric",
  body: 104,
- ),
- ),
- (
- 40,
- (
- title: "Intake #1",
- type: "brainstorm",
- start_date: datetime(year: 2023, month: 10, day: 14),
- end_date: datetime(year: 2023, month: 10, day: 14),
- attendance: "Ajibola, Ishika, Eric, Makhi",
- designed: "Ajibola",
- witnessed: "Makhi",
- body: 107,
- ),
- ),
- (
- 41,
- (
- title: "Intake #1",
- type: "select",
- start_date: datetime(year: 2023, month: 10, day: 14),
- end_date: datetime(year: 2023, month: 10, day: 14),
- attendance: "Ajibola, Ishika, Eric, Emma",
- designed: "Ajibola",
- witnessed: "Eric",
- body: 110,
- ),
- ),
- (
- 42,
- (
- title: "Area 53 Scrimmage",
- type: "competition",
- start_date: datetime(year: 2023, month: 10, day: 21),
- end_date: datetime(year: 2023, month: 10, day: 21),
- attendance: "Ajibola, Ishika, Makhi, Eric, Rory",
- designed: "Ajibola",
- witnessed: "Eric",
- body: 115,
- ),
- ),
- (
- 43,
- (
- title: "Intake #1",
- type: "build",
- start_date: datetime(year: 2023, month: 10, day: 27),
- end_date: datetime(year: 2023, month: 10, day: 28),
- attendance: "Ajibola, Ishika, Eric, Rory, Makhi",
- designed: "Rory",
- witnessed: "Eric",
- body: 120,
- ),
- ),
- (
- 44,
- (
- title: "November Gantt Chart",
- type: "management",
- start_date: datetime(year: 2023, month: 11, day: 3),
- end_date: datetime(year: 2023, month: 11, day: 3),
- attendance: "",
- designed: "Ajibola",
- witnessed: "Ishika",
- body: 122,
- ),
- ),
- (
- 45,
- (
- title: "Intake #1",
- type: "program",
- start_date: datetime(year: 2023, month: 11, day: 3),
- end_date: datetime(year: 2023, month: 11, day: 3),
- attendance: "Ajibola, Ishika, Rory, Makhi",
- designed: "Ajibola",
- witnessed: "Ishika",
- body: 123,
- ),
- ),
- (
- 46,
- (
- title: "Intake #1",
- type: "test",
- start_date: datetime(year: 2023, month: 11, day: 3),
- end_date: datetime(year: 2023, month: 11, day: 3),
- attendance: "Ajibola, Ishika, Makhi, Eric, Rory",
- designed: "Rory",
- witnessed: "Ajibola",
- body: 125,
- ),
- ),
- (
- 47,
- (
- title: "Dulaney Royal Rumble",
- type: "competition",
- start_date: datetime(year: 2023, month: 11, day: 4),
- end_date: datetime(year: 2023, month: 11, day: 4),
- attendance: "Ajibola, Ishika, Makhi, Rory",
- designed: "Ajibola",
- witnessed: "Ishika",
- body: 127,
- ),
  ),
 )
 
