@@ -10,12 +10,12 @@
   witnessed: "Ishika",
 )
 
-From observing robots from the higher level and other robots at the tournament, we recognized the power of wedges. Robots equipped with wedges can effectively block, push, or redirect opponents, disrupting their planned maneuvers and potentially limiting their scoring opportunities.
 
 #gridx(
   columns: 1,
   rows: auto,
   auto-hlines: false,
+
 
   gridx(
     columns: 2,
@@ -25,8 +25,8 @@ From observing robots from the higher level and other robots at the tournament, 
       = #datetime(year: 2023, month: 11, day: 11).display("[year]/[month]/[day]")
       #nb_todo(
         date: datetime(year: 2023, month: 11, day: 11),
-        monthly-schedule: none,
-        yearly-schedule: none,
+        monthly-schedule: "Off",
+        yearly-schedule: "On",
         (
           (true, "Brainstorm possible wedges for the robot (Everyone)"),
           (true, "Select the best wedges for the robot using a decision matrix (Everyone)"),
@@ -35,7 +35,23 @@ From observing robots from the higher level and other robots at the tournament, 
           (false, "Finish tuning the catapult tower (Makhi, Eric, and Rory)"),
         )
       )
+
+      From observing robots from the higher level and other robots at the tournament, we recognized the power of wedges. Robots equipped with wedges can effectively block, push, or redirect opponents, disrupting their planned maneuvers and potentially limiting their scoring opportunities.
     ],
+
+    cellx(colspan: 2)[
+      #tablex(
+        columns: 2,
+        align: center + horizon,
+
+        cellx(fill: gray.lighten(20%))[Aggressive Wedges], cellx(fill: gray.lighten(20%))[Passive Wedges],
+        [#image("./build/Aggressive wedges.excalidraw.svg")], [#image("./build/Passive wedges.excalidraw.svg")],
+
+        [Used to get under the other alliance bot and tilt them over or unbalance them],
+        [Used to push triballs over the middle bar],
+      )
+    ],
+
     [
       == Build Steps
       - Assembled wedges to the front of the robot
@@ -51,6 +67,6 @@ From observing robots from the higher level and other robots at the tournament, 
   ),
 
   nb_admonition(type: "note")[
-    Having the tower so low on the ground leads to some problems for us. Instead of using gears, we used sprockets and chains to connect the catapult.
+    Having the tower so low on the ground led to some clearance problems for us. Instead of using gears, we had to use sprockets and chains to connect the catapult axles.
   ]
 )

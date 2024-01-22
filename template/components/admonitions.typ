@@ -42,13 +42,13 @@
 
 #let nb_todo(date: none, monthly-schedule: none, yearly-schedule: none, attendance: none, body) = {
   if monthly-schedule != none {
-    if ((monthly-schedule != "On") and (monthly-schedule != "Behind") and (monthly-schedule != "Ahead")) {
+    if ((monthly-schedule != "On") and (monthly-schedule != "Behind") and (monthly-schedule != "Ahead") and (monthly-schedule != "Off")) {
       panic("Invalid monthly schedule status")
     }
   }
 
   if yearly-schedule != none {
-    if ((yearly-schedule != "On") and (yearly-schedule != "Behind") and (yearly-schedule != "Ahead")) {
+    if ((yearly-schedule != "On") and (yearly-schedule != "Behind") and (yearly-schedule != "Ahead") and (monthly-schedule != "Off")) {
       panic("Invalid yearly schedule status")
     }
   }

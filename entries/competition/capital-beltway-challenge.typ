@@ -1,9 +1,9 @@
 #import "/template/template.typ": *
 
 #show: create_entry.with(
-  title: "Hereford Zone Stampede",
+  title: "Capital Beltway Challenge",
   type: "competition",
-  start_date: datetime(year: 2023, month: 12, day: 2),
+  start_date: datetime(year: 2023, month: 12, day: 16),
   attendance: "Ajibola, Ishika, Makhi, Eric, Rory",
   designed: "Ajibola",
   witnessed: "Makhi",

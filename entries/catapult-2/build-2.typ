@@ -23,8 +23,8 @@
       = #datetime(year: 2023, month: 11, day: 17).display("[year]/[month]/[day]")
       #nb_todo(
         date: datetime(year: 2023, month: 11, day: 17),
-        monthly-schedule: none,
-        yearly-schedule: none,
+        monthly-schedule: "Behind",
+        yearly-schedule: "Behind",
         (
           (true, "Finish boxing the catapult (Makhi, Eric, and Rory)"),
           (true, "Check for and fix any remaining problems with the wings (Ajibola and Ishika)"),

@@ -25,8 +25,8 @@ We don't plan on making any major rebuilds until the winter break in December. R
       = #datetime(year: 2023, month: 11, day: 10).display("[year]/[month]/[day]")
       #nb_todo(
         date: datetime(year: 2023, month: 11, day: 10),
-        monthly-schedule: none,
-        yearly-schedule: none,
+        monthly-schedule: "On",
+        yearly-schedule: "On",
         (
           (true, "Scrutinize the catapult design for any flaws (Everyone)"),
           (true, "Brace any parts of the catapult that lack support (Makhi, Eric, and Rory)"),

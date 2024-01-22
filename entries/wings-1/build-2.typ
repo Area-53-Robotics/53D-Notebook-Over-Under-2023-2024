@@ -25,6 +25,8 @@
 
         #nb_todo(
           date: datetime(year: 2023, month: 11, day: 18),
+          monthly-schedule: "Off",
+          yearly-schedule: "Behind",
           (
             (true, "Improve the extension length of the wings (Everyone)"),
           )

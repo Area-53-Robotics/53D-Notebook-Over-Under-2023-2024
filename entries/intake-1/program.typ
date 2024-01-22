@@ -9,16 +9,6 @@
   witnessed: "Ishika",
 )
 
-#nb_todo(
-  date: datetime(year: 2023, month: 11, day: 3),
-  monthly-schedule: "On",
-  yearly-schedule: "On",
-  (
-    (true, "Program the intake to be usable during driver control. (Ajibola and Ishika)"),
-    (true, "Test the intake (Everyone)"),
-  )
-)
-
 = Intake Driver Control
 #nb_admonition(type: "identify", title: "Mini-Identify: Intake Driver Control")[
   Makhi, our driver, identified that he wants the intake to:

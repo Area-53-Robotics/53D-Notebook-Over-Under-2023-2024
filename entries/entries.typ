@@ -57,12 +57,9 @@
 #include "./intake-1/program.typ"
 #include "./intake-1/test.typ"
 #include "./competition/dulaney-royal-rumble.typ"
-
+/*
 #include "./catapult-2/build-1.typ"
-
 #include "./wedges-1/build.typ"
-// -- insert wedge entries
-
 #include "./catapult-2/build-2.typ"
 #include "./wings-1/build-2.typ"
 #include "./misc-program/github-workflows.typ"
@@ -83,7 +80,6 @@
 
 // -- re-select game strategy entry?
 
-/*
 #include "./autonomous/capital-beltway-auton.typ"
 #include "./competition/capital-beltway-challenge.typ"
 #include "./drivetrain-2/brainstorm.typ"

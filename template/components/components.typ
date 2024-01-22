@@ -2,6 +2,7 @@
 #import "codly.typ": *
 #import "decision-matrix.typ": *
 #import "entry-components.typ": *
+#import "external-info.typ": *
 #import "graphs.typ": *
 #import "headings.typ": *
 #import "page.typ": *
