@@ -1,6 +1,7 @@
 #import "@preview/tablex:0.0.8": *
 #import "../icons/icons.typ": *
 #import "../globals.typ": frontmatter_page_counter, entry_page_counter, appendix_page_counter, entries
+#import "./entry-lists.typ": *
 
 #let nb_pro_con(name: none, image: [], image-width: 40%, pros: [], cons: [], notes: []) = [
   #assert(name != none, message: "No name given")
@@ -160,6 +161,65 @@
 
 // ! You can only have two entry references in an entry without getting the "did not converge" error
 #let nb_entry_reference(
+  date: none,
+  type: none,
+  title: none,
+  body: [entry on],
+) = {
+  locate(
+    loc => {
+
+      let valid_entries = entries.final(loc).enumerate()
+
+      if date != none {
+        valid_entries = valid_entries.filter(
+          entry => {
+            entry.last().start_date.display("[year]/[month]/[day]").match(date.display("[year]/[month]/[day]")) != none
+          }
+        )
+      }
+
+      if type != none {
+        valid_entries = valid_entries.filter(
+          entry => {
+            entry.last().type.match(type) != none
+          }
+        )
+      }
+
+      if title != none {
+        valid_entries = valid_entries.filter(
+          entry => {
+            entry.last().title.match(title) != none
+          }
+        )
+      }
+
+      assert(valid_entries.len() > 0, message: "No entries meet the given attributes")
+      assert(valid_entries.len() <= 1, message: "More than one entry meet the given attributes")
+
+      let entry = valid_entries.first()
+      let info = type_metadata.at(entry.last().type)
+      let page = counter(page).at(query(selector(<nb_entry>), loc).at(entry.first()).location()).at(0)
+
+      [
+        #box(baseline: 15%, nb_icon(label: entry.last().type, size: 1em))
+        #h(1pt)
+        #highlight(fill: info.color.lighten(30%))[
+          #link((page: {frontmatter_page_counter.final(loc).at(0) + page + 2}, x: 0pt, y: 0pt))[
+            #text(fill: black)[
+              _#h(2pt) #entry.last().start_date.display("[year]/[month]/[day]") #sym.dash.em #info.name: #entry.last().title #h(2pt)_
+            ]
+          ]
+        ]
+        #body pg. #page #h(-0.2em)
+      ]
+    }
+  )
+}
+
+// ! You can only have two entry references in an entry without getting the "did not converge" error
+#let past_nb_entry_reference(
   date: none,
   type: none,
   title: none,
