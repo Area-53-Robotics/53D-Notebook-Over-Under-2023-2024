@@ -4,7 +4,9 @@
   title: "Intake #1",
   type: "test",
   start_date: datetime(year: 2023, month: 11, day: 3),
-  attendance: "Ajibola, Ishika, Makhi, Eric, Rory"
+  attendance: "Ajibola, Ishika, Makhi, Eric, Rory",
+  designed: "Rory",
+  witnessed: "Ajibola",
 )
 
 To ensure that our intake was functioning that the level that we wanted, we tested the catapult on two of the "Purposes of an Outtake" that we identified in our #nb_entry_reference(date: datetime(year: 2023, month: 9, day: 16), type: "identify"). The two that we chose to test are "Game Element Acquisition" and "Handling."

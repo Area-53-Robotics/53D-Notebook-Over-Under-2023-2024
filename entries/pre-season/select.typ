@@ -4,7 +4,9 @@
   title: "Game Challenge - Design Strategies",
   type: "select",
   start_date: datetime(year: 2023, month: 7, day: 14),
-  attendance: "Ajibola, Ishika, Eric, Emma"
+  attendance: "Ajibola, Ishika, Eric, Emma",
+  designed: "Ajibola",
+  witnessed: "Ishika",
 )
 
 #nb_matrix_criteria[

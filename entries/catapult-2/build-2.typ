@@ -6,6 +6,8 @@
   start_date: datetime(year: 2023, month: 11, day: 17),
   end_date: none,
   attendance: "Ajibola, Ishika, Eric, Rory, Makhi",
+  designed: "Makhi",
+  witnessed: "Eric",
 )
 
 #gridx(

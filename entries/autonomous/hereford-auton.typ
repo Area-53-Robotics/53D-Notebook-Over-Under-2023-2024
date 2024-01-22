@@ -4,7 +4,9 @@
   title: "Autonomous Programming - Hereford Zone",
   type: "program",
   start_date: datetime(year: 2023, month: 12, day: 1),
-  attendance: "Ajibola, Ishika, Eric, Rory, Makhi"
+  attendance: "Ajibola, Ishika, Eric, Rory, Makhi",
+  designed: "Ajibola",
+  witnessed: "Ishika",
 )
 
 #grid(
@@ -26,7 +28,7 @@ Before making the autonomous, we needed to make autonomous movement functions fo
 
   Parameters:
   - length - A decimal value representing how many wheel rotations the drivetrain should move
-  - velocity - A positive value from 0 - 600 reprenting how fast the drivetrain should move in RPM
+  - velocity - A positive value from 0 - 600 representing how fast the drivetrain should move in RPM
 */
 void drive(double length, unsigned short int velocity) {
   // Delays the function until the drivetrain has stopped moving
@@ -43,7 +45,7 @@ void drive(double length, unsigned short int velocity) {
   Parameters:
   - direction - A letter, either 'L' or 'R' representing whether the drivetrain should turn left or right
   - length - A decimal value representing how many wheel rotations the drivetrain should turn
-  - velocity - A positive value from 0 - 600 reprenting how fast the drivetrain should turn in RPM
+  - velocity - A positive value from 0 - 600 representing how fast the drivetrain should turn in RPM
 */
 void turn(char direction, double length, unsigned short int velocity) {
   // Delays the function until the drivetrain has stopped moving
@@ -88,7 +90,7 @@ We then remade the autonomous movement functions using the new drivetrain object
 
   Parameters:
   - length - A decimal value representing how many wheel rotations the drivetrain should move
-  - velocity - A positive value from 0 - 600 reprenting how fast the drivetrain should move in RPM
+  - velocity - A positive value from 0 - 600 representing how fast the drivetrain should move in RPM
   - delay - How long the drivetrain should wait (in milliseconds) before performing the next autonomous movement
 */
 void AutonDrive(double length, unsigned short int velocity, unsigned short int delay) {
@@ -105,7 +107,7 @@ void AutonDrive(double length, unsigned short int velocity, unsigned short int d
   Parameters:
   - direction - A letter, either 'L' or 'R' representing whether the drivetrain should turn left or right
   - length - A decimal value representing how many wheel rotations the drivetrain should turn
-  - velocity - A positive value from 0 - 600 reprenting how fast the drivetrain should turn in RPM
+  - velocity - A positive value from 0 - 600 representing how fast the drivetrain should turn in RPM
   - delay - How long the drivetrain should wait (in milliseconds) before performing the next autonomous movement
 */
 void AutonTurn(char direction, double length, unsigned short int velocity, unsigned short int delay) {

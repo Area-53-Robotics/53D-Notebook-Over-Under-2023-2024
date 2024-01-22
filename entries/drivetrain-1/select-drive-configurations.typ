@@ -5,6 +5,8 @@
   type: "select",
   start_date: datetime(year: 2023, month: 7, day: 21),
   attendance: "Ajibola, Ishika, Eric, Emma",
+  designed: "Eric",
+  witnessed: "Ishika",
 )
 
 After brainstorming different drive configurations, we had to pick one to begin building. This will be a very important decision as it will determine what we can build in the future. As such, we identified as much criteria as possible to make an accurate judgement.

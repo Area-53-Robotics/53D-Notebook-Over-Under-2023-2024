@@ -5,6 +5,8 @@
   type: "select",
   start_date: datetime(year: 2023, month: 8, day: 12),
   attendance: "Ajibola, Ishika, Makhi",
+  designed: "Makhi",
+  witnessed: "Ajibola",
 )
 
 #nb_todo(

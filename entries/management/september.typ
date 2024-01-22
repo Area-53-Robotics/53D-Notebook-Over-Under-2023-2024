@@ -4,7 +4,9 @@
   title: "September Gantt Chart",
   type: "management",
   start_date: datetime(year: 2023, month: 9, day: 8),
-  attendance: "Ajibola, Ishika, Eric, Rory, Makhi"
+  attendance: "Ajibola, Ishika, Eric, Rory, Makhi",
+  designed: "Eric",
+  witnessed: "Rory",
 )
 
 #nb_todo(

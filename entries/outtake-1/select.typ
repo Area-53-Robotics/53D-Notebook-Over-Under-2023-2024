@@ -4,7 +4,9 @@
   title: "Outtake #1",
   type: "select",
   start_date: datetime(year: 2023, month: 9, day: 23),
-  attendance: "Ajibola, Ishika, Eric, Emma"
+  attendance: "Ajibola, Ishika, Eric, Emma",
+  designed: "Ajibola",
+  witnessed: "Eric",
 )
 
 // #nb_todo(

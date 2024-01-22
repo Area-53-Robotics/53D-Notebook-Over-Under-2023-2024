@@ -5,6 +5,8 @@
   type: "brainstorm",
   start_date: datetime(year: 2023, month: 7, day: 21),
   attendance: "Ajibola, Ishika, Eric, Emma",
+  designed: "Ajibola",
+  witnessed: "Ishika",
 )
 
 #nb_todo(

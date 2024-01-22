@@ -4,7 +4,9 @@
   title: "Outtake #2",
   type: "understand",
   start_date: datetime(year: 2023, month: 11, day: 11),
-  attendance: "Ajibola, Jin, Ishika, Eric, Rory, Makhi"
+  attendance: "Ajibola, Jin, Ishika, Eric, Rory, Makhi",
+  designed: "Jin",
+  witnessed: "Makhi",
 )
 
 #nb_admonition(type: "note")[

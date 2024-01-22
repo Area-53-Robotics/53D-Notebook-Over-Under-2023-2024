@@ -4,7 +4,9 @@
   title: "Flywheel #1",
   type: "program",
   start_date: datetime(year: 2023, month: 12, day: 14),
-  attendance: "Ajibola, Jin, Ishika, Makhi, Eric, Rory"
+  attendance: "Ajibola, Ishika, Makhi, Eric, Rory",
+  designed: "Ajibola",
+  witnessed: "Ishika",
 )
 
 #nb_todo(

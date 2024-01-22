@@ -4,7 +4,9 @@
   title: "Hereford Zone Stampede",
   type: "competition",
   start_date: datetime(year: 2023, month: 12, day: 2),
-  attendance: "Ajibola, Ishika, Makhi, Eric, Rory"
+  attendance: "Ajibola, Ishika, Makhi, Eric, Rory",
+  designed: "Ajibola",
+  witnessed: "Makhi",
 )
 
 #nb_admonition(type: "competition", title: "Competition Results")[

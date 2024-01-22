@@ -4,7 +4,9 @@
   title: "Kicker #1",
   type: "select",
   start_date: datetime(year: 2023, month: 11, day: 11),
-  attendance: "Ajibola, Ishika, Makhi, Eric, Rory",
+  attendance: "Ajibola, Jin, Ishika, Makhi, Eric, Rory",
+  designed: "Ajibola",
+  witnessed: "Jin",
 )
 
 After brainstorming the different kicker designs, we had to pick one to begin building. We did so using a weighted decision matrix.

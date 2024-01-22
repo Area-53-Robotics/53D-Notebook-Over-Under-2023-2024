@@ -4,7 +4,9 @@
   title: "Flywheel #1",
   type: "brainstorm",
   start_date: datetime(year: 2023, month: 12, day: 8),
-  attendance: "Ajibola, Ishika, Eric, Makhi"
+  attendance: "Ajibola, Ishika, Eric, Makhi",
+  designed: "Ajibola",
+  witnessed: "Makhi",
 )
 
 #nb_pro_con(

@@ -5,6 +5,8 @@
   type: "brainstorm",
   start_date: datetime(year: 2023, month: 9, day: 23),
   attendance: "Ajibola, Ishika, Eric, Makhi",
+  designed: "Ajibola",
+  witnessed: "Makhi",
 )
 
 #nb_pro_con(

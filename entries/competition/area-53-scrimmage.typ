@@ -4,14 +4,15 @@
   title: "Area 53 Scrimmage",
   type: "competition",
   start_date: datetime(year: 2023, month: 10, day: 21),
-  attendance: "Ajibola, Ishika, Makhi, Eric, Rory"
+  attendance: "Ajibola, Ishika, Makhi, Eric, Rory",
+  designed: "Ajibola",
+  witnessed: "Eric",
 )
 
 = Competition Goals
-- We hope to get skills done in order to qualify for States.
+- Test each subsystem in a competitive environment to identify problems.
 
 = Matches
-/*
 #nb_tournament_match(
   match: "Q3",
   red_alliance: (teams: ("53F", "53C"), score: 55),
@@ -273,4 +274,3 @@
   ],
   [#image("./area-53-scrimmage/Intake Performance.svg")]
 )
-*/

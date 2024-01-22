@@ -5,7 +5,9 @@
   type: "build",
   start_date: datetime(year: 2023, month: 12, day: 9),
   end_date: datetime(year: 2023, month: 12, day: 14),
-  attendance: "Ajibola, Jin, Ishika, Rory, Makhi",
+  attendance: "Ajibola, Ishika, Rory, Makhi",
+  designed: "Makhi",
+  witnessed: "Ishika",
 )
 
 #grid(

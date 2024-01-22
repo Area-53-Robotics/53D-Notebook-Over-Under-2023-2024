@@ -4,7 +4,9 @@
   title: "Intake #1",
   type: "program",
   start_date: datetime(year: 2023, month: 11, day: 3),
-  attendance: "Ajibola, Ishika, Rory, Makhi"
+  attendance: "Ajibola, Ishika, Rory, Makhi",
+  designed: "Ajibola",
+  witnessed: "Ishika",
 )
 
 #nb_todo(

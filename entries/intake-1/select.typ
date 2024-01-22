@@ -5,6 +5,8 @@
   type: "select",
   start_date: datetime(year: 2023, month: 10, day: 14),
   attendance: "Ajibola, Ishika, Eric, Emma",
+  designed: "Ajibola",
+  witnessed: "Eric",
 )
 
 #nb_matrix_criteria[

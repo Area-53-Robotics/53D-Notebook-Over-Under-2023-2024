@@ -4,7 +4,9 @@
   title: "Intake #1",
   type: "brainstorm",
   start_date: datetime(year: 2023, month: 10, day: 14),
-  attendance: "Ajibola, Ishika, Eric, Makhi"
+  attendance: "Ajibola, Ishika, Eric, Makhi",
+  designed: "Ajibola",
+  witnessed: "Makhi",
 )
 
 #nb_pro_con(

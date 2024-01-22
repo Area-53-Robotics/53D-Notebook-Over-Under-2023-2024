@@ -6,6 +6,8 @@
   start_date: datetime(year: 2023, month: 1, day: 5),
   end_date: datetime(year: 2023, month: 1, day: 6),
   attendance: "Ajibola, Jin, Ishika, Rory, Eric, Makhi",
+  designed: "Jin",
+  witnessed: "Ajibola",
 )
 
 With the majority of our drivetrain having completed construction, we made a strategic pivot towards working on the kicker mechanism. The decision to shift focus aligns with our goal of creating a well-rounded and versatile robot that can succeed in multiple different aspects of the game.

@@ -4,7 +4,9 @@
   title: "GitHub Workflows",
   type: "program",
   start_date: datetime(year: 2023, month: 11, day: 19),
-  attendance: "Ajibola, Ishika"
+  attendance: "Ajibola, Ishika",
+  designed: "Ajibola",
+  witnessed: "Ishika",
 )
 
 #nb_todo(

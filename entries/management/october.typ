@@ -4,7 +4,9 @@
   title: "October Gantt Chart",
   type: "management",
   start_date: datetime(year: 2023, month: 10, day: 7),
-  attendance: "Ajibola, Ishika, Eric, Rory, Makhi"
+  attendance: "Ajibola, Ishika, Eric, Rory, Makhi",
+  designed: "Ajibola",
+  witnessed: "Ishika",
 )
 
 

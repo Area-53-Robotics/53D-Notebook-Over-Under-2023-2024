@@ -5,6 +5,8 @@
   type: "test",
   start_date: datetime(year: 2023, month: 9, day: 15),
   attendance: "Ajibola, Ishika, Makhi, Eric, Rory",
+  designed: "Ajibola",
+  witnessed: "Ishika",
 )
 
 

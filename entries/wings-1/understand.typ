@@ -5,6 +5,8 @@
   type: "understand",
   start_date: datetime(year: 2023, month: 9, day: 22),
   attendance: "Ajibola, Ishika, Eric, Rory, Makhi",
+  designed: "Makhi",
+  witnessed: "Ajibola",
 )
 
 #tablex(

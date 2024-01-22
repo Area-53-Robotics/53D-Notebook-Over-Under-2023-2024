@@ -6,6 +6,8 @@
   start_date: datetime(year: 2023, month: 1, day: 6),
   end_date: none,
   attendance: "Ajibola, Jin, Ishika, Rory, Eric, Makhi",
+  designed: "Jin",
+  witnessed: "Ajibola",
 )
 
 With the kicker finished and the Valley Mall tournament quickly approaching, we dedicated today towards working on the intake and wings. To optimize efficiency and skill utilization, we've strategically divided the tasks among our team members. The more experienced builders are taking on the construction of the intake, leveraging their expertise to ensure precision and functionality. 

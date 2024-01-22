@@ -5,6 +5,8 @@
   type: "brainstorm",
   start_date: datetime(year: 2023, month: 9, day: 23),
   attendance: "Ajibola, Ishika, Eric, Makhi",
+  designed: "Ajibola",
+  witnessed: "Makhi",
 )
 
 While we identified most of the benefits of a catapult in general, there are specific benefits and drawbacks to each type of catapult. We talked with some Area 53 alumni to identify the specific pros and cons of each catapult type.

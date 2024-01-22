@@ -4,7 +4,9 @@
   title: "",
   type: "",
   start_date: datetime(year: 2023, month: 12, day: 1),
-  attendance: ""
+  attendance: "",
+  designed: "",
+  witnessed: "",
 )
 
 #nb_todo(

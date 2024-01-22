@@ -60,6 +60,8 @@
   // Headings
   show heading: it => nb_heading(it)
 
+  // set raw(theme: "/assets/halcyon2.tmTheme")
+
   // Content
   align(center)[
     // Title Page
@@ -98,6 +100,7 @@
   pagebreak()
   pagebreak()
 
-
   print_appendix_entries()
+
+  // signature-list()
 }

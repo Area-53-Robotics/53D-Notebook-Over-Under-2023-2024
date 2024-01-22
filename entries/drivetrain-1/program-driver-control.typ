@@ -7,6 +7,8 @@
   type: "program",
   start_date: datetime(year: 2023, month: 9, day: 15),
   attendance: "Ajibola, Ishika, Eric, Rory",
+  designed: "Ajibola",
+  witnessed: "Ishika",
 )
 
 Because basic tank drive code does not change between seasons, it did not take long for us to program the tank drive configuration for our drivetrain.

@@ -4,7 +4,9 @@
   title: "Kicker #1",
   type: "brainstorm",
   start_date: datetime(year: 2023, month: 11, day: 11),
-  attendance: "Ajibola, Ishika, Makhi, Eric, Rory",
+  attendance: "Ajibola, Jin, Ishika, Makhi, Eric, Rory",
+  designed: "Jin",
+  witnessed: "I",
 )
 
 5203G Gremlin utilized a normal kicker, but we wanted to explore other possible options before settling on a kicker design to select.

@@ -5,6 +5,8 @@
   type: "select",
   start_date: datetime(year: 2023, month: 11, day: 10),
   attendance: "Ajibola, Ishika, Makhi, Rory, Eric",
+  designed: "Jin",
+  witnessed: "Makhi",
 )
 
 After brainstorming the different RPM drivetrains, we needed to select one to build. We collectively determined that the criteria used to select this drivetrain should be the same as the criteria we used to evaluate the wheel configurations in our #nb_entry_reference(date: datetime(year: 2023, month: 7, day: 22), type: "select", title: "Drivetrain #1"), minus the "Omni-Directionality" criteria.

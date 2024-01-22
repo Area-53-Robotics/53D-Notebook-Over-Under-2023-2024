@@ -5,9 +5,10 @@
   type: "build",
   start_date: datetime(year: 2023, month: 11, day: 18),
   end_date: none,
-  attendance: "Ajibola, Ishika, Makhi"
+  attendance: "Ajibola, Ishika, Makhi",
+  designed: "Makhi",
+  witnessed: "Ishika",
 )
-
 
 #gridx(
   columns: 1,

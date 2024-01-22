@@ -4,7 +4,9 @@
   title: "Dulaney Royal Rumble",
   type: "competition",
   start_date: datetime(year: 2023, month: 11, day: 4),
-  attendance: "Ajibola, Ishika, Makhi, Rory"
+  attendance: "Ajibola, Ishika, Makhi, Rory",
+  designed: "Ajibola",
+  witnessed: "Ishika",
 )
 
 #nb_admonition(type: "competition", title: "Competition Results")[

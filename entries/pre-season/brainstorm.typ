@@ -4,7 +4,9 @@
   title: "Game Challenge - Design Strategies",
   type: "brainstorm",
   start_date: datetime(year: 2023, month: 7, day: 14),
-  attendance: "Ajibola, Ishika, Eric, Emma"
+  attendance: "Ajibola, Ishika, Eric, Emma",
+  designed: "Ishika",
+  witnessed: "Ajibola",
 )
 
 Before beginning the construction of our robot, we wanted to take time to brainstorm different strategies for how to approach the game challenge.

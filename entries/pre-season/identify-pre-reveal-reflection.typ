@@ -5,6 +5,8 @@
   type: "identify",
   start_date: datetime(year: 2023, month: 3, day: 17),
   attendance: "Ajibola, Emma, Von, Eric",
+  designed: "Ajibola",
+  witnessed: "Eric",
 )
 
 #nb_todo(

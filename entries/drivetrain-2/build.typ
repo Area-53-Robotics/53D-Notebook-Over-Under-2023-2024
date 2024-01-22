@@ -6,6 +6,8 @@
   start_date: datetime(year: 2023, month: 1, day: 4),
   end_date: datetime(year: 2023, month: 1, day: 4),
   attendance: "Ajibola, Jin, Ishika, Rory, Makhi",
+  designed: "Jin",
+  witnessed: "Ajibola",
 )
 
 #nb_todo(

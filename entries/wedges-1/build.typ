@@ -6,6 +6,8 @@
   start_date: datetime(year: 2023, month: 11, day: 11),
   end_date: none,
   attendance: "Ajibola, Ishika, Eric, Rory, Makhi",
+  designed: "Makhi",
+  witnessed: "Ishika",
 )
 
 From observing robots from the higher level and other robots at the tournament, we recognized the power of wedges. Robots equipped with wedges can effectively block, push, or redirect opponents, disrupting their planned maneuvers and potentially limiting their scoring opportunities.

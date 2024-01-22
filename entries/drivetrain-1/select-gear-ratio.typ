@@ -5,6 +5,8 @@
   type: "select",
   start_date: datetime(year: 2023, month: 7, day: 29),
   attendance: "Ajibola, Ishika, Eric, Emma",
+  designed: "Ajibola",
+  witnessed: "Ishika",
 )
 
 #nb_matrix_criteria[
@@ -20,13 +22,13 @@
     ("RPM", 4),
     ("Strength", 4),
     ("Maneuverability", 4),
-    ),
+  ),
   choices: (
     ("5:3 Ratio,\n4 Inch Wheel,\n200 RPM Motor", 4, 3, 3, 2),
     ("3:5 Ratio,\n4 Inch Wheel,\n600 RPM Motor", 4, 4, 2, 3),
     ("5:3 Ratio,\n3.25 Inch Wheel,\n200 RPM Motor", 2, 3, 3, 2),
     ("3:5 Ratio,\n3.25 Inch Wheel,\n600 RPM Motor", 3, 4, 4, 4),
-    ),
+  ),
 )
 
 #nb_admonition(type: "select", title: "Final Selection")[

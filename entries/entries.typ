@@ -39,7 +39,6 @@
 #include "./catapult-1/build.typ"
 #include "./wings-1/build-1.typ"
 
-
 // October
 #include "./management/october.typ"
 #include "./catapult-1/program.typ"

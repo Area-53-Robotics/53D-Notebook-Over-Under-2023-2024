@@ -4,7 +4,9 @@
   title: "Wings #1",
   type: "program",
   start_date: datetime(year: 2023, month: 10, day: 13),
-  attendance: "Ajibola, Ishika, Eric, Rory, Makhi"
+  attendance: "Ajibola, Ishika, Eric, Rory, Makhi",
+  designed: "Ajibola",
+  witnessed: "Ishika",
 )
 
 #nb_todo(

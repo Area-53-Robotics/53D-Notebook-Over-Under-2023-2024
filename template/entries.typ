@@ -2,7 +2,16 @@
 #import "./globals.typ": *
 #import "./components/components.typ": *
 
-#let create_entry(title: "", type: "", start_date: none, end_date: none, attendance: "", body) = {
+#let create_entry(
+  title: "",
+  type: "",
+  start_date: none,
+  end_date: none,
+  attendance: "",
+  designed: "",
+  witnessed: "",
+  body
+) = {
   if start_date == none {
     panic("No valid start date specified")
   }
@@ -16,6 +25,8 @@
       start_date: start_date,
       end_date: end_date,
       attendance: attendance,
+      designed: designed,
+      witnessed: witnessed,
       body: body,
     ))
     x
@@ -80,8 +91,8 @@
                       ]
                     ],
                     (),
-                    colspanx(4)[Designed By:], (), (), (), (), (),
-                    colspanx(4)[Witnessed By:], (), (), (), (), (),
+                    colspanx(4)[Designed By: #nb_signature(entry.designed)], (), (), (), (), (),
+                    colspanx(4)[Witnessed By: #nb_signature(entry.witnessed)], (), (), (), (), (),
                     align(center)[#entry.start_date.display("[year]/[month]/[day]")], colspanx(4)[Attendance: #entry.attendance], (), (), (), (
                       align(center + horizon)[
                         #box(
@@ -124,9 +135,9 @@
                       ]
                     ], (), (), (),
 
-                    (), (), colspanx(4)[Designed By:], (), (), (),
+                    (), (), colspanx(4)[Designed By: #nb_signature(entry.designed)], (), (), (),
 
-                    (), (), colspanx(4)[Witnessed By:], (), (), (),
+                    (), (), colspanx(4)[Witnessed By: #nb_signature(entry.witnessed)], (), (), (),
                     
                     (
                       align(center + horizon)[
@@ -229,4 +240,51 @@
     
     counter(page).update(_ => 0)
   })
+}
+
+#let signature-list() = {
+  locate(
+    loc => {
+
+      for name in ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory") {
+        table(
+          columns: 2,
+          rows: 3,
+
+          [= #name], [],
+          [== Designed By Pages], [== Witnessed By Pages],
+          {
+            let valid_entries = entries.final(loc).enumerate()
+
+            valid_entries = valid_entries.filter(
+              entry => {
+                entry.last().designed.match(name) != none
+              }
+            )
+
+            for (index, entry) in valid_entries [
+              #let page = counter(page).at(query(selector(<nb_entry>), loc).at(index).location()).at(0)
+
+              #page,
+            ]
+          },
+          {
+            let valid_entries = entries.final(loc).enumerate()
+
+            valid_entries = valid_entries.filter(
+              entry => {
+                entry.last().witnessed.match(name) != none
+              }
+            )
+
+            for (index, entry) in valid_entries [
+              #let page = counter(page).at(query(selector(<nb_entry>), loc).at(index).location()).at(0)
+
+              #page,
+            ]
+          },
+        )
+      }
+    }
+  )
 }

@@ -5,6 +5,8 @@
   type: "understand",
   start_date: datetime(year: 2023, month: 10, day: 14),
   attendance: "Ajibola, Ishika, Eric, Rory, Makhi",
+  designed: "Ajibola",
+  witnessed: "Eric",
 )
 
 #gridx(

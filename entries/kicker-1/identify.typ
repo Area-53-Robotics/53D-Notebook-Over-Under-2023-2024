@@ -3,14 +3,14 @@
 #show: create_entry.with(
   title: "Kicker #1",
   type: "identify",
-  start_date: datetime(year: 2023, month: 11, day: 11),
-  attendance: "Ajibola, Ishika, Makhi, Eric, Rory",
+  start_date: datetime(year: 2023, month: 12, day: 28),
+  attendance: "Ajibola, Jin, Ishika, Makhi, Eric, Rory",
+  designed: "Ajibola",
+  witnessed: "Jin",
 )
 
 #nb_todo(
-  date: datetime(year: 2023, month: 11, day: 11),
-  monthly-schedule: "On",
-  yearly-schedule: "On",
+  date: datetime(year: 2023, month: 12, day: 28),
   (
     (true, "Identify the design constraints and goals for the kicker. (Everyone)"),
     (true, "Brainstorm possible configurations for the kicker. (Ajibola, Makhi, & Ishika)"),
@@ -23,7 +23,7 @@
   columns: 2,
 
   [
-    After reviewing videos of competitive teams, we found that the number 1 team #footnote[5203G Gremlin Sugar Rush Pits & Parts Interview: https://www.youtube.com/watch?v=lIZKrpuLhwg] of the Sugar Rush signature event used a kicker.
+    After reviewing videos of competitive teams, we found that the #1 team #footnote[5203G Gremlin Sugar Rush Pits & Parts Interview: https://www.youtube.com/watch?v=lIZKrpuLhwg] of the Sugar Rush signature event used a kicker.
 
     A kicker is a mechanism designed to launch or propel triballs, typically with a quick and forceful action in a kicking motion.
   ],

@@ -4,7 +4,9 @@
   title: "Catapult #2",
   type: "program",
   start_date: datetime(year: 2023, month: 12, day: 1),
-  attendance: "Ajibola, Ishika, Eric, Rory, Makhi"
+  attendance: "Ajibola, Ishika, Eric, Rory, Makhi",
+  designed: "Ajibola",
+  witnessed: "Ishika",
 )
 
 #nb_todo(

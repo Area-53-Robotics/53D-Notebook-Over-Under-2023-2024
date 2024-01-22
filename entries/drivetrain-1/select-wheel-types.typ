@@ -5,6 +5,8 @@
   type: "select",
   start_date: datetime(year: 2023, month: 7, day: 22),
   attendance: "Ajibola, Ishika, Eric, Emma",
+  designed: "Ishika",
+  witnessed: "Eric",
 )
 
 Different wheel configurations can have very different purposes. To determine which wheel configuration would be best for us to use, we created an unweighted and a weighted decision matrix.

@@ -4,7 +4,9 @@
   title: "Wings #1 - Re-test",
   type: "test",
   start_date: datetime(year: 2023, month: 12, day: 1),
-  attendance: "Ajibola, Ishika, Eric, Rory, Makhi"
+  attendance: "Ajibola, Ishika, Eric, Rory, Makhi",
+  designed: "Ajibola",
+  witnessed: "Ishika",
 )
 
 Today we redid the wings test from our #nb_entry_reference(date: datetime(year: 2023, month: 10, day: 13), type: "test", title: "Wings #1") #h(0.5em) to test the effectiveness of the improvements we made in our #nb_entry_reference(date: datetime(year: 2023, month: 11, day: 18), type: "build", title: "Wings #1").
