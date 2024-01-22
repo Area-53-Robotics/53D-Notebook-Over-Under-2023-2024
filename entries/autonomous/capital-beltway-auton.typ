@@ -1,14 +1,17 @@
 #import "/template/template.typ": *
 
 #show: create_entry.with(
-  title: "Autonomous Programming - Hereford Zone",
+  title: "Autonomous Programming - Capital Beltway Challenge",
   type: "program",
-  start_date: datetime(year: 2023, month: 12, day: 1),
-  attendance: "Ajibola, Ishika, Eric, Rory, Makhi",
-  designed: "Ajibola",
-  witnessed: "Ishika",
+  start_date: datetime(year: 2023, month: 12, day: 15),
+  attendance: "Ajibola, Ishika, Makhi, Eric, Rory",
+  designed: "Ishika",
+  witnessed: "Ajibola",
 )
 
+Placeholder
+
+/*
 #grid(
   columns: 2,
 
@@ -143,3 +146,4 @@ With all of the setup done, we could finally program the auton itself.
   // Moves backward to disengage the robot from the triball
   AutonDrive(-1, 2000);
 ```
+*/

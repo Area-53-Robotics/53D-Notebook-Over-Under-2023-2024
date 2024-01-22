@@ -81,15 +81,19 @@
 #include "./flywheel-1/program.typ"
 #include "./flywheel-1/test.typ"
 
-/*
 // -- re-select game strategy entry?
 
+/*
+#include "./autonomous/capital-beltway-auton.typ"
+#include "./competition/capital-beltway-challenge.typ"
 #include "./drivetrain-2/brainstorm.typ"
 #include "./drivetrain-2/select.typ"
 #include "./kicker-1/identify.typ"
 #include "./kicker-1/understand.typ"
 #include "./kicker-1/brainstorm.typ"
 #include "./kicker-1/select.typ"
+
+// January
 #include "./drivetrain-2/build.typ"
 #include "./kicker-1/build.typ"
 #include "./intake-1/build-2.typ"

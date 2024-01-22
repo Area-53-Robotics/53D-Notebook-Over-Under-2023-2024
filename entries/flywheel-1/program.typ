@@ -13,7 +13,7 @@
   date: datetime(year: 2023, month: 12, day: 14),
   (
     (true, "Program the flywheel to be usable for driver control (Ajibola & Ishika)"),
-    (true, "Test the flywheel for speed and scoring distance (Everyone)"),
+    (false, "Test the flywheel for speed and scoring distance (Everyone)"),
   )
 )
 
