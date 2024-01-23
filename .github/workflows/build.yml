@@ -29,9 +29,12 @@ jobs:
       - name: Upload PDF File
         uses: actions/upload-artifact@v3.1.3
         with:
-          name: notebook
+          name: part2
           path: main.pdf
-      
+
+      - name: Rename PDF File
+        uses: mv main.pdf part2.pdf
+          
       # Uploads the rendered PDF to Discord
       - name: Upload to Discord
         uses: sinshutu/upload-to-discord@v2.0.0
