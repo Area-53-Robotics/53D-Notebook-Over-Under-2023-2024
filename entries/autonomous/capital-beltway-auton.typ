@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create_entry.with(
-  title: "Autonomous Programming - Capital Beltway Challenge",
+  title: "Autonomous Programming - Capital Beltway",
   type: "program",
   start_date: datetime(year: 2023, month: 12, day: 15),
   attendance: "Ajibola, Ishika, Makhi, Eric, Rory",
