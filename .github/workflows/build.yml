@@ -33,7 +33,7 @@ jobs:
           path: main.pdf
 
       - name: Rename PDF File
-        uses: mv main.pdf part2.pdf
+        run: mv main.pdf part2.pdf
           
       # Uploads the rendered PDF to Discord
       - name: Upload to Discord
