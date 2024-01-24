@@ -21,7 +21,7 @@
   team: "",
   organization: "",
   count: (current: 1, total: 1),
-  cover: "",
+  cover: [],
   year: "",
   season: "",
   about: [],
@@ -72,7 +72,7 @@
         #count.current of #count.total
       ]
 
-      #image(cover, height: 70%)
+      #cover
 
       #year \
       VEX Robotics Challenge \

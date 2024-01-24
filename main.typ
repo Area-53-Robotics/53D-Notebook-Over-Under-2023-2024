@@ -8,7 +8,7 @@
   team: "53D",
   organization: "Area 53",
   count: (current: 2, total: 2),
-  cover: "/assets/logos/logo.png",
+  cover: circle(align(center + horizon)[#image("/assets/logos/logo.svg", width: 110%)], fill: black),
   year: "2023 - 2024",
   season: "Over Under",
   about: [

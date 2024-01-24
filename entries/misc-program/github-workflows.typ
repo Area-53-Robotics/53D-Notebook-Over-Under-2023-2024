@@ -59,7 +59,7 @@ To solve this, we created a GitHub workflow that compiles the notebook when chan
 Here is the final workflow code:
 
 #align(center)[*53D_OverUnder-Over-Under-Notebook/.github/workflows/build.yml*]
-#raw(block: true, lang: "yml", read("/.github/workflows/build.yml"))
+#raw(block: true, lang: "yml", read("./github-workflows/build.yml"))
 
 When the workflow is completed, the notebook can be downloaded from our Discord by team members from a message that looks like this:
 

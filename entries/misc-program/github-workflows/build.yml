@@ -1,0 +1,41 @@
+name: Build Typst Document
+# This GitHub workflow will be triggered when a change is pushed to the repository or when a team member activates it manually
+on: [push, workflow_dispatch]
+
+# Gives the workflow permission to upload the compiled notebook to GitHub and Discord
+permissions:
+  contents: write
+
+jobs:
+  build:
+    # The workflow is ran on a Ubuntu Linux virtual machine
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks the virtual machine out of the repository so the workflow can access it through commands
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+
+      # Installs Typst onto the virtual machine so that it can compile the notebook
+      - name: Install Typst
+        uses: yusancky/setup-typst@v3
+        id: setup-typst
+
+      # Compiles the notebook
+      - name: Compile Notebook
+        run: typst compile main.typ --font-path ./assets/fonts/
+          
+      # Uploads the rendered PDF to GitHub
+      - name: Upload PDF File
+        uses: actions/upload-artifact@v3.1.3
+        with:
+          name: part2
+          path: main.pdf
+          
+      # Uploads the rendered PDF to Discord
+      - name: Upload to Discord
+        uses: sinshutu/upload-to-discord@v2.0.0
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        with:
+          args: part2.pdf
