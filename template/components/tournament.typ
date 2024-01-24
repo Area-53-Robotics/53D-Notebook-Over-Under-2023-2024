@@ -114,7 +114,7 @@
     align(horizon)[
       #show red_alliance.teams.first(): it => text(red)[#it]
       #show red_alliance.teams.last(): it => text(red)[#it]
-      #show blue_alliance.teams.last(): it => text(blue)[#it]
+      #show blue_alliance.teams.first(): it => text(blue)[#it]
       #show blue_alliance.teams.last(): it => text(blue)[#it]
 
       #grid(

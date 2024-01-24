@@ -64,6 +64,7 @@ void opcontrol() {
 = Catapult Autonomous Function
 Because we had extra time, we decided to preemptively make the function necessary to use the catapult during the autonomous phase. During autonomous, after each shot of the catapult, we want the catapult to return to its original position. Taking into account the slip gear #glossary_footnote[Slip Gear], this will occur if the motor turns 360 degrees during each shot.
 
+#align(center)[*53D_OverUnder/src/autonomous.cpp*]
 ```cpp
 void AutonCatapult() {
   // Turns the catapult motor 360 degrees forward at near maximum speed

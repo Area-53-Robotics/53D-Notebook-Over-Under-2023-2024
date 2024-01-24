@@ -88,7 +88,7 @@
       #nb_todo(
         date: datetime(year: 2023, month: 12, day: 14),
         (
-          (true, "Check for and resolve any causes of friction on the flywheel (Ishika, Jin, and Rory)"),
+          (true, "Check for and resolve any causes of friction on the flywheel (Ishika, Jin, & Rory)"),
           (false, "Program the flywheel to be usable for driver control (Ajibola & Ishika)"),
           (false, "Test the flywheel for speed and scoring distance (Everyone)"),
         )

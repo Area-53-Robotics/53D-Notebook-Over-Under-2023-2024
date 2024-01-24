@@ -209,7 +209,7 @@
   columns: 2,
   [
     - Worked consistently, we even managed to intake into the cata a few times.
-    - In the future, we might want to make the catapult longer to grab triballs easier, and maybe even reach the inside of the match load zone for AWP.
+    - In the future, we might want to make the intake longer to grab triballs easier, and maybe even reach the inside of the match load zone for AWP.
 
     #align(center)[
       #tablex(
@@ -272,7 +272,7 @@
   #grid(
   columns: 2,
   [
-  - They worked every round . We managed to push quite a few triballs at a time with them.
+  - They worked every round. We managed to push quite a few triballs at a time with them.
   - We are planning to add guards to each wing to make them more sturdy.
 
     #align(center)[
