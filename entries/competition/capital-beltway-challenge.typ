@@ -362,7 +362,6 @@ We were not able to perform skills before the line closed.
 - I think we should look into an alternative robot design strategy to descoring. It is too unreliable to rely on the opposing alliance to double zone. If we can create stronger wings, we could be able descore using them instead, even if the robot itself is too small to descore.
 - Our blocker was effective at preventing opposing alliances from matchloading, delaying their scoring.
 
-
 == Ishika 
 - I see some problems with our current drivetrain. It lacks a lot of pushing power.
 - I am also wary of our intake design. Although it does work, I noticed that the intake is slowly deteriorating.

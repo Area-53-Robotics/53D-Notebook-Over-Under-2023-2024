@@ -117,9 +117,9 @@ void opcontrol() {
     [Variance], [0.31878399999998],
     [Standard Deviation], [0.56460959963499],
   ),
-
-  align(center)[#image("./test/Velocity (in_sec) vs. Trial.svg")]
 )
+
+#align(center)[#image("./test/Velocity (in_sec) vs. Trial.svg", height: 23em)]
 
 == Conclusion
 We are happy with the results. It seems like the flywheel can reach a high velocity quickly enough to be viable for competition usage.
