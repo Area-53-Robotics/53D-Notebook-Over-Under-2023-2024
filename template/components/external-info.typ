@@ -40,6 +40,12 @@
       }
     )
 
-    enumerated-entry-list
+    let entry-list = ()
+
+    for (index, entry) in enumerated-entry-list {
+      entry-list.push(entry)
+    }
+    
+    entry-list
   }
 )
