@@ -18,6 +18,10 @@
   if end_date == none {
     end_date = start_date
   }
+
+  assert((designed == "Ajibola") or (designed == "Ishika") or (designed == "Jin") or (designed == "Makhi") or (designed == "Eric") or (designed == "Rory"), message: "Invalid \"Designed By\"")
+  assert((witnessed == "Ajibola") or (witnessed == "Ishika") or (witnessed == "Jin") or (witnessed == "Makhi") or (witnessed == "Eric") or (witnessed == "Rory"), message: "Invalid \"Witnessed By\"")
+
   entries.update(x => {
     x.push((
       title: title,

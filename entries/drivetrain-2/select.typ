@@ -3,7 +3,7 @@
 #show: create_entry.with(
   title: "Drivetrain #2 - RPM",
   type: "select",
-  start_date: datetime(year: 2023, month: 11, day: 10),
+  start_date: datetime(year: 2023, month: 12, day: 27),
   attendance: "Ajibola, Ishika, Makhi, Rory, Eric",
   designed: "Jin",
   witnessed: "Makhi",

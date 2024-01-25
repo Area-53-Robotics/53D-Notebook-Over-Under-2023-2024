@@ -13,9 +13,10 @@
   date: datetime(year: 2023, month: 12, day: 28),
   (
     (true, "Identify the design constraints and goals for the kicker. (Everyone)"),
+    (true, "Determine the mathematical and scientific concepts involved in outtake design (Everyone)"),
     (true, "Brainstorm possible configurations for the kicker. (Ajibola, Makhi, & Ishika)"),
     (true, "Select the best kicker configuration using a decision matrix. (Ajibola, Makhi, & Ishika)"),
-    (false, "Create a plan for the construction of the kicker using CAD. (Ajibola)"),
+    (true, "Create a plan for the construction of the kicker using CAD. (Ajibola)"),
   )
 )
 

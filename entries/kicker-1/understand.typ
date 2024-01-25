@@ -3,7 +3,7 @@
 #show: create_entry.with(
   title: "Outtake #2",
   type: "understand",
-  start_date: datetime(year: 2023, month: 11, day: 11),
+  start_date: datetime(year: 2023, month: 12, day: 28),
   attendance: "Ajibola, Jin, Ishika, Eric, Rory, Makhi",
   designed: "Jin",
   witnessed: "Makhi",

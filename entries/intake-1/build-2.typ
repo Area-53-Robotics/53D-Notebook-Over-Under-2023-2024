@@ -3,7 +3,7 @@
 #show: create_entry.with(
   title: "Intake #1 - Improvements",
   type: "build",
-  start_date: datetime(year: 2023, month: 1, day: 6),
+  start_date: datetime(year: 2024, month: 1, day: 6),
   end_date: none,
   attendance: "Ajibola, Jin, Ishika, Rory, Eric, Makhi",
   designed: "Jin",
@@ -21,7 +21,7 @@ The Valley Mall tournament serves as a motivating deadline, driving our team's c
   auto-hlines: false,
 
   [
-    = #datetime(year: 2023, month: 1, day: 6).display("[year]/[month]/[day]")
+    = #datetime(year: 2024, month: 1, day: 6).display("[year]/[month]/[day]")
   ],
 
   gridx(

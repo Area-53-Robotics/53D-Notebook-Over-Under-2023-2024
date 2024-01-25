@@ -3,18 +3,10 @@
 #show: create_entry.with(
   title: "Flywheel #1",
   type: "select",
-  start_date: datetime(year: 2023, month: 8, day: 12),
+  start_date: datetime(year: 2023, month: 12, day: 8),
   attendance: "Ajibola, Ishika, Makhi",
   designed: "Makhi",
   witnessed: "Ajibola",
-)
-
-#nb_todo(
-  date: datetime(year: 2023, month: 12, day: 8),
-  (
-    (true, "Select the best flywheel configuration using a decision matrix. (Everyone)"),
-    (true, "Create a plan for the construction of the flywheel using CAD. (Ajibola and Makhi)"),
-  )
 )
 
 #nb_matrix_criteria[

@@ -3,14 +3,14 @@
 #show: create_entry.with(
   title: "Drivetrain #2 - RPM",
   type: "brainstorm",
-  start_date: datetime(year: 2023, month: 11, day: 10),
+  start_date: datetime(year: 2023, month: 12, day: 27),
   attendance: "Ajibola, Jin, Ishika, Makhi, Rory, Eric",
   designed: "Jin",
   witnessed: "Ajibola",
 )
 
 #nb_todo(
-  date: datetime(year: 2023, month: 11, day: 10),
+  date: datetime(year: 2023, month: 12, day: 27),
   monthly-schedule: "On",
   yearly-schedule: "On",
   (

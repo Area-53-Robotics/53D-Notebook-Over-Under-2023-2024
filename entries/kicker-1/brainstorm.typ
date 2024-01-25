@@ -3,10 +3,10 @@
 #show: create_entry.with(
   title: "Kicker #1",
   type: "brainstorm",
-  start_date: datetime(year: 2023, month: 11, day: 11),
+  start_date: datetime(year: 2023, month: 12, day: 28),
   attendance: "Ajibola, Jin, Ishika, Makhi, Eric, Rory",
   designed: "Jin",
-  witnessed: "I",
+  witnessed: "Ishika",
 )
 
 5203G Gremlin utilized a normal kicker, but we wanted to explore other possible options before settling on a kicker design to select.

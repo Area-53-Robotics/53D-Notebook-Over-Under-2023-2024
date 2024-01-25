@@ -3,8 +3,8 @@
 #show: create_entry.with(
   title: "Intake #1",
   type: "build",
-  start_date: datetime(year: 2023, month: 10, day: 27),
-  end_date: datetime(year: 2023, month: 10, day: 28),
+  start_date: datetime(year: 2024, month: 10, day: 27),
+  end_date: datetime(year: 2024, month: 10, day: 28),
   attendance: "Ajibola, Ishika, Eric, Rory, Makhi",
   designed: "Rory",
   witnessed: "Eric",
@@ -21,9 +21,9 @@
       rows: auto,
 
       cellx(colspan: 2)[
-        = 2023/10/27
+        = 2024/10/27
         #nb_todo(
-          date: datetime(year: 2023, month: 10, day: 27),
+          date: datetime(year: 2024, month: 10, day: 27),
           monthly-schedule: "On",
           yearly-schedule: "On",
           (
@@ -56,9 +56,9 @@
       rows: auto,
 
       cellx(colspan: 2)[
-        = 2023/10/28
+        = 2024/10/28
         #nb_todo(
-          date: datetime(year: 2023, month: 10, day: 6),
+          date: datetime(year: 2024, month: 10, day: 6),
           monthly-schedule: "On",
           yearly-schedule: "On",
           (

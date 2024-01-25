@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create_entry.with(
-  title: "Wings #1 - Improvements",
+  title: "Wings #1 - Extension Length Improvements",
   type: "build",
   start_date: datetime(year: 2023, month: 11, day: 18),
   end_date: none,

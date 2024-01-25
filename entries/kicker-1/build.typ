@@ -3,8 +3,8 @@
 #show: create_entry.with(
   title: "Kicker #1",
   type: "build",
-  start_date: datetime(year: 2023, month: 1, day: 5),
-  end_date: datetime(year: 2023, month: 1, day: 6),
+  start_date: datetime(year: 2024, month: 1, day: 5),
+  end_date: datetime(year: 2024, month: 1, day: 6),
   attendance: "Ajibola, Jin, Ishika, Rory, Eric, Makhi",
   designed: "Jin",
   witnessed: "Ajibola",
@@ -18,10 +18,10 @@ With the majority of our drivetrain having completed construction, we made a str
   auto-hlines: false,
 
   [
-    = #datetime(year: 2023, month: 1, day: 5).display("[year]/[month]/[day]")
+    = #datetime(year: 2024, month: 1, day: 5).display("[year]/[month]/[day]")
 
     #nb_todo(
-      date: datetime(year: 2023, month: 1, day: 5),
+      date: datetime(year: 2024, month: 1, day: 5),
       monthly-schedule: none,
       yearly-schedule: none,
       (
@@ -88,10 +88,10 @@ With the majority of our drivetrain having completed construction, we made a str
   auto-hlines: false,
 
   cellx(colspan: 2)[
-    = #datetime(year: 2023, month: 1, day: 6).display("[year]/[month]/[day]")
+    = #datetime(year: 2024, month: 1, day: 6).display("[year]/[month]/[day]")
 
     #nb_todo(
-      date: datetime(year: 2023, month: 1, day: 6),
+      date: datetime(year: 2024, month: 1, day: 6),
       monthly-schedule: none,
       yearly-schedule: none,
       (

@@ -14,8 +14,8 @@
   (
     (true, "Identify the design constraints and goals for the flywheel. (Everyone)"),
     (true, "Brainstorm possible configurations for the flywheel. (Everyone)"),
-    (false, "Select the best flywheel configuration using a decision matrix. (Everyone)"),
-    (false, "Create a plan for the construction of the flywheel using CAD. (Ajibola and Makhi)"),
+    (true, "Select the best flywheel configuration using a decision matrix. (Everyone)"),
+    (true, "Create a plan for the construction of the flywheel using CAD. (Ajibola and Makhi)"),
   )
 )
 

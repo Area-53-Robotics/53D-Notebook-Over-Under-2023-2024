@@ -3,7 +3,7 @@
 #show: create_entry.with(
   title: "Kicker #1",
   type: "select",
-  start_date: datetime(year: 2023, month: 11, day: 11),
+  start_date: datetime(year: 2023, month: 12, day: 28),
   attendance: "Ajibola, Jin, Ishika, Makhi, Eric, Rory",
   designed: "Ajibola",
   witnessed: "Jin",

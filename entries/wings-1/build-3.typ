@@ -1,9 +1,9 @@
 #import "/template/template.typ": *
 
 #show: create_entry.with(
-  title: "Wings #1 - Improvements #2",
+  title: "Wings #1 - Horizontal and Vertical Wings",
   type: "build",
-  start_date: datetime(year: 2023, month: 1, day: 6),
+  start_date: datetime(year: 2024, month: 1, day: 6),
   end_date: none,
   attendance: "Ajibola, Jin, Ishika, Rory, Eric, Makhi",
   designed: "Jin",
@@ -16,7 +16,7 @@
   rows: auto,
 
   cellx(colspan: 2)[
-    = #datetime(year: 2023, month: 1, day: 6).display("[year]/[month]/[day]")
+    = #datetime(year: 2024, month: 1, day: 6).display("[year]/[month]/[day]")
   ],
 
   [
