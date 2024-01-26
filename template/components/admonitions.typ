@@ -88,21 +88,21 @@
     ]
 
     #if monthly-schedule != none [
-      - Monthly Schedule Status: #monthly-schedule Schedule
+      - *Monthly Schedule Status:* #monthly-schedule Schedule
     ]
 
     #if yearly-schedule != none [
       #v(-3pt)
       #if yearly-schedule == "Ahead" [
-        - Yearly Schedule Status: #yearly-schedule of Schedule
+        - *Yearly Schedule Status:* #yearly-schedule of Schedule
       ] else [
-        - Yearly Schedule Status: #yearly-schedule Schedule
+        - *Yearly Schedule Status:* #yearly-schedule Schedule
       ]
     ]
 
     #if attendance != none [
       #v(-3pt)
-      - Attendance: #attendance
+      - *Attendance:* #attendance
     ]
   ]
 }

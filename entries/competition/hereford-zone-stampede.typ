@@ -108,7 +108,7 @@
     - The triball that we pushed didn't go completely under the net, so it was not scored
 ],
   match_notes: [
-    - 1893J tried to block our 9290B's shots, but they were too slow doing it
+    - 1893J tried to block 9290B's shots, but they were too slow doing it
       - We took advantage of this opening to repeatedly score into the goal
     - Our drivetrain and wings were working consistently this round, allowing us to consistently and quickly push triballs into the goal.
     - 1893X managed to elevate, but the point difference we created negated it

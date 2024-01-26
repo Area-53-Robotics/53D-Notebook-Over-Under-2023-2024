@@ -33,6 +33,6 @@ We are very proud of our time management this month. We managed to get ahead on 
 The extra unplanned meetings on 2023/12/17 and 2023/12/28 helped us get significantly ahead on constructing the next iteration of our robot.
 
 = January Gantt Chart
-This month we signed up for the Baltimore Robotics Competition and Cardinal Classic so that we can perform our skills runs. Getting our skills runs in is crucial towards qualifying for the Maryland state competition, since many of the spots remaining for the competition will be given out using the skills leaderboard. We do not think that we will have our elevation mechanism working before the Baltimore competition, but we think that we can get it working and tested before Cardinal Classic.
+This month we signed up for the Baltimore Robotics and Cardinal Classic competitions so that we can perform our skills runs. Performing our skills runs is crucial towards qualifying for the Maryland state competition, since many of the spots remaining for the competition will be given out using the skills leaderboard. We do not think that we will have our elevation mechanism working before the Baltimore competition, but we think that we can get it working and tested before Cardinal Classic.
 
 #align(center)[#image("./gantt-charts/january-pre-gantt-chart.png")]
