@@ -40,10 +40,11 @@ After brainstorming the different RPM drivetrains, we needed to select one to bu
   A 450 RPM drivetrain satisfies most of the criteria we identified without any major drawbacks, such as a significant decrease in torque.
 ]
 
-#colbreak()
-#let count = 0
-#while count < 5 {
-  [THIS PAGE IS INTENTIONALLY LEFT BLANK]
-  colbreak()
-  count = count + 1
-}
+#nb_cad(
+  folder: "drivetrain-2",
+  sheets: 5,
+  add-views: ("Isometric", "Top", "Side", "Front"),
+  date: datetime(year: 2023, month: 7, day: 29),
+  designed: "Ajibola",
+  witnessed: "Ishika",
+)

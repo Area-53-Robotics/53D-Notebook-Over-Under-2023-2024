@@ -7,4 +7,4 @@
 
 // Below is a diagram of our polycarbonate usage:
 
-#align(center + horizon, box(fill: blue.desaturate(80%), stroke: black + 1pt, image("/assets/appendix/polycarb-map.svg")))
+#align(center + horizon, box(fill: blue.desaturate(80%), stroke: black + 1pt, image("/assets/appendix/polycarbonate-map.svg")))
