@@ -9,26 +9,34 @@
   witnessed: "Ishika",
 )
 
+#nb_admonition(type: "note")[
+  The meetings scheduled after 2024/01/06 until today were cancelled due to inclement weather.
+]
+
 #nb_todo(
-  date: datetime(year: 2023, month: 7, day: 15),
-  monthly-schedule: "On",
-  yearly-schedule: "On",
+  date: datetime(year: 2023, month: 7, day: 25),
+  monthly-schedule: "Behind",
+  yearly-schedule: "Behind",
   (
-    (true, "Identify the design constraints and goals for the drivetrain. (Everyone)"),
-    (true, "Determine the mathematical and scientific concepts involved in drivetrain design (Everyone)"),
+    (true, "Identify the design aspects, goals, and constraints for the auton. (Everyone)"),
+    (true, "Brainstorm possible auton implementations. (Everyone)"),
+    (true, "Select the best auton implementation using a decision matrix. (Everyone)"),
   )
 )
-
 
 #grid(
   columns: 2,
 
   [
-    With the signature event coming up (2024/02/03), we wanted to dedicate a design cycle towards autonomous movement this time to get the best autonomous possible. We want to give our best possible performance at our first signature event, and that necessitates quality performance auton routines.
+    With the Gateway to the West signature event coming up (2024/02/03), we wanted to dedicate a design cycle towards autonomous movement this time to get the best autonomous possible. We want to give our best possible performance at our first signature event, and that necessitates quality performance auton routines.
 
-    There are multiple methods of programming an autonomous, ranging from DIY implementations to libraries made by other teams. Before brainstorming implementations we could use, we first identified the aspects that would go into autonomous programming.
+    Before brainstorming autonomous implementations we could use, we first identified the aspects that would go into autonomous programming.
   ],
-  box(height: 25%)[#image("/assets/identify/identify-drivetrain.excalidraw.svg")]
+  [
+    #image("/assets/identify/X'ed Out Controller.svg", height: 3em)
+    #v(-1em)
+    #image("/assets/identify/identify-drivetrain.excalidraw.svg", height: 11em)
+  ]
 )
 
 #tablex(
@@ -37,12 +45,14 @@
   header-rows: 1,
   align: left + top,
 
-  cellx(fill: gray, align: center)[*Aspects of an Auton Routine*],
+  cellx(fill: gray, align: center)[*Aspects of an Autonomous Routine*],
   [*Auton Bonus* - the team that wins the autonomous phase of a match starts the match ahead with 8 points, which can be a tiebreaker in very close rounds.],
   [*Auton Win Point (AWP)* - any alliance that completes all of the tasks outlined in rule #vex-rule[SC7] gets an AWP, which does not affect the outcome of the round, but does affect their standing in the qualification match rankings.],
   [*Early Scoring* - the 15 second autonomous phase precedes the driver control phase, so teams with good autonomous routines can get ahead in scoring triballs to get into an advantageous position.],
-  [*Programming Skills* - 50% of a team's total skills score is determined by their programming skills score, so having a good programming skills auton is crucial.]
+  [*Programming Skills* - 50% of a team's total skills score is determined by their programming skills score, so having a good programming skills autonomous routine is crucial.]
 )
+
+#colbreak()
 
 #tablex(
   columns: (1fr, 1fr),
@@ -54,14 +64,22 @@
   cellx(fill: red)[*Design Constraints*],
   [
     We want three auton routines:
-    + *Left (Defensive) Side Auton* - scores 
+    + *Left (Defensive) Side Auton*:
+      - Descores the triball in the match load zone and touches the elevation bar at the end of the autonomous phase to satisfy 2/3 of the requirements for the AWP
+      - Scores a pre-load triball into the opposing alliance's goal
+      - Scores at least 5-10 points
+    + *Right (Offensive) Side Auton*:
+      - Scores 1-3 triballs (including our pre-load triball) into our goal to satisfy 1/3 of the requirements for the AWP
+      - Scores at least 5-15 points
+    + *Programming Skills*:
+      - Activates the kicker for about 40 seconds for the drive team to match load triballs onto the kicker to shoot
+      - In the last 20 seconds, drives into the offensive zone and scores as many triballs as possible into the goal
   ],
   [
-    - It must fit within the 18-inch cubed limit.
-      - In order to fit other subsystems, the drivetrain will have to be constrained further than this. These are the preliminary size limits we came up with:
-        - Length: 16 in
-        - Width: 16 in
-        - Height: 6 in
-    - The total power drawn from the motors in the drivetrain cannot exceed 88W.
+    - The time length of all the autonomous routines must be less than or equal to the maximum autonomous period time:
+      - In a match: 15 seconds
+      - During Programming Skills: 60 seconds
+    - #vex-rule[G11]: The autonomous period (during a match) cannot have any input from the drive team
+    - The autonomous program cannot reasonably be expected to perform better than if a driver were to control it
   ],
 )

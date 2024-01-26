@@ -20,7 +20,10 @@ float GetCurveOutput(int input) {
  */
 void opcontrol()
 {
+	// Initializes the driver control period controller screen
 	ControllerDisplay();
+
+	// Integer variables from [-127, 127] representing the Y axes of both joysticks of the controller
 	short int leftAxis;
 	short int rightAxis;
 
@@ -41,11 +44,16 @@ void opcontrol()
 			drivetrainReversed = !drivetrainReversed;
 		}
 
+		// If the drivetrain is not set to drive reversed, then...
 		if(!drivetrainReversed) {
+			// The left motors drive equivalent to the position of the left joystick
 			LMotors.move(GetCurveOutput(leftAxis));
+			// The right motors drive equivalent to the position of the right joystick
 			RMotors.move(GetCurveOutput(rightAxis));
 		} else {
+			// The right motors drive equivalent to the negative position of the left joystick
 			RMotors.move(GetCurveOutput(-leftAxis));
+			// The left motors drive equivalent to the negative position of the right joystick
 			LMotors.move(GetCurveOutput(-rightAxis));
 		}
 		

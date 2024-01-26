@@ -99,3 +99,5 @@
 #include "./wings-1/build-3.typ"
 
 #include "./autonomous/identify.typ"
+#include "./autonomous/brainstorm-implementations.typ"
+#include "./autonomous/select-implementations.typ"

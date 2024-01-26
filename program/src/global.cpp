@@ -34,7 +34,7 @@ pros::IMU Inertial(1);
 
 // Boolean variable representing whether the kicker is on or not
 bool kickerOn = false;
-// Boolean variable represeting whether the drivetrain is set to drive in reverse or not
+// Boolean variable representing whether the drivetrain is set to drive in reverse or not
 bool drivetrainReversed = false;
 
 // Prints driver control information onto the controller for the driver to view

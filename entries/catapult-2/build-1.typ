@@ -49,4 +49,4 @@
         - #text(green)[Solution:] Create a ramp that helps triballs travel to the catapult.
   ],
   [#image("./build/11-10.png", height: 100%)],
-),
+)

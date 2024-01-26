@@ -31,13 +31,3 @@ void ToggleVerticalPneumaticWings() {
         verticalWingsActivated = false;
     }
 }
-
-void ToggleHangingMech(){
-    if(!hangingMechActivated){
-        HangingMech.set_value(1);
-        hangingMechActivated = true;
-    } else{
-        HangingMech.set_value(0);
-        hangingMechActivated = false;
-    }
-    }
