@@ -1,6 +1,6 @@
 #import "@preview/tablex:0.0.8": *
 #import "../icons/icons.typ": *
-#import "../globals.typ": frontmatter_page_counter, entry_page_counter, appendix_page_counter, entries
+#import "../globals.typ": frontmatter_page_counter, entry_page_counter, appendix_page_counter, entries, signature-type
 #import "./entry-lists.typ": *
 
 #let nb_pro_con(name: none, image: [], image-width: 40%, pros: [], cons: [], notes: []) = [
@@ -49,7 +49,35 @@
   }
 ]
 
-#let nb_cad(folder: "", sheets: 1, add-views: none) = [
+#let signature_metadata = (
+  "Ajibola": (name: "Ajibola Ajani", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
+  "Ishika": (name: "Ishika Saha", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
+  "Jin": (name: "Jin Cao", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
+  "Makhi": (name: "Makhi Epps", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
+  "Eric": (name: "Eric Singer", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
+  "Rory": (name: "Rory Cullum", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
+)
+
+#let nb_signature(name) = {
+  if signature-type == 0 [
+    #label(name)
+  ] else if signature-type == 1 [
+    #signature_metadata.at(name).name #label(name)
+  ] else if signature-type == 2 [
+    #signature_metadata.at(name).signature #label(name)
+  ] else {
+    panic("Invalid signature-type value")
+  }
+}
+
+#let nb_cad(
+  folder: "",
+  sheets: 1,
+  add-views: none,
+  date: none,
+  designed: none,
+  witnessed: none,
+) = [
   // put a loc on here for index
 
   #let current-sheet = 1
@@ -87,6 +115,20 @@
           }
         )
       },
+      foreground: {
+        align(bottom + left)[
+          #move(dx: 6.4em, dy: -2.5em)[
+            #gridx(
+              columns: (10.75em, 8.35em),
+              rows: (1.2em, 1.2em),
+              align: left + horizon,
+
+              [#nb_signature(designed)], cellx(align: center + horizon)[#date.display("[year]/[month]/[day]")],
+              [#nb_signature(witnessed)], cellx(align: center + horizon)[#date.display("[year]/[month]/[day]")],
+            )
+          ]
+        ]
+      }
     )[]
 
     current-sheet = current-sheet + 1

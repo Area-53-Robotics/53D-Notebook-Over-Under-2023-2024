@@ -37,5 +37,8 @@
 #nb_cad(
   folder: "wings-1",
   sheets: 3,
-  add-views: ("Isometric", "Top", "Side", "Front")
+  add-views: ("Isometric", "Top", "Side", "Front"),
+  date: datetime(year: 2023, month: 9, day: 23),
+  designed: "Ajibola",
+  witnessed: "Makhi",
 )

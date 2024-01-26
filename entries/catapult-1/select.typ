@@ -46,5 +46,8 @@
 #nb_cad(
   folder: "catapult-1",
   sheets: 6,
-  add-views: ("Isometric", "Top", "Front", "Back")
+  add-views: ("Isometric", "Top", "Front", "Back"),
+  date: datetime(year: 2023, month: 9, day: 23),
+  designed: "Ajibola",
+  witnessed: "Eric",
 )

@@ -14,3 +14,10 @@
 #let glossary_entries = state("glossary_entries", ())
 
 #let appendix_entry_counter = counter("appendix_entry_counter")
+
+/*
+  0 = Metadata
+  1 = Text
+  2 = Signature
+*/
+#let signature-type = 0;

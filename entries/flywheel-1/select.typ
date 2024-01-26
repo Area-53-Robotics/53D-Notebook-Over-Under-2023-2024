@@ -38,10 +38,11 @@
   A four bar flywheel gives us the best balance of all the criteria we identified along with the possibility to attach a blocker to it.
 ]
 
-/*
 #nb_cad(
   folder: "flywheel-1",
-  sheets: #,
-  add-views: ("Isometric", "Top", "Side", "Front")
+  sheets: 5,
+  add-views: ("Isometric", "Top", "Side", "Front"),
+  date: datetime(year: 2023, month: 12, day: 8),
+  designed: "Makhi",
+  witnessed: "Ajibola",
 )
-*/

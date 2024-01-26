@@ -42,5 +42,8 @@
 #nb_cad(
   folder: "drivetrain-1",
   sheets: 5,
-  add-views: ("Isometric", "Top", "Side", "Front")
+  add-views: ("Isometric", "Top", "Side", "Front"),
+  date: datetime(year: 2023, month: 7, day: 29),
+  designed: "Ajibola",
+  witnessed: "Ishika",
 )

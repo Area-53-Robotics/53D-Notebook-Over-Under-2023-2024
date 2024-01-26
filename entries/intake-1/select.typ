@@ -33,5 +33,8 @@
 #nb_cad(
   folder: "intake-1",
   sheets: 3,
-  add-views: ("Isometric", "Top", "Side", "Front")
+  add-views: ("Isometric", "Top", "Side", "Front"),
+  date: datetime(year: 2023, month: 10, day: 14),
+  designed: "Ajibola",
+  witnessed: "Eric",
 )

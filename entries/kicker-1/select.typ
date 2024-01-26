@@ -44,10 +44,11 @@ After brainstorming the different kicker designs, we had to pick one to begin bu
   The normal kicker gives us the most versatility and reliability without having any critical drawbacks, such as extreme power usage.
 ]
 
-/*
 #nb_cad(
   folder: "kicker-1",
-  sheets: 6,
-  add-views: ("Isometric", "Top", "Front", "Back")
+  sheets: 3,
+  add-views: ("Isometric", "Top", "Front", "Side"),
+  date: datetime(year: 2023, month: 12, day: 28),
+  designed: "Ajibola",
+  witnessed: "Jin",
 )
-*/
