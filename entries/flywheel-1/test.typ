@@ -11,6 +11,8 @@
 
 #nb_todo(
   date: datetime(year: 2023, month: 12, day: 15),
+  monthly-schedule: "On",
+  yearly-schedule: "Behind",
   (
     (true, "Test the flywheel for speed and scoring distance (Everyone)"),
     (true, "Program an auton for the Capital Beltway Challenge (Ajibola & Ishika)"),

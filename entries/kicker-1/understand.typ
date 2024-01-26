@@ -48,7 +48,7 @@
           rows: 2,
           align: center + horizon,
 
-          text(size: 15pt)[#underline[*Horizontal*]], text(size: 15pt)[#underline[*Vertical*]],
+          text(size: 15pt)[#underline[*Horizontal Motion*]], text(size: 15pt)[#underline[*Vertical Motion*]],
 
           text(size: 15pt)[
             $ #sym.Delta x = v_0_x t $

@@ -11,6 +11,8 @@
 
 #nb_todo(
   date: datetime(year: 2023, month: 12, day: 28),
+  monthly-schedule: "Off",
+  yearly-schedule: "Behind",
   (
     (true, "Identify the design constraints and goals for the kicker. (Everyone)"),
     (true, "Determine the mathematical and scientific concepts involved in outtake design (Everyone)"),

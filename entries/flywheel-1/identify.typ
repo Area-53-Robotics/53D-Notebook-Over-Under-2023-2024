@@ -11,6 +11,8 @@
 
 #nb_todo(
   date: datetime(year: 2023, month: 12, day: 8),
+  monthly-schedule: "Ahead",
+  yearly-schedule: "Behind",
   (
     (true, "Identify the design constraints and goals for the flywheel. (Everyone)"),
     (true, "Brainstorm possible configurations for the flywheel. (Everyone)"),

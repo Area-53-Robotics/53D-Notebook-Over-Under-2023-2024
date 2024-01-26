@@ -113,7 +113,7 @@
   align(center)[
     #if is-vertical == false {
       tablex(
-        columns: 4,
+        columns: 5,
         rows: 2,
         align: center + horizon,
 
@@ -123,15 +123,17 @@
             else if col == 1 {color.rgb(204,0,0,255)}
             else if col == 2 {color.rgb(241,194,50,255)}
             else if col == 3 {color.rgb(106,168,79,255)}
+            else if col == 4 {color.rgb(20,51,83,255)}
             else {white}
           }
         },
 
-        cellx(colspan: 4)[Key],
+        cellx(colspan: 5)[Key],
         [Intended Schedule],
         [Behind Schedule],
         [On Schedule],
         [Ahead of Schedule],
+        [Off Schedule]
       )
     } else {
       tablex(

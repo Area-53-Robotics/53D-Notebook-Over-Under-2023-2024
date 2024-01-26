@@ -11,8 +11,8 @@
 
 #nb_todo(
   date: datetime(year: 2023, month: 12, day: 27),
-  monthly-schedule: "On",
-  yearly-schedule: "On",
+  monthly-schedule: "Off",
+  yearly-schedule: "Behind",
   (
     (true, "Brainstorm possible configurations for the drivetrain. (Everyone)"),
     (true, "Select the best drivetrain configuration using a decision matrix. (Everyone)"),

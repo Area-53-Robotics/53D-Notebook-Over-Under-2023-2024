@@ -10,19 +10,6 @@
   witnessed: "Ajibola",
 )
 
-#nb_todo(
-  date: datetime(year: 2023, month: 1, day: 4),
-  monthly-schedule: none,
-  yearly-schedule: none,
-  (
-    (true, "Construct the wheel joints (Ishika, Jin, and Rory)"),
-    (true, "Construct the motor axle joints (Ajibola and Makhi)"),
-    (true, "Construct the left side of the drivetrain (Ishika, Jin, and Rory)"),
-    (true, "Construct the right side of the drivetrain (Ajibola and Makhi)"),
-    (true, "Attach the two sides of the drivetrain together to complete it (Makhi)"),
-  )
-)
-
 We were excited to begin building the new iteration of the drivetrain. Going into the construction phase, we planned on following the CAD model more stringently than we did when building the first iteration of the drivetrain to ensure that we complete the drivetrain in a timely manner. The aim was to ensure a systematic and efficient building process that aligns with our design objectives so that we can complete this rebuild quickly. 
 
 = Build Steps
@@ -41,7 +28,7 @@ We were excited to begin building the new iteration of the drivetrain. Going int
         - Gathered 28 hole long C-channels
           - *Reason:* They will serve as the chassis base
         - Attached the wheels to the gears with a 3/8 inch spacers
-        - Spaced out the wheels onto their screw joints using the spacing from [Page of CAD]
+        - Spaced out the wheels onto their screw joints using the spacing from sheet 5 of the Drivetrain \#2 CAD
         - Attached the motors to their axles and then attached them to the motor 
         - Close the drive half tightly from the screw joint 
       ],

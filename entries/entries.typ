@@ -66,6 +66,7 @@
 #include "./misc-program/github-workflows.typ"
 
 // December
+#include "./management/december.typ"
 #include "./catapult-2/program.typ"
 #include "./catapult-2/test.typ"
 #include "./wings-1/test-2.typ"
@@ -91,6 +92,7 @@
 #include "./kicker-1/select.typ"
 
 // January
+#include "./management/january.typ"
 #include "./drivetrain-2/build.typ"
 #include "./kicker-1/build.typ"
 #include "./intake-1/build-2.typ"

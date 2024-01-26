@@ -22,8 +22,8 @@
 
       #nb_todo(
         date: datetime(year: 2023, month: 12, day: 9),
-        monthly-schedule: none,
-        yearly-schedule: none,
+        monthly-schedule: "Ahead",
+        yearly-schedule: "Behind",
         (
           (true, "Construct the joints needed to facilitate arm movement (Ishika, Jin, and Rory)"),
           (true, "Attach the flywheel to the robot (Ajibola and Makhi)"),
@@ -87,9 +87,11 @@
 
       #nb_todo(
         date: datetime(year: 2023, month: 12, day: 14),
+        monthly-schedule: "Ahead",
+        yearly-schedule: "Behind",
         (
           (true, "Check for and resolve any causes of friction on the flywheel (Ishika, Jin, & Rory)"),
-          (false, "Program the flywheel to be usable for driver control (Ajibola & Ishika)"),
+          (true, "Program the flywheel to be usable for driver control (Ajibola & Ishika)"),
           (false, "Test the flywheel for speed and scoring distance (Everyone)"),
         )
       )

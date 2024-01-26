@@ -11,6 +11,8 @@
 
 #nb_todo(
   date: datetime(year: 2023, month: 11, day: 19),
+  monthly-schedule: "Off",
+  yearly-schedule: "Behind",
   (
     (true, "Configure GitHub workflows for our program repositories (Ajibola)"),
     (false, "Create a pre-autonomous menu selection screen (Ajibola)"),

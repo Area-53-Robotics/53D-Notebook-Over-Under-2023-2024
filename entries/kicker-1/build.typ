@@ -22,8 +22,8 @@ With the majority of our drivetrain having completed construction, we made a str
 
     #nb_todo(
       date: datetime(year: 2024, month: 1, day: 5),
-      monthly-schedule: none,
-      yearly-schedule: none,
+      monthly-schedule: "On",
+      yearly-schedule: "Behind",
       (
         (true, "Construct the kicker tower (Eric and Rory)"),
         (true, "Construct the kicker leg (Ajibola and Makhi)"),
@@ -92,8 +92,8 @@ With the majority of our drivetrain having completed construction, we made a str
 
     #nb_todo(
       date: datetime(year: 2024, month: 1, day: 6),
-      monthly-schedule: none,
-      yearly-schedule: none,
+      monthly-schedule: "On",
+      yearly-schedule: "Behind",
       (
         (true, "Verify the strength of the triangle bracing on the intake (Jin)"),
         (true, "Assemble the shell of the intake (Makhi and Jin)"),

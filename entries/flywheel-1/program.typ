@@ -9,14 +9,6 @@
   witnessed: "Ishika",
 )
 
-#nb_todo(
-  date: datetime(year: 2023, month: 12, day: 14),
-  (
-    (true, "Program the flywheel to be usable for driver control (Ajibola & Ishika)"),
-    (false, "Test the flywheel for speed and scoring distance (Everyone)"),
-  )
-)
-
 #nb_admonition(type: "identify", title: "Sub-Identify: Intake Driver Control")[
   We identified that we needed the arm and flywheel to have the following capabilities:
   - The arm and the flywheel need to be controlled separately, so that it is possible to raise the blocker without activating the flywheel

@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    # Installs the ARM toolchain, which is the project compilation toolchain that PROS uses
+    # Installs the ARM toolchain, the project compilation toolchain that PROS uses
     - name: Install ARM Toolchain
       uses: fiam/arm-none-eabi-gcc@v1
       with:
