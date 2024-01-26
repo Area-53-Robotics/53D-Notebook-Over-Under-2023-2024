@@ -44,7 +44,7 @@ After brainstorming the different RPM drivetrains, we needed to select one to bu
   folder: "drivetrain-2",
   sheets: 5,
   add-views: ("Isometric", "Top", "Side", "Front"),
-  date: datetime(year: 2023, month: 7, day: 29),
-  designed: "Ajibola",
-  witnessed: "Ishika",
+  date: datetime(year: 2023, month: 12, day: 27),
+  designed: "Jin",
+  witnessed: "Makhi",
 )
