@@ -97,3 +97,5 @@
 #include "./kicker-1/build.typ"
 #include "./intake-1/build-2.typ"
 #include "./wings-1/build-3.typ"
+
+#include "./autonomous/identify.typ"
