@@ -7,4 +7,4 @@
 
 Here is the updated driver control scheme as of 1/12/2024:
 
-#image("/assets/controller-scheme.svg", width: 100%)
+#image("/assets/appendix/controller-scheme.svg", width: 100%)

@@ -8,9 +8,6 @@
 = autonomous.cpp <autonomous.cpp>
 #raw(block: true, lang: "cpp", read("src/autonomous.cpp"))
 
-= autonSelector.cpp <autonSelector.cpp>
-#raw(block: true, lang: "cpp", read("src/autonSelector.cpp"))
-
 = global.cpp <global.cpp>
 #raw(block: true, lang: "cpp", read("src/global.cpp"))
 
