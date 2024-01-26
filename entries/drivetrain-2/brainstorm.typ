@@ -19,7 +19,7 @@
   )
 )
 
-After the Capital Beltway Challenge tournament, we realized that it would be best if we started rebuilding our robot ASAP to get ready for the competition heavy January and February months. We will begin this process with the rebuilding of the drivetrain. The aspects, design goals, and design constraints of the drivetrain remain the same from when we identified them in our #past_nb_entry_reference(date: datetime(year: 2023, month: 7, day: 15), type: "identify"). However, for our second robot iteration, we decided to keep the tank drive configuration and hybrid wheel configuration, and instead debate what RPM to use and how to adjust the gear ratios based on that.
+After the Capital Beltway Challenge tournament, we realized that it would be best if we started rebuilding our robot ASAP to get ready for the competition heavy January and February months. We will begin this process with the rebuilding of the drivetrain. The aspects, design goals, and design constraints of the drivetrain remain the same from when we identified them in our #nb_entry_reference(date: datetime(year: 2023, month: 7, day: 15), type: "identify"). However, for our second robot iteration, we decided to keep the tank drive configuration and hybrid wheel configuration, and instead debate what RPM to use and how to adjust the gear ratios based on that.
 
 #nb_pro_con(
   name: "600 RPM",

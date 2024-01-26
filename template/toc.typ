@@ -71,7 +71,54 @@
 
               #let headings = query(selector(<nb_entry>), loc)
 
-              #for (index, entry) in entries.final(loc).enumerate().slice(36) {
+              #for (index, entry) in entries.final(loc).enumerate().slice(36, 36 * 2) {
+                let page_number = counter(page).at(headings.at(index).location()).at(0)
+                // let page_number = entry_page_counter.at(headings.at(index).location()).at(0) + 1
+                let start_date = entry.start_date.display("[year]/[month]/[day]")
+                let end_date = if (not entry.start_date == entry.end_date) { entry.end_date.display("[year]/[month]/[day]") } else { none }
+
+                let info = type_metadata.at(entry.type)
+
+                let frontmatter_count = frontmatter_page_counter.final(loc).at(0)
+
+                [
+                  #box(baseline: 15%, nb_icon(label: entry.type, size: 1em))
+                  #h(5pt)
+                  #box(fill: info.color.lighten(30%), radius: 1pt, height: 1em, baseline: 15%)[
+                    #align(center + horizon)[
+                      #link((page: {frontmatter_count + page_number + 2}, x: 0pt, y: 0pt))[
+                        #text(fill: black)[
+                          _#h(2pt) #start_date #sym.dash.em #info.name: #entry.title #h(2pt)_
+                        ]
+                      ]
+                    ]
+                  ]#h(5pt)
+                  #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted")))
+                  #page_number \
+                ]
+              }
+            ]
+            parbreak()
+          }
+        }
+      )
+  ]
+
+  page(
+    margin: (left: 5em, right: 5em, /*bottom: 4em*/),
+    background: nb_side_margin_color(color: gray),
+    header: nb_title[Table of Contents],
+    footer: nb_frontmatter_footer(),
+  )[
+
+      #locate(
+        loc => {
+          if entries.final(loc).len() > 36 {
+            box[
+
+              #let headings = query(selector(<nb_entry>), loc)
+
+              #for (index, entry) in entries.final(loc).enumerate().slice(36 * 2) {
                 let page_number = counter(page).at(headings.at(index).location()).at(0)
                 // let page_number = entry_page_counter.at(headings.at(index).location()).at(0) + 1
                 let start_date = entry.start_date.display("[year]/[month]/[day]")

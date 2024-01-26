@@ -9,7 +9,7 @@
   witnessed: "Makhi",
 )
 
-Today we redid the catapult test from our #past_nb_entry_reference(date: datetime(year: 2023, month: 10, day: 7), type: "test", title: "Catapult #1") #h(0.5em) to test the effectiveness of the improvements we recently made to the catapult. This test focuses on two aspects of the catapult that we identified in our #past_nb_entry_reference(date: datetime(year: 2023, month: 9, day: 16), type: "identify", title: "Outtake"), being _Scoring_ and _Multihandling_.
+Today we redid the catapult test from our #nb_entry_reference(date: datetime(year: 2023, month: 10, day: 7), type: "test", title: "Catapult #1") #h(0.5em) to test the effectiveness of the improvements we recently made to the catapult. This test focuses on two aspects of the catapult that we identified in our #nb_entry_reference(date: datetime(year: 2023, month: 9, day: 16), type: "identify", title: "Outtake"), being _Scoring_ and _Multihandling_.
 
 = Triball Distance from Robot (Scoring)
 == Materials

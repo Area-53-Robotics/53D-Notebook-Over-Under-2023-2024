@@ -15,7 +15,7 @@
 
 #let appendix_entry_counter = counter("appendix_entry_counter")
 
-#let page-number-offset = 133
+#let page-number-offset = 0 //133
 
 /*
   0 = Metadata
