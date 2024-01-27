@@ -9,6 +9,17 @@
   witnessed: "Eric",
 )
 
+#nb_admonition(type: "competition", title: "Competition Results")[
+  - *Rank:* 4/7
+  - *Qualification Matches Wins/Losses/Ties:* 1/3/0
+  - *Overall Wins/Losses/Ties:* 2/4/0
+  - *Eliminated in:* Finals
+]
+
+#nb_admonition(type: "note")[
+  This "competition" is a small scrimmage with all 6 Area 53#glossary_footnote[Area 53] teams and one team from AHC, a local team.
+]
+
 = Competition Goals
 - Test each subsystem in a competitive environment to identify problems.
 

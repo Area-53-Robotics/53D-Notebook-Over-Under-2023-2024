@@ -4,7 +4,7 @@
   title: "December Gantt Chart",
   type: "management",
   start_date: datetime(year: 2023, month: 12, day: 1),
-  attendance: "",
+  attendance: "Ajibola, Ishika, Eric, Rory, Makhi",
   designed: "Ajibola",
   witnessed: "Ishika",
 )

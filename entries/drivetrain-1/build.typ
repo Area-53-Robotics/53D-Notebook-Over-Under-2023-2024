@@ -160,7 +160,7 @@
       ],
 
       [
-        As we near the completion of the left side drivetrain assembly, our primary concern began to center around the potential problems associated with improper spacing. Despite the concern, the team remains optimistic, considering this challenge as manageable with careful oversight. In an effort to maintain momentum, we are eager to begin working on the right side of the drivetrain. Anticipating increased efficiency as our newer members become more adept with the building process, we are optimistic about the accelerated progress and the continued refinement of our robotic system.
+        As we near the completion of the left side drivetrain assembly, our primary concern began to center around the potential problems associated with improper spacing. Despite the concern, the team remains optimistic, considering this challenge as manageable with careful oversight. In an effort to maintain momentum, we were eager to begin working on the right side of the drivetrain. Anticipating increased efficiency as our newer members become more adept with the building process, we are optimistic about the accelerated progress and the continued refinement of our robotic system.
 
       ],
       [
@@ -178,7 +178,7 @@
             - We found that one of the spacers was 1/8 too long
         - Flipped the direction of the screws on the gears.
         
-        Organization was a significant problem that we faced today, so we took time to organize our parts by size.
+        Organization was a significant problem that we faced today because the disorganization of our parts made it harder to find what we needed in a timely manner. To fix this, we took time to organize our parts by size.
       ]
     )
   ],

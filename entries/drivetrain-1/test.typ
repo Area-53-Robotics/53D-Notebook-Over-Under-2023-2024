@@ -66,6 +66,8 @@ To ensure that our drivetrain was functioning that the level that we wanted, we 
   [#image("./test/Drivetrain Speed.svg")]
 )
 
+#colbreak()
+
 == Conclusion
 This test was successful, as the average drivetrain speed exceeded the goal we set in the identify phase, which was 56.723 in/sec.
 

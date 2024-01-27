@@ -54,7 +54,7 @@
       [Each Triball Scored in an Offensive Zone], [2 points]
     )
   ],
-  [#image("/assets/field-elements/triball.png", height: 100%)],
+  [#image("/assets/field-elements/triball.png", height: 20em)],
   [#image("/assets/field-elements/elevation-bar.png")],
   [
     == Elevation Bar
@@ -82,7 +82,7 @@
     - Length - 30 inches
     - Height - 2.38 inches
     - Distance away from corner - 17.33 inches 
-    - Degree - 45 degrees
+    - Angle - 45 degrees
   ],
   [
     == Robot Skills Challenge
@@ -95,7 +95,7 @@
   [#image("/assets/field-elements/skills-field.png")],
 )
 
-== Robot Rules
+== Robot Sizing Restrictions
 - #vex-rule[R4] Robot must fit within an 18” x 18” x 18” volume
 - #vex-rule[SG2] Horizontal expansion is limited to 36”
 - There is NO limit on vertical expansion
@@ -124,7 +124,7 @@
 )
 
 #nb_admonition(type: "note")[
-  #vex-rule[SG9] makes a solo autonomous win point impossible to achieve unless you can consistently score into your goal from across the field. It is highly unlikely that teams will be able to do this, especially at the beginning of the season.
+  #vex-rule[SG9] makes a solo autonomous win point impossible to achieve unless you can consistently score into your goal from across the field. We strongly believe that teams will not be able to do this, especially at the beginning of the season.
 ]
 
 == Match Scoring

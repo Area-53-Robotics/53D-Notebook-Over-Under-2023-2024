@@ -4,7 +4,7 @@
   title: "January Gantt Chart",
   type: "management",
   start_date: datetime(year: 2024, month: 1, day: 4),
-  attendance: "",
+  attendance: "Ajibola, Jin, Ishika, Rory, Makhi",
   designed: "Ajibola",
   witnessed: "Ishika",
 )
