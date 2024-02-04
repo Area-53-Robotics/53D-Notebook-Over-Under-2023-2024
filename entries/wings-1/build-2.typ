@@ -33,7 +33,7 @@
         )
       ],
       [
-        Today we attempted to tackle the problem with the wings not fully extending when deployed. This seems to be linked with the result that we obtained from our test of the wings in our #nb_entry_reference(date: datetime(year: 2023, month: 10, day: 13),type: "test", title: "Wings #1"). In the air loss test, we found that the wings lost about 18 PSI per deployment. This, combined with the wings not fully extended, creates a major concern regarding the functionality and air efficiency of the wings. It became apparent that the piston was not delivering the required torque to properly extend the wings as intended.
+        Today we attempted to tackle the problem with the wings not fully extending when deployed. This seems to be linked with the result that we obtained from our test of the wings in our #past_nb_entry_reference(date: datetime(year: 2023, month: 10, day: 13),type: "test", title: "Wings #1"). In the air loss test, we found that the wings lost about 18 PSI per deployment. This, combined with the wings not fully extended, creates a major concern regarding the functionality and air efficiency of the wings. It became apparent that the piston was not delivering the required torque to properly extend the wings as intended.
 
         == Build Steps
         - #text(red)[Problem:] The mechanical advantage of the robot is small. We noticed that because the piston is attached right next to the pivot, more force is required to fully extend the wings compared if the piston was further.

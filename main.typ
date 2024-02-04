@@ -7,7 +7,7 @@
 #show: notebook.with(
   team: "53D",
   organization: "Area 53",
-  count: (current: 1, total: 1),
+  count: (current: 2, total: 2),
   cover: circle(align(center + horizon)[#image("/assets/logos/logo.svg", width: 110%)], fill: black),
   year: "2023 - 2024",
   season: "Over Under",

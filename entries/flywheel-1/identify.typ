@@ -29,7 +29,7 @@
 
     The flywheel is an different outtake from the catapult. Instead of needing to wind the catapult arm, the flywheel doesn't need to reload and instead is constantly spin. This allow us to simply drop triballs on the flywheel instead of waiting for the catapult to go down when match loading.
 
-    The purposes, design goals, and design constraints remain the same as those that we identified in our #nb_entry_reference(  title: "Outtake", type: "identify", date: datetime(year: 2023, month: 9, day: 16)).
+    The purposes, design goals, and design constraints remain the same as those that we identified in our #past_nb_entry_reference(  title: "Outtake", type: "identify", date: datetime(year: 2023, month: 9, day: 16)).
   ],
   box(height: 35%)[#image("/assets/identify/identify-flywheel.excalidraw.svg")]
 )
