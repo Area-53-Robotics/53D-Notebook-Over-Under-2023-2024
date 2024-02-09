@@ -101,3 +101,8 @@
 #include "./autonomous/identify.typ"
 #include "./autonomous/brainstorm-implementations.typ"
 #include "./autonomous/select-implementations.typ"
+#include "./elevation-1/identify.typ"
+#include "./elevation-1/understand.typ"
+#include "./elevation-1/brainstorm.typ"
+#include "./elevation-1/select.typ"
+#include "./competition/gateway-to-the-west.typ"
