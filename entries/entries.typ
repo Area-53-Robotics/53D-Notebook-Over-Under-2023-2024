@@ -99,10 +99,14 @@
 #include "./wings-1/build-3.typ"
 
 #include "./autonomous/identify.typ"
-#include "./autonomous/brainstorm-implementations.typ"
-#include "./autonomous/select-implementations.typ"
+#include "./odometry/brainstorm-movement.typ"
+#include "./odometry/select-movement.typ"
 #include "./elevation-1/identify.typ"
 #include "./elevation-1/understand.typ"
 #include "./elevation-1/brainstorm.typ"
 #include "./elevation-1/select.typ"
 #include "./competition/gateway-to-the-west.typ"
+
+// #include "./odometry/program-odometry.typ"
+#include "./odometry/brainstorm-implementation.typ"
+#include "./odometry/select-implementation.typ"

@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create_entry.with(
-  title: "Autonomous Movement - Implementations",
+  title: "Autonomous - Movement",
   type: "brainstorm",
   start_date: datetime(year: 2024, month: 1, day: 25),
   attendance: "Ajibola, Ishika, Eric, Makhi",
@@ -13,7 +13,7 @@
 
 #nb_pro_con(
   name: "Relative Movements",
-  image: image("./brainstorm-implementations/relative-movements.excalidraw.svg"),
+  image: image("./brainstorm-movement/relative-movements.excalidraw.svg"),
   pros: [
     - *Low Difficulty* - Easy to understand and write code for
     - *Implementation Time* - Because we have been using relative movements until this point, we already have the code necessary to implement it
@@ -32,7 +32,7 @@
 
 #nb_pro_con(
   name: "PID",
-  image: image("./brainstorm-implementations/PID.excalidraw.svg"),
+  image: image("./brainstorm-movement/PID.excalidraw.svg"),
   pros: [
     - *Heavily Documented* - PID is widely used by other teams and for applications outside of VRC, so there will be a lot of documentation and assistance available if we need it
     - *Implementation Time* - While it takes more time to implement PID than relative movements, PID can be implemented relatively quickly, especially when done with a library
@@ -47,7 +47,7 @@
 
 #nb_pro_con(
   name: "Pure Pursuit",
-  image: image("./brainstorm-implementations/pure-pursuit.excalidraw.svg"),
+  image: image("./brainstorm-movement/pure-pursuit.excalidraw.svg"),
   pros: [
     - *Smooth Movement* - Pure Pursuit gives the smoothest movement and turns out of any autonomous implementation
   ],

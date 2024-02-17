@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create_entry.with(
-  title: "Autonomous Movement - Implementations",
+  title: "Autonomous - Movement",
   type: "select",
   start_date: datetime(year: 2024, month: 1, day: 25),
   attendance: "Ajibola, Ishika, Eric, Makhi",
@@ -9,7 +9,7 @@
   witnessed: "Ishika",
 )
 
-After brainstorming the autonomous implementations, we needed to select one to use. Because the signature event is in one week (2023/02/03), implementation time is going to be the most restrictive criteria.
+// After brainstorming the autonomous implementations, we needed to select one to use. Because the signature event is in one week (2023/02/03), implementation time is going to be the most restrictive criteria.
 
 #nb_matrix_criteria[
   - Implementation Time - How little time it takes to create the algorithms and functions necessary for the autonomous implementation.
@@ -35,3 +35,11 @@ After brainstorming the autonomous implementations, we needed to select one to u
 #nb_admonition(type: "select", title: "Final Selection")[
   PID strikes the best balance between implementation & testing time and its resulting performance.
 ]
+
+#nb_admonition(type: "note")[
+  Although we will be using PID for the majority of our autonomous movements, it is not exclusive with Pure Pursuit implementation. If possible, we would like to implement both movement options and use them as needed.
+]
+
+= Implementation Plan
++ We will read *An Introduction to PID Controllers by George Gillard (2017)* #footnote[https://georgegillard.com/component/osdownloads/routedownload/robotics/introduction-to-pid-controllers-2nd-edition] to learn the workings of PID.
++ We will brainstorm and select an implementation method for PID
