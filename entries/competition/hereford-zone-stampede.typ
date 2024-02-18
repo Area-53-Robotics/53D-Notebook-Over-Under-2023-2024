@@ -42,6 +42,7 @@
     overperformed: "Intake",
     satisfactory: "Catapult, Wings",
     underperformed: "Drivetrain",
+    disabled: none,
   )
 )
 
@@ -67,6 +68,7 @@
     overperformed: "Intake",
     satisfactory: "Wings, Catapult",
     underperformed: "Drivetrain",
+    disabled: none,
   )
 )
 
@@ -91,6 +93,7 @@
     overperformed: "Catapult, Intake",
     satisfactory: "Wings",
     underperformed: "Drivetrain",
+    disabled: none,
   )
 )
 
@@ -117,6 +120,7 @@
     overperformed: "Catapult, Intake",
     satisfactory: "Wings, Drivetrain",
     underperformed: "",
+    disabled: none,
   )
 )
 
@@ -142,6 +146,7 @@
     overperformed: "Wings, Drivetrain",
     satisfactory: "Catapult, Intake",
     underperformed: "",
+    disabled: none,
   )
 )
 
@@ -167,6 +172,7 @@
     overperformed: "Intake, Catapult",
     satisfactory: "Wings, Drivetrain",
     underperformed: "",
+    disabled: none,
   )
 )
 

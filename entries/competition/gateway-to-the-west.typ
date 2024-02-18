@@ -59,6 +59,7 @@ Due to time constraints, we decided to use the one-triball auton that we created
     overperformed: "",
     satisfactory: "Drivetrain, Intake",
     underperformed: "Wings, Kicker, Elevation",
+    disabled: none,
   )
 )
 
@@ -84,6 +85,7 @@ Due to time constraints, we decided to use the one-triball auton that we created
     overperformed: "Elevation, Drivetrain, Intake",
     satisfactory: "Wings",
     underperformed: "Kicker",
+    disabled: none,
   )
 )
 
@@ -108,6 +110,7 @@ Due to time constraints, we decided to use the one-triball auton that we created
     overperformed: "",
     satisfactory: "Drivetrain, Intake, Wings, Elevation",
     underperformed: "Kicker",
+    disabled: none,
   )
 )
 
@@ -136,6 +139,7 @@ Due to time constraints, we decided to use the one-triball auton that we created
     overperformed: "",
     satisfactory: "Drivetrain, Intake, Wings",
     underperformed: "Elevation, Kicker",
+    disabled: none,
   )
 )
 
@@ -160,6 +164,7 @@ Due to time constraints, we decided to use the one-triball auton that we created
     overperformed: "",
     satisfactory: "Drivetrain, Intake, Wings",
     underperformed: "Elevation, Kicker",
+    disabled: none,
   )
 )
 
@@ -185,6 +190,7 @@ Due to time constraints, we decided to use the one-triball auton that we created
     overperformed: "",
     satisfactory: "Drivetrain, Intake, Wings",
     underperformed: "Elevation, Kicker",
+    disabled: none,
   )
 )
 
@@ -209,6 +215,7 @@ Due to time constraints, we decided to use the one-triball auton that we created
     overperformed: "Drivetrain, Wings",
     satisfactory: "Intake",
     underperformed: "Elevation, Kicker",
+    disabled: none,
   )
 )
 
@@ -235,6 +242,7 @@ Due to time constraints, we decided to use the one-triball auton that we created
     overperformed: "Drivetrain, Wings, Intake",
     satisfactory: "",
     underperformed: "Elevation, Kicker",
+    disabled: none,
   )
 )
 
@@ -261,6 +269,7 @@ Due to time constraints, we decided to use the one-triball auton that we created
     overperformed: "Drivetrain, Wings",
     satisfactory: "Intake",
     underperformed: "Elevation, Kicker",
+    disabled: none,
   )
 )
 
@@ -286,6 +295,7 @@ Due to time constraints, we decided to use the one-triball auton that we created
     overperformed: "",
     satisfactory: "Drivetrain, Wings, Intake",
     underperformed: "Elevation, Kicker",
+    disabled: none,
   )
 )
 

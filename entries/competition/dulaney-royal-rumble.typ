@@ -46,6 +46,7 @@ We did not queue for the skills line before it closed, so we were unable to run 
     overperformed: "",
     satisfactory: "Intake",
     underperformed: "Catapult, Wings, Drivetrain",
+    disabled: none,
   )
 )
 
@@ -67,6 +68,7 @@ We did not queue for the skills line before it closed, so we were unable to run 
     overperformed: "Drivetrain, Intake",
     satisfactory: "",
     underperformed: "Catapult, Wings",
+    disabled: none,
   )
 )
 
@@ -96,6 +98,7 @@ We did not queue for the skills line before it closed, so we were unable to run 
     overperformed: "Drivetrain, intake",
     satisfactory: "",
     underperformed: "Catapult, Wings",
+    disabled: none,
   )
 )
 
@@ -121,6 +124,7 @@ We did not queue for the skills line before it closed, so we were unable to run 
     overperformed: "Drivetrain",
     satisfactory: "Wings, Intake",
     underperformed: "Catapult",
+    disabled: none,
   )
 )
 
@@ -146,6 +150,7 @@ We did not queue for the skills line before it closed, so we were unable to run 
     overperformed: "Drivetrain, Intake",
     satisfactory: "Wings",
     underperformed: "Catapult",
+    disabled: none,
   )
 )
 
@@ -172,6 +177,7 @@ We did not queue for the skills line before it closed, so we were unable to run 
     overperformed: "Drivetrain",
     satisfactory: "",
     underperformed: "Catapult, Intake, Wings",
+    disabled: none,
   )
 )
 
@@ -198,6 +204,7 @@ We did not queue for the skills line before it closed, so we were unable to run 
     overperformed: "Drivetrain, Intake",
     satisfactory: "Wings",
     underperformed: "Catapult",
+    disabled: none,
   )
 )
 

@@ -46,6 +46,7 @@
     overperformed: "",
     satisfactory: "Drivetrain, Intake, Flywheel, Wings",
     underperformed: "",
+    disabled: none,
   )
 )
 
@@ -72,6 +73,7 @@
     overperformed: "Intake",
     satisfactory: "Drivetrain, Flywheel, Wings",
     underperformed: "",
+    disabled: none,
   )
 )
 
@@ -98,6 +100,7 @@
     overperformed: "Flywheel",
     satisfactory: "Drivetrain, Intake, Wings",
     underperformed: "",
+    disabled: none,
   )
 )
 
@@ -122,6 +125,7 @@
     overperformed: "Flywheel",
     satisfactory: "Drivetrain, Intake, Wings",
     underperformed: "",
+    disabled: none,
   )
 )
 
@@ -148,6 +152,7 @@
     overperformed: "",
     satisfactory: "Drivetrain, Intake, Flywheel",
     underperformed: "Wings",
+    disabled: none,
   )
 )
 
@@ -174,6 +179,7 @@
     overperformed: "",
     satisfactory: "Drivetrain, Flywheel, Intake, Wings",
     underperformed: "",
+    disabled: none,
   )
 )
 
@@ -199,6 +205,7 @@
     overperformed: "Wings, Flywheel",
     satisfactory: "Drivetrain, Intake",
     underperformed: "",
+    disabled: none,
   )
 )
 
@@ -225,6 +232,7 @@
     overperformed: "",
     satisfactory: "Intake, Wings",
     underperformed: "Drivetrain, Flywheel",
+    disabled: none,
   )
 )
 

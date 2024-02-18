@@ -15,6 +15,7 @@
     overperformed: none,
     satisfactory: none,
     underperformed: none,
+    disabled: none,
   )
 ) = {
   assert((auton == "Red") or (auton == "Blue") or (auton == "Tie"), message: "Invalid auton winner")
@@ -202,6 +203,9 @@
           - Overperformed: #subsystems.overperformed \
           - Satisfactory: #subsystems.satisfactory \
           - Underperformed: #subsystems.underperformed
+          #if (subsystems.disabled != none) [
+            - Disabled: #subsystems.disabled
+          ]
         ],
 
       )
