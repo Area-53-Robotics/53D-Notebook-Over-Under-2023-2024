@@ -112,7 +112,9 @@
 #include "./elevation-1/understand.typ"
 #include "./elevation-1/brainstorm.typ"
 #include "./elevation-1/select.typ"
+*/
 #include "./competition/gateway-to-the-west.typ"
+/*
 
 // #include "./odometry/program-odometry.typ"
 #include "./odometry/brainstorm-implementation.typ"

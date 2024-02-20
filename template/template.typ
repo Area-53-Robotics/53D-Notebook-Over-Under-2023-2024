@@ -75,9 +75,9 @@
   pagebreak()
   pagebreak()
 
-  about
+  // about
 
-  intro
+  // intro
 
   nb_toc()
 

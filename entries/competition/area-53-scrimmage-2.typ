@@ -1,4 +1,5 @@
 #import "/template/template.typ": *
+#import "@preview/cetz:0.2.0"
 
 #show: create_entry.with(
   title: "Area 53 Scrimmage 2",
@@ -9,30 +10,15 @@
   witnessed: "Makhi",
 )
 
-// #nb_admonition(type: "competition", title: "Competition Results")[
-//   - *Rank:* 44/68
-//   - *Qualification Matches Wins/Losses/Ties:* 5/5/0
-//   - *Eliminated in:* N/A
-// ]
-
-= Competition Goals
-// - End the event with at least the same amount of wins as losses
-// - Obtain a score of 60+ in driver skills
-// - Obtain a score of 30+ in programming skills
-
-= Autonomous Programming
-Due to time constraints, we decided to use the one-triball auton that we created in our #nb_entry_reference(date: datetime(year: 2023, month: 12, day: 1), type: "program", title: "Autonomous Programming").
-
-#nb_admonition(type: "note", title: "Driving Strategies")[
-  A lot of our matches used similar drive strategies, which we'll define here:
-  - Bowling - Match loading triballs onto the robot in a way that makes the triballs fall in front of the robot, and then pushing multiple of those triballs at once under the elevation bar into your offensive zone
-  - Cycling - Repeatedly match loading directly into the robot's intake
-  - Field Starvation:
-    - Not scoring triballs using outtake mechanisms like a kicker or flywheel to prevent the other team from capitalizing on our match loads.
-    - Stealing any match loads that the opposing team outtakes and scoring them in our goal
+#nb_admonition(type: "competition", title: "Competition Results")[
+  - *Wins/Losses/Ties:* 1/4/0
 ]
 
-#colbreak()
+= Competition Goals
+- Diagnose any critical issues we need to resolve before the States competition
+
+= Driving Strategies
+The driving strategies that we used for this scrimmage are the same as the ones we utilized in the #nb_entry_reference(date: datetime(year: 2024, month: 2, day: 2), type: "competition")
 
 = Matches
 #nb_tournament_match(
@@ -165,17 +151,80 @@ Due to time constraints, we decided to use the one-triball auton that we created
   )
 )
 
+#colbreak()
 
-/*
-  = Subsystem Reflection
-  #v(0.5em)
-  #box[
-    == Drivetrain
-    #grid(
+= Subsystem Reflection
+#v(0.5em)
+#box[
+  == Drivetrain
+  #grid(
     columns: 2,
     [
-      - We saw no major problems with the drivetrain as it worked fairly well for all our matches.
-      - However, we believe that our driver can benefit from having a quicker drivetrain. We also noticed that the drivetrain had some trouble getting over the middle barrier.
+      - Our drivetrain performed satisfactorily for most of our matches, and we believe it is nearly ready for the States competition
+      - We need to improve our wire management to make it easier to switch ports when needed before States
+
+      #align(center)[
+        #tablex(
+          columns: 2,
+          rows: 5,
+          align: center + horizon,
+
+          map-rows: (col, cells) => cells.map(c => {
+            if col == 0 {
+              (..c, fill: gray.lighten(20%), content: [*#c.content*])
+            } else {c}
+          }),
+
+          [Performance], [Matches],
+          [Overperformed], [0],
+          [Satisfactory], [3],
+          [Underperformed], [1],
+          [Disabled], [1]
+        )
+      ]
+    ],
+
+    cetz.canvas({
+      import cetz.draw: *
+      import cetz.chart
+
+      let data = (
+        ([Overperformed], 0),
+        ([Satisfactory], 3),
+        ([Underperformed], 1),
+        ([Disabled], 1),
+      )
+
+      let colors = (green, yellow.darken(10%), red, gray)
+
+      chart.piechart(
+        data,
+        value-key: 1,
+        label-key: 0,
+        radius: 4,
+        slice-style: colors,
+        inner-radius: 1,
+        outset: 1,
+        inner-label: (
+          content: (value, label) => [
+            #text(white, label)
+          ],
+          radius: 110%
+        ),
+        outer-label: (content: "%", radius: 110%)
+      )
+    })
+  )
+]
+
+#box[
+  == Intake
+  #grid(
+    columns: 2,
+
+    [
+      - The intake performed satisfactorily during the matches where our robot was functional
+      - We believe that the intake is ready for the States competition
 
       #align(center)[
         #tablex(
@@ -191,22 +240,55 @@ Due to time constraints, we decided to use the one-triball auton that we created
 
           [Performance], [Matches],
           [Overperformed], [0],
-          [Satisfactory], [7],
-          [Underperformed], [1]
+          [Satisfactory], [3],
+          [Underperformed], [0],
+          [Disabled], [2]
         )
       ]
     ],
-    align(horizon)[#image("./capital-beltway-challenge/Drivetrain Performance.svg")]
-    )
-  ]
 
-  #box[
-    == Intake
-    #grid(
+    cetz.canvas({
+      import cetz.draw: *
+      import cetz.chart
+
+      let data = (
+        ([Overperformed], 0),
+        ([Satisfactory], 3),
+        ([Underperformed], 0),
+        ([Disabled], 2),
+      )
+
+      let colors = (green, yellow.darken(10%), red, gray)
+
+      chart.piechart(
+        data,
+        value-key: 1,
+        label-key: 0,
+        radius: 4,
+        slice-style: colors,
+        inner-radius: 1,
+        outset: 1,
+        inner-label: (
+          content: (value, label) => [
+            #text(white, label)
+          ],
+          radius: 110%
+        ),
+        outer-label: (content: "%", radius: 110%)
+      )
+    })
+  )
+]
+
+#box[
+  == Elevation
+  #grid(
     columns: 2,
+
     [
-      - The intake worked consistently, we even managed to intake into the cata a few times.
-      - In the future we want to have a longer intake as we can intake deeper into the goal.
+      - We were not able to test the elevation mechanism in most of our rounds
+      - For the matches where the elevation mechanism was used, the results were varying
+      - We will need more tests to ensure that the elevation mechanism is ready for the States competition
 
       #align(center)[
         #tablex(
@@ -222,22 +304,53 @@ Due to time constraints, we decided to use the one-triball auton that we created
 
           [Performance], [Matches],
           [Overperformed], [1],
-          [Satisfactory], [7],
-          [Underperformed], [0]
+          [Satisfactory], [0],
+          [Underperformed], [1],
+          [Disabled], [3]
         )
       ]
     ],
-    align(horizon)[#image("./capital-beltway-challenge/Intake Performance.svg")]
-    )
-  ]
+    
+    cetz.canvas({
+      import cetz.draw: *
+      import cetz.chart
 
-  #box[
-    == Flywheel
-    #grid(
+      let data = (
+        ([Overperformed], 1),
+        ([Satisfactory], 0),
+        ([Underperformed], 1),
+        ([Disabled], 3),
+      )
+
+      let colors = (green, yellow.darken(10%), red, gray)
+
+      chart.piechart(
+        data,
+        value-key: 1,
+        label-key: 0,
+        radius: 4,
+        slice-style: colors,
+        inner-radius: 1,
+        outset: 3,
+        inner-label: (
+          content: (value, label) => [
+            #text(white, label)
+          ],
+          radius: 110%
+        ),
+        outer-label: (content: "%", radius: 110%)
+      )
+    })
+  )
+]
+
+#box[
+  == Kicker
+  #grid(
     columns: 2,
     [
-      - The flywheel worked consistently, however, it could be sometimes unreliable with its ability to score over the barrier.
-      - The blocker was amazing though. A lot of our matches were won using it.
+      - Our kicker was disabled for the scrimmage so that we could test the elevation mechanism
+      - We will have to perform a separate set of tests for the kicker to make sure it is usable for skills at the States competition
 
       #align(center)[
         #tablex(
@@ -252,23 +365,55 @@ Due to time constraints, we decided to use the one-triball auton that we created
           }),
 
           [Performance], [Matches],
-          [Overperformed], [3],
-          [Satisfactory], [4],
-          [Underperformed], [1]
+          [Overperformed], [0],
+          [Satisfactory], [0],
+          [Underperformed], [0],
+          [Disabled], [5]
         )
       ]
     ],
-    align(horizon)[#image("./capital-beltway-challenge/Flywheel Performance.svg")]
-    )
-  ]
 
-  #box[
-    == Wings
-    #grid(
+    cetz.canvas({
+      import cetz.draw: *
+      import cetz.chart
+
+      let data = (
+        ([Overperformed], 0),
+        ([Satisfactory], 0),
+        ([Underperformed], 0),
+        ([Disabled], 5),
+      )
+
+      let colors = (green, yellow.darken(10%), red, gray)
+
+      chart.piechart(
+        data,
+        value-key: 1,
+        label-key: 0,
+        radius: 4,
+        slice-style: colors,
+        inner-radius: 1,
+        outset: 3,
+        inner-label: (
+          content: (value, label) => [
+            #text(white, label)
+          ],
+          radius: 110%
+        ),
+        outer-label: (content: "%", radius: 110%)
+      )
+    })
+  )
+]
+
+#box[
+  == Wings
+  #grid(
     columns: 2,
+
     [
-    - They worked nearly every round. We managed to multiple triballs at once with them.
-    - Upon looking at the other teams, we want to add wedges to the wings.
+      - We did not have access to a pressure pump during the scrimmage, so we were unable to use our wings
+      - We will need to perform a separate set of tests to make sure the wings are ready for the States competition
 
       #align(center)[
         #tablex(
@@ -283,16 +428,48 @@ Due to time constraints, we decided to use the one-triball auton that we created
           }),
 
           [Performance], [Matches],
-          [Overperformed], [1],
-          [Satisfactory], [6],
-          [Underperformed], [1]
+          [Overperformed], [0],
+          [Satisfactory], [0],
+          [Underperformed], [0],
+          [Disabled], [5]
         )
       ]
     ],
-    align(horizon)[#image("./capital-beltway-challenge/Wings Performance.svg")]
-    )
-  ]
+    
+    cetz.canvas({
+      import cetz.draw: *
+      import cetz.chart
 
+      let data = (
+        ([Overperformed], 0),
+        ([Satisfactory], 0),
+        ([Underperformed], 0),
+        ([Disabled], 5),
+      )
+
+      let colors = (green, yellow.darken(10%), red, gray)
+
+      chart.piechart(
+        data,
+        value-key: 1,
+        label-key: 0,
+        radius: 4,
+        slice-style: colors,
+        inner-radius: 1,
+        outset: 3,
+        inner-label: (
+          content: (value, label) => [
+            #text(white, label)
+          ],
+          radius: 110%
+        ),
+        outer-label: (content: "%", radius: 110%)
+      )
+    })
+  )
+]
+
+/*
   = Skills
   We were not able to perform skills before the line closed.
 
