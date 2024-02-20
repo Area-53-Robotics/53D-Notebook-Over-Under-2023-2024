@@ -98,11 +98,11 @@
 #include "./intake-1/build-2.typ"
 #include "./wings-1/build-3.typ"
 #include "./drivetrain-2/program.typ"
+#include "./drivetrain-2/test.typ"
 
 
 
 #include "./game-manual-update.typ"
-#include "./competition/area-53-scrimmage-2.typ"
 
 /*
 #include "./autonomous/identify.typ"
@@ -120,3 +120,5 @@
 #include "./odometry/brainstorm-implementation.typ"
 #include "./odometry/select-implementation.typ"
 */
+
+#include "./competition/area-53-scrimmage-2.typ"

@@ -48,6 +48,7 @@ pros::Motor FRMotor(20, pros::E_MOTOR_GEAR_BLUE);
 Second, we grouped our drive motors into motor groups to make programming them in the code easier.
 
 #code-header[src/global.cpp]
+#codly-offset(offset: 15)
 ```cpp
 // Drivetrain Motor Groups
 pros::Motor_Group LMotors({BLMotor, MLMotor, FLMotor});
