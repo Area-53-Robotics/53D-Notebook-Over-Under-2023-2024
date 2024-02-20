@@ -40,5 +40,5 @@ Different wheel configurations can have very different purposes. To determine wh
 )
 
 #nb_admonition(type: "select", title: "Final Selection")[
-  A hybrid wheel configuration meets the most of the criteria we identified for for the wneel configurations. Many other teams use a similar wheel configuration, so we will be able to do research on methods to build a drivetrain with it.
+  A hybrid wheel configuration meets the most of the criteria we identified for the wheel configurations. Many other teams use a similar wheel configuration, so we will be able to do research on methods to build a drivetrain with it.
 ]
