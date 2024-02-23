@@ -4,9 +4,9 @@
   title: "Drivetrain #2",
   type: "test",
   start_date: datetime(year: 2023, month: 1, day: 12),
-  attendance: "Ajibola, Ishika, Jin, Makhi, Eric, Rory",
-  designed: "Ajibola",
-  witnessed: "Ishika",
+  attendance: "Ajibola, Jin, Makhi, Ishika, Eric, Rory",
+  designed: "Jin",
+  witnessed: "Makhi",
 )
 
 
@@ -74,7 +74,7 @@ To ensure that the second iteration of our drivetrain was functioning that the l
     )
   ],
 
-  [#image("./test/Drivetrain Speed.svg")]
+  box(stroke: 2pt)[#image("./test/Drivetrain Speed.svg")]
 )
 
 #colbreak()
@@ -126,9 +126,9 @@ Our new drivetrain is slightly faster than the previous version. In addition, we
     [Weight (lb)], [5], [10], [15], [20], [25],
     [Distance (ft)], [13.56], [11.22], [8.76], [7.12], [6.52],
   )
-]
 
-#image("./test/Distance (ft) vs. Trial.svg", height: 30%)
+  #box(stroke: 2pt)[#image("./test/Distance (ft) vs. Trial.svg", height: 30%)]
+]
 
 == Conclusion
 Compared to the previous drivetrain, our new drivetrain's push power is slightly lower. This is expected because when gearing the drivetrain for a higher speed, torque is sacrificed as a result. However, wee are not worried because the torque loss is negligible.

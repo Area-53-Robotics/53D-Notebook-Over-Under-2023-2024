@@ -470,9 +470,6 @@ The driving strategies that we used for this scrimmage are the same as the ones 
 ]
 
 /*
-  = Skills
-  We were not able to perform skills before the line closed.
-
   = Individual Reflections
   == Ajibola
   - I think we should look into an alternative robot design strategy to descoring. It is too unreliable to rely on the opposing alliance to double zone. If we can create stronger wings, we could be able descore using them instead, even if the robot itself is too small to descore.

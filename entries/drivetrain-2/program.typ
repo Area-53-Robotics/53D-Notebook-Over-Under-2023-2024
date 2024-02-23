@@ -4,16 +4,20 @@
   title: "Drivetrain #2",
   type: "program",
   start_date: datetime(year: 2024, month: 1, day: 12),
-  attendance: "",
+  attendance: "Ajibola, Jin, Makhi, Ishika, Eric, Rory",
   designed: "Ajibola",
   witnessed: "Ishika",
 )
 
 #nb_todo(
   date: datetime(year: 2024, month: 1, day: 12),
+	monthly-schedule: "On",
+	yearly-schedule: "Behind",
   (
     (true, "Program the drivetrain to be usable for driver control (Ajibola & Ishika)"),
-    (true, "Test the drivetrain (Everyone)"),
+    (true, "Test the drivetrain (Jin & Makhi)"),
+    (true, "Program the kicker to be usable for driver control (Ajibola & Ishika)"),
+    (true, "Test the kicker (Eric & Rory)"),
   )
 )
 
@@ -45,6 +49,8 @@ pros::Motor MRMotor(19, pros::E_MOTOR_GEAR_BLUE);
 pros::Motor FRMotor(20, pros::E_MOTOR_GEAR_BLUE);
 ```
 
+#colbreak()
+
 Second, we grouped our drive motors into motor groups to make programming them in the code easier.
 
 #code-header[src/global.cpp]
@@ -54,8 +60,6 @@ Second, we grouped our drive motors into motor groups to make programming them i
 pros::Motor_Group LMotors({BLMotor, MLMotor, FLMotor});
 pros::Motor_Group RMotors({BRMotor, MRMotor, FRMotor});
 ```
-
-#colbreak()
 
 = Function Refactoring
 We decided to take this opportunity to refactor the drive code and condense it. This involved moving the extra functions that we created in our #past_nb_entry_reference(date: datetime(year: 2023, month: 9, day: 15), type: "program", title: "Driver Control"), such as:
@@ -100,7 +104,7 @@ void opcontrol()
 			LMotors.move(GetCurveOutput(leftAxis));
       // and the right drive moves according to the right joystick
 			RMotors.move(GetCurveOutput(rightAxis));
-    // If the drivetrain is reversed
+    // Otherwise, if the drivetrain is reversed...
 		} else {
       // the right drive moves according to the reverse of the left joystick
 			RMotors.move(GetCurveOutput(-leftAxis));
