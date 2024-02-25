@@ -63,20 +63,19 @@
   set raw(theme: "/assets/vscode_light.tmTheme")
 
   // Content
-  align(center)[
-    // Title Page
-    #set text(size: 24pt, font: "Orbitron")
-      #text(size: 28pt)[
-        #team Engineering Notebook \
-        #count.current of #count.total
-      ]
-
-      #image(cover, height: 70%)
-
+  page(
+    margin: (rest: 0.5in),
+    background: image("/assets/cover-background.png")
+  )[
+    #align(center)[
+      #set text(font: "Nasalization", size: 35pt, fill: yellow)
+      #team Engineering Notebook \
+      #count.current of #count.total \
+      #image("/assets/logos/logo.svg")
       #year \
       VEX Robotics Challenge \
-      // #line(length: 50%, stroke: (thickness: 2.5pt, cap: "round"))
       #season
+    ]
   ]
 
   appendix_entry_counter.update(_ => 1)
