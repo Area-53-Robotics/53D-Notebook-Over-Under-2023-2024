@@ -65,9 +65,18 @@
 
   // Content
   page(
-    margin: (rest: 0pt),
+    margin: (rest: 0.5in),
+    background: image("/assets/cover.png")
   )[
-    #image("/assets/cover.png")
+    #align(center)[
+      #set text(font: "Nasalization", size: 35pt, fill: yellow)
+      #team Engineering Notebook \
+      #count.current of #count.total \
+      #image("/assets/logos/logo.svg")
+      #year \
+      VEX Robotics Challenge \
+      #season
+    ]
   ]
 
   appendix_entry_counter.update(_ => 1)
