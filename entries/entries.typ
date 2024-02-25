@@ -95,12 +95,13 @@
 #include "./management/january.typ"
 #include "./drivetrain-2/build.typ"
 #include "./kicker-1/build.typ"
-#include "./intake-1/build-2.typ"
+#include "./intake-1.1/build.typ"
 #include "./wings-1/build-3.typ"
 #include "./drivetrain-2/program.typ"
 #include "./drivetrain-2/test.typ"
 #include "./kicker-1/program.typ"
 #include "./kicker-1/test.typ"
+#include "./intake-1.1/test.typ"
 
 
 #include "./game-manual-update.typ"

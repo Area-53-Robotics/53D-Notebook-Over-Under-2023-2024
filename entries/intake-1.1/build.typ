@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create_entry.with(
-  title: "Intake #1 - Improvements",
+  title: "Intake #1.1 - Intake Improvements",
   type: "build",
   start_date: datetime(year: 2024, month: 1, day: 6),
   end_date: none,
@@ -42,7 +42,7 @@ The Valley Mall tournament serves as a motivating deadline, driving our team's c
         - Connecting on the gear will be the rubber kicker
     ],
     figure(
-      image("./build-2/1.6-1.png", height: 19em),
+      image("./build/1.6-1.png", height: 19em),
       caption: "The new spacing between the right side of the intake and the right drive"
     ),
     cellx(colspan: 2)[
@@ -62,7 +62,7 @@ The Valley Mall tournament serves as a motivating deadline, driving our team's c
     rows: auto,
 
     figure(
-      image("./build-2/1.6-2.png", height: 19em),
+      image("./build/1.6-2.png", height: 19em),
       caption: "Our current robot, with the newly completed intake in the bottom right"
     ),
     [
