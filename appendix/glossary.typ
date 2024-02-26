@@ -117,7 +117,7 @@
   title: "Repository",
   category: "program",
   definition: [
-    A centralized digital storage that developers use to make and manage changes to an application's source code
+    A centralized digital storage that developers use to make and manage changes to an application's source code.
   ],
 )
 

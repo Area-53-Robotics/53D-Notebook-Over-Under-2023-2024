@@ -1,4 +1,5 @@
 #import "/template/template.typ": *
+#import "@preview/cetz:0.2.0"
 
 #show: create_entry.with(
   title: "Gateway to the West",
@@ -58,8 +59,8 @@ Due to time constraints, we decided to use the one-triball auton that we created
   subsystems: (
     overperformed: "",
     satisfactory: "Drivetrain, Intake",
-    underperformed: "Wings, Kicker, Elevation",
-    disabled: none,
+    underperformed: "Wings",
+    disabled: "Elevation, Kicker",
   )
 )
 
@@ -82,10 +83,10 @@ Due to time constraints, we decided to use the one-triball auton that we created
     - Because we were the only team that elevated, the elevation got us 20 points, winning us the match
   ],
   subsystems: (
-    overperformed: "Elevation, Drivetrain, Intake",
+    overperformed: "Drivetrain, Intake, Elevation",
     satisfactory: "Wings",
-    underperformed: "Kicker",
-    disabled: none,
+    underperformed: "",
+    disabled: "Kicker",
   )
 )
 
@@ -109,8 +110,8 @@ Due to time constraints, we decided to use the one-triball auton that we created
   subsystems: (
     overperformed: "",
     satisfactory: "Drivetrain, Intake, Wings, Elevation",
-    underperformed: "Kicker",
-    disabled: none,
+    underperformed: "",
+    disabled: "Kicker",
   )
 )
 
@@ -138,8 +139,8 @@ Due to time constraints, we decided to use the one-triball auton that we created
   subsystems: (
     overperformed: "",
     satisfactory: "Drivetrain, Intake, Wings",
-    underperformed: "Elevation, Kicker",
-    disabled: none,
+    underperformed: "",
+    disabled: "Elevation, Kicker",
   )
 )
 
@@ -163,8 +164,8 @@ Due to time constraints, we decided to use the one-triball auton that we created
   subsystems: (
     overperformed: "",
     satisfactory: "Drivetrain, Intake, Wings",
-    underperformed: "Elevation, Kicker",
-    disabled: none,
+    underperformed: "",
+    disabled: "Elevation, Kicker",
   )
 )
 
@@ -189,8 +190,8 @@ Due to time constraints, we decided to use the one-triball auton that we created
   subsystems: (
     overperformed: "",
     satisfactory: "Drivetrain, Intake, Wings",
-    underperformed: "Elevation, Kicker",
-    disabled: none,
+    underperformed: "",
+    disabled: "Elevation, Kicker",
   )
 )
 
@@ -214,8 +215,8 @@ Due to time constraints, we decided to use the one-triball auton that we created
   subsystems: (
     overperformed: "Drivetrain, Wings",
     satisfactory: "Intake",
-    underperformed: "Elevation, Kicker",
-    disabled: none,
+    underperformed: "",
+    disabled: "Elevation, Kicker",
   )
 )
 
@@ -239,10 +240,10 @@ Due to time constraints, we decided to use the one-triball auton that we created
     - We attempted to elevate, but it did not work
   ],
   subsystems: (
-    overperformed: "Drivetrain, Wings, Intake",
+    overperformed: "Drivetrain, Intake, Wings",
     satisfactory: "",
-    underperformed: "Elevation, Kicker",
-    disabled: none,
+    underperformed: "Elevation",
+    disabled: "Kicker",
   )
 )
 
@@ -268,8 +269,8 @@ Due to time constraints, we decided to use the one-triball auton that we created
   subsystems: (
     overperformed: "Drivetrain, Wings",
     satisfactory: "Intake",
-    underperformed: "Elevation, Kicker",
-    disabled: none,
+    underperformed: "",
+    disabled: "Elevation, Kicker",
   )
 )
 
@@ -289,164 +290,355 @@ Due to time constraints, we decided to use the one-triball auton that we created
   match_notes: [
     - The other alliance got off to a better start, scoring triballs while we were adjusting
     - They scored triballs at a faster rate than we did, so 20095G switched to match loading instead of cycling in the last 30 seconds to try to make up the point difference
-    - We were not able to score enough of the shots to make up the point difference
+    - We were not able to score enough of 20095G's shots to make up the point difference
   ],
   subsystems: (
     overperformed: "",
     satisfactory: "Drivetrain, Wings, Intake",
-    underperformed: "Elevation, Kicker",
-    disabled: none,
+    underperformed: "",
+    disabled: "Elevation, Kicker",
   )
 )
 
-/*
+#colbreak()
+
 = Subsystem Reflection
 #v(0.5em)
 #box[
   == Drivetrain
   #grid(
-  columns: 2,
-  [
-    - We saw no major problems with the drivetrain as it worked fairly well for all our matches.
-    - However, we believe that our driver can benefit from having a quicker drivetrain. We also noticed that the drivetrain had some trouble getting over the middle barrier.
+    columns: 2,
+    [
+      - Fortunately, we did not face any instances of the drivetrain motors disengaging
+      - However, the drivetrain wheels had a tendency of falling off
+      -The nylons on the wheel screw joints need to be tighten.
 
-    #align(center)[
-      #tablex(
-        columns: 2,
-        rows: 4,
-        align: center + horizon,
+      #align(center)[
+        #tablex(
+          columns: 2,
+          rows: 5,
+          align: center + horizon,
 
-        map-rows: (col, cells) => cells.map(c => {
-          if col == 0 {
-            (..c, fill: gray.lighten(20%), content: [*#c.content*])
-          } else {c}
-        }),
+          map-rows: (col, cells) => cells.map(c => {
+            if col == 0 {
+              (..c, fill: gray.lighten(20%), content: [*#c.content*])
+            } else {c}
+          }),
 
-        [Performance], [Matches],
-        [Overperformed], [0],
-        [Satisfactory], [7],
-        [Underperformed], [1]
+          [Performance], [Matches],
+          [Overperformed], [4],
+          [Satisfactory], [6],
+          [Underperformed], [0],
+          [Disabled], [0]
+        )
+      ]
+    ],
+
+    cetz.canvas({
+      import cetz.draw: *
+      import cetz.chart
+
+      let data = (
+        ([Overperformed], 4),
+        ([Satisfactory], 6),
+        ([Underperformed], 0),
+        ([Disabled], 0),
       )
-    ]
-  ],
-  align(horizon)[#image("./capital-beltway-challenge/Drivetrain Performance.svg")]
+
+      let colors = (green, yellow.darken(10%), red, gray)
+
+      chart.piechart(
+        data,
+        value-key: 1,
+        label-key: 0,
+        radius: 3.5,
+        slice-style: colors,
+        inner-radius: 1,
+        outset: 1,
+        inner-label: (
+          content: (value, label) => [
+            #text(white, label)
+          ],
+          radius: 110%
+        ),
+        outer-label: (content: "%", radius: 110%)
+      )
+    })
   )
 ]
 
 #box[
   == Intake
   #grid(
-  columns: 2,
-  [
-    - The intake worked consistently, we even managed to intake into the cata a few times.
-    - In the future we want to have a longer intake as we can intake deeper into the goal.
+    columns: 2,
 
-    #align(center)[
-      #tablex(
-        columns: 2,
-        rows: 4,
-        align: center + horizon,
+    [
+      - We are happy with the performance of our new intake 
+      - We had an easier time gripping the triballs and cycling with our new intake compared to our first version
+      - We observed some other teams intaking from the top of their intake
+        - In the future, we want to extend the intake arm long enough to intake from the top
 
-        map-rows: (col, cells) => cells.map(c => {
-          if col == 0 {
-            (..c, fill: gray.lighten(20%), content: [*#c.content*])
-          } else {c}
-        }),
+      #align(center)[
+        #tablex(
+          columns: 2,
+          rows: 4,
+          align: center + horizon,
 
-        [Performance], [Matches],
-        [Overperformed], [1],
-        [Satisfactory], [7],
-        [Underperformed], [0]
+          map-rows: (col, cells) => cells.map(c => {
+            if col == 0 {
+              (..c, fill: gray.lighten(20%), content: [*#c.content*])
+            } else {c}
+          }),
+
+          [Performance], [Matches],
+          [Overperformed], [2],
+          [Satisfactory], [8],
+          [Underperformed], [0],
+          [Disabled], [0]
+        )
+      ]
+    ],
+
+    cetz.canvas({
+      import cetz.draw: *
+      import cetz.chart
+
+      let data = (
+        ([Overperformed], 2),
+        ([Satisfactory], 8),
+        ([Underperformed], 0),
+        ([Disabled], 0),
       )
-    ]
-  ],
-  align(horizon)[#image("./capital-beltway-challenge/Intake Performance.svg")]
-  )
-]
 
-#box[
-  == Flywheel
-  #grid(
-  columns: 2,
-  [
-    - The flywheel worked consistently, however, it could be sometimes unreliable with its ability to score over the barrier.
-    - The blocker was amazing though. A lot of our matches were won using it.
+      let colors = (green, yellow.darken(10%), red, gray)
 
-    #align(center)[
-      #tablex(
-        columns: 2,
-        rows: 4,
-        align: center + horizon,
-
-        map-rows: (col, cells) => cells.map(c => {
-          if col == 0 {
-            (..c, fill: gray.lighten(20%), content: [*#c.content*])
-          } else {c}
-        }),
-
-        [Performance], [Matches],
-        [Overperformed], [3],
-        [Satisfactory], [4],
-        [Underperformed], [1]
+      chart.piechart(
+        data,
+        value-key: 1,
+        label-key: 0,
+        radius: 3.5,
+        slice-style: colors,
+        inner-radius: 1,
+        outset: 1,
+        inner-label: (
+          content: (value, label) => [
+            #text(white, label)
+          ],
+          radius: 110%
+        ),
+        outer-label: (content: "%", radius: 110%)
       )
-    ]
-  ],
-  align(horizon)[#image("./capital-beltway-challenge/Flywheel Performance.svg")]
+    })
   )
 ]
 
 #box[
   == Wings
   #grid(
-  columns: 2,
-  [
-  - They worked nearly every round. We managed to multiple triballs at once with them.
-  - Upon looking at the other teams, we want to add wedges to the wings.
+    columns: 2,
 
-    #align(center)[
-      #tablex(
-        columns: 2,
-        rows: 4,
-        align: center + horizon,
+    [
+      - We did not attach our front wings for this tournament because we did not have enough T-splits for them
+      - Our back wings worked fine but sometimes disconnected from their pneumatics
+        - We plan to brace them better in the future 
 
-        map-rows: (col, cells) => cells.map(c => {
-          if col == 0 {
-            (..c, fill: gray.lighten(20%), content: [*#c.content*])
-          } else {c}
-        }),
+      #align(center)[
+        #tablex(
+          columns: 2,
+          rows: 4,
+          align: center + horizon,
 
-        [Performance], [Matches],
-        [Overperformed], [1],
-        [Satisfactory], [6],
-        [Underperformed], [1]
+          map-rows: (col, cells) => cells.map(c => {
+            if col == 0 {
+              (..c, fill: gray.lighten(20%), content: [*#c.content*])
+            } else {c}
+          }),
+
+          [Performance], [Matches],
+          [Overperformed], [3],
+          [Satisfactory], [6],
+          [Underperformed], [1],
+          [Disabled], [0]
+        )
+      ]
+    ],
+    
+    cetz.canvas({
+      import cetz.draw: *
+      import cetz.chart
+
+      let data = (
+        ([Overperformed], 3),
+        ([Satisfactory], 6),
+        ([Underperformed], 1),
+        ([Disabled], 0),
       )
-    ]
-  ],
-  align(horizon)[#image("./capital-beltway-challenge/Wings Performance.svg")]
+
+      let colors = (green, yellow.darken(10%), red, gray)
+
+      chart.piechart(
+        data,
+        value-key: 1,
+        label-key: 0,
+        radius: 3.5,
+        slice-style: colors,
+        inner-radius: 1,
+        outset: 1,
+        inner-label: (
+          content: (value, label) => [
+            #text(white, label)
+          ],
+          radius: 110%
+        ),
+        outer-label: (content: "%", radius: 110%)
+      )
+    })
+  )
+]
+
+#box[
+  == Elevation
+  #grid(
+    columns: 2,
+    [
+      - Our robot was back heavy, causing it to tip backwards when we attempted to elevate
+      - We plan to remove the elevation to reduce weight on our robot
+
+      #align(center)[
+        #tablex(
+          columns: 2,
+          rows: 4,
+          align: center + horizon,
+
+          map-rows: (col, cells) => cells.map(c => {
+            if col == 0 {
+              (..c, fill: gray.lighten(20%), content: [*#c.content*])
+            } else {c}
+          }),
+
+          [Performance], [Matches],
+          [Overperformed], [1],
+          [Satisfactory], [1],
+          [Underperformed], [1],
+          [Disabled], [7]
+        )
+      ]
+    ],
+
+    cetz.canvas({
+      import cetz.draw: *
+      import cetz.chart
+
+      let data = (
+        ([Overperformed], 1),
+        ([Satisfactory], 1),
+        ([Underperformed], 1),
+        ([Disabled], 7),
+      )
+
+      let colors = (green, yellow.darken(10%), red, gray)
+
+      chart.piechart(
+        data,
+        value-key: 1,
+        label-key: 0,
+        radius: 3.5,
+        slice-style: colors,
+        inner-radius: 1,
+        outset: 3,
+        inner-label: (
+          content: (value, label) => [
+            #text(white, label)
+          ],
+          radius: 110%
+        ),
+        outer-label: (content: "%", radius: 110%)
+      )
+    })
+  )
+]
+
+#box[
+  == Kicker
+  #grid(
+    columns: 2,
+
+    [
+      - We did not use our kicker during matches, instead favoring elevation
+      - The kicker faced bracing issues that prevented us from doing skills
+      - We need to work making our kicker stable
+
+      #align(center)[
+        #tablex(
+          columns: 2,
+          rows: 4,
+          align: center + horizon,
+
+          map-rows: (col, cells) => cells.map(c => {
+            if col == 0 {
+              (..c, fill: gray.lighten(20%), content: [*#c.content*])
+            } else {c}
+          }),
+
+          [Performance], [Matches],
+          [Overperformed], [0],
+          [Satisfactory], [0],
+          [Underperformed], [0],
+          [Disabled], [10]
+        )
+      ]
+    ],
+    
+    cetz.canvas({
+      import cetz.draw: *
+      import cetz.chart
+
+      let data = (
+        ([Overperformed], 0),
+        ([Satisfactory], 0),
+        ([Underperformed], 0),
+        ([Disabled], 10),
+      )
+
+      let colors = (green, yellow.darken(10%), red, gray)
+
+      chart.piechart(
+        data,
+        value-key: 1,
+        label-key: 0,
+        radius: 3.5,
+        slice-style: colors,
+        inner-radius: 1,
+        outset: 3,
+        inner-label: (
+          content: (value, label) => [
+            #text(white, label)
+          ],
+          radius: 110%
+        ),
+        outer-label: (content: "%", radius: 115%)
+      )
+    })
   )
 ]
 
 = Skills
-We were not able to perform skills before the line closed.
+By the time we managed to fix our kicker, the skills line had closed.
 
 = Individual Reflections
 == Ajibola
-- I think we should look into an alternative robot design strategy to descoring. It is too unreliable to rely on the opposing alliance to double zone. If we can create stronger wings, we could be able descore using them instead, even if the robot itself is too small to descore.
-- Our blocker was effective at preventing opposing alliances from matchloading, delaying their scoring.
+- I don't believe that we utilized our elevation mechanism enough in this tournament. When approaching the last 15 seconds of our matches, we need to start placing a greater focus on elevating so that we can score some last-second points
 
-== Ishika 
-- I see some problems with our current drivetrain. It lacks a lot of pushing power.
-- I am also wary of our intake design. Although it does work, I noticed that the intake is slowly deteriorating.
+== Jin 
+I am surprised with our performance since we didn't have a completed auton. One of the biggest advantages of attending this tournament was that I saw most top teams run a fast elevation mechanism. I believe that having a fast elevation is better than a high one because you can have more match time. I want to aim for a 5 second hang in the future. 
+
+== Ishika
+I want to prioritize more auton practice and pneumatic tuning. At the start of the event, we had a massive leak that prevented us from using our wings in some matches. I would also like to brace our drivetrain and wings so they don't fall off.
+
+#colbreak()
 
 == Makhi 
-- I'm really proud with our driving. We managed to score the highest scoring match of the tournament!
-- I believe that a faster drivetrain would be better. Maybe a 600 RPM, 2.75 wheel drivetrain could really benefit me.
-- I think due to the lack of time, our flywheel was a little messed up. If we had more time, I think we can perfect our outake mechanism.
+I am super impressed with how we did. We scored the highest out of all the 53 teams. I want to make the intake longer so we can cycle from the top. I also noticed that we were back heavy. I think I can take away the elevation to reduce weight.
 
 == Rory
-- We should redo the drivetrain and flywheel. The drivetrain has been annoying multiple times with failures like the gears skipping. We need a much better and more reliable design for that and the flywheel just isn't sturdy enough. The flywheel can shoot, but not very far.
-
-== Eric
-- I suggest we rebuild the drivetrain to not focus on descoring
-- I noticed that a lot of teams can climb. I really want to design something that could allow us to get a B level elevation. I predict that climbing will be a meta for future tournaments. 
-*/
+We need to work on wire management. On our first match, our battery came unplugged. The robot wires are also a mess to look at since they're not that organized. I also noticed the wheels coming loose and getting crooked. This really hurts our drivetrain performance.
