@@ -106,6 +106,8 @@
 #include "./kicker-platform/identify.typ"
 #include "./kicker-platform/brainstorm.typ"
 #include "./kicker-platform/select.typ"
+#include "./wedges-2/brainstorm.typ"
+#include "./wedges-2/select.typ"
 
 
 #include "./competition/loyola-blakefield-challenge.typ"

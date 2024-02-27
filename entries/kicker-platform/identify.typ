@@ -53,7 +53,7 @@
   cellx(fill: red)[*Design Constraints*],
   [
     - Provide a constant orientation for the triballs when they are placed on the platform
-      - We don't want different orientations because different angles can affect the triball's tragectory
+      - We don't want different orientations because different angles can affect the triball's trajectory
     - Allow for smooth placement of the triballs
     - Prevent the triballs from falling off the kicker
   ],

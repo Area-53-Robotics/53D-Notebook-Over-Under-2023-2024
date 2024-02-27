@@ -13,7 +13,7 @@
 
 #nb_pro_con(
   name: "---",
-  image: image("./---.svg"),
+  image: image("./brainstorm/---.svg"),
   pros: [
     - 
   ],
@@ -32,7 +32,6 @@
     - 
   ],
   cons: [
-    - 
     - 
   ],
   notes: [

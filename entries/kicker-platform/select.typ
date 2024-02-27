@@ -15,7 +15,7 @@
   - Stability - How stable the platform is
   - Weight - How little the platform weighs
   - Durability - How long the platform will last until it needs maintenance
-  - Compatibility - How easy it would be to impelement the platform onto the kicker
+  - Compatibility - How easy it would be to implement the platform onto the kicker
   - Grouping & Precision - How often triball shots made with the platform land in the same spot
 ]
 
