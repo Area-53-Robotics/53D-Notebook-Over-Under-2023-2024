@@ -102,11 +102,14 @@
 #include "./kicker-1/program.typ"
 #include "./kicker-1/test.typ"
 #include "./intake-1.1/test.typ"
-
-
 #include "./competition/valley-mall.typ"
+#include "./kicker-platform/identify.typ"
+#include "./kicker-platform/brainstorm.typ"
+#include "./kicker-platform/select.typ"
+
+
 #include "./competition/loyola-blakefield-challenge.typ"
-#include "./game-manual-update.typ"
+#include "./game-manual-updates/game-manual-update.typ"
 
 /*
 #include "./autonomous/identify.typ"

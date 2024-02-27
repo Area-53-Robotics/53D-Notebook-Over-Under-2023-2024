@@ -86,9 +86,9 @@
                   #h(5pt)
                   #box(fill: info.color.lighten(30%), radius: 1pt, height: 1em, baseline: 15%)[
                     #align(center + horizon)[
-                      #link((page: {frontmatter_count + page_number + 2}, x: 0pt, y: 0pt))[
+                      #link((page: {frontmatter_count + page_number + 2/* - page-number-offset*/}, x: 0pt, y: 0pt))[
                         #text(fill: black)[
-                          _#h(2pt) #start_date #sym.dash.em #info.name: #entry.title #h(2pt)_
+                          _#h(2pt) /*[#frontmatter_count + #page_number + #2 - #page-number-offset] */#start_date #sym.dash.em #info.name: #entry.title #h(2pt)_
                         ]
                       ]
                     ]
