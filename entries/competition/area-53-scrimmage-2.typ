@@ -18,7 +18,7 @@
 - Diagnose any critical issues we need to resolve before the States competition
 
 = Driving Strategies
-The driving strategies that we used for this scrimmage are the same as the ones we utilized in the #nb_entry_reference(date: datetime(year: 2024, month: 2, day: 2), type: "competition").
+The driving strategies that we used for this scrimmage are the same as the ones we utilized in the #nb_entry_reference(date: datetime(year: 2024, month: 2, day: 2), type: "competition", title: "Gateway").
 
 = Matches
 #nb_tournament_match(

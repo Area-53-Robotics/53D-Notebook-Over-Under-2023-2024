@@ -104,6 +104,8 @@
 #include "./intake-1.1/test.typ"
 
 
+#include "./competition/valley-mall.typ"
+#include "./competition/loyola-blakefield-challenge.typ"
 #include "./game-manual-update.typ"
 
 /*
