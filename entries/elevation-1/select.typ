@@ -3,7 +3,7 @@
 #show: create_entry.with(
   title: "Elevation #1",
   type: "select",
-  start_date: datetime(year: 2024, month: 2, day: 1),
+  start_date: datetime(year: 2024, month: 1, day: 18),
   attendance: "Ajibola, Jin, Ishika, Makhi, Eric, Rory",
   designed: "Ajibola",
   witnessed: "Jin",

@@ -108,6 +108,13 @@
 #include "./kicker-platform/select.typ"
 #include "./wedges-2/brainstorm.typ"
 #include "./wedges-2/select.typ"
+#include "./sleds-1/identify.typ"
+#include "./sleds-1/brainstorm.typ"
+#include "./sleds-1/select.typ"
+#include "./elevation-1/identify.typ"
+#include "./elevation-1/understand.typ"
+#include "./elevation-1/brainstorm.typ"
+#include "./elevation-1/select.typ"
 
 
 #include "./competition/loyola-blakefield-challenge.typ"
@@ -117,10 +124,6 @@
 #include "./autonomous/identify.typ"
 #include "./odometry/brainstorm-movement.typ"
 #include "./odometry/select-movement.typ"
-#include "./elevation-1/identify.typ"
-#include "./elevation-1/understand.typ"
-#include "./elevation-1/brainstorm.typ"
-#include "./elevation-1/select.typ"
 */
 #include "./competition/gateway-to-the-west.typ"
 /*

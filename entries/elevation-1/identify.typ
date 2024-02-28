@@ -3,7 +3,7 @@
 #show: create_entry.with(
   title: "Elevation #1",
   type: "identify",
-  start_date: datetime(year: 2024, month: 1, day: 31),
+  start_date: datetime(year: 2024, month: 1, day: 18),
   attendance: "Ajibola, Jin, Ishika, Makhi, Eric, Rory",
   designed: "Jin",
   witnessed: "Makhi",
@@ -16,6 +16,10 @@
   (
     (true, "Identify the design constraints and goals for the elevation mechanism. (Everyone)"),
     (true, "Determine the mathematical and scientific concepts involved in elevation (Everyone)"),
+    (true, "Brainstorm possible configurations for the kicker. (Everyone)"),
+    (true, "Select the best kicker configuration using a decision matrix. (Everyone)"),
+    (false, "Create a plan for the construction of the kicker using CAD. (Ajibola & Jin)"),
+    (true, "Build the kicker platform. (Everyone)"),
   )
 )
 
@@ -44,6 +48,8 @@ At the end of the match, we can gain additional points at the end of the match w
     - The robot is making contact with other robots that isn't elevated
   ]
 )
+
+#colbreak()
 
 Elevation point system:
 #tablex(

@@ -37,7 +37,7 @@
   header-rows: 1,
   align: left + top,
 
-  cellx(fill: gray, align: center)[*Aspects of the Subsystem*],
+  cellx(fill: gray, align: center)[*Aspects of a Kicker Platform*],
   [*Scoring* - A kicker platform may be designed to assist the kicker in accurately shooting or kicking triballs into designated scoring areas.],
   [*Control* - The kicker platform may provide precise control over the trajectory, speed, and direction of launched objects, allowing for strategic gameplay and scoring opportunities.],
   [*Agility* - Integrating a kicker platform into a robot's design can streamline and enhance match loading speed.],

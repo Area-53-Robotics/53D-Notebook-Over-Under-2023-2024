@@ -3,21 +3,10 @@
 #show: create_entry.with(
   title: "Elevation #1",
   type: "brainstorm",
-  start_date: datetime(year: 2024, month: 2, day: 1),
+  start_date: datetime(year: 2024, month: 1, day: 18),
   attendance: "Ajibola, Jin, Ishika, Makhi, Eric, Rory",
   designed: "Jin",
   witnessed: "Ajibola",
-)
-
-#nb_todo(
-  date: datetime(year: 2024, month: 2, day: 1),
-  monthly-schedule: "On",
-  yearly-schedule: "Behind",
-  (
-    (true, "Brainstorm possible configurations for the kicker. (Everyone)"),
-    (true, "Select the best kicker configuration using a decision matrix. (Everyone)"),
-    (false, "Create a plan for the construction of the kicker using CAD. (Ajibola & Jin)"),
-  )
 )
 
 Throughout the season, we have observed a large variety of elevation options, with each of them varying greatly in how they are constructed. We created a pros and cons list for each of them to organize our collective thoughts.
