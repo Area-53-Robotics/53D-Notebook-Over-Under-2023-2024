@@ -520,6 +520,8 @@
   )
 ]
 
+#colbreak()
+
 = Skills
 #nb_admonition(type: "competition", title: "Skills Performance")[
   - *Driver Skills Score:* 72
