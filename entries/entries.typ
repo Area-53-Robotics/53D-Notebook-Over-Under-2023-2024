@@ -115,6 +115,8 @@
 #include "./elevation-1/understand.typ"
 #include "./elevation-1/brainstorm.typ"
 #include "./elevation-1/select.typ"
+#include "./kicker-platform/build.typ"
+#include "./elevation-1/build.typ"
 
 
 #include "./competition/loyola-blakefield-challenge.typ"
