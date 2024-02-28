@@ -81,7 +81,7 @@
 
                 let frontmatter_count = frontmatter_page_counter.final(loc).at(0)
 
-                let temp = frontmatter_count + page_number + 2 - page-number-offset + 4
+                let temp = frontmatter_count + page_number + 2 - page-number-offset + 5
 
                 if temp < 0 {
                   panic(str(info.name) + str(entry.title) + str(temp))
@@ -94,7 +94,7 @@
                     #align(center + horizon)[
                       #link((page: {{temp}}, x: 0pt, y: 0pt))[
                         #text(fill: black)[
-                          _#h(2pt) {#frontmatter_count + #page_number + #2 - #page-number-offset} #start_date #sym.dash.em #info.name: #entry.title #h(2pt)_
+                          _#h(2pt) /*[#frontmatter_count + #page_number + #2 - #page-number-offset]*/ #start_date #sym.dash.em #info.name: #entry.title #h(2pt)_
                         ]
                       ]
                     ]

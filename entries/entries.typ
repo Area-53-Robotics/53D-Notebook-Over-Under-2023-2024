@@ -130,4 +130,5 @@
 #include "./odometry/select-implementation.typ"
 */
 
+#include "./competition/cardinal-classic.typ"
 #include "./competition/area-53-scrimmage-2.typ"
