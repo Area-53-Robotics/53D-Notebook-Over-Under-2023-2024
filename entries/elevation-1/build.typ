@@ -116,7 +116,7 @@ Now that the middle bar sit elevation mechanism has been completed, we started w
     
     #figure(
       image("./build/1.20-2.excalidraw.svg", height: 30%),
-      caption: [The elevation bar hang mechanism. When activated it can acheive a B tier elevation]
+      caption: [The elevation bar hang mechanism (circled in green). When activated it can acheive a B tier elevation.]
     )
   ]
 )

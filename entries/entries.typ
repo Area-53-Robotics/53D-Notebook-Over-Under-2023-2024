@@ -117,8 +117,7 @@
 #include "./elevation-1/select.typ"
 #include "./kicker-platform/build.typ"
 #include "./elevation-1/build.typ"
-
-
+#include "./kicker-platform/test.typ"
 #include "./competition/loyola-blakefield-challenge.typ"
 #include "./game-manual-updates/game-manual-update.typ"
 
