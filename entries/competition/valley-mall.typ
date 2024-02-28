@@ -205,7 +205,7 @@
   match_notes: [
     - Our kicker worked really well
     - Our drivetrain motors got loose, causing us to unable to go straight
-    - We were very effective at pushing triballs into our goal however 
+    - We were very effective at pushing triballs into our goal. 
   ],
   subsystems: (
     overperformed: "Intake",
@@ -214,6 +214,60 @@
     disabled: none,
   )
 )
+
+#nb_tournament_match(
+  match: "Round of 16",
+  red_alliance: (teams:("53D","12580A"), score:124),
+  blue_alliance: (teams:("16700A","96807A"), score:82),
+  won: true,
+  auton:"Red",
+  awp: false,
+  strategy: [
+   Since we were confident that we could easily win this match, we decided to use our kicker to matchload 
+  ],
+  auton_notes: [
+    - None of the blue teams had an auton
+    - 12580A scored their triball
+  ],
+  match_notes: [
+    - We helped our teammate scored with their catapult
+    - Easily play defense against red alliance
+    - Wings still couldn't deploy
+  ],
+  subsystems: (
+    overperformed: "Intake",
+    satisfactory:"Drivetrain, Kicker",
+    underperformed: "Wings",
+    disabled: none,
+  )
+)
+
+#nb_tournament_match(
+  match: "Quarterfinals",
+  red_alliance: (teams:("9080H","9080S"), score:147),
+  blue_alliance: (teams:("53D","12580A"), score:90),
+  won: false,
+  auton:"Red",
+  awp: false,
+  strategy: [
+   Since they were a stronger team, we planned to bowl.
+  ],
+  auton_notes: [
+    - Auton didn't work
+  ],
+  match_notes: [
+    - We called a time out because our drivetrain was very loose.
+    - 9080H had an fast puncher and we couldn't stop them.
+    - An overwhelming amount of triballs landed on our side.
+  ],
+  subsystems: (
+    overperformed: "Intake",
+    satisfactory:"Kicker",
+    underperformed: "Drivetrain, Wings",
+    disabled: none,
+  )
+)
+
 #colbreak()
 
 = Subsystem Reflection
@@ -223,12 +277,14 @@
   #grid(
     columns: 2,
     [
-      - --
+      - Motors were very loose. In some matches, we were a 4 motor drive or 2 motor drive.
+      - Sometimes, this cause us to be stuck turning in one intake. 
+
 
       #align(center)[
         #tablex(
           columns: 2,
-          rows: 5,
+          rows: 4,
           align: center + horizon,
 
           map-rows: (col, cells) => cells.map(c => {
@@ -239,9 +295,8 @@
 
           [Performance], [Matches],
           [Overperformed], [0],
-          [Satisfactory], [0],
-          [Underperformed], [0],
-          [Disabled], [0]
+          [Satisfactory], [5],
+          [Underperformed], [4],
         )
       ]
     ],
@@ -252,8 +307,8 @@
 
       let data = (
         ([Overperformed], 0),
-        ([Satisfactory], 0),
-        ([Underperformed], 0),
+        ([Satisfactory], 5),
+        ([Underperformed], 4),
         ([Disabled], 0),
       )
 
@@ -285,7 +340,8 @@
     columns: 2,
 
     [
-      - --
+      - Worked consistently
+      - The sleds did a great job intaking it into the goal.
 
       #align(center)[
         #tablex(
@@ -300,10 +356,9 @@
           }),
 
           [Performance], [Matches],
-          [Overperformed], [0],
-          [Satisfactory], [0],
+          [Overperformed], [8],
+          [Satisfactory], [1],
           [Underperformed], [0],
-          [Disabled], [0]
         )
       ]
     ],
@@ -313,8 +368,8 @@
       import cetz.chart
 
       let data = (
-        ([Overperformed], 0),
-        ([Satisfactory], 0),
+        ([Overperformed], 8),
+        ([Satisfactory], 1),
         ([Underperformed], 0),
         ([Disabled], 0),
       )
@@ -328,7 +383,7 @@
         radius: 3.5,
         slice-style: colors,
         inner-radius: 1,
-        outset: 1,
+        outset: 0,
         inner-label: (
           content: (value, label) => [
             #text(white, label)
@@ -347,7 +402,7 @@
     columns: 2,
 
     [
-      - -- 
+      - The wings did not work much during the entire duration of the tournament.
 
       #align(center)[
         #tablex(
@@ -364,8 +419,7 @@
           [Performance], [Matches],
           [Overperformed], [0],
           [Satisfactory], [0],
-          [Underperformed], [0],
-          [Disabled], [0]
+          [Underperformed], [9],
         )
       ]
     ],
@@ -377,7 +431,70 @@
       let data = (
         ([Overperformed], 0),
         ([Satisfactory], 0),
-        ([Underperformed], 0),
+        ([Underperformed], 9),
+        ([Disabled], 0),
+      )
+
+      let colors = (green, yellow.darken(10%), red, gray)
+
+      chart.piechart(
+        data,
+        value-key: 1,
+        label-key: 0,
+        radius: 3.5,
+        slice-style: colors,
+        inner-radius: 1,
+        outset: 2,
+        inner-label: (
+          content: (value, label) => [
+            #text(white, label)
+          ],
+          radius: 110%
+        ),
+        outer-label: (content: "%", radius: 110%)
+      )
+    })
+  )
+]
+
+#box[
+  == Kicker
+  #grid(
+    columns: 2,
+
+    [
+      - The rubberbands kept snapping and the motors were really loose.
+      - We want to add a ratchet to our kicker so we can set it set when we bowl
+      - We need to make the platform larger
+
+      #align(center)[
+        #tablex(
+          columns: 2,
+          rows: 4,
+          align: center + horizon,
+
+          map-rows: (col, cells) => cells.map(c => {
+            if col == 0 {
+              (..c, fill: gray.lighten(20%), content: [*#c.content*])
+            } else {c}
+          }),
+
+          [Performance], [Matches],
+          [Overperformed], [0],
+          [Satisfactory], [7],
+          [Underperformed], [2],
+        )
+      ]
+    ],
+    
+    cetz.canvas({
+      import cetz.draw: *
+      import cetz.chart
+
+      let data = (
+        ([Overperformed], 0),
+        ([Satisfactory], 7),
+        ([Underperformed], 2),
         ([Disabled], 0),
       )
 
@@ -397,129 +514,6 @@
           ],
           radius: 110%
         ),
-        outer-label: (content: "%", radius: 110%)
-      )
-    })
-  )
-]
-
-#box[
-  == Elevation
-  #grid(
-    columns: 2,
-    [
-      - --
-
-      #align(center)[
-        #tablex(
-          columns: 2,
-          rows: 4,
-          align: center + horizon,
-
-          map-rows: (col, cells) => cells.map(c => {
-            if col == 0 {
-              (..c, fill: gray.lighten(20%), content: [*#c.content*])
-            } else {c}
-          }),
-
-          [Performance], [Matches],
-          [Overperformed], [0],
-          [Satisfactory], [0],
-          [Underperformed], [0],
-          [Disabled], [0]
-        )
-      ]
-    ],
-
-    cetz.canvas({
-      import cetz.draw: *
-      import cetz.chart
-
-      let data = (
-        ([Overperformed], 0),
-        ([Satisfactory], 0),
-        ([Underperformed], 0),
-        ([Disabled], 0),
-      )
-
-      let colors = (green, yellow.darken(10%), red, gray)
-
-      chart.piechart(
-        data,
-        value-key: 1,
-        label-key: 0,
-        radius: 3.5,
-        slice-style: colors,
-        inner-radius: 1,
-        outset: 3,
-        inner-label: (
-          content: (value, label) => [
-            #text(white, label)
-          ],
-          radius: 110%
-        ),
-        outer-label: (content: "%", radius: 110%)
-      )
-    })
-  )
-]
-
-#box[
-  == Kicker
-  #grid(
-    columns: 2,
-
-    [
-      - --
-
-      #align(center)[
-        #tablex(
-          columns: 2,
-          rows: 4,
-          align: center + horizon,
-
-          map-rows: (col, cells) => cells.map(c => {
-            if col == 0 {
-              (..c, fill: gray.lighten(20%), content: [*#c.content*])
-            } else {c}
-          }),
-
-          [Performance], [Matches],
-          [Overperformed], [0],
-          [Satisfactory], [0],
-          [Underperformed], [0],
-          [Disabled], [0]
-        )
-      ]
-    ],
-    
-    cetz.canvas({
-      import cetz.draw: *
-      import cetz.chart
-
-      let data = (
-        ([Overperformed], 0),
-        ([Satisfactory], 0),
-        ([Underperformed], 0),
-        ([Disabled], 0),
-      )
-
-      let colors = (green, yellow.darken(10%), red, gray)
-
-      chart.piechart(
-        data,
-        value-key: 1,
-        label-key: 0,
-        radius: 3.5,
-        slice-style: colors,
-        inner-radius: 1,
-        outset: 3,
-        inner-label: (
-          content: (value, label) => [
-            #text(white, label)
-          ],
-          radius: 110%
-        ),
         outer-label: (content: "%", radius: 115%)
       )
     })
@@ -527,21 +521,24 @@
 ]
 
 = Skills
---
+#nb_admonition(type: "competition", title: "Skills Performance")[
+  - *Driver Skills Score:* 72
+  - *Programming Skills Score:* 61
+  - *Total Skills Score:* 133
+]
 
 = Individual Reflections
 
 == Jin 
---
+- I'm a little hesitant with bowling. I think we should always rely on bowling and instead start match loading and then bowl if we're getting counter
+- We need to make the kicker platform a lot larger. The triball had a hard time being placed on it
+
 
 == Ishika
---
+- Some matches were better than others. We used a method called bowling instead of just match loading and it was pretty effective. However, there needs to be more practice with it because it did give us two violations.
+- Definitely tightening everything because parts were falling because we rushed. Everything works decently we just need to fix it up more. Also this time we need to buy the longer rubber bands because we went around trying to find some for the kicker.  We also have to work on auton because for some reason it was not following commands that were put. 
 
 == Makhi 
---
-
-== Rory
---
-
-== Eric 
---
+- Even though we only had two days to complete this rebuild, I'm not surprised with how the result. We need to work on tightening and testing out the robots. 
+- I'm very mad with how some of our matches played out. Some of the teammates got in our way with our bowling
+- We should make the kicker platform larger. It will help with grouping.
