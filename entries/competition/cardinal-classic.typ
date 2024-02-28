@@ -156,9 +156,10 @@
   ],
   match_notes: [
     - 24K battery died while trying to cross the middle barrier
-    - We started to cycle and played heavy defense against 7135E
-    - 7135E tried to cycle but we stole the triball away from them
-    - Both us and 7135E hung
+    - With 24K out, we were freely to bowl and cycle as much as we want
+    - 7135J was playing heavy defense at 5525A in order for us to score triballs faster
+    - We used 24K to assist with our hang
+
   ],
   subsystems: (
     overperformed: "Elevation, VerticalWings, Drivetrain, Intake",
