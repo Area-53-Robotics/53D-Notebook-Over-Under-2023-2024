@@ -250,7 +250,7 @@
         #box(baseline: 15%, nb_icon(label: entry.last().type, size: 1em))
         #h(1pt)
         #highlight(fill: info.color.lighten(30%))[
-          #link((page: {frontmatter_page_counter.final(loc).at(0) + page + 2 - page-number-offset + page-number-offset}, x: 0pt, y: 0pt))[
+          #link((page: {frontmatter_page_counter.final(loc).at(0) + page + 2 - page-number-offset}, x: 0pt, y: 0pt))[
             #text(fill: black)[
               _#h(2pt) #entry.last().start_date.display("[year]/[month]/[day]") #sym.dash.em #info.name: #entry.last().title #h(2pt)_
             ]
