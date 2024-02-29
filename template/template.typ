@@ -27,6 +27,7 @@
   about: [],
   intro: [],
   appendix: [],
+  innovate-form: false,
   body,
 ) = {
   // Styling rules

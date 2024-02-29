@@ -37,7 +37,7 @@ We brainstormed a few ideas for kicker platforms based on robots that we have se
   name: "Tower Platform",
   image: [
     #box(height: 11em)[#image("./brainstorm/bird eye view of tower plateform.excalidraw.svg")]
-    #box(height: 11em)[#image("./brainstorm/Tray platform.excalidraw.svg")]
+    #box(height: 11em)[#image("./brainstorm/Kicker tower platform.excalidraw.svg")]
   ],
   pros: [
     - *Stability:* The tray will help support the kicker's towers and improve the robot's overall structural integrity

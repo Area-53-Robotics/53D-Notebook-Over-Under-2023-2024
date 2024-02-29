@@ -27,14 +27,14 @@
     ("Durability", 3),
     ("Compatibility", 4),
     ("Grouping & Precision", 5),
-    ),
+  ),
   choices: (
     ("Tray Platform", 4, 3, 3, 3, 2, 4),
     ("Tower Platform", 2, 4, 3, 4, 4, 2),
     ("Lexan Wings Platform", 3, 3, 4, 2, 3, 4),
-    ),
+  ),
 )
 
 #nb_admonition(type: "select", title: "Final Selection")[
-  Although it was a close match, we chose to make the wings because of how easy and quick they can be made.
+  Although it was a close match, we chose to make the lexan wings kicker platform because of how easy and quick they can be made.
 ]

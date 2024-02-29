@@ -28,7 +28,6 @@
 
             #for (index, entry) in entries.final(loc).enumerate().slice(0, toc-length) {
               let page_number = counter(page).at(headings.at(index).location()).at(0)
-              // let page_number = entry_page_counter.at(headings.at(index).location()).at(0) + 1
               let start_date = entry.start_date.display("[year]/[month]/[day]")
               let end_date = if (not entry.start_date == entry.end_date) { entry.end_date.display("[year]/[month]/[day]") } else { none }
 
@@ -73,7 +72,6 @@
 
               #for (index, entry) in entries.final(loc).enumerate().slice(36) {
                 let page_number = counter(page).at(headings.at(index).location()).at(0)
-                // let page_number = entry_page_counter.at(headings.at(index).location()).at(0) + 1
                 let start_date = entry.start_date.display("[year]/[month]/[day]")
                 let end_date = if (not entry.start_date == entry.end_date) { entry.end_date.display("[year]/[month]/[day]") } else { none }
 

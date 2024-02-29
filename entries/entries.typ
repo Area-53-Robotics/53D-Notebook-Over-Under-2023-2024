@@ -120,6 +120,8 @@
 #include "./kicker-platform/test.typ"
 #include "./competition/loyola-blakefield-challenge.typ"
 #include "./game-manual-updates/game-manual-update.typ"
+#include "./intake-1.1/identify-problems.typ"
+#include "./kicker-1/identify-problems.typ"
 
 /*
 #include "./autonomous/identify.typ"

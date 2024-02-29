@@ -17,4 +17,5 @@
   intro: [
     #include "introduction.typ"
   ],
+  innovate-form: false
 )

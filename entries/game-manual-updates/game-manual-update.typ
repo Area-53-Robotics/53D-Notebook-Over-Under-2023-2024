@@ -3,7 +3,7 @@
 #show: create_entry.with(
   title: "Game Manual Updates & Meta Changes",
   type: "identify",
-  start_date: datetime(year: 2024, month: 1, day: 30),
+  start_date: datetime(year: 2024, month: 1, day: 31),
   attendance: "Ajibola, Jin",
   designed: "Ajibola",
   witnessed: "Jin",
