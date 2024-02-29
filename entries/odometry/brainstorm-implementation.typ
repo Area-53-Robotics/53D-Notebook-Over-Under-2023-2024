@@ -65,6 +65,6 @@ Now that we have decided to use PID with a possibility for Pure Pursuit, we brai
     - *PROS 4 Incompatibility* - We would have to downgrade our current version of PROS from the PROS 4 Beta to the PROS 3 stable version to use this library
   ],
   notes: [
-    - Created by the Purdue SigBots VEX U team, the same group that created PROS. #glossary_footnote[PROS]
+    - Created by the Purdue SigBots VEX U team, the same group that created PROS. #glossary-footnote[PROS]
   ],
 )

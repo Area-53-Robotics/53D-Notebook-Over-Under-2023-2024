@@ -67,7 +67,7 @@ We were excited to begin building the new iteration of the drivetrain. Going int
       [
         == Drivetrain Assembly
         - Attached a 25 long 3C-channel across the back of the drivetrain
-          - We hope to box #glossary_footnote[Boxing] it together to allow for better structural integrity 
+          - We hope to box #glossary-footnote[Boxing] it together to allow for better structural integrity 
         - #text(red)[Problem:] The back C-channel rubs against the omni wheels, causing friction
         - #text(green)[Solution:] We attached a 1/4 spacer on the top of the chassis so that there is enough clearance
 

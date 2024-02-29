@@ -40,12 +40,12 @@ With the majority of our drivetrain having completed construction, we made a str
 
     [
       == Build Steps
-      - Finished boxing #glossary_footnote[Boxing] the back 3C-channel
+      - Finished boxing #glossary-footnote[Boxing] the back 3C-channel
       - Gathered 2 15 hole long 2C-channel
         - *Reason:* They will serve as the towers.
         - Attached them with 2 inch clearance from the ground
       - Secured the 36 tooth gear onto a high strength axle
-        - Stripped the gear. This will allow the gear #glossary_footnote[Slip Gear] to lose contact and release the kicker
+        - Stripped the gear. This will allow the gear #glossary-footnote[Slip Gear] to lose contact and release the kicker
       - Attached the gear to a 60 tooth gear
         - Connecting on the gear will be the rubber kicker
       - Attached a rubber bumper at the end of the kicker leg

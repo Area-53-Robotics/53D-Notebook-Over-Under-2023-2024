@@ -58,7 +58,7 @@
      Similar strategy to the first mation, we want to bowl so that either team wont take advantage of our matchloads. 
   ],
   auton_notes: [
-    - We had difficulties getting auton to work. PID needs tunning.
+    - We had difficulties getting auton to work. PID needs tuning.
   ],
   match_notes: [
     - We still were having problems with our drivtrain because our wheels started to misalign themselves. 
@@ -471,7 +471,7 @@
     columns: 2,
 
     [
-      - Our intake sleds cause the triballs to not fire in a close groupping that we want. This hurt our skill run. 
+      - Our intake sleds cause the triballs to not fire in a close grouping that we want. This hurt our skill run. 
       - The kicker wasn't prioritized as much in matches but it was still useful.
 
       #align(center)[

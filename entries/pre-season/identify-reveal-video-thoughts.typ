@@ -16,7 +16,7 @@
   )
 )
 
-Today marks the beginning of the VRC Over Under season. Area 53 #glossary_footnote[Area 53] had a watch party to celebrate, after which we discussed our immediate thoughts. The thoughts below are the general thoughts we had after watching, while we plan to do our in-depth analysis of the game rules tomorrow.
+Today marks the beginning of the VRC Over Under season. Area 53 #glossary-footnote[Area 53] had a watch party to celebrate, after which we discussed our immediate thoughts. The thoughts below are the general thoughts we had after watching, while we plan to do our in-depth analysis of the game rules tomorrow.
 
 = Game Object
 The triballs have a weird shape, which might make them harder to intake and hold than previous game objects like the Spin Up disks and the Tipping Point rings.

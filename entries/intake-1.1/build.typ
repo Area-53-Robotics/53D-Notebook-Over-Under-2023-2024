@@ -32,12 +32,12 @@ The Valley Mall tournament serves as a motivating deadline, driving our team's c
       == Build Steps
       - #text(red)[Problem:] Due to the nature of the intake, there needs to be equal spacing of the intake at both side of the drivetrain 
       - #text(green)[Solution:] Instead of having an 18 hole long intake, we changed it to 20 holes. This allows use to have more clearance on each side
-      - Finished boxing #glossary_footnote[Boxing] the back 3C-channel
+      - Finished boxing #glossary-footnote[Boxing] the back 3C-channel
       - Gathered 2 15 hole long 2C-channel
         - *Reason:* They will serve as the towers.
         - Attached them with 2 inch clearance from the ground
       - Secured the 36 tooth gear onto a high strength axle
-        - Stripped the gear. This will allow the gear #glossary_footnote[Slip Gear] to lose contact and release the kicker
+        - Stripped the gear. This will allow the gear #glossary-footnote[Slip Gear] to lose contact and release the kicker
       - Attached the gear to a 60 tooth gear
         - Connecting on the gear will be the rubber kicker
     ],

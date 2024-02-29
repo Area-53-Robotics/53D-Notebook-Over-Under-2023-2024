@@ -245,7 +245,7 @@
   #grid(
   columns: 2,
   [
-    - Worked consistently, but the cycling was a bit slow compared to other teams. Maybe if we increase the banding, and add PID #glossary_footnote[PID] control to the catapult, we might be able to get the cycle time a bit faster.
+    - Worked consistently, but the cycling was a bit slow compared to other teams. Maybe if we increase the banding, and add PID #glossary-footnote[PID] control to the catapult, we might be able to get the cycle time a bit faster.
     - Automatic catapult control wasn't working at the beginning of the tournament, so we had to use manual control during the tournament.
       - We suspect that it stopped working at the tournament even though it worked the night before because of the minor structural changes we made to the robot during the tournament.
     - We only got the automatic catapult code working after our last qualification match, so there is still potential for it to make catapult usage easier for future tournaments.

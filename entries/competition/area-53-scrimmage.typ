@@ -17,7 +17,7 @@
 ]
 
 #nb_admonition(type: "note")[
-  This "competition" is a small scrimmage with all 6 Area 53#glossary_footnote[Area 53] teams and one team from AHC, a local team.
+  This "competition" is a small scrimmage with all 6 Area 53#glossary-footnote[Area 53] teams and one team from AHC, a local team.
 ]
 
 = Competition Goals

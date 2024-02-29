@@ -23,7 +23,7 @@
   The work done today was done during Thanksgiving break, and not at an official Area 53 meeting. Only Ajibola worked on the code, and Ishika peer reviewed it afterward.
 ]
 
-We decided to dedicate some time during our break to streamline our our usage of GitHub repositories. #glossary_footnote[Repository] We determined that we can do this by using GitHub workflows, which can be used to automate tasks after commits (changes) are made to a repository.
+We decided to dedicate some time during our break to streamline our our usage of GitHub repositories. #glossary-footnote[Repository] We determined that we can do this by using GitHub workflows, which can be used to automate tasks after commits (changes) are made to a repository.
 
 #nb_admonition(type: "identify", title: "Sub-Identify: GitHub Workflows")[
   Some aspects of our GitHub repositories that we wanted to automate are:
@@ -51,7 +51,7 @@ When the workflow succeeds, we get a message in our Discord that looks like this
 #image("./github-workflows/pros-build-test.png")
 
 = Digital Notebook Compilation Workflow
-One major disadvantage of writing our notebook using Typst #glossary_footnote[Typst] instead of doing it on a platform such as Google Slides is that the members on our team who do not have easy access to the notebook's GitHub repository cannot access the digital notebook on demand.
+One major disadvantage of writing our notebook using Typst #glossary-footnote[Typst] instead of doing it on a platform such as Google Slides is that the members on our team who do not have easy access to the notebook's GitHub repository cannot access the digital notebook on demand.
 
 To solve this, we created a GitHub workflow that compiles the notebook when changes are made to it and uploads it to both GitHub and Discord. The notebook getting uploaded to GitHub and Discord gives us a few benefits:
 - Discord is a cross-platform application, so the digital notebook can be accessed by anyone on our team, at any time, on any device, including phones, tablets, and laptops.
@@ -69,7 +69,7 @@ When the workflow is completed, the notebook can be downloaded from our Discord 
 
 
 = Digital Notebook Spell Check Workflow
-The last problem that we addressed using GitHub workflows is spell checking the notebook. Because our notebook is written in Typst, a lot of the writing is done in VSCode,#glossary_footnote[Visual Studio Code] which does not have easy access to spell checks. To spell check changes made to the notebook, we used a spell check workflow action called Typos. #footnote[The Typos GitHub repository can be found at https://github.com/crate-ci/typos] Typos is far from perfect and leaves unaddressed mistakes sometimes, but it is better than having nothing.
+The last problem that we addressed using GitHub workflows is spell checking the notebook. Because our notebook is written in Typst, a lot of the writing is done in VSCode,#glossary-footnote[Visual Studio Code] which does not have easy access to spell checks. To spell check changes made to the notebook, we used a spell check workflow action called Typos. #footnote[The Typos GitHub repository can be found at https://github.com/crate-ci/typos] Typos is far from perfect and leaves unaddressed mistakes sometimes, but it is better than having nothing.
 
 Here is the final workflow code:
 

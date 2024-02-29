@@ -39,8 +39,8 @@
     == Materials
     - A pair of  2x5x1 c-channel
     - 4 1x15x1 half cuts
-    - A pair of  double acting pistons 
-    - The rest fo the materials are found in the tool box
+    - A pair of double acting pistons 
+    - The rest of the materials are found in the tool box
 
 
     == Assembly

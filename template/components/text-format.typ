@@ -6,7 +6,7 @@
   ]
 }
 
-#let glossary_footnote(body) = [
+#let glossary-footnote(body) = [
   #footnote[See "#body" glossary entry]
 ]
 

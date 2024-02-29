@@ -164,6 +164,14 @@
   ],
 )
 
+#nb_create_glossary_entry(
+  title: "Meta",
+  category: "competition",
+  definition: [
+    What is generally agreed upon by the VRC community to be the best (or one of the best strategies) to approach the game challenge.
+  ],
+)
+
 // Old Glossary Entries
 /*
 #nb_create_glossary_entry(
