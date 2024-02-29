@@ -266,7 +266,7 @@
   #grid(
     columns: 2,
     [
-      - We didn't ran into much trouble with our drivetrain. The wheels didn't fall off and all the motors were properly plug in. We are very happy with our barrier cross as well.
+      - We didn't run into much trouble with our drivetrain. The wheels didn't fall off and all the motors were properly plugged in. We are very happy with our barrier cross as well.
 
       #align(center)[
         #tablex(
