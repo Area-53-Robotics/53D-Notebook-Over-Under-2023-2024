@@ -20,7 +20,7 @@
   )
 )
 
-[We are exicitng to introduce our modular mehanism as we hadn't seen anyone done this in Maryland. We learn that we barely use our kicker during matches and can be replace with a hang mechanism. Instead of trying to add a hang mechanism along our kicker, we can replace our kicker all together. This helps reduce the weight of our mechanism. 
+[We are excited to introduce our modular mechanism as we have not seen anyone do this in Maryland. We learnt that we barely use our kicker during matches and can be replaced with a hang mechanism. Instead of trying to add a hang mechanism along our kicker, we can replace our kicker all together. This helps reduce the weight of our mechanism. 
 ]
 
 == Delegation
@@ -47,7 +47,7 @@
     == Assembly
     Kicker: 
     - Attach the 2x13x1 c-channel to the gear box
-      - SInce we want to hit the kicker at a certain angle to maxmize the grouping, we are going for a lower angle kicker 
+      - Since we want to hit the kicker at a certain angle to maxmize the grouping, we are going for a lower angle kicker 
       - We need a shorter arm to achieve this result
     - Attach the pair of flex wheels together with a screw joint and a collar
       - Attach with a stand off and connect to the kicker arm

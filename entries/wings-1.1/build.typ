@@ -11,7 +11,7 @@
 )
 
 = 2024/02/07
-[Excited from our performance from Gateway, the team was eager to design this new wing design. We decided to not CAD this wing since we had pictures of the wings from team 338A. From our priority list, the team wants to do more skills runs. The front wings is used to help us bowl and to push triballs over the middle barrier. 
+[Excited from our performance at Gateway, the team was eager to design this new wing design. We decided to not CAD these wings since we had pictures of the wings from team 338A. From our priority list, the team wants to do more skills runs. The front wings is used to help us bowl and to push triballs over the middle barrier. 
 ]
 
 == Delegation
@@ -33,7 +33,7 @@
     - Before building anything new on the bot, the team wants to make sure everything works first. This took some time.
     - Properly wire everything
     - Reattach the wheels because they were loose 
-      - We feared that they will come off mid match
+      - We feared that they will come off mid matches
 
 
     == Materials
@@ -46,14 +46,14 @@
     == Assembly
     Wing:
     - Attach the screw joint to the end of the drivetrain
-      -This screw join will extend to reach all the way below to maxmize stability 
+      -This screw joint will extend to reach all the way below to maxmize stability 
     - Box the inside of the chassis
     - Attach the 2x5x1 c-channel 
     - Attach the half cuts together and box through out
       - Prevent them from bending
       - Attach to the c-channel
     - Attach a collar at the end of the screw joint
-      - This will server as one of the end of the triangle brace 
+      - This will serve as one end of the triangle brace 
     - Attach piston to the c-channel middle brace
       - Creates the 145 degrees
 

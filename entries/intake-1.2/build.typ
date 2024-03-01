@@ -10,7 +10,7 @@
 )
 
 = 2024/02/02
-[The team observed a rise of popularity of the flex wheel intake. We noticed that rubberbands twisted a lot when intake a triball which accelerated the speed that the rubber bands wear down. This worsen the grip that the rubberbands have and increase the frequency that we needed to replace them. We believed that switching to a flex wheel intake, we will have a better time cycling and intaking. ]
+[The team observed a rise of popularity of the flex wheel intake. We noticed that rubberbands twisted a lot when we intake a triball which accelerated the speed the rubber bands wear down. This worsened the grip that the rubberbands have and increased the frequency that they needed to be replaced. We believed that switching to a flex wheel intake, we allow us to have a better time cycling and intaking. ]
 
 == Delegation
 - inventory (collecting materials from the manifest to improve on the wings): Ishika and Rory

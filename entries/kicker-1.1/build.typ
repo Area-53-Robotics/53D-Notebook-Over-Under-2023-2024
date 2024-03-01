@@ -11,7 +11,7 @@
 )
 
 = 2024/02/02
-[With Gateway coming soon, the team is anxious because it is the first signature event that the org is going to. The team has already done research about what the skill level we will be expecting at the event. From our research, we plan to make a tray from Gremlin. The unique aspect of this tray is that we plan to make it modular, meaning we quickly take it off and put it back on. 
+[With Gateway coming soon, the team is anxious because it is the first signature event that the organization is going to. The team has already done research about the skill level we will be expecting at the event. From our research, we plan to make a tray from Gremlin. The unique aspect of this tray is that we plan to make it modular, meaning we can quickly take it off and put it back on. 
 ]
 
 == Delegation
@@ -46,7 +46,7 @@
 
     == Assembly
     Kicker:
-    - In the previous design, the hole was drilled at the side of the drivetrain. This cause the walls of the c-channel to be weak. 
+    - In the previous design, the hole was drilled at the side of the drivetrain. This caused the walls of the c-channel to be weak. 
       - During previous matches, the towers of the kicker started to bend and tip over. 
     - We attached new towers on the c-channel for the kicker
       - The novice builders redrilled the c-channel in order to fit our gear. With our new gear ratio, we will have more torque when firing triballs.
@@ -60,14 +60,14 @@
     - Cut a square piece of the tray that allows the kicker to hit the triball.
     - Attach the kicker by two screws
       -This helps the tray to be modular. We plan to only use the tray for skills and replace it for an elevation mechanism 
-    - Rerubberband the kicker arm for skills
+    - Re-rubberband the kicker arm for skills
       - We tested that the kicker arm was able to kick at least 5 feet away from the robot. That is the distance between the match bar and the middle barrier
 
     Optical Sensor:
     - Attached a 5c under the tray with the color sensor 
     - Screw it to the bottom of the tray 
-    - Something that we worried about the color sensor is its ability to detect the color of the triball
-      - Since the distance sensor use a laser, we needed to cut hole in order for it to work 
+    - Something that worried us about the color sensor is its ability to detect the color of the triball
+      - Since the distance sensor uses a laser, we needed to a cut hole in order for it to work 
 
 
   ],

@@ -20,7 +20,7 @@
   )
 )
 
-[With the kicker finished, the team is ready to but the motorized hang. We will be following the CAD so the novice builders can assist with assembly. We hope to finish this assembly quickly in order to have a hang tested before states. We believe that a C tier hang is plausible. 
+[With the kicker finished, the team is ready to build the motorized hang. We will be following the CAD so the novice builders can assist with assembly. We hope to finish this assembly quickly in order to have a hang tested before states. We believe that a C tier hang is plausible. 
 ]
 
 == Delegation
@@ -64,7 +64,7 @@
     == Troubleshooting
     Climb:
     - We first test how well the robot was able to clamp itself to the elevation bar.
-    - So far the robot had some difficulties getting the initiate grip on the elevation bar 
+    - So far the robot had some difficulties getting the intial grip on the elevation bar 
       - We gave it additional help for the hang mechanism to grip onto the elevation bar
     
     Tier:
