@@ -43,7 +43,7 @@ pros::Optical Optical(6);
 
 // Boolean variable representing whether the kicker is on or not
 bool kickerOn = false;
-// Boolean variable represeting whether the drivetrain is set to drive in reverse or not
+// Boolean variable representing whether the drivetrain is set to drive in reverse or not
 bool drivetrainReversed = false;
 
 // Boolean variable representing whether manual mode is activated (true) or automatic mode is activated (false)

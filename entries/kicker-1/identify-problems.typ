@@ -29,7 +29,7 @@
   columns: 2,
 
   cellx(colspan: 2, fill: red)[Problem],
-  cellx(inset: 0pt)[#image("/assets/duck.jpg", height: 15em)],
+  image("./identify-problems/Identify problem ishika.excalidraw.svg", height: 14em),
   [Our lexan wings kicker platform is designed for the triball to slide into place, however, there is nothing to hold them in place afterwards. If any small movement or disturbance occurs to the robot, the triball falls off or its trajectory is interrupted.]
 )
 
@@ -37,7 +37,7 @@
   columns: 2,
 
   cellx(colspan: 2, fill: green)[Solution],
-  cellx(inset: 0pt)[#image("./identify-problems/Tray platform solution.excalidraw.svg", height: 15em)],
+  image("./identify-problems/Tray platform solution.excalidraw.svg", height: 14em),
   [With this design, the standoffs will keep the triball in a set position. The side walls will prevent the triball from falling off the platform. Overall, this design provides more optimized grouping, allowing for better shot consistency during skills runs.
   ]
 )

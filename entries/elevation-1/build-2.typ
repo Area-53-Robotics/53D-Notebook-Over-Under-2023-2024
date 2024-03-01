@@ -24,16 +24,15 @@
 ]
 
 == Delegation
-- inventory (collecting materials from the manifest to improve on the wings): Ishika and Rory
-- Manufacture (Cutting pieces to size, cleaning sharp edges, slip gears): Eric and Ajibola
+- Inventory (collecting materials from the manifest to improve on the wings): Ishika and Rory
+- Manufacturing (cutting pieces to size, cleaning sharp edges, & slipping gears): Eric and Ajibola
 - Cut and shape the lexan for the hang mechanism: Eric
-- Connect and assemble the hang mechanism - Jin, Makhi, Rory
-- Wire everything for testing - Eric, Rory
-- Rubberband the hang mechanism - Makhi
-- Oversight & Quality Control: Ajibola, Jin
-- Initial testing: Everyone
+- Connect materials for and assemble the hang mechanism: Jin, Makhi, Rory
+- Wire everything for testing: Eric, Rory
+- Rubberband the hang mechanism: Makhi
+- Oversight & Quality Control: Ajibola & Jin
+- Initial Testing: Everyone
 - Programming: Ishika and Ajibola
-
 
 #grid(
   columns: 3,
@@ -64,7 +63,7 @@
     == Troubleshooting
     Climb:
     - We first test how well the robot was able to clamp itself to the elevation bar.
-    - So far the robot had some difficulties getting the intial grip on the elevation bar 
+    - So far the robot had some difficulties getting the initial grip on the elevation bar
       - We gave it additional help for the hang mechanism to grip onto the elevation bar
     
     Tier:
