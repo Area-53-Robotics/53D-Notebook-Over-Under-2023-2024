@@ -29,69 +29,30 @@ void initialize() {
 
 	pros::lcd::register_btn1_cb(on_center_button);
 
-	// Calibrates the LemLib chassis (takes 3 seconds)
-	chassis.calibrate();
-
-	 pros::Task screenTask([&]() {
-        lemlib::Pose pose(0, 0, 0);
-        while (true) {
-            // print robot location to the brain screen
-            pros::lcd::print(0, "X: %f", chassis.getPose().x); // x
-            pros::lcd::print(1, "Y: %f", chassis.getPose().y); // y
-            pros::lcd::print(2, "Theta: %f", chassis.getPose().theta); // heading
-            // log position telemetry
-            lemlib::telemetrySink()->info("Chassis pose: {}", chassis.getPose());
-            // delay to save resources
-            pros::delay(50);
-        }
-    });
-	/*
-	* Sets the starting X coordinate, Y coordinate, and
-	* orientation of the robot in the program depending on which
-	* autonomous is being used.
-	*/
-	switch (autonSelect) {
-		case 0:
-			// Odom Tests
-			chassis.setPose(0, 0, 0); // X, Y, Heading (degrees)
-			break;
-		case 1:
-			// Left Quals
-			chassis.setPose(23,58, 90); // X, Y, Heading (degrees)
-			break;
-		case 2:
-			// Right Quals
-			chassis.setPose(0, 0, 0); // X, Y, Heading (degrees)
-			break;
-		case 3:
-			// Left Elims
-			chassis.setPose(0, 0, 0); // X, Y, Heading (degrees)
-			break;
-		case 4:
-			// Right Elims
-			chassis.setPose(0, 0, 0); // X, Y, Heading (degrees)
-			break;
-		case 5:
-			// Full Autonomous Win Point
-			chassis.setPose(0, 0, 0); // X, Y, Heading (degrees)
-			break;
-		case 6:
-			// No Auton
-			chassis.setPose(0, 0, 0); // X, Y, Heading (degrees)
-			break;
-		case 7:
-			// Programming Skills
-			chassis.setPose(0, 0, 0); // X, Y, Heading (degrees)
-			break;
-	}
 
 	// Sets the kicker motor to hold its position when it is stopped
 	KickerMotor.set_brake_mode(pros::E_MOTOR_BRAKE_HOLD);
+	// Brakes the kicker motor when the program is initialized
 	KickerMotor.brake();
 	// Clears the controller screen
 	controller.clear();
-	// Resets the inertial sensor readings
-	Inertial.reset();
+	// Calibrates the LemLib chassis (takes 3 seconds)
+	chassis.calibrate();
+
+	// Prints LemLib chassis position values to the computer terminal for debugging purposes
+	pros::Task terminalTask([&]() {
+        while (true) {
+            // print robot location to the brain screen
+            std::cout << "X: " << chassis.getPose().x << std::endl; // x
+            std::cout << "Y: " << chassis.getPose().y << std::endl; // y
+            std::cout << "Theta: " << chassis.getPose().theta << std::endl; // heading
+            std::cout << "Inertial: " << Inertial.get_heading() << std::endl; // heading
+			std::cout << "Kicker: " << KickerMotor.get_position() << std::endl;
+            std::cout << "----------------------------" << std::endl;
+            // delay to save resources
+            pros::delay(500);
+        }
+    });
 }
 
 /**
