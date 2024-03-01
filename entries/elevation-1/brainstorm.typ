@@ -14,6 +14,7 @@ Throughout the season, we have observed a large variety of elevation options, wi
 #nb_pro_con(
   name: "Middle Barrier Hang",
   image: image("./brainstorm/Middle bar hang.excalidraw.svg"),
+  image-width: 50%,
   pros: [
     - *Speed* - Super quick, giving us more playtime on the field before we have to hang
     - *Simplicity* - The middle hang is not complicated to make
@@ -31,6 +32,7 @@ Throughout the season, we have observed a large variety of elevation options, wi
 #nb_pro_con(
   name: "Pull Up Hang",
   image: image("./brainstorm/Pull up hang.excalidraw.svg"),
+  image-width: 50%,
   pros: [
     - *Tier Flexibility* - This hang can do more different levels of hangs
   ],
@@ -49,6 +51,7 @@ Throughout the season, we have observed a large variety of elevation options, wi
 #nb_pro_con(
   name: "Upside-Down Hang",
   image: image("./brainstorm/Upside-down hang.excalidraw.svg"),
+  image-width: 50%,
   pros: [
     - *Highest Tier* - Can score a J tier elevation, the highest tier
   ],

@@ -13,7 +13,7 @@ We brainstormed ideas for the sleds based on what we have used in previous seaso
 
 #nb_pro_con(
   name: "Triangle Sleds",
-  image: image("./brainstorm/Circular sleds.excalidraw.svg"),
+  image: image("./brainstorm/Triangle sleds.excalidraw.svg"),
   image-width: 50%,
   pros: [
     - *Stability:* Triangular sleds may offer increased stability due to their three-point contact
@@ -30,7 +30,7 @@ We brainstormed ideas for the sleds based on what we have used in previous seaso
 
 #nb_pro_con(
   name: "Circular Sleds",
-  image: image("./brainstorm/Gusset sleds.excalidraw.svg"),
+  image: image("./brainstorm/Circular sleds.excalidraw.svg"),
   image-width: 50%,
   pros: [
     - *Friction:* Depending on the design, a circular shape might reduce friction as the sled moves, contributing to smoother and more efficient sliding
@@ -48,7 +48,7 @@ We brainstormed ideas for the sleds based on what we have used in previous seaso
 
 #nb_pro_con(
   name: "Gusset Sleds",
-  image: image("./brainstorm/Circular sleds.excalidraw.svg"),
+  image: image("./brainstorm/Gusset sleds.excalidraw.svg"),
   image-width: 50%,
   pros: [
     - *Strength:* The materials are made out of gussets and not lexan, making them much stronger

@@ -8,7 +8,7 @@
   designed: "Ajibola",
   witnessed: "Jin",
 )
-/*
+
 #nb_todo(
   date: datetime(year: 2024, month: 1, day: 17),
   monthly-schedule: "On",
@@ -20,7 +20,6 @@
     (false, "Create a plan for the construction of the sleds. (Ajibola & Jin)"),
   )
 )
-*/
 
 #grid(
   columns: 2,

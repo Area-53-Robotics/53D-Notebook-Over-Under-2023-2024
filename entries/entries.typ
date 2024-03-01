@@ -122,6 +122,7 @@
 #include "./game-manual-updates/game-manual-update.typ"
 #include "./intake-1.1/identify-problems.typ"
 #include "./kicker-1/identify-problems.typ"
+#include "./kicker-sensor/identify.typ"
 
 /*
 #include "./autonomous/identify.typ"
