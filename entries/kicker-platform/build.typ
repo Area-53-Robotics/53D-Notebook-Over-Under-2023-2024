@@ -17,7 +17,7 @@ Our previous platform was bulky and inconsistent. It was built with a 5 hole C-c
 
   [
     == Delegation
-    - Inventory (collecting materials from the manifest to improve on the wings): Ishika & Rory
+    - Inventory (collecting materials from the manifest to build the kicker platform): Ishika & Rory
     - Manufacturing (cutting pieces to size, cleaning sharp edges, and slipping gears): Eric & Ajibola
     - Cut and sand down the lexan sleds: Eric
     - Attach the sleds onto the kicker: Jin

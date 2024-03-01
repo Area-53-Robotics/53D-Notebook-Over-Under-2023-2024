@@ -24,7 +24,7 @@
 ]
 
 == Delegation
-- inventory (collecting materials from the manifest to improve on the wings): Ishika and Rory
+- inventory (collecting materials from the manifest to improve the kicker): Ishika and Rory
 - Manufacture (Cutting pieces to size, cleaning sharp edges, slip gears): Eric and Ajibola
 - Create the new flex wheel kicker arm - Makhi
 - Rubber band and tune the banding of the rubber bands - Makhi

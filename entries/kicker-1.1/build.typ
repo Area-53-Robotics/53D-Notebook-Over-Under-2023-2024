@@ -14,7 +14,7 @@
 With Gateway coming soon, we are a bit anxious because it is the first signature event that the organization is going to. We have already done research to determine the skill level we will be expecting at the event. From our research, we plan to build a new tray inspired by 5203G Gremlin (our process for identifying this design can be found in our #nb_entry_reference(date: datetime(year: 2024, month: 2, day: 1), type: "identify", title: "Kicker")). The unique aspect of this tray is that we plan to make it modular, meaning that we would be able to take it off and quickly put it back on. 
 
 == Delegation
-- Inventory (collecting materials from the manifest to improve on the wings): Ishika and Rory
+- Inventory (collecting materials from the manifest to improve the kicker): Ishika and Rory
 - Manufacturing (cutting pieces to size, cleaning sharp edges, & slipping gears): Eric and Ajibola
 - Reattach the towers of the kicker: Eric, Rory
 - Cut and shape the lexan for the tray: Jin

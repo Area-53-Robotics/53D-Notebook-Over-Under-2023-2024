@@ -137,7 +137,7 @@
 #include "./intake-1.2/build.typ"
 #include "./intake-1.2/test.typ"
 #include "./competition/gateway-to-the-west.typ"
-
+/*
 #include "./wings-1.1/build.typ"
 
 #include "./competition/cardinal-classic.typ"
@@ -146,3 +146,4 @@
 #include "./elevation-1/build-2.typ"
 
 #include "./competition/area-53-scrimmage-2.typ"
+*/

@@ -22,7 +22,7 @@
 As the meta of the game evolved throughout the season, elevation became increasingly important. A lot of powerful teams practice a strategy of not match loading. Instead, they starve the enemy team of trialls and limit the amount of triballs in play. With the decline of triball-based scoring, the importance of elevation raised. As a result, we want to make two forms of elevation, first with the middle bar sit that we selected in our #nb_entry_reference(date: datetime(year: 2024, month: 1, day: 18), type: "select", title: "Elevation #1").
 
 == Delegation
-- Inventory (collecting materials from the manifest to improve the wings): Ishika & Rory
+- Inventory (collecting materials from the manifest to build the elevation mechanism): Ishika & Rory
 - Manufacturing (cutting pieces to size, cleaning sharp edges, & slipping gears): Eric & Ajibola
 - Assemble the hinge onto the robot: Makhi
 - Brace the middle bar sit elevation mechanism to the robot: Makhi, Eric, & Rory 

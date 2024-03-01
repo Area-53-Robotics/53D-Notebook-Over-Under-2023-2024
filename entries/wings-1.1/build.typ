@@ -15,7 +15,7 @@
 ]
 
 == Delegation
-- inventory (collecting materials from the manifest to improve on the wings): Ishika and Rory
+- inventory (collecting materials from the manifest to improve the wings): Ishika and Rory
 - Manufacture (Cutting pieces to size, cleaning sharp edges, slip gears): Eric and Ajibola
 - Tune the drive-train to reduce any friction - Makhi 
 - Fixed the screw joint - Jin

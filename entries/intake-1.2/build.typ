@@ -17,7 +17,7 @@ The team observed a rise of popularity of the flex wheel intake. We noticed that
 
   [
     == Delegation
-    - Inventory (collecting materials from the manifest to improve on the wings): Ishika and Rory
+    - Inventory (collecting materials from the manifest to improve the intake): Ishika and Rory
     - Manufacturing (cutting pieces to size, cleaning sharp edges, & slipping gears): Eric and Ajibola
     - Replace the intake rubber bands & sprockets with flex wheel: Makhi
     - Re-cut sleds for the intake: Eric
