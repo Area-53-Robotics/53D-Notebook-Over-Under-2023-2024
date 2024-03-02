@@ -11,14 +11,6 @@
 )
 
 = 2024/02/13
-#nb_todo(
-  date: datetime(year: 2024, month: 2, day: 13),
-  monthly-schedule: "On",
-  yearly-schedule: "On",
-  (
-    (true, "Build the kicker upgrades. (Everyone)"),
-  )
-)
 
 We are excited to introduce our modular mechanism as we have not seen anyone do this in Maryland. Because we barely use our kicker during matches, replacing it with an elevation mechanism makes the most effective use of our motors. Instead of trying to add a hang mechanism along our kicker, we can replace our kicker all together. This helps reduce the weight of our mechanism. 
 

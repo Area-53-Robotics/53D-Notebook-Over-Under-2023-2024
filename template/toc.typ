@@ -70,7 +70,7 @@
 
               #let headings = query(selector(<nb_entry>), loc)
 
-              #for (index, entry) in entries.final(loc).enumerate().slice(36) {
+              #for (index, entry) in entries.final(loc).enumerate().slice(36, 72) {
                 let page_number = counter(page).at(headings.at(index).location()).at(0)
                 let start_date = entry.start_date.display("[year]/[month]/[day]")
                 let end_date = if (not entry.start_date == entry.end_date) { entry.end_date.display("[year]/[month]/[day]") } else { none }
@@ -189,7 +189,7 @@
 
               #let headings = query(selector(<nb_entry>), loc)
 
-              #for (index, entry) in entries.final(loc).enumerate().slice(36) {
+              #for (index, entry) in entries.final(loc).enumerate().slice(72) {
                 let page_number = counter(page).at(headings.at(index).location()).at(0)
                 let start_date = entry.start_date.display("[year]/[month]/[day]")
                 let end_date = if (not entry.start_date == entry.end_date) { entry.end_date.display("[year]/[month]/[day]") } else { none }
@@ -225,7 +225,6 @@
             parbreak()
           }
 
-/*
           box[
 
             = Program
@@ -256,7 +255,6 @@
             #counter(page).update(_ => 0)
           ]
           parbreak()
-*/
 
           box[
 

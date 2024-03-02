@@ -3,20 +3,21 @@
 #show: create_entry.with(
   title: "Autonomous - Implementation",
   type: "brainstorm",
-  start_date: datetime(year: 2024, month: 1, day: 1),
+  start_date: datetime(year: 2024, month: 2, day: 13),
   attendance: "Ajibola, Ishika",
   designed: "Ajibola",
   witnessed: "Ishika",
 )
 
 #nb_todo(
-  date: datetime(year: 2023, month: 12, day: 1),
+  date: datetime(year: 2024, month: 2, day: 13),
   (
-    (true, ""),
+    (true, "Brainstorm possible implementation methods for PID (Everyone)"),
+    (true, "Select the best implementation method using a decision matrix (Everyone)"),
+    (true, "Build the kicker upgrades. (Everyone)"),
   )
 )
 
-= ---
 Now that we have decided to use PID with a possibility for Pure Pursuit, we brainstormed a few different implementation methods that have the capability to use them.
 
 #nb_pro_con(

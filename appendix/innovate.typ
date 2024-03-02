@@ -23,7 +23,7 @@ What's truly innovative is our ability to adapt, switching between the two depen
       columns: 2,
 
       {
-        heading(level: 2)[Kicker]
+        heading(level: 3)[Kicker]
         let valid_entries = entries.final(loc).enumerate()
 
         valid_entries = valid_entries.filter(
@@ -63,7 +63,7 @@ What's truly innovative is our ability to adapt, switching between the two depen
         }
       },
       {
-        heading(level: 2)[Elevation]
+        heading(level: 3)[Elevation]
         let valid_entries = entries.final(loc).enumerate()
 
         valid_entries = valid_entries.filter(
