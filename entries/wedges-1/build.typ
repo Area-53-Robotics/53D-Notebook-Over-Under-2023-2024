@@ -7,7 +7,7 @@
   end_date: none,
   attendance: "Ajibola, Ishika, Eric, Rory, Makhi",
   designed: "Makhi",
-  witnessed: "Ishika",
+  witnessed: "Rory",
 )
 
 = #datetime(year: 2023, month: 11, day: 11).display("[year]/[month]/[day]")

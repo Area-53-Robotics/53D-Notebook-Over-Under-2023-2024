@@ -16,7 +16,7 @@ Today we were excited to begin building the new iteration of the drivetrain. Goi
 - Inventory (collecting materials from the manifest to build the flywheel): Ishika & Rory
 - Manufacturing (cutting pieces to size, cleaning sharp edges, & slipping gears): Eric & Ajibola
 - Trouble shoot causes of friction on the flywheel: Makhi
-- Check if spacing is corect: Eric & Rory
+- Check if spacing is correct: Eric & Rory
 - Rubber band the flywheel down: Makhi
 - Oversight & Quality Control: Ajibola
 - Initial Testing: Everyone

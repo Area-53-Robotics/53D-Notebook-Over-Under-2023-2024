@@ -79,10 +79,10 @@
 
                 let frontmatter_count = frontmatter_page_counter.final(loc).at(0)
 
-                let temp = frontmatter_count + page_number + 2 - page-number-offset
+                let temp = frontmatter_count + page_number + 3 - page-number-offset
 
                 if temp < 1 {
-                  // panic(str(info.name) + str(entry.title) + str(temp))
+                  panic(str(info.name) + str(entry.title) + str(temp))
                   temp = temp * -1
                 }
 
@@ -91,11 +91,11 @@
                   #h(5pt)
                   #box(fill: info.color.lighten(30%), radius: 1pt, height: 1em, baseline: 15%)[
                     #align(center + horizon)[
-                      // #link((page: {temp}, x: 0pt, y: 0pt))[
+                      #link((page: {temp}, x: 0pt, y: 0pt))[
                         #text(fill: black)[
-                          #h(2pt) #start_date #sym.dash.em #info.name: #entry.title #h(2pt)
+                          _#h(2pt) #start_date #sym.dash.em #info.name: #entry.title #h(2pt)_
                         ]
-                      // ]
+                      ]
                     ]
                   ]#h(5pt)
                   #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted")))

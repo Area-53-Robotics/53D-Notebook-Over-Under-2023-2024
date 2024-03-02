@@ -42,9 +42,16 @@
             )
 
             for (index, entry) in valid_entries [
-              #let page = counter(page).at(query(selector(<nb_entry>), loc).at(index).location()).at(0)
+              #let first-page = counter(page).at(query(selector(<nb_entry>), loc).at(index).location()).at(0)
+              #let last-page = 0
 
-              #page,
+              #if index < query(selector(<nb_entry>), loc).len() - 1 {
+                last-page = counter(page).at(query(selector(<nb_entry>), loc).at(index + 1).location()).at(0) - 1
+              } else {
+                last-page = [END]
+              }
+
+              #first-page - #last-page,
             ]
           },
           {
@@ -57,9 +64,16 @@
             )
 
             for (index, entry) in valid_entries [
-              #let page = counter(page).at(query(selector(<nb_entry>), loc).at(index).location()).at(0)
+              #let first-page = counter(page).at(query(selector(<nb_entry>), loc).at(index).location()).at(0)
+              #let last-page = 0
 
-              #page,
+              #if index < query(selector(<nb_entry>), loc).len() - 1 {
+                last-page = counter(page).at(query(selector(<nb_entry>), loc).at(index + 1).location()).at(0) - 1
+              } else {
+                last-page = [END]
+              }
+
+              #first-page - #last-page,
             ]
           },
         )

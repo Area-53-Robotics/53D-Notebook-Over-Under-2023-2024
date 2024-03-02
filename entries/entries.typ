@@ -124,19 +124,11 @@
 #include "./kicker-1/identify-problems.typ"
 #include "./kicker-sensor/identify.typ"
 
-/*
-#include "./autonomous/identify.typ"
-#include "./odometry/brainstorm-movement.typ"
-#include "./odometry/select-movement.typ"
-#include "./odometry/program-odometry.typ"
-#include "./odometry/brainstorm-implementation.typ"
-#include "./odometry/select-implementation.typ"
-*/
-
 #include "./kicker-1.1/build.typ"
 #include "./intake-1.2/build.typ"
 #include "./intake-1.2/test.typ"
 #include "./competition/gateway-to-the-west.typ"
+
 /*
 #include "./wings-1.1/build.typ"
 
@@ -146,4 +138,11 @@
 #include "./elevation-1/build-2.typ"
 
 #include "./competition/area-53-scrimmage-2.typ"
+
+#include "./autonomous/identify.typ"
+#include "./odometry/brainstorm-movement.typ"
+#include "./odometry/select-movement.typ"
+#include "./odometry/program-odometry.typ"
+#include "./odometry/brainstorm-implementation.typ"
+#include "./odometry/select-implementation.typ"
 */
