@@ -132,7 +132,7 @@
 #include "./wings-1.1/build.typ"
 #include "./wings-1.1/test.typ"
 #include "./competition/cardinal-classic.typ"
-
+#include "./elevation-1/identify-problems.typ"
 
 #include "./elevation-1.1/build.typ"
 #include "./competition/area-53-scrimmage-2.typ"
