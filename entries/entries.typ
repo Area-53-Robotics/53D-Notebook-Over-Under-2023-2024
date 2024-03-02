@@ -128,13 +128,14 @@
 #include "./intake-1.2/build.typ"
 #include "./intake-1.2/test.typ"
 #include "./competition/gateway-to-the-west.typ"
-#include "./wings-1.1/identify-problems.typ"
+#include "./wings-1/identify-problems.typ"
+#include "./wings-1.1/build.typ"
+#include "./wings-1.1/test.typ"
+#include "./competition/cardinal-classic.typ"
 #include "./elevation-1/test.typ"
 
 /*
-#include "./wings-1.1/build.typ"
 
-#include "./competition/cardinal-classic.typ"
 
 #include "./kicker-1.1/build-2.typ"
 #include "./elevation-1/build-2.typ"

@@ -11,69 +11,86 @@
 )
 
 = 2024/02/07
-[Excited from our performance at Gateway, the team was eager to design this new wing design. We decided to not CAD these wings since we had pictures of the wings from team 338A. From our priority list, the team wants to do more skills runs. The front wings is used to help us bowl and to push triballs over the middle barrier. 
-]
+After witnessing the success of 338A's wings at Gateway, we are eager to redesign our wings. We decided to not CAD these wings since we had pictures of the wings from team 338A. The new front wings will help us bowl (pushing multiple triballs down the left or right lanes of the fieldat once) and to push triballs over the middle barrier.
+
 
 == Delegation
-- inventory (collecting materials from the manifest to improve the wings): Ishika and Rory
-- Manufacture (Cutting pieces to size, cleaning sharp edges, slip gears): Eric and Ajibola
-- Tune the drive-train to reduce any friction - Makhi 
-- Fixed the screw joint - Jin
-- Make and boxed the physical wing - Eric and Rory
-- Attach the piston to the wing - Jin
-- Attach the sensor - Ajibola
-- Oversight & Quality Control: Ajibola, Jin
-- Initial testing: Everyone
+- Inventory (collecting materials from the manifest to create the wedges): Ishika & Rory
+- Manufacturing (cutting pieces to size, cleaning sharp edges, & slipping gears): Eric & Ajibola
+- Tune the drivetrain to reduce any friction: Makhi 
+- Fix the screw joint: Jin
+- Make and box the physical wing: Eric and Rory
+- Attach the piston to the wing: Jin
+- Oversight & Quality Control: Ajibola
+- Initial Testing: Everyone
 - Programming: Ishika and Ajibola
+
+
+
 #grid(
-  columns: 3,
+  columns: 2,
 
   [
     == Troubleshooting
-    - Before building anything new on the bot, the team wants to make sure everything works first. This took some time.
-    - Properly wire everything
-    - Reattach the wheels because they were loose 
-      - We feared that they will come off mid matches
-
+    - Before building anything new on the bot, we wanted to make sure everything worked first
+      - This took about 20 minutes of time
+    - Properly wired everything
+    - Reattached the drivetrain wheels because they were loose 
+      - We feared that they could come off during matches
 
     == Materials
-    - A pair of  2x5x1 c-channel
-    - 4 1x15x1 half cuts
+    - A pair of 2x5x1 C-channel
+    - 4 1x15x1 half cut C-channel
     - A pair of double acting pistons 
-    - The rest of the materials are found in the tool box
+    - The rest of the materials are found in our toolbox
 
-
-    == Assembly
-    Wing:
-    - Attach the screw joint to the end of the drivetrain
-      -This screw joint will extend to reach all the way below to maxmize stability 
-    - Box the inside of the chassis
-    - Attach the 2x5x1 c-channel 
-    - Attach the half cuts together and box through out
+    == Assembly: Wings
+    - Attached the screw joint to the end of the drivetrain
+      - This screw joint will extend to reach all the way below to maxmize stability 
+    - Boxed the inside of the chassis
+    - Attached the 2x5x1 C-channel 
+    - Attached the half cut C-channel together and box through out
       - Prevent them from bending
-      - Attach to the c-channel
-    - Attach a collar at the end of the screw joint
+      - Attach to the C-channel
+    - Attached a collar at the end of the screw joint
       - This will serve as one end of the triangle brace 
-    - Attach piston to the c-channel middle brace
-      - Creates the 145 degrees
+    - Attached a piston to the C-channel middle brace
+      - Creates the 145 degree angle needed for the optimal wings movement
 
-    Triangle Brace: 
-    - From the inner side of the chassis, attach a 1.5 inch stand-off.
+    == Assembly: Triangle Brace
+    - From the inner side of the chassis, we attached a 1.5 inch stand-off.
       - This serves as the stop for the wing and to the other end of the triangle brace
-    - Attach collar at the end
-    - From the two collars, connect them with a stand-off
+    - Attached a collar at the end
+    - From the two collars, we connected them with a stand-off
 
   ],
 
   [
     #figure(
-      image("/assets/duck.jpg", height: 30%),
-      caption: [Caption here]
+      image("./build/2.7-1.png", height: 30%),
+      caption: [
+        The wing mechanism before we attach the triangle brace. The two collars at the end will meet with a stand-off.
+      ]
     )
 
     #figure(
-      image("/assets/duck.jpg", height: 30%),
-      caption: [Caption here]
+      image("./build/2.7-2.png", height: 30%),
+      caption: [
+        The triangle brace on the pivot point.
+      ]
     )
   ]
 )
+
+#align(center)[
+  #tablex(
+    columns: 2,
+    column-gutter: 5pt,
+    align: center,
+
+    [Left wing], [Right wing],
+
+    cellx(inset: 0pt)[#image("./build/2.7-3.png", height: 20em)],
+    cellx(inset: 0pt)[#image("./build/2.7-4.png", height: 20em)]
+  )
+]
