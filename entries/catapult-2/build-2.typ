@@ -22,7 +22,8 @@
 )
 
 == Delegation
-- Inventory (collecting materials from the manifest to create the wedges): Ishika & Rory
+// Physical - digital discrepancy
+- Inventory (collecting materials from the manifest to create the catapult): Ishika & Rory
 - Manufacturing (cutting pieces to size, cleaning sharp edges, & slipping gears): Eric & Ajibola
 - Box and brace the new catapult arm: Makhi, Eric, & Rory
 - Slip two more tooth on the slip gear: Eric

@@ -13,9 +13,8 @@
 = 2024/02/07
 After witnessing the success of 338A's wings at Gateway, we are eager to redesign our wings. We decided to not CAD these wings since we had pictures of the wings from team 338A. The new front wings will help us bowl (pushing multiple triballs down the left or right lanes of the fieldat once) and to push triballs over the middle barrier.
 
-
 == Delegation
-- Inventory (collecting materials from the manifest to create the wedges): Ishika & Rory
+- Inventory (collecting materials from the manifest to improve the wings): Ishika & Rory
 - Manufacturing (cutting pieces to size, cleaning sharp edges, & slipping gears): Eric & Ajibola
 - Tune the drivetrain to reduce any friction: Makhi 
 - Fix the screw joint: Jin
@@ -24,8 +23,6 @@ After witnessing the success of 338A's wings at Gateway, we are eager to redesig
 - Oversight & Quality Control: Ajibola
 - Initial Testing: Everyone
 - Programming: Ishika and Ajibola
-
-
 
 #grid(
   columns: 2,

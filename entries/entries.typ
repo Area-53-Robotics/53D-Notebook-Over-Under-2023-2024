@@ -132,15 +132,17 @@
 #include "./wings-1.1/build.typ"
 #include "./wings-1.1/test.typ"
 #include "./competition/cardinal-classic.typ"
-#include "./elevation-1/test.typ"
+
+
+#include "./elevation-1.1/build.typ"
+#include "./competition/area-53-scrimmage-2.typ"
+#include "./elevation-1.1/test.typ"
 
 /*
 
 
 #include "./kicker-1.1/build-2.typ"
-#include "./elevation-1/build-2.typ"
 
-#include "./competition/area-53-scrimmage-2.typ"
 
 #include "./autonomous/identify.typ"
 #include "./odometry/brainstorm-movement.typ"

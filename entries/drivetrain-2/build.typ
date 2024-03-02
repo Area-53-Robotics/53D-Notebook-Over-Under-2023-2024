@@ -13,7 +13,8 @@
 Today we were excited to begin building the new iteration of the drivetrain. Going into the construction phase, we planned on following the CAD model more stringently than we did when building the first iteration of the drivetrain to ensure that we complete the drivetrain in a timely manner. The aim was to ensure a systematic and efficient building process that aligns with our design objectives so that we can complete this rebuild quickly. 
 
 == Delegation
-- Inventory (collecting materials from the manifest to build the flywheel): Ishika & Rory
+// Physical - digital discrepancy
+- Inventory (collecting materials from the manifest to build the drivetrain): Ishika & Rory
 - Manufacturing (cutting pieces to size, cleaning sharp edges, & slipping gears): Eric & Ajibola
 - Trouble shoot causes of friction on the flywheel: Makhi
 - Check if spacing is correct: Eric & Rory

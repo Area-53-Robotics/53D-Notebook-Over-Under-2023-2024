@@ -2,7 +2,7 @@
 #import "@preview/cetz:0.2.0"
 
 #show: create_entry.with(
-  title: "Elevation #1",
+  title: "Elevation #1.1",
   type: "test",
   start_date: datetime(year: 2024, month: 2, day: 23),
   attendance: "Ajibola, Jin, Ishika, Makhi, Eric, Rory",
