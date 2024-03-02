@@ -132,6 +132,9 @@
 #include "./wings-1.1/build.typ"
 #include "./wings-1.1/test.typ"
 #include "./competition/cardinal-classic.typ"
+#include "./autonomous/identify.typ"
+#include "./odometry/brainstorm-movement.typ"
+#include "./odometry/select-movement.typ"
 #include "./elevation-1/identify-problems.typ"
 #include "./kicker-1.1/build-2.typ"
 #include "./elevation-1.1/build.typ"
@@ -140,9 +143,6 @@
 
 
 /*
-#include "./autonomous/identify.typ"
-#include "./odometry/brainstorm-movement.typ"
-#include "./odometry/select-movement.typ"
 #include "./odometry/program-odometry.typ"
 #include "./odometry/brainstorm-implementation.typ"
 #include "./odometry/select-implementation.typ"

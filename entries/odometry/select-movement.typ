@@ -3,7 +3,7 @@
 #show: create_entry.with(
   title: "Autonomous - Movement",
   type: "select",
-  start_date: datetime(year: 2024, month: 1, day: 25),
+  start_date: datetime(year: 2024, month: 2, day: 12),
   attendance: "Ajibola, Ishika, Eric, Makhi",
   designed: "Ajibola",
   witnessed: "Ishika",

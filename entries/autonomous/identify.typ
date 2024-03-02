@@ -3,24 +3,21 @@
 #show: create_entry.with(
   title: "Autonomous Movement",
   type: "identify",
-  start_date: datetime(year: 2024, month: 1, day: 25),
+  start_date: datetime(year: 2024, month: 2, day: 12),
   attendance: "Ajibola, Ishika, Eric, Makhi",
   designed: "Ajibola",
   witnessed: "Ishika",
 )
 
-#nb_admonition(type: "note")[
-  The meetings scheduled after 2024/01/06 until today were cancelled due to inclement weather.
-]
-
 #nb_todo(
-  date: datetime(year: 2023, month: 7, day: 25),
-  monthly-schedule: "Behind",
-  yearly-schedule: "Behind",
+  date: datetime(year: 2024, month: 2, day: 12),
+  monthly-schedule: "On",
+  yearly-schedule: "On",
   (
     (true, "Identify the design aspects, goals, and constraints for the auton. (Everyone)"),
     (true, "Brainstorm possible auton implementations. (Everyone)"),
     (true, "Select the best auton implementation using a decision matrix. (Everyone)"),
+    (true, "Identify improvements that can be made to our elevation mechanism (Everyone)"),
   )
 )
 
@@ -28,7 +25,7 @@
   columns: 2,
 
   [
-    With the Gateway to the West signature event coming up (2024/02/03), we wanted to dedicate a design cycle towards autonomous movement this time to get the best autonomous possible. We want to give our best possible performance at our first signature event, and that necessitates quality performance auton routines.
+    With the state competition coming up (2024/03/02), we wanted to dedicate a design cycle towards autonomous movement this time to get the best autonomous possible. We want to give our best possible performance so we can have a chance at qualifying for worlds, and that necessitates quality performance auton routines.
 
     Before brainstorming autonomous implementations we could use, we first identified the aspects that would go into autonomous programming.
   ],

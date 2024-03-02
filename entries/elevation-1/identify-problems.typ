@@ -9,13 +9,6 @@
   witnessed: "Ajibola",
 )
 
-#nb_todo(
-  date: datetime(year: 2024, month: 1, day: 1),
-  (
-    (true, ""),
-  )
-)
-
 = Middle Bar Elevation
 During the Gateway to the West competition, we saw that we could just hang with our vertical wings. Due to the the kicker, our robot leans backwards when we try to balance on the middle barrier. Since our vertical wings are locking, we can initiate the robot on the middle barrier and balance the robot with our vertical wings.
 
