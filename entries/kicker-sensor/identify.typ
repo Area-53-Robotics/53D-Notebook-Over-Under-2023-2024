@@ -63,3 +63,7 @@
 #nb_admonition(type: "note")[
   Unfortunately our team does not have any distance sensors, only optical sensors. Therefore, we will have to use an optical sensor.
 ]
+
+#nb_admonition(type: "note")[
+  We programmed pseudocode for the optical sensor in our #nb_entry_reference(date: datetime(year: 2024, month: 1, day: 12), type: "program", title: "Kicker #1"), so we don't have to spend time programming it now.
+]

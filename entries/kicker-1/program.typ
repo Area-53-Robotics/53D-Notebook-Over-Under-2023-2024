@@ -84,11 +84,17 @@ if(manualKicker) {
   - *Ultrasonic Sensor* - Determines the distance from the sensor to the object in front of it by sending out a ping and determining how long it takes for that ping to hit the object
 ]
 
+/*
 #nb_admonition(type: "select", title: "Final Selection: Kicker Sensors")[
   We decided to use the *Optical Sensor* because our team was out of stock of the other two sensors.
 ]
 
 We then installed the optical sensor under the polycarbonate part of the kicker tray.
+*/
+
+#nb_admonition(type: "note")[
+  We don't have any of the sensors that we brainstormed available to us right now, so to save time, we are writing pseudocode for the optical sensor so that we have code prepared when we get it.
+]
 
 === Triball Hue Determination
 To determine which hue value the triballs are, we utilized the devices menu of the VEX V5 brain. We determined that triballs have a green hue value of around 70.
